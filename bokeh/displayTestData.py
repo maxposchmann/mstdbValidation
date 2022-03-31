@@ -47,12 +47,11 @@ for source in data.experimentalReferences:
     names.append(source['title'])
     types.append(source['type'])
     details.append(f"Authors: {source['authors']}")
-    fullDetails.append("<pre>" +
-                       f"Title: {source['title']}\n" +
+    fullDetails.append(f"Title: {source['title']}\n" +
                        f"Authors: {source['authors']}\n" +
                        f"URL: {source['url']}\n" +
-                       f"Type: {source['type']}\n" +
-                       "</pre>")
+                       f"Type: {source['type']}\n"
+                       )
     # Loop over all associated test series to add nodes and edges
     for testType in source['tests']:
         if testType == 'vapor pressures':
@@ -68,13 +67,12 @@ for source in data.experimentalReferences:
                 details.append(f"Status: {currentSeries['series status']}")
                 tempTest = 'tests'
                 tempComp = 'composition'
-                fullDetails.append("<pre>" +
-                                   f"Name: {series}\n" +
+                fullDetails.append(f"Name: {series}\n" +
                                    f"Type: {currentSeries['series type']}\n" +
                                    f"Status: {currentSeries['series status']}\n" +
                                    f"Database: {currentSeries['database']}\n" +
-                                   f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}" +
-                                   "</pre>")
+                                   f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
+                                   )
                 # Create connections from sources to test series
                 edgeStarts.append(i)
                 edgeEnds.append(j + len(data.experimentalReferences))
@@ -127,7 +125,7 @@ plot.renderers.append(graph)
 def nodeCallback(event):
     try:
         indexActive = graph.node_renderer.data_source.selected.indices[0]
-        layout.children[1]=Div(text=fullDetails[indexActive])
+        layout.children[1]=Div(text="<pre>" + fullDetails[indexActive] + "</pre>")
     except IndexError:
         pass
 

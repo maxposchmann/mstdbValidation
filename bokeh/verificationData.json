@@ -1,0 +1,253 @@
+{
+  "sources": {
+    "ORNL-4415": {
+      "mstdb references": ["mstdb-1:capelli2014"],
+      "url": "http://moltensalt.org/references/static/downloads/pdf/ORNL-4415.pdf",
+      "title": "LIQUID-VAPOR EQUILIBRIA IN LiF-BeF2 AND LiF-BeF2-ThF4 SYSTEMS",
+      "authors": "F. J. Smith, L. M. Ferris, C. T. Thompson",
+      "type": "experiment",
+      "tests": {
+        "vapor pressures": {
+          "LiF-BeF2-RbF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 90,
+              "Be": 10,
+              "Rb": 0.09,
+              "F": 110.09
+            },
+            "relative error": 0.1,
+            "samples": {
+              "0": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "LiF": 0.001331730483745061,
+                  "BeF2": 0.00061704380473887976248,
+                  "RbF": 4.851600948875407602e-5
+                }
+              },
+              "1": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "LiF": 0.0012527459471881597069,
+                  "BeF2": 0.00037057045768912018954,
+                  "RbF": 4.190377512396247406e-5
+                }
+              },
+              "2": {
+                "temperature": 1273,
+                "partial pressures": {
+                  "LiF": 0.0010149229249239429072,
+                  "BeF2": 0.00043172823967755355815,
+                  "RbF": 3.619090071878935304e-5
+                }
+              },
+              "3": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "LiF": 0.00037435340864331722189,
+                  "BeF2": 0.00015587577347273007256,
+                  "RbF": 1.033006790840435621e-5
+                }
+              },
+              "4": {
+                "temperature": 1173,
+                "partial pressures": {
+                  "LiF": 0.00014115457627528399994,
+                  "BeF2": 6.681854580171344598e-5,
+                  "RbF": 4.427919717237298656e-6
+                }
+              },
+              "5": {
+                "temperature": 1150,
+                "partial pressures": {
+                  "LiF": 9.436380453611992603e-5,
+                  "BeF2": 4.279595240389594838e-5,
+                  "RbF": 2.897687112297461091e-6
+                }
+              }
+            }
+          },
+          "LiF-BeF2-ZrF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 90,
+              "Be": 10,
+              "Zr": 0.083,
+              "F": 110.332
+            },
+            "relative error": 0.1,
+            "samples": {
+              "0": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "LiF": 0.0019146905849446800747,
+                  "BeF2": 0.00055437544715825006099,
+                  "ZrF4": 0.00000719054
+                }
+              },
+              "1": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "LiF": 0.0022302364963278881009,
+                  "BeF2": 0.00049970231249142106622,
+                  "ZrF4": 3.8902277910685e-6
+                }
+              },
+              "2": {
+                "temperature": 1273,
+                "partial pressures": {
+                  "LiF": 0.0007568536858919344,
+                  "BeF2": 0.0002063662831107673,
+                  "ZrF4": 1.9185477733284e-6
+                }
+              },
+              "3": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "LiF": 0.00032930505781967846701,
+                  "BeF2": 0.00013421920607798655425,
+                  "ZrF4": 9.236987084281507145e-7
+                }
+              },
+              "4": {
+                "temperature": 1177,
+                "partial pressures": {
+                  "LiF": 0.00016030298926902764186,
+                  "BeF2": 0.04275917295860816,
+                  "ZrF4": 0.000059234068427718504
+                }
+              }
+            }
+          },
+          "LiF-BeF2-UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 86.4,
+              "Be": 9.6,
+              "U": 4,
+              "F": 121.6
+            },
+            "relative error": 0.1,
+            "samples": {
+              "0": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "LiF": 0.0025161441529438378223,
+                  "BeF2": 0.00088058688414202211572
+                }
+              },
+              "1": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "LiF": 0.0013545509760662915316,
+                  "BeF2": 0.00044505287597976130997,
+                  "UF4": 4.297491794639072409e-6
+                }
+              },
+              "2": {
+                "temperature": 1278,
+                "partial pressures": {
+                  "LiF": 0.0013660301860824093124,
+                  "BeF2": 0.32718055807236296
+                }
+              },
+              "3": {
+                "temperature": 1253,
+                "partial pressures": {
+                  "LiF": 0.00048316428867989450737,
+                  "BeF2": 0.0001763467207611769472,
+                  "UF4": 1.216794568666595374e-6
+                }
+              },
+              "4": {
+                "temperature": 1248,
+                "partial pressures": {
+                  "LiF": 0.00046422146722747514684,
+                  "BeF2": 0.00017667170979441144127,
+                  "UF4": 6.100867948881346348e-7
+                }
+              },
+              "5": {
+                "temperature": 1209,
+                "partial pressures": {
+                  "LiF": 0.00019950477473317589322,
+                  "BeF2": 8.259113896859625629e-5,
+                  "UF4": 2.79194503493205451e-7
+                }
+              },
+              "6": {
+                "temperature": 1156,
+                "partial pressures": {
+                  "LiF": 6.846724899416695305e-5,
+                  "BeF2": 2.775524760830336204e-5,
+                  "UF4": 8.446216559839082804e-8
+                }
+              }
+            }
+          },
+          "LiF-BeF2-ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70.5,
+              "Be": 7.5,
+              "Th": 22,
+              "F": 173.5
+            },
+            "relative error": 0.1,
+            "samples": {
+              "0": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "LiF": 0.0019245273363283832077,
+                  "BeF2": 0.0010765408307823278768,
+                  "ThF4": 4.773308426264897239e-6
+                }
+              },
+              "1": {
+                "temperature": 1305,
+                "partial pressures": {
+                  "LiF": 0.001591311777032393274,
+                  "BeF2": 0.0010104331139831463065,
+                  "ThF4": 2.85518416992542e-6
+                }
+              },
+              "2": {
+                "temperature": 1276,
+                "partial pressures": {
+                  "LiF": 0.0009789175230084756589,
+                  "BeF2": 0.0004531804955629489,
+                  "ThF4": 2.402450009072164774e-6
+                }
+              },
+              "3": {
+                "temperature": 1250,
+                "partial pressures": {
+                  "LiF": 0.00068356969368124512274,
+                  "BeF2": 0.00034043210194420649032,
+                  "ThF4": 2.377208111773162112e-6
+                }
+              },
+              "4": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "LiF": 0.00056521540819089914707,
+                  "BeF2": 0.00022788649021546054344,
+                  "ThF4": 9.789175230084745595e-7
+                }
+              },
+              "5": {
+                "temperature": 1196,
+                "partial pressures": {
+                  "LiF": 0.00029363669198179977431,
+                  "BeF2": 0.09287309277274187,
+                  "ThF4": 0.0011232041918512424
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

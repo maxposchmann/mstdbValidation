@@ -16,7 +16,7 @@
               "Rb": 0.09,
               "F": 110.09
             },
-            "relative error": 0.1,
+            "relative error": 0.2,
             "samples": {
               "1": {
                 "temperature": 1323,
@@ -76,7 +76,7 @@
               "Zr": 0.083,
               "F": 110.332
             },
-            "relative error": 0.1,
+            "relative error": 0.2,
             "enabled": "false",
             "samples": {
               "1": {
@@ -129,7 +129,7 @@
               "U": 4,
               "F": 121.6
             },
-            "relative error": 0.1,
+            "relative error": 0.2,
             "samples": {
               "1": {
                 "temperature": 1323,
@@ -195,7 +195,7 @@
               "Th": 22,
               "F": 173.5
             },
-            "relative error": 0.1,
+            "relative error": 0.2,
             "samples": {
               "1": {
                 "temperature": 1323,

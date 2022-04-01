@@ -41,7 +41,11 @@ def runVaporPressures(series):
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
-        o = out[sample]['solution phases']['gas_ideal']['species']
+        try:
+            o = out[sample]['solution phases']['gas_ideal']['species']
+        except KeyError:
+            series['samples'][sample]['status'] = 'fail'
+            continue
         sampleStatus = 'pass'
         for species in s['partial pressures']:
             try:
@@ -206,7 +210,11 @@ def runSolubilityLimits(series):
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
-        o = out[sample]['solution phases'][phase][fracType]
+        try:
+            o = out[sample]['solution phases'][phase][fracType]
+        except KeyError:
+            series['samples'][sample]['status'] = 'fail'
+            continue
         sampleStatus = 'pass'
         for species in s['fractions']:
             try:

@@ -49,3 +49,22 @@ class jsonTestData:
 
                         # Add test to series list
                         self.testSeries.append(dict([(series,self.data['sources'][source]['tests'][testType][series])]))
+                elif testType == 'phase transitions':
+                    for series in self.data['sources'][source]['tests'][testType].keys():
+                        seriesStatus = 'incomplete'
+                        if 'status' not in list(self.data['sources'][source]['tests'][testType][series].keys()):
+                            seriesStatus = 'incomplete'
+                        elif self.data['sources'][source]['tests'][testType][series]['samples']['status'] == 'pass':
+                            seriesStatus = 'pass'
+                        elif self.data['sources'][source]['tests'][testType][series]['samples']['status'] == 'fail':
+                            seriesStatus = 'fail'
+                        self.data['sources'][source]['tests'][testType][series]['series status'] = seriesStatus
+                        # For included tests, references to respective lists
+                        for ref in mstdbParentRefs:
+                            if ref not in self.mstdbReferences:
+                                self.mstdbReferences.append(ref)
+                        if self.data['sources'][source] not in self.experimentalReferences:
+                            self.experimentalReferences.append(self.data['sources'][source])
+
+                        # Add test to series list
+                        self.testSeries.append(dict([(series,self.data['sources'][source]['tests'][testType][series])]))

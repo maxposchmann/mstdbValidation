@@ -10,21 +10,23 @@ from bokeh.palettes import Spectral4
 from bokeh.events import Tap
 import parseTests
 
-filename = 'verificationData-results.json'
+filename = 'verificationData.json'
 data = parseTests.jsonTestData(filename)
 
-totalNodes = len(data.experimentalReferences) + len(data.testSeries)
+nExpRef = len(data.experimentalReferences)
+nTestSeries = len(data.testSeries)
+totalNodes = nExpRef + nTestSeries
 node_indices = list(range(totalNodes))
 
 seriesNames = [list(series.keys())[0] for series in data.testSeries]
 
-x = []
-y = []
-names = []
-types = []
-details = []
-fullDetails = []
-size = []
+x = [0 for i in node_indices]
+y = [0 for i in node_indices]
+names = ['' for i in node_indices]
+types = ['' for i in node_indices]
+details = ['' for i in node_indices]
+fullDetails = ['' for i in node_indices]
+size = [0 for i in node_indices]
 colorCode = [RGB(100,100,100) for i in node_indices]
 sizes = [50 for i in node_indices]
 
@@ -36,22 +38,23 @@ rightLim = 0.75
 edgeStarts = []
 edgeEnds   = []
 i = -1
-j = -1
+j = nExpRef - 1
 for source in data.experimentalReferences:
     i += 1
     # Calculate node reference positions
-    y.append(level1)
-    x.append(leftLim + (rightLim - leftLim) * (i+0.5) / len(data.experimentalReferences))
+    y[i] = level1
+    x[i] = leftLim + (rightLim - leftLim) * (i+0.5) / nExpRef
     colorCode[i] = RGB(0,0,255)
-    size.append(20)
-    names.append(source['title'])
-    types.append(source['type'])
-    details.append(f"Authors: {source['authors']}")
-    fullDetails.append(f"Title: {source['title']}\n" +
-                       f"Authors: {source['authors']}\n" +
-                       f"URL: {source['url']}\n" +
-                       f"Type: {source['type']}\n"
-                       )
+    size[i] = 20
+    names[i] = source['title']
+    types[i] = source['type']
+    details[i] = f"Authors: {source['authors']}"
+    fullDetails[i] = (
+                     f"Title: {source['title']}\n" +
+                     f"Authors: {source['authors']}\n" +
+                     f"URL: {source['url']}\n" +
+                     f"Type: {source['type']}\n"
+                     )
     # Loop over all associated test series to add nodes and edges
     for testType in source['tests']:
         if testType == 'vapor pressures':
@@ -59,31 +62,63 @@ for source in data.experimentalReferences:
                 j += 1
                 currentSeries = source['tests'][testType][series]
                 # Calculate test series node positions
-                y.append(level2)
-                x.append(leftLim + (rightLim - leftLim) * (j+0.5) / len(data.testSeries))
-                size.append(20)
-                names.append(series)
-                types.append(currentSeries['series type'])
-                details.append(f"Status: {currentSeries['series status']}")
-                tempTest = 'tests'
+                y[j] = level2
+                x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
+                size[j] = 20
+                names[j] = series
+                types[j] = testType
+                details[j] = f"Status: {currentSeries['series status']}"
                 tempComp = 'composition'
-                fullDetails.append(f"Name: {series}\n" +
-                                   f"Type: {currentSeries['series type']}\n" +
-                                   f"Status: {currentSeries['series status']}\n" +
-                                   f"Database: {currentSeries['database']}\n" +
-                                   f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
-                                   )
+                fullDetails[j] = (
+                                 f"Name: {series}\n" +
+                                 f"Type: {testType}\n" +
+                                 f"Status: {currentSeries['series status']}\n" +
+                                 f"Database: {currentSeries['database']}\n" +
+                                 f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
+                                 )
                 # Create connections from sources to test series
                 edgeStarts.append(i)
-                edgeEnds.append(j + len(data.experimentalReferences))
+                edgeEnds.append(j)
                 # Get series statuses to set colors
                 seriesStatus = currentSeries['series status']
                 if seriesStatus == 'pass':
-                    colorCode[j + len(data.experimentalReferences)] = RGB(0,255,0)
+                    colorCode[j + nExpRef] = RGB(0,255,0)
                 elif seriesStatus == 'fail':
-                    colorCode[j + len(data.experimentalReferences)] = RGB(255,0,0)
+                    colorCode[j + nExpRef] = RGB(255,0,0)
                 elif seriesStatus == 'partial':
-                    colorCode[j + len(data.experimentalReferences)] = RGB(255,255,0)
+                    colorCode[j + nExpRef] = RGB(255,255,0)
+        elif testType == 'phase transitions':
+            for series in source['tests'][testType]:
+                j += 1
+                currentSeries = source['tests'][testType][series]
+                # Calculate test series node positions
+                y[j] = level2
+                x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
+                size[j] = 20
+                names[j] = series
+                types[j] = testType
+                details[j] = f"Status: {currentSeries['series status']}"
+                tempComp = 'composition'
+                fullDetails[j] = (
+                                 f"Name: {series}\n" +
+                                 f"Type: {testType}\n" +
+                                 f"Status: {currentSeries['series status']}\n" +
+                                 f"Database: {currentSeries['database']}\n" +
+                                 f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}\n" +
+                                 f"Target temperature: {currentSeries['target temperature']}K\n" +
+                                 f"Low temperature phases: {' '.join(currentSeries['phases low'])}\n" +
+                                 f"High temperature phases: {' '.join(currentSeries['phases high'])}\n" +
+                                 f"Error tolerance: {currentSeries['error']}K\n"
+                                 )
+                # Create connections from sources to test series
+                edgeStarts.append(i)
+                edgeEnds.append(j)
+                # Get series statuses to set colors
+                seriesStatus = currentSeries['series status']
+                if seriesStatus == 'pass':
+                    colorCode[j + nExpRef] = RGB(0,255,0)
+                elif seriesStatus == 'fail':
+                    colorCode[j + nExpRef] = RGB(255,0,0)
 
 graph = GraphRenderer()
 

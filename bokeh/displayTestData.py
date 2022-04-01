@@ -9,8 +9,9 @@ from bokeh.colors import RGB
 from bokeh.palettes import Spectral4
 from bokeh.events import Tap
 import parseTests
+import testRunner
 
-filename = 'verificationData.json'
+filename = 'verificationData-tested.json'
 data = parseTests.jsonTestData(filename)
 
 nExpRef = len(data.experimentalReferences)

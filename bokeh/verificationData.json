@@ -248,6 +248,97 @@
           }
         }
       }
+    },
+    "jones-1962": {
+      "mstdb references": ["mstdb-1:capelli2014"],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1962.tb11084.x",
+      "title": "Phase Equilibria in the Ternary Fused-Salt System LiF-BeF2-UF4",
+      "authors": "L.V. JONES, D.E. ETTER, C.R. HUDGENS, A.A. HUFFMAN, T.B. RHINEHAMMER, N.E. ROGERS, P.A. TUCKER, and L.J. WITTENBERG",
+      "type": "experiment",
+      "comment": "More detail at http://moltensalt.org/references/static/downloads/pdf/ORNL-2896.pdf and http://moltensalt.org/references/static/downloads/pdf/ORNL-2548.pdf",
+      "tests": {
+        "phase transitions":
+        {
+          "LiF-7LiF.6UF4-4LiF.UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 72,
+              "Be": 5.5,
+              "U": 22.5,
+              "F": 173
+            },
+            "error": 20,
+            "target temperature": 753,
+            "phases low": ["FLi_solid(s)","U6F31Li7_S1(s)","MSFL"],
+            "phases high": ["UF8Li4_S1(s)","MSFL"]
+          },
+          "LiF-2LiF.BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 69.5,
+              "Be": 22.5,
+              "U": 8,
+              "F": 146.5
+            },
+            "error": 20,
+            "target temperature": 700,
+            "phases low": ["FLi_solid(s)","Li2BeF4(s)","U6F31Li7_S1(s)"],
+            "phases high": ["MSFL"]
+          },
+          "2LiF.BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 29,
+              "U": 6,
+              "F": 147
+            },
+            "error": 20,
+            "target temperature": 711,
+            "phases low": ["Li2BeF4(s)","U6F31Li7_S1(s)"],
+            "phases high": ["MSFL"]
+          },
+          "2LiF.BeF2-BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 48,
+              "Be": 51.5,
+              "U": 0.5,
+              "F": 153
+            },
+            "error": 20,
+            "target temperature": 623,
+            "phases low": ["Li2BeF4(s)","BeF2_Solid_I_Hi","U6F31Li7_S1(s)"],
+            "phases high": ["MSFL"]
+          },
+          "BeF2-LiF.4UF4-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 45.5,
+              "Be": 54,
+              "U": 0.5,
+              "F": 155.5
+            },
+            "error": 20,
+            "target temperature": 654,
+            "phases low": ["BeF2_Solid_I_Hi","U6F31Li7_S1(s)","MSFL"],
+            "phases high": ["BeF2_Solid_I_Hi","U4F17Li_S1(s)","MSFL"]
+          },
+          "BeF2-UF4-LiF.4UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 30.5,
+              "Be": 69,
+              "U": 0.5,
+              "F": 170.5
+            },
+            "error": 20,
+            "target temperature": 756,
+            "phases low": ["BeF2_Solid_I_Hi","U4F17Li_S1(s)","MSFL"],
+            "phases high": ["BeF2_Solid_I_Hi","UF4_solid(s)","MSFL"]
+          }
+        }
+      }
     }
   }
 }

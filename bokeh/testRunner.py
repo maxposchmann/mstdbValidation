@@ -24,11 +24,38 @@ def runVaporPressures(series):
         inputFile.write(f'mass unit         = {munit}\n')
         inputFile.write(f'nEl               = {nElements}\n')
         inputFile.write(f'iEl               = {" ".join([str(atomic_number_map.index(element)+1) for element in elements])}\n')
-        inputFile.write(f'nCalc             = {len(list(currentSeries["samples"].keys()))}\n')
-        for sample in currentSeries['samples']:
-            s = currentSeries['samples'][sample]
+        inputFile.write(f'nCalc             = {len(list(series["samples"].keys()))}\n')
+        for sample in series['samples']:
+            s = series['samples'][sample]
             inputFile.write(f'{s["temperature"]} {press} {compString}\n')
+    # Run calculations
     subprocess.run([thermopath,inputScript])
+    # Get output from Thermochimica
+    try:
+        f = open(outjsonpath,)
+        out = json.load(f)
+        f.close()
+    except:
+        print('Failed to Thermochimica output file')
+        return
+    # Check output against experiment
+    for sample in series['samples']:
+        s = series['samples'][sample]
+        o = out[sample]['solution phases']['gas_ideal']['species']
+        sampleStatus = 'pass'
+        for species in s['partial pressures']:
+            try:
+                # Calculate bounds
+                lb = (10**(-logErr)) * o[species]['mole fraction']*press
+                ub = (10**( logErr)) * o[species]['mole fraction']*press
+                calculated = s['partial pressures'][species]
+                print(f'{calculated} {lb} {ub}')
+                if not (calculated >= lb and calculated <= ub):
+                    sampleStatus = 'fail'
+            except KeyError:
+                sampleStatus = 'fail'
+        series['samples'][sample]['status'] = sampleStatus
+
 
 # Set file names for input/output
 infilename  = 'verificationData.json'

@@ -308,7 +308,7 @@
             },
             "error": 20,
             "target temperature": 623,
-            "phases low": ["Li2BeF4(s)","BeF2_Solid_I_Hi","U6F31Li7_S1(s)"],
+            "phases low": ["Li2BeF4(s)","BeF2_Solid_I_Hi_quar(s2)","U6F31Li7_S1(s)"],
             "phases high": ["MSFL"]
           },
           "BeF2-LiF.4UF4-7LiF.6UF4": {
@@ -321,8 +321,8 @@
             },
             "error": 20,
             "target temperature": 654,
-            "phases low": ["BeF2_Solid_I_Hi","U6F31Li7_S1(s)","MSFL"],
-            "phases high": ["BeF2_Solid_I_Hi","U4F17Li_S1(s)","MSFL"]
+            "phases low": ["BeF2_Solid_I_Hi_quar(s2)","U6F31Li7_S1(s)","MSFL"],
+            "phases high": ["BeF2_Solid_I_Hi_quar(s2)","U4F17Li_S1(s)","MSFL"]
           },
           "BeF2-UF4-LiF.4UF4": {
             "database": "fluoride",
@@ -334,8 +334,8 @@
             },
             "error": 20,
             "target temperature": 756,
-            "phases low": ["BeF2_Solid_I_Hi","U4F17Li_S1(s)","MSFL"],
-            "phases high": ["BeF2_Solid_I_Hi","UF4_solid(s)","MSFL"]
+            "phases low": ["BeF2_Solid_I_Hi_quar(s2)","U4F17Li_S1(s)","MSFL"],
+            "phases high": ["BeF2_Solid_I_Hi_quar(s2)","UF4_solid(s)","MSFL"]
           }
         },
         "solubility limits": {

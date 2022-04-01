@@ -26,7 +26,7 @@ def runVaporPressures(series):
         inputFile.write(f'nCalc             = {len(list(currentSeries["samples"].keys()))}\n')
         for sample in currentSeries['samples']:
             s = currentSeries['samples'][sample]
-            inputFile.write(f'{s["temperature"]} 1.0 {compString}\n')
+            inputFile.write(f'{s["temperature"]} {press} {compString}\n')
     subprocess.run([thermopath,inputScript])
 
 # Set file names for input/output
@@ -45,6 +45,8 @@ chloridepath = '/media/max/data/mstdbValidation/mstdb/Models and Documentation/M
 tunit = 'K'
 punit = 'atm'
 munit = 'moles'
+# Assume all pressures will be 1 atm for now
+press = 1.0
 
 atomic_number_map = [
     'H','He','Li','Be','B','C','N','O','F','Ne','Na','Mg','Al','Si','P',

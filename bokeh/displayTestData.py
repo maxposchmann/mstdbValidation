@@ -85,11 +85,11 @@ for source in data.experimentalReferences:
                 # Get series statuses to set colors
                 seriesStatus = currentSeries['series status']
                 if seriesStatus == 'pass':
-                    colorCode[j + nExpRef] = RGB(0,255,0)
+                    colorCode[j] = RGB(0,255,0)
                 elif seriesStatus == 'fail':
-                    colorCode[j + nExpRef] = RGB(255,0,0)
+                    colorCode[j] = RGB(255,0,0)
                 elif seriesStatus == 'partial':
-                    colorCode[j + nExpRef] = RGB(255,255,0)
+                    colorCode[j] = RGB(255,255,0)
         elif testType == 'phase transitions':
             for series in source['tests'][testType]:
                 j += 1
@@ -121,9 +121,9 @@ for source in data.experimentalReferences:
                 # Get series statuses to set colors
                 seriesStatus = currentSeries['series status']
                 if seriesStatus == 'pass':
-                    colorCode[j + nExpRef] = RGB(0,255,0)
+                    colorCode[j] = RGB(0,255,0)
                 elif seriesStatus == 'fail':
-                    colorCode[j + nExpRef] = RGB(255,0,0)
+                    colorCode[j] = RGB(255,0,0)
     x[i] = x[i] / nExpInSource
 
 graph = GraphRenderer()

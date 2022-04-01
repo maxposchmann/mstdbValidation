@@ -429,7 +429,7 @@
               "U": 98,
               "F": 396
             },
-            "error": 0.02,
+            "error": 0.1,
             "phase": "MSFL",
             "fraction type": "endmembers",
             "samples": {
@@ -437,199 +437,232 @@
                 "temperature": 891.3922803238208,
                 "fractions": {
                   "UF4": 0.021868787276341964
-                }
+                },
+                "status": "pass"
               },
               "2": {
                 "temperature": 929.4480952899319,
                 "fractions": {
                   "UF4": 0.030815109343936373
-                }
+                },
+                "status": "pass"
               },
               "3": {
                 "temperature": 960.5909213308047,
                 "fractions": {
                   "UF4": 0.041749502982107375
-                }
+                },
+                "status": "pass"
               },
               "4": {
                 "temperature": 981.3608263960903,
                 "fractions": {
                   "UF4": 0.053677932405566606
-                }
+                },
+                "status": "fail"
               },
               "5": {
                 "temperature": 991.7492165164631,
                 "fractions": {
                   "UF4": 0.06163021868787279
-                }
+                },
+                "status": "fail"
               },
               "6": {
                 "temperature": 1012.5242779633437,
                 "fractions": {
                   "UF4": 0.07654075546719684
-                }
+                },
+                "status": "fail"
               },
               "7": {
                 "temperature": 1022.9178244653119,
                 "fractions": {
                   "UF4": 0.08747514910536779
-                }
+                },
+                "status": "fail"
               },
               "8": {
                 "temperature": 1036.7936473378747,
                 "fractions": {
                   "UF4": 0.11232604373757456
-                }
+                },
+                "status": "fail"
               },
               "9": {
                 "temperature": 1041.9947175735213,
                 "fractions": {
                   "UF4": 0.12027833001988071
-                }
+                },
+                "status": "fail"
               },
               "10": {
                 "temperature": 1057.5738651663505,
                 "fractions": {
                   "UF4": 0.13021868787276342
-                }
+                },
+                "status": "fail"
               },
               "11": {
                 "temperature": 1040.28967405939,
                 "fractions": {
                   "UF4": 0.13419483101391655
-                }
+                },
+                "status": "fail"
               },
               "12": {
                 "temperature": 1052.40888960187,
                 "fractions": {
                   "UF4": 0.14314115308151099
-                }
+                },
+                "status": "fail"
               },
               "13": {
                 "temperature": 1061.078485857191,
                 "fractions": {
                   "UF4": 0.15705765407554673
-                }
+                },
+                "status": "fail"
               },
               "14": {
                 "temperature": 1061.1059865590319,
                 "fractions": {
                   "UF4": 0.1729622266401591
-                }
+                },
+                "status": "fail"
               },
               "15": {
                 "temperature": 1069.777301608218,
                 "fractions": {
                   "UF4": 0.1878727634194831
-                }
+                },
+                "status": "fail"
               },
               "16": {
                 "temperature": 1076.7195100291622,
                 "fractions": {
                   "UF4": 0.2027833001988072
-                }
+                },
+                "status": "fail"
               },
               "17": {
                 "temperature": 1078.47096097765,
                 "fractions": {
                   "UF4": 0.2157057654075547
-                }
+                },
+                "status": "fail"
               },
               "18": {
                 "temperature": 1083.685781564217,
                 "fractions": {
                   "UF4": 0.231610337972167
-                }
+                },
+                "status": "fail"
               },
               "19": {
                 "temperature": 1090.6176772219708,
                 "fractions": {
                   "UF4": 0.2405566600397615
-                }
+                },
+                "status": "fail"
               },
               "20": {
                 "temperature": 1101.0627875398905,
                 "fractions": {
                   "UF4": 0.28131212723658056
-                }
+                },
+                "status": "fail"
               },
               "21": {
                 "temperature": 1108.0153087240246,
                 "fractions": {
                   "UF4": 0.3021868787276342
-                }
+                },
+                "status": "fail"
               },
               "22": {
                 "temperature": 1109.7770724357028,
                 "fractions": {
                   "UF4": 0.3210735586481114
-                }
+                },
+                "status": "fail"
               },
               "23": {
                 "temperature": 1120.180931700861,
                 "fractions": {
                   "UF4": 0.3379721669980119
-                }
+                },
+                "status": "fail"
               },
               "24": {
                 "temperature": 1121.932382649349,
                 "fractions": {
                   "UF4": 0.3508946322067595
-                }
+                },
+                "status": "fail"
               },
               "25": {
                 "temperature": 1139.3128262127525,
                 "fractions": {
                   "UF4": 0.40258449304174954
-                }
+                },
+                "status": "fail"
               },
               "26": {
                 "temperature": 1153.2281813442114,
                 "fractions": {
                   "UF4": 0.45029821073558657
-                }
+                },
+                "status": "fail"
               },
               "27": {
                 "temperature": 1168.8777994855077,
                 "fractions": {
                   "UF4": 0.5009940357852882
-                }
+                },
+                "status": "fail"
               },
               "28": {
                 "temperature": 1174.1527778573518,
                 "fractions": {
                   "UF4": 0.55168986083499
-                }
+                },
+                "status": "pass"
               },
               "29": {
                 "temperature": 1200.1718793865052,
                 "fractions": {
                   "UF4": 0.5994035785288271
-                }
+                },
+                "status": "fail"
               },
               "30": {
                 "temperature": 1217.5523229499086,
                 "fractions": {
                   "UF4": 0.6510934393638171
-                }
+                },
+                "status": "pass"
               },
               "31": {
                 "temperature": 1231.467678081368,
                 "fractions": {
                   "UF4": 0.6988071570576542
-                }
+                },
+                "status": "pass"
               },
               "32": {
                 "temperature": 1264.4977397860675,
                 "fractions": {
                   "UF4": 0.8011928429423459
-                }
+                },
+                "status": "pass"
               },
               "33": {
                 "temperature": 1313.1739820443336,
                 "fractions": {
                   "UF4": 0.9522862823061631
-                }
+                },
+                "status": "pass"
               }
             },
             "series status": "incomplete",

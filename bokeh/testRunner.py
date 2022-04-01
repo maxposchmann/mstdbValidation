@@ -165,6 +165,61 @@ def runPhaseTransitions(series):
                 print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
 
+def runSolubilityLimits(series):
+    inputScript = 'solubilityLimits.ti'
+    if series['database'] == 'fluoride':
+        datapath = fluoridepath
+    elif series['database'] == 'chloride':
+        datapath = chloridepath
+    else:
+        print('database not recognized')
+        return
+    elements = list(series['composition'].keys())
+    nElements = len(elements)
+    compString = " ".join([str(series['composition'][element]) for element in elements])
+    err = series['error']
+    phase = series['phase']
+    fracType = series['fraction type']
+    # Write input script
+    with open(inputScript, 'w') as inputFile:
+        inputFile.write('! Python-generated input file for Thermochimica\n')
+        inputFile.write(f'data file         = {datapath}\n')
+        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'pressure unit     = {punit}\n')
+        inputFile.write(f'mass unit         = {munit}\n')
+        inputFile.write(f'nEl               = {nElements}\n')
+        inputFile.write(f'iEl               = {" ".join([str(atomic_number_map.index(element)+1) for element in elements])}\n')
+        inputFile.write(f'nCalc             = {len(list(series["samples"].keys()))}\n')
+        for sample in series['samples']:
+            s = series['samples'][sample]
+            inputFile.write(f'{s["temperature"]} {press} {compString}\n')
+    # Run calculations
+    subprocess.run([thermopath,inputScript])
+    # Get output from Thermochimica
+    try:
+        f = open(outjsonpath,)
+        out = json.load(f)
+        f.close()
+    except:
+        print('Failed to Thermochimica output file')
+        return
+    # Check output against experiment
+    for sample in series['samples']:
+        s = series['samples'][sample]
+        o = out[sample]['solution phases'][phase][fracType]
+        sampleStatus = 'pass'
+        for species in s['fractions']:
+            try:
+                # Calculate bounds
+                lb = o[species]['mole fraction'] - err
+                ub = o[species]['mole fraction'] + err
+                calculated = s['fractions'][species]
+                if not (calculated >= lb and calculated <= ub):
+                    sampleStatus = 'fail'
+            except KeyError:
+                sampleStatus = 'fail'
+        series['samples'][sample]['status'] = sampleStatus
+
 # Set file names for input/output
 infilename  = 'verificationData.json'
 outfilename = 'verificationData-tested.json'
@@ -218,7 +273,9 @@ for sourceName in data.data['sources']:
             elif testType == 'phase transitions':
                 runPhaseTransitions(currentSeries)
                 print(currentSeries['status'])
-            # elif testType in ['solubility limits']:
-            #     runSolubilityLimits(currentSeries)
+            elif testType in ['solubility limits']:
+                runSolubilityLimits(currentSeries)
+                for sample in currentSeries['samples']:
+                    print(f"{sample}: {currentSeries['samples'][sample]['status']}")
 with open(outfilename, 'w') as outfile:
     json.dump(data.data, outfile, indent=2)

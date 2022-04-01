@@ -3,6 +3,7 @@ mstdb/
 *.docx
 *.jpg
 *.jpeg
+*.ti
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

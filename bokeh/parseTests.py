@@ -54,9 +54,9 @@ class jsonTestData:
                         seriesStatus = 'incomplete'
                         if 'status' not in list(self.data['sources'][source]['tests'][testType][series].keys()):
                             seriesStatus = 'incomplete'
-                        elif self.data['sources'][source]['tests'][testType][series]['samples']['status'] == 'pass':
+                        elif self.data['sources'][source]['tests'][testType][series]['status'] == 'pass':
                             seriesStatus = 'pass'
-                        elif self.data['sources'][source]['tests'][testType][series]['samples']['status'] == 'fail':
+                        elif self.data['sources'][source]['tests'][testType][series]['status'] == 'fail':
                             seriesStatus = 'fail'
                         self.data['sources'][source]['tests'][testType][series]['series status'] = seriesStatus
                         # For included tests, references to respective lists

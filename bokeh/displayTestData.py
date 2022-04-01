@@ -43,7 +43,8 @@ for source in data.experimentalReferences:
     i += 1
     # Calculate node reference positions
     y[i] = level1
-    x[i] = leftLim + (rightLim - leftLim) * (i+0.5) / nExpRef
+    x[i] = 0
+    nExpInSource = 0
     colorCode[i] = RGB(0,0,255)
     size[i] = 20
     names[i] = source['title']
@@ -60,10 +61,12 @@ for source in data.experimentalReferences:
         if testType in ['vapor pressures','solubility limits']:
             for series in source['tests'][testType]:
                 j += 1
+                nExpInSource += 1
                 currentSeries = source['tests'][testType][series]
                 # Calculate test series node positions
                 y[j] = level2
                 x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
+                x[i] += x[j]
                 size[j] = 20
                 names[j] = series
                 types[j] = testType
@@ -90,10 +93,12 @@ for source in data.experimentalReferences:
         elif testType == 'phase transitions':
             for series in source['tests'][testType]:
                 j += 1
+                nExpInSource += 1
                 currentSeries = source['tests'][testType][series]
                 # Calculate test series node positions
                 y[j] = level2
                 x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
+                x[i] += x[j]
                 size[j] = 20
                 names[j] = series
                 types[j] = testType
@@ -119,6 +124,7 @@ for source in data.experimentalReferences:
                     colorCode[j + nExpRef] = RGB(0,255,0)
                 elif seriesStatus == 'fail':
                     colorCode[j + nExpRef] = RGB(255,0,0)
+    x[i] = x[i] / nExpInSource
 
 graph = GraphRenderer()
 

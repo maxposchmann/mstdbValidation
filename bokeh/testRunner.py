@@ -49,13 +49,121 @@ def runVaporPressures(series):
                 lb = (10**(-logErr)) * o[species]['mole fraction']*press
                 ub = (10**( logErr)) * o[species]['mole fraction']*press
                 calculated = s['partial pressures'][species]
-                print(f'{calculated} {lb} {ub}')
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
             except KeyError:
                 sampleStatus = 'fail'
         series['samples'][sample]['status'] = sampleStatus
 
+def runPhaseTransitions(series):
+    inputScript = 'phaseTransitions.ti'
+    if series['database'] == 'fluoride':
+        datapath = fluoridepath
+    elif series['database'] == 'chloride':
+        datapath = chloridepath
+    else:
+        print('database not recognized')
+        return
+    elements = list(series['composition'].keys())
+    nElements = len(elements)
+    compString = " ".join([str(series['composition'][element]) for element in elements])
+    target = series['target temperature']
+    err = series['error']
+    plo = series['phases low']
+    phi = series['phases high']
+    # Write input script
+    with open(inputScript, 'w') as inputFile:
+        inputFile.write('! Python-generated input file for Thermochimica\n')
+        inputFile.write(f'data file         = {datapath}\n')
+        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'pressure unit     = {punit}\n')
+        inputFile.write(f'mass unit         = {munit}\n')
+        inputFile.write(f'nEl               = {nElements}\n')
+        inputFile.write(f'iEl               = {" ".join([str(atomic_number_map.index(element)+1) for element in elements])}\n')
+        inputFile.write(f'nCalc             = 2\n')
+        # Run once at low temperature limit and once at high
+        inputFile.write(f'{target - err} {press} {compString}\n')
+        inputFile.write(f'{target + err} {press} {compString}\n')
+    # Run calculations
+    subprocess.run([thermopath,inputScript])
+    # Get output from Thermochimica
+    try:
+        f = open(outjsonpath,)
+        out = json.load(f)
+        f.close()
+    except:
+        print('Failed to Thermochimica output file')
+        return
+    # Check output against experiment
+    # Low temperature check
+    series['status'] = 'pass'
+    for phase in out["1"]["solution phases"].keys():
+        p = out["1"]["solution phases"][phase]
+        # If phase is supposed to be there, make sure it has non-zero moles
+        if phase in plo:
+            if p['moles'] <= 0.0:
+                series['status'] = 'fail'
+        # Otherwise, should have zero
+        else:
+            if p['moles'] >  0.0:
+                series['status'] = 'fail'
+    for phase in out["1"]["pure condensed phases"].keys():
+        p = out["1"]["pure condensed phases"][phase]
+        # If phase is supposed to be there, make sure it has non-zero moles
+        if phase in plo:
+            if p['moles'] <= 0.0:
+                series['status'] = 'fail'
+        # Otherwise, should have zero
+        else:
+            if p['moles'] >  0.0:
+                series['status'] = 'fail'
+    # Now reverse: if it is supposed to be there, ensure it is
+    for phase in plo:
+        try:
+            if out["1"]["solution phases"][phase]['moles'] <= 0.0:
+                series['status'] = 'fail'
+        except KeyError:
+            # If not in solution phases, check pure condensed
+            try:
+                if out["1"]["pure condensed phases"][phase]['moles'] <= 0.0:
+                    series['status'] = 'fail'
+            except KeyError:
+                print(f'Phase {phase} not found in Thermochimica output')
+                series['status'] = 'fail'
+    # High temperature check
+    for phase in out["2"]["solution phases"].keys():
+        p = out["2"]["solution phases"][phase]
+        # If phase is supposed to be there, make sure it has non-zero moles
+        if phase in phi:
+            if p['moles'] <= 0.0:
+                series['status'] = 'fail'
+        # Otherwise, should have zero
+        else:
+            if p['moles'] >  0.0:
+                series['status'] = 'fail'
+    for phase in out["2"]["pure condensed phases"].keys():
+        p = out["2"]["pure condensed phases"][phase]
+        # If phase is supposed to be there, make sure it has non-zero moles
+        if phase in plo:
+            if p['moles'] <= 0.0:
+                series['status'] = 'fail'
+        # Otherwise, should have zero
+        else:
+            if p['moles'] >  0.0:
+                series['status'] = 'fail'
+    # Now reverse: if it is supposed to be there, ensure it is
+    for phase in phi:
+        try:
+            if out["2"]["solution phases"][phase]['moles'] <= 0.0:
+                series['status'] = 'fail'
+        except KeyError:
+            # If not in solution phases, check pure condensed
+            try:
+                if out["2"]["pure condensed phases"][phase]['moles'] <= 0.0:
+                    series['status'] = 'fail'
+            except KeyError:
+                print(f'Phase {phase} not found in Thermochimica output')
+                series['status'] = 'fail'
 
 # Set file names for input/output
 infilename  = 'verificationData.json'
@@ -107,8 +215,9 @@ for sourceName in data.data['sources']:
                 runVaporPressures(currentSeries)
                 for sample in currentSeries['samples']:
                     print(f"{sample}: {currentSeries['samples'][sample]['status']}")
-            # elif testType == 'phase transitions':
-            #     runPhaseTransitions(currentSeries)
+            elif testType == 'phase transitions':
+                runPhaseTransitions(currentSeries)
+                print(currentSeries['status'])
             # elif testType in ['solubility limits']:
             #     runSolubilityLimits(currentSeries)
 with open(outfilename, 'w') as outfile:

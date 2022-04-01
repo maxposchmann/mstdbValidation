@@ -309,7 +309,8 @@
               "UF8Li4_S1(s)",
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           },
           "LiF-2LiF.BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -329,7 +330,8 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           },
           "2LiF.BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -348,7 +350,8 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           },
           "2LiF.BeF2-BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -362,13 +365,14 @@
             "target temperature": 623,
             "phases low": [
               "Li2BeF4(s)",
-              "BeF2_Solid_I_Hi",
+              "BeF2_Solid_I_Hi_quar(s2)",
               "U6F31Li7_S1(s)"
             ],
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           },
           "BeF2-LiF.4UF4-7LiF.6UF4": {
             "database": "fluoride",
@@ -381,16 +385,17 @@
             "error": 20,
             "target temperature": 654,
             "phases low": [
-              "BeF2_Solid_I_Hi",
+              "BeF2_Solid_I_Hi_quar(s2)",
               "U6F31Li7_S1(s)",
               "MSFL"
             ],
             "phases high": [
-              "BeF2_Solid_I_Hi",
+              "BeF2_Solid_I_Hi_quar(s2)",
               "U4F17Li_S1(s)",
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           },
           "BeF2-UF4-LiF.4UF4": {
             "database": "fluoride",
@@ -403,16 +408,17 @@
             "error": 20,
             "target temperature": 756,
             "phases low": [
-              "BeF2_Solid_I_Hi",
+              "BeF2_Solid_I_Hi_quar(s2)",
               "U4F17Li_S1(s)",
               "MSFL"
             ],
             "phases high": [
-              "BeF2_Solid_I_Hi",
+              "BeF2_Solid_I_Hi_quar(s2)",
               "UF4_solid(s)",
               "MSFL"
             ],
-            "series status": "incomplete"
+            "series status": "incomplete",
+            "status": "fail"
           }
         },
         "solubility limits": {

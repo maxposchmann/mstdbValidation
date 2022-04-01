@@ -1,0 +1,636 @@
+{
+  "sources": {
+    "ORNL-4415": {
+      "mstdb references": [
+        "mstdb-1:capelli2014"
+      ],
+      "url": "http://moltensalt.org/references/static/downloads/pdf/ORNL-4415.pdf",
+      "title": "LIQUID-VAPOR EQUILIBRIA IN LiF-BeF2 AND LiF-BeF2-ThF4 SYSTEMS",
+      "authors": "F. J. Smith, L. M. Ferris, C. T. Thompson",
+      "type": "experiment",
+      "tests": {
+        "vapor pressures": {
+          "LiF-BeF2-RbF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 90,
+              "Be": 10,
+              "Rb": 0.09,
+              "F": 110.09
+            },
+            "logarithmic error": 1,
+            "samples": {
+              "1": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "FLi": 0.001331730483745061,
+                  "BeF2": 0.0006170438047388798,
+                  "RbF": 4.8516009488754076e-05
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "FLi": 0.0012527459471881597,
+                  "BeF2": 0.0003705704576891202,
+                  "RbF": 4.1903775123962474e-05
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1273,
+                "partial pressures": {
+                  "FLi": 0.001014922924923943,
+                  "BeF2": 0.00043172823967755356,
+                  "RbF": 3.619090071878935e-05
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "FLi": 0.0003743534086433172,
+                  "BeF2": 0.00015587577347273007,
+                  "RbF": 1.0330067908404356e-05
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 1173,
+                "partial pressures": {
+                  "FLi": 0.000141154576275284,
+                  "BeF2": 6.681854580171345e-05,
+                  "RbF": 4.427919717237299e-06
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 1150,
+                "partial pressures": {
+                  "FLi": 9.436380453611993e-05,
+                  "BeF2": 4.279595240389595e-05,
+                  "RbF": 2.897687112297461e-06
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "vapor pressures"
+          },
+          "LiF-BeF2-ZrF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 90,
+              "Be": 10,
+              "Zr": 0.083,
+              "F": 110.332
+            },
+            "logarithmic error": 1,
+            "enabled": "false",
+            "samples": {
+              "1": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "FLi": 0.00191469058494468,
+                  "BeF2": 0.0005543754471582501,
+                  "ZrF4": 7.19054e-06
+                }
+              },
+              "2": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "FLi": 0.002230236496327888,
+                  "BeF2": 0.0004997023124914211,
+                  "ZrF4": 3.8902277910685e-06
+                }
+              },
+              "3": {
+                "temperature": 1273,
+                "partial pressures": {
+                  "FLi": 0.0007568536858919344,
+                  "BeF2": 0.0002063662831107673,
+                  "ZrF4": 1.9185477733284e-06
+                }
+              },
+              "4": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "FLi": 0.00032930505781967847,
+                  "BeF2": 0.00013421920607798655,
+                  "ZrF4": 9.236987084281507e-07
+                }
+              },
+              "5": {
+                "temperature": 1177,
+                "partial pressures": {
+                  "FLi": 0.00016030298926902764,
+                  "BeF2": 0.04275917295860816,
+                  "ZrF4": 5.9234068427718504e-05
+                }
+              }
+            },
+            "series status": "incomplete",
+            "series type": "vapor pressures"
+          },
+          "LiF-BeF2-UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 86.4,
+              "Be": 9.6,
+              "U": 4,
+              "F": 121.6
+            },
+            "logarithmic error": 1,
+            "samples": {
+              "1": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "FLi": 0.002516144152943838,
+                  "BeF2": 0.0008805868841420221
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1298,
+                "partial pressures": {
+                  "FLi": 0.0013545509760662915,
+                  "BeF2": 0.0004450528759797613,
+                  "UF4": 4.297491794639072e-06
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1278,
+                "partial pressures": {
+                  "FLi": 0.0013660301860824093,
+                  "BeF2": 0.32718055807236296
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 1253,
+                "partial pressures": {
+                  "FLi": 0.0004831642886798945,
+                  "BeF2": 0.00017634672076117695,
+                  "UF4": 1.2167945686665954e-06
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 1248,
+                "partial pressures": {
+                  "FLi": 0.00046422146722747515,
+                  "BeF2": 0.00017667170979441144,
+                  "UF4": 6.100867948881346e-07
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 1209,
+                "partial pressures": {
+                  "FLi": 0.0001995047747331759,
+                  "BeF2": 8.259113896859626e-05,
+                  "UF4": 2.7919450349320545e-07
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 1156,
+                "partial pressures": {
+                  "FLi": 6.846724899416695e-05,
+                  "BeF2": 2.7755247608303362e-05,
+                  "UF4": 8.446216559839083e-08
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "vapor pressures"
+          },
+          "LiF-BeF2-ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70.5,
+              "Be": 7.5,
+              "Th": 22,
+              "F": 173.5
+            },
+            "logarithmic error": 1,
+            "samples": {
+              "1": {
+                "temperature": 1323,
+                "partial pressures": {
+                  "FLi": 0.0019245273363283832,
+                  "BeF2": 0.0010765408307823279,
+                  "ThF4": 4.773308426264897e-06
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 1305,
+                "partial pressures": {
+                  "FLi": 0.0015913117770323933,
+                  "BeF2": 0.0010104331139831463,
+                  "ThF4": 2.85518416992542e-06
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 1276,
+                "partial pressures": {
+                  "FLi": 0.0009789175230084757,
+                  "BeF2": 0.0004531804955629489,
+                  "ThF4": 2.4024500090721648e-06
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1250,
+                "partial pressures": {
+                  "FLi": 0.0006835696936812451,
+                  "BeF2": 0.0003404321019442065,
+                  "ThF4": 2.377208111773162e-06
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 1223,
+                "partial pressures": {
+                  "FLi": 0.0005652154081908991,
+                  "BeF2": 0.00022788649021546054,
+                  "ThF4": 9.789175230084746e-07
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 1196,
+                "partial pressures": {
+                  "FLi": 0.0002936366919817998,
+                  "BeF2": 0.09287309277274187,
+                  "ThF4": 0.0011232041918512424
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "vapor pressures"
+          }
+        }
+      }
+    },
+    "jones-1962": {
+      "mstdb references": [
+        "mstdb-1:capelli2014"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1962.tb11084.x",
+      "title": "Phase Equilibria in the Ternary Fused-Salt System LiF-BeF2-UF4",
+      "authors": "L.V. JONES, D.E. ETTER, C.R. HUDGENS, A.A. HUFFMAN, T.B. RHINEHAMMER, N.E. ROGERS, P.A. TUCKER, and L.J. WITTENBERG",
+      "type": "experiment",
+      "comment": "More detail at http://moltensalt.org/references/static/downloads/pdf/ORNL-2896.pdf and http://moltensalt.org/references/static/downloads/pdf/ORNL-2548.pdf",
+      "tests": {
+        "phase transitions": {
+          "LiF-7LiF.6UF4-4LiF.UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 72,
+              "Be": 5.5,
+              "U": 22.5,
+              "F": 173
+            },
+            "error": 20,
+            "target temperature": 753,
+            "phases low": [
+              "FLi_solid(s)",
+              "U6F31Li7_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "UF8Li4_S1(s)",
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          },
+          "LiF-2LiF.BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 69.5,
+              "Be": 22.5,
+              "U": 8,
+              "F": 146.5
+            },
+            "error": 20,
+            "target temperature": 700,
+            "phases low": [
+              "FLi_solid(s)",
+              "Li2BeF4(s)",
+              "U6F31Li7_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          },
+          "2LiF.BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 29,
+              "U": 6,
+              "F": 147
+            },
+            "error": 20,
+            "target temperature": 711,
+            "phases low": [
+              "Li2BeF4(s)",
+              "U6F31Li7_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          },
+          "2LiF.BeF2-BeF2-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 48,
+              "Be": 51.5,
+              "U": 0.5,
+              "F": 153
+            },
+            "error": 20,
+            "target temperature": 623,
+            "phases low": [
+              "Li2BeF4(s)",
+              "BeF2_Solid_I_Hi",
+              "U6F31Li7_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          },
+          "BeF2-LiF.4UF4-7LiF.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 45.5,
+              "Be": 54,
+              "U": 0.5,
+              "F": 155.5
+            },
+            "error": 20,
+            "target temperature": 654,
+            "phases low": [
+              "BeF2_Solid_I_Hi",
+              "U6F31Li7_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "BeF2_Solid_I_Hi",
+              "U4F17Li_S1(s)",
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          },
+          "BeF2-UF4-LiF.4UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 30.5,
+              "Be": 69,
+              "U": 0.5,
+              "F": 170.5
+            },
+            "error": 20,
+            "target temperature": 756,
+            "phases low": [
+              "BeF2_Solid_I_Hi",
+              "U4F17Li_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "BeF2_Solid_I_Hi",
+              "UF4_solid(s)",
+              "MSFL"
+            ],
+            "series status": "incomplete"
+          }
+        },
+        "solubility limits": {
+          "BeF2-UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 2,
+              "U": 98,
+              "F": 396
+            },
+            "error": 0.02,
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 891.3922803238208,
+                "fractions": {
+                  "UF4": 0.021868787276341964
+                }
+              },
+              "2": {
+                "temperature": 929.4480952899319,
+                "fractions": {
+                  "UF4": 0.030815109343936373
+                }
+              },
+              "3": {
+                "temperature": 960.5909213308047,
+                "fractions": {
+                  "UF4": 0.041749502982107375
+                }
+              },
+              "4": {
+                "temperature": 981.3608263960903,
+                "fractions": {
+                  "UF4": 0.053677932405566606
+                }
+              },
+              "5": {
+                "temperature": 991.7492165164631,
+                "fractions": {
+                  "UF4": 0.06163021868787279
+                }
+              },
+              "6": {
+                "temperature": 1012.5242779633437,
+                "fractions": {
+                  "UF4": 0.07654075546719684
+                }
+              },
+              "7": {
+                "temperature": 1022.9178244653119,
+                "fractions": {
+                  "UF4": 0.08747514910536779
+                }
+              },
+              "8": {
+                "temperature": 1036.7936473378747,
+                "fractions": {
+                  "UF4": 0.11232604373757456
+                }
+              },
+              "9": {
+                "temperature": 1041.9947175735213,
+                "fractions": {
+                  "UF4": 0.12027833001988071
+                }
+              },
+              "10": {
+                "temperature": 1057.5738651663505,
+                "fractions": {
+                  "UF4": 0.13021868787276342
+                }
+              },
+              "11": {
+                "temperature": 1040.28967405939,
+                "fractions": {
+                  "UF4": 0.13419483101391655
+                }
+              },
+              "12": {
+                "temperature": 1052.40888960187,
+                "fractions": {
+                  "UF4": 0.14314115308151099
+                }
+              },
+              "13": {
+                "temperature": 1061.078485857191,
+                "fractions": {
+                  "UF4": 0.15705765407554673
+                }
+              },
+              "14": {
+                "temperature": 1061.1059865590319,
+                "fractions": {
+                  "UF4": 0.1729622266401591
+                }
+              },
+              "15": {
+                "temperature": 1069.777301608218,
+                "fractions": {
+                  "UF4": 0.1878727634194831
+                }
+              },
+              "16": {
+                "temperature": 1076.7195100291622,
+                "fractions": {
+                  "UF4": 0.2027833001988072
+                }
+              },
+              "17": {
+                "temperature": 1078.47096097765,
+                "fractions": {
+                  "UF4": 0.2157057654075547
+                }
+              },
+              "18": {
+                "temperature": 1083.685781564217,
+                "fractions": {
+                  "UF4": 0.231610337972167
+                }
+              },
+              "19": {
+                "temperature": 1090.6176772219708,
+                "fractions": {
+                  "UF4": 0.2405566600397615
+                }
+              },
+              "20": {
+                "temperature": 1101.0627875398905,
+                "fractions": {
+                  "UF4": 0.28131212723658056
+                }
+              },
+              "21": {
+                "temperature": 1108.0153087240246,
+                "fractions": {
+                  "UF4": 0.3021868787276342
+                }
+              },
+              "22": {
+                "temperature": 1109.7770724357028,
+                "fractions": {
+                  "UF4": 0.3210735586481114
+                }
+              },
+              "23": {
+                "temperature": 1120.180931700861,
+                "fractions": {
+                  "UF4": 0.3379721669980119
+                }
+              },
+              "24": {
+                "temperature": 1121.932382649349,
+                "fractions": {
+                  "UF4": 0.3508946322067595
+                }
+              },
+              "25": {
+                "temperature": 1139.3128262127525,
+                "fractions": {
+                  "UF4": 0.40258449304174954
+                }
+              },
+              "26": {
+                "temperature": 1153.2281813442114,
+                "fractions": {
+                  "UF4": 0.45029821073558657
+                }
+              },
+              "27": {
+                "temperature": 1168.8777994855077,
+                "fractions": {
+                  "UF4": 0.5009940357852882
+                }
+              },
+              "28": {
+                "temperature": 1174.1527778573518,
+                "fractions": {
+                  "UF4": 0.55168986083499
+                }
+              },
+              "29": {
+                "temperature": 1200.1718793865052,
+                "fractions": {
+                  "UF4": 0.5994035785288271
+                }
+              },
+              "30": {
+                "temperature": 1217.5523229499086,
+                "fractions": {
+                  "UF4": 0.6510934393638171
+                }
+              },
+              "31": {
+                "temperature": 1231.467678081368,
+                "fractions": {
+                  "UF4": 0.6988071570576542
+                }
+              },
+              "32": {
+                "temperature": 1264.4977397860675,
+                "fractions": {
+                  "UF4": 0.8011928429423459
+                }
+              },
+              "33": {
+                "temperature": 1313.1739820443336,
+                "fractions": {
+                  "UF4": 0.9522862823061631
+                }
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          }
+        }
+      }
+    }
+  }
+}

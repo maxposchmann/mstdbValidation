@@ -14,7 +14,7 @@ def runVaporPressures(series):
     elements = list(currentSeries['composition'].keys())
     nElements = len(elements)
     compString = " ".join([str(currentSeries['composition'][element]) for element in elements])
-    relErr = currentSeries['relative error']
+    logErr = series['logarithmic error']
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'data file         = {datapath}\n')

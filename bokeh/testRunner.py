@@ -4,17 +4,18 @@ import subprocess
 
 def runVaporPressures(series):
     inputScript = 'vaporPressure.ti'
-    if currentSeries['database'] == 'fluoride':
+    if series['database'] == 'fluoride':
         datapath = fluoridepath
-    elif currentSeries['database'] == 'chloride':
+    elif series['database'] == 'chloride':
         datapath = chloridepath
     else:
         print('database not recognized')
         return
-    elements = list(currentSeries['composition'].keys())
+    elements = list(series['composition'].keys())
     nElements = len(elements)
-    compString = " ".join([str(currentSeries['composition'][element]) for element in elements])
+    compString = " ".join([str(series['composition'][element]) for element in elements])
     logErr = series['logarithmic error']
+    # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'data file         = {datapath}\n')
@@ -64,17 +65,24 @@ data = parseTests.jsonTestData(infilename)
 nExpRef = len(data.experimentalReferences)
 nTestSeries = len(data.testSeries)
 
-for source in data.experimentalReferences:
+for sourceName in data.data['sources']:
+    source = data.data['sources'][sourceName]
     # Loop over all associated test series and execture
     for testType in source['tests']:
         for series in source['tests'][testType]:
+            print(series)
             currentSeries = source['tests'][testType][series]
             if 'enabled' in currentSeries.keys():
                 if currentSeries['enabled'] in ['false', 'False', 'FALSE', 0]:
+                    print('disabled')
                     continue
             if testType in ['vapor pressures']:
                 runVaporPressures(currentSeries)
+                for sample in currentSeries['samples']:
+                    print(f"{sample}: {currentSeries['samples'][sample]['status']}")
             # elif testType == 'phase transitions':
             #     runPhaseTransitions(currentSeries)
             # elif testType in ['solubility limits']:
             #     runSolubilityLimits(currentSeries)
+with open(outfilename, 'w') as outfile:
+    json.dump(data.data, outfile, indent=2)

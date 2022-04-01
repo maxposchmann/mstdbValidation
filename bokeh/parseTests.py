@@ -17,7 +17,7 @@ class jsonTestData:
         for source in self.data['sources'].keys():
             mstdbParentRefs = self.data['sources'][source]['mstdb references']
             for testType in self.data['sources'][source]['tests'].keys():
-                if testType in ['vapor pressures','solubility limits']:
+                if testType in ['vapor pressures','solubility limits','heat capacities']:
                     for series in self.data['sources'][source]['tests'][testType].keys():
                         # Calculate status of series before deciding if samples are included
                         seriesStatus = 'unknown'

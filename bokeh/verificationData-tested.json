@@ -670,6 +670,147 @@
           }
         }
       }
+    },
+    "mstdb-48:benes2013": {
+      "mstdb references": [
+        "mstdb-48:benes2013"
+      ],
+      "url": "https://d1wqtxts1xzle7.cloudfront.net/43483988/A_comprehensive_study_of_the_heat_capaci20160307-20489-h6a4uz-with-cover-page-v2.pdf?Expires=1648848814&Signature=WsJLokgH-jibFKYC1WA5gk9EUpEO~GNjON2xbx3ZKYiWVUblAVdYLuZkxDasSERZcxB9D5fZINFaFxNvnSndY8X65tkduyNonqguEFHwR~Ox4pXMJFWOuCGs0bkOSmDpVX65etPoRiSNncE3bEHY0qA6CGHRWMlqQLV7xy7AYxacKOlR7N7VC9LJMlMgW-KzosEQ-uEq9Hxj9KS-M-WT0N6XtEkodtOcWayvwVS~NpVi09GAgDU-7zPNtdfF9UNhaEAiWP09qakd~CIu6CDNh910x6keBnlbDreArpP1SASyHPHOuYidB6vghbSyeCV~3aTnzS-8oWH~dE1eCcDLYA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+      "title": "A comprehensive study of the heat capacity of CsF from T = 5 K to T = 1400 K",
+      "authors": "Bene\u0161, O., R. J. M. Konings, D. Sedmidubsk\u00fd, M. Beilmann, O. S. Valu, E. Capelli, M. Salanne, and S. Nichenko",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "heat capacities": {
+          "CsF": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 1,
+              "F": 1
+            },
+            "relative error": 0.1,
+            "samples": {
+              "1": {
+                "temperature": 300,
+                "heat capacity": 50.23,
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 350,
+                "heat capacity": 51.72,
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 400,
+                "heat capacity": 53.82,
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 450,
+                "heat capacity": 56.28,
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 500,
+                "heat capacity": 58.95,
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 550,
+                "heat capacity": 61.78,
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 600,
+                "heat capacity": 64.69,
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 650,
+                "heat capacity": 67.68,
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 700,
+                "heat capacity": 70.72,
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 750,
+                "heat capacity": 73.8,
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 800,
+                "heat capacity": 76.9,
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 850,
+                "heat capacity": 80.02,
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 900,
+                "heat capacity": 83.17,
+                "status": "pass"
+              },
+              "14": {
+                "temperature": 950,
+                "heat capacity": 86.32,
+                "status": "pass"
+              },
+              "15": {
+                "temperature": 1000,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "16": {
+                "temperature": 1050,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "17": {
+                "temperature": 1100,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "18": {
+                "temperature": 1150,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "19": {
+                "temperature": 1200,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "20": {
+                "temperature": 1250,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "21": {
+                "temperature": 1300,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "22": {
+                "temperature": 1350,
+                "heat capacity": 70.56,
+                "status": "pass"
+              },
+              "23": {
+                "temperature": 1400,
+                "heat capacity": 70.56,
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "heat capacities"
+          }
+        }
+      }
     }
   }
 }

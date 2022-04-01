@@ -59,7 +59,7 @@ for source in data.experimentalReferences:
                      )
     # Loop over all associated test series to add nodes and edges
     for testType in source['tests']:
-        if testType in ['vapor pressures','solubility limits']:
+        if testType in ['vapor pressures','solubility limits','heat capacities']:
             for series in source['tests'][testType]:
                 j += 1
                 nExpInSource += 1

@@ -337,7 +337,7 @@
             "phases high": ["BeF2_Solid_I_Hi","UF4_solid(s)","MSFL"]
           }
         },
-        "solubility limits" {
+        "solubility limits": {
           "BeF2-UF4": {
             "database": "fluoride",
             "composition": {

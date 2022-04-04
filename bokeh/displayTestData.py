@@ -33,8 +33,8 @@ sizes = [50 for i in node_indices]
 
 level1 = 0.5
 level2 = -0.5
-leftLim = -0.75
-rightLim = 0.75
+leftLim = -0.95
+rightLim = 0.95
 
 edgeStarts = []
 edgeEnds   = []
@@ -149,8 +149,8 @@ graph.edge_renderer.hover_glyph = MultiLine(line_color=Spectral4[1], line_width=
 graph.selection_policy = NodesAndLinkedEdges()
 graph.inspection_policy = NodesAndLinkedEdges()
 
-plot = figure(title="MSTDB Tests", x_range=(-1.1,1.1), y_range=(-1.1,1.1),
-              tools="", toolbar_location=None)
+plot = figure(title="MSTDB Tests", x_range=(-1,1), y_range=(-1,1),
+              tools="", toolbar_location=None, plot_width=2000, plot_height=1000)
 plot.axis.visible = False
 plot.xgrid.visible = False
 plot.ygrid.visible = False

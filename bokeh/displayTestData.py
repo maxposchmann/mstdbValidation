@@ -35,21 +35,21 @@ def makeNetwork():
 
     edgeStarts = []
     edgeEnds   = []
-    i = -1
-    j = nExpRef - 1
+    sourceIndex = -1
+    seriesIndex = nExpRef - 1
     for sourceName in data.data['sources']:
         source = data.data['sources'][sourceName]
-        i += 1
+        sourceIndex += 1
         # Calculate node reference positions
-        y[i] = level1
-        x[i] = 0
+        y[sourceIndex] = level1
+        x[sourceIndex] = 0
         nExpInSource = 0
-        colorCode[i] = RGB(0,0,255)
-        size[i] = 20
-        names[i] = source['title']
-        types[i] = source['type']
-        details[i] = f"Authors: {source['authors']}"
-        fullDetails[i] = (
+        colorCode[sourceIndex] = RGB(0,0,255)
+        size[sourceIndex] = 20
+        names[sourceIndex] = source['title']
+        types[sourceIndex] = source['type']
+        details[sourceIndex] = f"Authors: {source['authors']}"
+        fullDetails[sourceIndex] = (
                          f"Title: {source['title']}\n" +
                          f"Authors: {source['authors']}\n" +
                          f"URL: {source['url']}\n" +
@@ -59,19 +59,19 @@ def makeNetwork():
         for testType in source['tests']:
             if testType in ['vapor pressures','solubility limits','heat capacities']:
                 for series in source['tests'][testType]:
-                    j += 1
+                    seriesIndex += 1
                     nExpInSource += 1
                     currentSeries = source['tests'][testType][series]
                     # Calculate test series node positions
-                    y[j] = level2
-                    x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
-                    x[i] += x[j]
-                    size[j] = 20
-                    names[j] = series
-                    types[j] = testType
-                    details[j] = f"Status: {currentSeries['series status']}"
+                    y[seriesIndex] = level2
+                    x[seriesIndex] = leftLim + (rightLim - leftLim) * (seriesIndex-nExpRef+0.5) / nTestSeries
+                    x[sourceIndex] += x[seriesIndex]
+                    size[seriesIndex] = 20
+                    names[seriesIndex] = series
+                    types[seriesIndex] = testType
+                    details[seriesIndex] = f"Status: {currentSeries['series status']}"
                     tempComp = 'composition'
-                    fullDetails[j] = (
+                    fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
                                      f"Type: {testType}\n" +
                                      f"Status: {currentSeries['series status']}\n" +
@@ -79,31 +79,31 @@ def makeNetwork():
                                      f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
                                      )
                     # Create connections from sources to test series
-                    edgeStarts.append(i)
-                    edgeEnds.append(j)
+                    edgeStarts.append(sourceIndex)
+                    edgeEnds.append(seriesIndex)
                     # Get series statuses to set colors
                     seriesStatus = currentSeries['series status']
                     if seriesStatus == 'pass':
-                        colorCode[j] = RGB(0,255,0)
+                        colorCode[seriesIndex] = RGB(0,255,0)
                     elif seriesStatus == 'fail':
-                        colorCode[j] = RGB(255,0,0)
+                        colorCode[seriesIndex] = RGB(255,0,0)
                     elif seriesStatus == 'partial':
-                        colorCode[j] = RGB(255,255,0)
+                        colorCode[seriesIndex] = RGB(255,255,0)
             elif testType == 'phase transitions':
                 for series in source['tests'][testType]:
-                    j += 1
+                    seriesIndex += 1
                     nExpInSource += 1
                     currentSeries = source['tests'][testType][series]
                     # Calculate test series node positions
-                    y[j] = level2
-                    x[j] = leftLim + (rightLim - leftLim) * (j-nExpRef+0.5) / nTestSeries
-                    x[i] += x[j]
-                    size[j] = 20
-                    names[j] = series
-                    types[j] = testType
-                    details[j] = f"Status: {currentSeries['series status']}"
+                    y[seriesIndex] = level2
+                    x[seriesIndex] = leftLim + (rightLim - leftLim) * (seriesIndex-nExpRef+0.5) / nTestSeries
+                    x[sourceIndex] += x[seriesIndex]
+                    size[seriesIndex] = 20
+                    names[seriesIndex] = series
+                    types[seriesIndex] = testType
+                    details[seriesIndex] = f"Status: {currentSeries['series status']}"
                     tempComp = 'composition'
-                    fullDetails[j] = (
+                    fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
                                      f"Type: {testType}\n" +
                                      f"Status: {currentSeries['series status']}\n" +
@@ -115,15 +115,15 @@ def makeNetwork():
                                      f"Error tolerance: {currentSeries['error']}K\n"
                                      )
                     # Create connections from sources to test series
-                    edgeStarts.append(i)
-                    edgeEnds.append(j)
+                    edgeStarts.append(sourceIndex)
+                    edgeEnds.append(seriesIndex)
                     # Get series statuses to set colors
                     seriesStatus = currentSeries['series status']
                     if seriesStatus == 'pass':
-                        colorCode[j] = RGB(0,255,0)
+                        colorCode[seriesIndex] = RGB(0,255,0)
                     elif seriesStatus == 'fail':
-                        colorCode[j] = RGB(255,0,0)
-        x[i] = x[i] / nExpInSource
+                        colorCode[seriesIndex] = RGB(255,0,0)
+        x[sourceIndex] = x[sourceIndex] / nExpInSource
 
     graph = GraphRenderer()
 

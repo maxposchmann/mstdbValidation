@@ -330,36 +330,37 @@ atomic_number_map = [
     'Sg','Bh','Hs','Mt','Ds','Rg','Cn','Nh','Fl','Mc','Lv','Ts', 'Og'
 ]
 
-# Get data
-data = parseTests.jsonTestData(infilename)
-nExpRef = len(data.experimentalReferences)
-nTestSeries = len(data.testSeries)
+def run():
+    # Get data
+    data = parseTests.jsonTestData(infilename)
+    nExpRef = len(data.experimentalReferences)
+    nTestSeries = len(data.testSeries)
 
-for sourceName in data.data['sources']:
-    source = data.data['sources'][sourceName]
-    # Loop over all associated test series and execture
-    for testType in source['tests']:
-        for series in source['tests'][testType]:
-            print(series)
-            currentSeries = source['tests'][testType][series]
-            if 'enabled' in currentSeries.keys():
-                if currentSeries['enabled'] in ['false', 'False', 'FALSE', 0]:
-                    print('disabled')
-                    continue
-            if testType in ['vapor pressures']:
-                runVaporPressures(currentSeries)
-                for sample in currentSeries['samples']:
-                    print(f"{sample}: {currentSeries['samples'][sample]['status']}")
-            elif testType == 'phase transitions':
-                runPhaseTransitions(currentSeries)
-                print(currentSeries['status'])
-            elif testType in ['solubility limits']:
-                runSolubilityLimits(currentSeries)
-                for sample in currentSeries['samples']:
-                    print(f"{sample}: {currentSeries['samples'][sample]['status']}")
-            elif testType in ['heat capacities']:
-                runHeatCapacities(currentSeries)
-                for sample in currentSeries['samples']:
-                    print(f"{sample}: {currentSeries['samples'][sample]['status']}")
-with open(outfilename, 'w') as outfile:
-    json.dump(data.data, outfile, indent=2)
+    for sourceName in data.data['sources']:
+        source = data.data['sources'][sourceName]
+        # Loop over all associated test series and execture
+        for testType in source['tests']:
+            for series in source['tests'][testType]:
+                print(series)
+                currentSeries = source['tests'][testType][series]
+                if 'enabled' in currentSeries.keys():
+                    if currentSeries['enabled'] in ['false', 'False', 'FALSE', 0]:
+                        print('disabled')
+                        continue
+                if testType in ['vapor pressures']:
+                    runVaporPressures(currentSeries)
+                    for sample in currentSeries['samples']:
+                        print(f"{sample}: {currentSeries['samples'][sample]['status']}")
+                elif testType == 'phase transitions':
+                    runPhaseTransitions(currentSeries)
+                    print(currentSeries['status'])
+                elif testType in ['solubility limits']:
+                    runSolubilityLimits(currentSeries)
+                    for sample in currentSeries['samples']:
+                        print(f"{sample}: {currentSeries['samples'][sample]['status']}")
+                elif testType in ['heat capacities']:
+                    runHeatCapacities(currentSeries)
+                    for sample in currentSeries['samples']:
+                        print(f"{sample}: {currentSeries['samples'][sample]['status']}")
+    with open(outfilename, 'w') as outfile:
+        json.dump(data.data, outfile, indent=2)

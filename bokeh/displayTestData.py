@@ -1,7 +1,7 @@
 from bokeh.io import show, output_file
 from bokeh.models import (Circle, MultiLine,
                           GraphRenderer, StaticLayoutProvider, NodesAndLinkedEdges,
-                          Div, Column,
+                          Div, Column, Row,
                           HoverTool, TapTool, BoxSelectTool,
                           CheckboxButtonGroup, CustomJS)
 from bokeh.layouts import column
@@ -148,7 +148,7 @@ def makeNetwork():
     graph.inspection_policy = NodesAndLinkedEdges()
 
     plot = figure(title="MSTDB Tests", x_range=(-1,1), y_range=(-1,1),
-                  tools="", toolbar_location=None, plot_width=1800, plot_height=1000)
+                  tools="", toolbar_location=None, plot_width=1800, plot_height=600)
     plot.axis.visible = False
     plot.xgrid.visible = False
     plot.ygrid.visible = False
@@ -175,16 +175,47 @@ def makeNetwork():
 
 # Filter buttons
 sampleStatusOptions = ["pass", "fail", "incomplete"]
+seriesStatusOptions = ["pass", "fail", "partial", "incomplete"]
+seriesTypeOptions   = ["phase transitions", "solubility limits", "vapor pressures", "heat capacities"]
 
 def sampleStatusCallback(active):
     data.sampleStatusFilter = []
     for option in active:
         data.sampleStatusFilter.append(sampleStatusOptions[option])
     data.filter()
-    layout.children[1] = makeNetwork()
+    plot = makeNetwork()
+    layout.children[1] = plot
+
+def seriesStatusCallback(active):
+    data.seriesStatusFilter = []
+    for option in active:
+        data.seriesStatusFilter.append(seriesStatusOptions[option])
+    data.filter()
+    plot = makeNetwork()
+    layout.children[1] = plot
+
+def seriesTypeCallback(active):
+    data.seriesTypeFilter = []
+    for option in active:
+        data.seriesTypeFilter.append(seriesTypeOptions[option])
+    data.filter()
+    plot = makeNetwork()
+    layout.children[1] = plot
+
 sampleStatusButtonGroup = CheckboxButtonGroup(labels=sampleStatusOptions, active=[], width = 10)
 sampleStatusButtonGroup.on_click(sampleStatusCallback)
 
+seriesStatusButtonGroup = CheckboxButtonGroup(labels=seriesStatusOptions, active=[], width = 10)
+seriesStatusButtonGroup.on_click(seriesStatusCallback)
+
+seriesTypeButtonGroup = CheckboxButtonGroup(labels=seriesTypeOptions, active=[], width = 10)
+seriesTypeButtonGroup.on_click(seriesTypeCallback)
+
+buttonRow = Row(
+                Column(Div(text='Sample Status', width = 200),sampleStatusButtonGroup),
+                Column(Div(text='Series Status', width = 250),seriesStatusButtonGroup),
+                Column(Div(text='Series Type'),seriesTypeButtonGroup)
+               )
 
 filename = 'verificationData-tested.json'
 data = parseTests.jsonTestData(filename)
@@ -193,7 +224,7 @@ div=Div(text='')
 
 plot = makeNetwork()
 
-layout = Column(sampleStatusButtonGroup,plot,div)
+layout = Column(buttonRow,plot,div)
 
 curdoc().add_root(layout)
 

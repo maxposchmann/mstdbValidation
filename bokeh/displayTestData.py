@@ -25,9 +25,8 @@ def makeNetwork():
     types = ['' for i in node_indices]
     details = ['' for i in node_indices]
     fullDetails = ['' for i in node_indices]
-    size = [0 for i in node_indices]
+    size = [10 for i in node_indices]
     colorCode = [RGB(100,100,100) for i in node_indices]
-    sizes = [50 for i in node_indices]
 
     level1   = 0.75
     level2   = 0
@@ -102,13 +101,12 @@ def makeNetwork():
                         currentSample = currentSeries['samples'][sample]
                         y[sampleIndex] = level3
                         x[sampleIndex] = samplePos
-                        size[sampleIndex] = 20
                         names[sampleIndex] = sample
                         types[sampleIndex] = testType
                         details[sampleIndex] = f"Status: {currentSample['status']}"
                         tempComp = 'composition'
                         fullDetails[sampleIndex] = (
-                                         f"Name: {sample}\n" +
+                                         f"Name: {series} sample {sample}\n" +
                                          f"Type: {testType}\n" +
                                          f"Status: {currentSample['status']}\n" +
                                          f"Database: {currentSeries['database']}\n" +
@@ -136,7 +134,6 @@ def makeNetwork():
                     x[seriesIndex] = samplePos
                     x[sourceIndex] += x[seriesIndex]
                     samplePos += sampleSpace
-                    size[seriesIndex] = 20
                     names[seriesIndex] = series
                     types[seriesIndex] = testType
                     details[seriesIndex] = f"Status: {currentSeries['series status']}"

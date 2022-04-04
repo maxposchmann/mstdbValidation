@@ -28,6 +28,7 @@ class jsonTestData:
         self.nSeries = 0
         self.nSamples = 0
 
+        delSampleList = []
         delSeriesList = []
         delSourceList = []
 
@@ -65,6 +66,8 @@ class jsonTestData:
                                 sampleStatus = 'incomplete'
                             if (sampleStatus in self.sampleStatusFilter) or (not self.sampleStatusFilter):
                                 seriesSamples += 1
+                            else:
+                                delSampleList.append([sourceName,testType,seriesName,sample])
                         series['series status'] = seriesStatus
                         series['series type'] = testType
 
@@ -98,25 +101,28 @@ class jsonTestData:
                         elif series['status'] == 'fail':
                             seriesStatus = 'fail'
                         # Apply the sample filters to series for phase transitions
-                        if (series['status'] in self.sampleStatusFilter) or (not self.sampleStatusFilter):
-                            seriesSamples += 1
+                        # if (series['status'] in self.sampleStatusFilter) or (not self.sampleStatusFilter):
+                        #     seriesSamples += 1
                         series['series status'] = seriesStatus
 
                         # Check series filters for series inclusion
                         includeSeries = True
+                        # Apply the sample filters to series for phase transitions
+                        if (seriesStatus not in self.sampleStatusFilter) and self.sampleStatusFilter:
+                            includeSeries = False
                         if (seriesStatus not in self.seriesStatusFilter) and self.seriesStatusFilter:
                             includeSeries = False
                         if (testType not in self.seriesTypeFilter) and self.seriesTypeFilter:
                             includeSeries = False
-                        if seriesSamples <= 0:
-                            includeSeries = False
+                        # if seriesSamples <= 0:
+                        #     includeSeries = False
                         for element in self.seriesElementsFilter:
                             if element not in series['composition'].keys():
                                 includeSeries = False
                         # If series included, update source variables
                         if includeSeries:
                             sourceSeries  += 1
-                            sourceSamples += seriesSamples
+                            # sourceSamples += seriesSamples
                         else:
                             delSeriesList.append([sourceName,testType,seriesName])
 
@@ -124,8 +130,8 @@ class jsonTestData:
             includeSource = True
             if sourceSeries <= 0:
                 includeSource = False
-            if sourceSamples <= 0:
-                includeSource = False
+            # if sourceSamples <= 0:
+            #     includeSource = False
             # If source included, update total variables
             if includeSource:
                 self.nSources += 1
@@ -134,6 +140,8 @@ class jsonTestData:
             else:
                 delSourceList.append(sourceName)
 
+        for item in delSampleList:
+            del self.data['sources'][item[0]]['tests'][item[1]][item[2]]['samples'][item[3]]
         for item in delSeriesList:
             del self.data['sources'][item[0]]['tests'][item[1]][item[2]]
         for item in delSourceList:

@@ -9,6 +9,7 @@ class jsonTestData:
         # Set data filters empty
         self.seriesStatusFilter = []
         self.seriesTypeFilter = []
+        self.seriesElementsFilter = []
         self.sampleStatusFilter = []
 
         # Call data filter tool (with empty filters)
@@ -75,6 +76,9 @@ class jsonTestData:
                             includeSeries = False
                         if seriesSamples <= 0:
                             includeSeries = False
+                        for element in self.seriesElementsFilter:
+                            if element not in series['composition'].keys():
+                                includeSeries = False
                         # If series included, update source variables
                         if includeSeries:
                             sourceSeries  += 1
@@ -106,6 +110,9 @@ class jsonTestData:
                             includeSeries = False
                         if seriesSamples <= 0:
                             includeSeries = False
+                        for element in self.seriesElementsFilter:
+                            if element not in series['composition'].keys():
+                                includeSeries = False
                         # If series included, update source variables
                         if includeSeries:
                             sourceSeries  += 1

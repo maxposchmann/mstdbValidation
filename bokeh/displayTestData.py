@@ -177,6 +177,8 @@ def makeNetwork():
 sampleStatusOptions = ["pass", "fail", "incomplete"]
 seriesStatusOptions = ["pass", "fail", "partial", "incomplete"]
 seriesTypeOptions   = ["phase transitions", "solubility limits", "vapor pressures", "heat capacities"]
+elementOptions      = ["Pu","U","Th","Nd","Ce","La","Cs","Zr","Rb","Ni","Fe","Cr","Ca","K","Al","Mg","Na","Be","Li","Cl","F"]
+elementOptions.reverse()
 
 def sampleStatusCallback(active):
     data.sampleStatusFilter = []
@@ -202,6 +204,14 @@ def seriesTypeCallback(active):
     plot = makeNetwork()
     layout.children[1] = plot
 
+def seriesElementsCallback(active):
+    data.seriesElementsFilter = []
+    for option in active:
+        data.seriesElementsFilter.append(elementOptions[option])
+    data.filter()
+    plot = makeNetwork()
+    layout.children[1] = plot
+
 sampleStatusButtonGroup = CheckboxButtonGroup(labels=sampleStatusOptions, active=[], width = 10)
 sampleStatusButtonGroup.on_click(sampleStatusCallback)
 
@@ -211,11 +221,17 @@ seriesStatusButtonGroup.on_click(seriesStatusCallback)
 seriesTypeButtonGroup = CheckboxButtonGroup(labels=seriesTypeOptions, active=[], width = 10)
 seriesTypeButtonGroup.on_click(seriesTypeCallback)
 
-buttonRow = Row(
-                Column(Div(text='Sample Status', width = 200),sampleStatusButtonGroup),
-                Column(Div(text='Series Status', width = 250),seriesStatusButtonGroup),
-                Column(Div(text='Series Type'),seriesTypeButtonGroup)
-               )
+seriesElementsButtonGroup = CheckboxButtonGroup(labels=elementOptions, active=[], width = 10)
+seriesElementsButtonGroup.on_click(seriesElementsCallback)
+
+buttonRow = Column(
+                Row(
+                    Column(Div(text='Sample Status', width = 200),sampleStatusButtonGroup),
+                    Column(Div(text='Series Status', width = 250),seriesStatusButtonGroup),
+                    Column(Div(text='Series Type'),seriesTypeButtonGroup)
+                ),
+                Column(Div(text='Elements'),seriesElementsButtonGroup)
+            )
 
 filename = 'verificationData-tested.json'
 data = parseTests.jsonTestData(filename)

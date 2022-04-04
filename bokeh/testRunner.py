@@ -101,6 +101,13 @@ def runPhaseTransitions(series):
     # Check output against experiment
     # Low temperature check
     series['status'] = 'pass'
+    # Check if run converged
+    try:
+        out["1"]["solution phases"].keys()
+    except KeyError:
+        print('Low temperature run did not converge')
+        series['status'] = 'fail'
+        return
     for phase in out["1"]["solution phases"].keys():
         p = out["1"]["solution phases"][phase]
         # If phase is supposed to be there, make sure it has non-zero moles
@@ -134,7 +141,15 @@ def runPhaseTransitions(series):
             except KeyError:
                 print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
+
     # High temperature check
+    # Check if run converged
+    try:
+        out["2"]["solution phases"].keys()
+    except KeyError:
+        print('High temperature run did not converge')
+        series['status'] = 'fail'
+        return
     for phase in out["2"]["solution phases"].keys():
         p = out["2"]["solution phases"][phase]
         # If phase is supposed to be there, make sure it has non-zero moles

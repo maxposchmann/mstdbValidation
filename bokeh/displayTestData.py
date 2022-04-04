@@ -13,9 +13,10 @@ import parseTests
 import testRunner
 
 def makeNetwork():
-    nExpRef = data.nSources
-    nTestSeries = data.nSeries
-    totalNodes = nExpRef + nTestSeries
+    nExpRef      = data.nSources
+    nTestSeries  = data.nSeries
+    nSamples     = data.nSamples
+    totalNodes   = nExpRef + nTestSeries + nSamples
     node_indices = list(range(totalNodes))
 
     x = [0 for i in node_indices]
@@ -28,15 +29,19 @@ def makeNetwork():
     colorCode = [RGB(100,100,100) for i in node_indices]
     sizes = [50 for i in node_indices]
 
-    level1 = 0.5
-    level2 = -0.5
-    leftLim = -0.95
+    level1   = 0.75
+    level2   = 0
+    level3   = -0.75
+    leftLim  = -0.95
     rightLim = 0.95
 
     edgeStarts = []
     edgeEnds   = []
     sourceIndex = -1
     seriesIndex = nExpRef - 1
+    sampleIndex = nExpRef + nTestSeries - 1
+    samplePos   = leftLim
+    sampleSpace = 0.01
     for sourceName in data.data['sources']:
         source = data.data['sources'][sourceName]
         sourceIndex += 1
@@ -64,7 +69,7 @@ def makeNetwork():
                     currentSeries = source['tests'][testType][series]
                     # Calculate test series node positions
                     y[seriesIndex] = level2
-                    x[seriesIndex] = leftLim + (rightLim - leftLim) * (seriesIndex-nExpRef+0.5) / nTestSeries
+                    x[seriesIndex] = 0
                     x[sourceIndex] += x[seriesIndex]
                     size[seriesIndex] = 20
                     names[seriesIndex] = series
@@ -89,6 +94,38 @@ def makeNetwork():
                         colorCode[seriesIndex] = RGB(255,0,0)
                     elif seriesStatus == 'partial':
                         colorCode[seriesIndex] = RGB(255,255,0)
+                    # Create sample points
+                    nSampleInSeries = 0
+                    for sample in currentSeries['samples'].keys():
+                        sampleIndex += 1
+                        nSampleInSeries += 1
+                        currentSample = currentSeries['samples'][sample]
+                        y[sampleIndex] = level3
+                        x[sampleIndex] = samplePos
+                        size[sampleIndex] = 20
+                        names[sampleIndex] = sample
+                        types[sampleIndex] = testType
+                        details[sampleIndex] = f"Status: {currentSample['status']}"
+                        tempComp = 'composition'
+                        fullDetails[sampleIndex] = (
+                                         f"Name: {sample}\n" +
+                                         f"Type: {testType}\n" +
+                                         f"Status: {currentSample['status']}\n" +
+                                         f"Database: {currentSeries['database']}\n" +
+                                         f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
+                                         )
+                        samplePos += sampleSpace
+                        x[seriesIndex] += x[sampleIndex]
+                        # Create connections from series to test samples
+                        edgeStarts.append(seriesIndex)
+                        edgeEnds.append(sampleIndex)
+                        if currentSample['status'] == 'pass':
+                            colorCode[sampleIndex] = RGB(0,255,0)
+                        elif currentSample['status'] == 'fail':
+                            colorCode[sampleIndex] = RGB(255,0,0)
+                    x[seriesIndex] = x[seriesIndex] / nSampleInSeries
+                    x[sourceIndex] += x[seriesIndex]
+                    samplePos += sampleSpace
             elif testType == 'phase transitions':
                 for series in source['tests'][testType]:
                     seriesIndex += 1
@@ -96,8 +133,9 @@ def makeNetwork():
                     currentSeries = source['tests'][testType][series]
                     # Calculate test series node positions
                     y[seriesIndex] = level2
-                    x[seriesIndex] = leftLim + (rightLim - leftLim) * (seriesIndex-nExpRef+0.5) / nTestSeries
+                    x[seriesIndex] = samplePos
                     x[sourceIndex] += x[seriesIndex]
+                    samplePos += sampleSpace
                     size[seriesIndex] = 20
                     names[seriesIndex] = series
                     types[seriesIndex] = testType

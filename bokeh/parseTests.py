@@ -16,57 +16,116 @@ class jsonTestData:
         self.nSeries = 0
         self.nSamples = 0
 
-        for source in self.data['sources'].keys():
-            mstdbParentRefs = self.data['sources'][source]['mstdb references']
-            for testType in self.data['sources'][source]['tests'].keys():
+        self.seriesStatusFilter = []
+        self.seriesTypeFilter = []
+        self.sampleStatusFilter = []
+
+        delSeriesList = []
+        delSourceList = []
+
+        for sourceName in self.data['sources'].keys():
+            source = self.data['sources'][sourceName]
+            sourceSeries  = 0
+            sourceSamples = 0
+            mstdbParentRefs = source['mstdb references']
+            for testType in source['tests'].keys():
                 if testType in ['vapor pressures','solubility limits','heat capacities']:
-                    for series in self.data['sources'][source]['tests'][testType].keys():
+                    for seriesName in source['tests'][testType].keys():
+                        series = source['tests'][testType][seriesName]
+                        seriesSamples = 0
                         # Calculate status of series before deciding if samples are included
                         seriesStatus = 'unknown'
-                        for sample in self.data['sources'][source]['tests'][testType][series]['samples'].keys():
-                            if 'status' not in list(self.data['sources'][source]['tests'][testType][series]['samples'][sample].keys()):
-                                seriesStatus = 'incomplete'
-                                break
-                            if self.data['sources'][source]['tests'][testType][series]['samples'][sample]['status'] == 'pass':
+                        for sample in series['samples'].keys():
+                            # If no status, write incomplete status
+                            try:
+                                series['samples'][sample]['status']
+                            except KeyError:
+                                series['samples'][sample]['status'] = 'incomplete'
+                            sampleStatus = series['samples'][sample]['status']
+                            if sampleStatus == 'pass':
                                 if seriesStatus == 'unknown':
                                     seriesStatus = 'pass'
                                 elif seriesStatus == 'fail':
                                     seriesStatus = 'partial'
-                            elif self.data['sources'][source]['tests'][testType][series]['samples'][sample]['status'] == 'fail':
+                            elif sampleStatus == 'fail':
                                 if seriesStatus == 'unknown':
                                     seriesStatus = 'fail'
                                 elif seriesStatus == 'pass':
                                     seriesStatus = 'partial'
                             else:
                                 seriesStatus = 'incomplete'
-                                break
-                        self.data['sources'][source]['tests'][testType][series]['series status'] = seriesStatus
-                        self.data['sources'][source]['tests'][testType][series]['series type'] = testType
-                        # For included tests, references to respective lists
-                        for ref in mstdbParentRefs:
-                            if ref not in self.mstdbReferences:
-                                self.mstdbReferences.append(ref)
-                        if self.data['sources'][source] not in self.experimentalReferences:
-                            self.experimentalReferences.append(self.data['sources'][source])
+                                sampleStatus = 'incomplete'
+                            if (sampleStatus in self.sampleStatusFilter) or (not self.sampleStatusFilter):
+                                seriesSamples += 1
+                        series['series status'] = seriesStatus
+                        series['series type'] = testType
 
-                        # Add test to series list
-                        self.testSeries.append(dict([(series,self.data['sources'][source]['tests'][testType][series])]))
+                        # Check series filters for series inclusion
+                        includeSeries = True
+                        if (seriesStatus not in self.seriesStatusFilter) and self.seriesStatusFilter:
+                            includeSeries = False
+                        if (testType not in self.seriesTypeFilter) and self.seriesTypeFilter:
+                            includeSeries = False
+                        if seriesSamples <= 0:
+                            includeSeries = False
+                        # If series included, update source variables
+                        if includeSeries:
+                            sourceSeries  += 1
+                            sourceSamples += seriesSamples
+                        else:
+                            delSeriesList.append([sourceName,testType,seriesName])
                 elif testType == 'phase transitions':
-                    for series in self.data['sources'][source]['tests'][testType].keys():
+                    for seriesName in source['tests'][testType].keys():
+                        series = source['tests'][testType][seriesName]
+                        # For phase transitions, series and samples are equivalent
+                        seriesSamples = 0
                         seriesStatus = 'incomplete'
-                        if 'status' not in list(self.data['sources'][source]['tests'][testType][series].keys()):
+                        if 'status' not in list(series.keys()):
                             seriesStatus = 'incomplete'
-                        elif self.data['sources'][source]['tests'][testType][series]['status'] == 'pass':
+                        elif series['status'] == 'pass':
                             seriesStatus = 'pass'
-                        elif self.data['sources'][source]['tests'][testType][series]['status'] == 'fail':
+                        elif series['status'] == 'fail':
                             seriesStatus = 'fail'
-                        self.data['sources'][source]['tests'][testType][series]['series status'] = seriesStatus
-                        # For included tests, references to respective lists
-                        for ref in mstdbParentRefs:
-                            if ref not in self.mstdbReferences:
-                                self.mstdbReferences.append(ref)
-                        if self.data['sources'][source] not in self.experimentalReferences:
-                            self.experimentalReferences.append(self.data['sources'][source])
+                        # Apply the sample filters to series for phase transitions
+                        if (series['status'] in self.sampleStatusFilter) or (not self.sampleStatusFilter):
+                            seriesSamples += 1
+                        series['series status'] = seriesStatus
 
-                        # Add test to series list
-                        self.testSeries.append(dict([(series,self.data['sources'][source]['tests'][testType][series])]))
+                        # Check series filters for series inclusion
+                        includeSeries = True
+                        if (seriesStatus not in self.seriesStatusFilter) and self.seriesStatusFilter:
+                            includeSeries = False
+                        if (testType not in self.seriesTypeFilter) and self.seriesTypeFilter:
+                            includeSeries = False
+                        if seriesSamples <= 0:
+                            includeSeries = False
+                        # If series included, update source variables
+                        if includeSeries:
+                            sourceSeries  += 1
+                            sourceSamples += seriesSamples
+                        else:
+                            delSeriesList.append([sourceName,testType,seriesName])
+
+            # Check source filters for source inclusion
+            includeSource = True
+            if sourceSeries <= 0:
+                includeSource = False
+            if sourceSamples <= 0:
+                includeSource = False
+            # If source included, update total variables
+            if includeSource:
+                self.nSources += 1
+                self.nSeries  += sourceSeries
+                self.nSamples += sourceSamples
+            else:
+                delSourceList.append(sourceName)
+
+        for item in delSeriesList:
+            del self.data['sources'][item[0]]['tests'][item[1]][item[2]]
+        for item in delSourceList:
+            del self.data['sources'][item]
+
+        self.nRefs = len(self.mstdbReferences)
+        print(self.nSources)
+        print(self.nSeries)
+        print(self.nSamples)

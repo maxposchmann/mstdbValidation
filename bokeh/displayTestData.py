@@ -34,6 +34,11 @@ def makeNetwork():
     leftLim  = -0.95
     rightLim = 0.95
 
+    compString = 'composition'
+    ppString   = 'partial pressures'
+    frString   = 'fractions'
+    nlString   = '\n'
+
     edgeStarts = []
     edgeEnds   = []
     sourceIndex = -1
@@ -74,13 +79,12 @@ def makeNetwork():
                     names[seriesIndex] = series
                     types[seriesIndex] = testType
                     details[seriesIndex] = f"Status: {currentSeries['series status']}"
-                    tempComp = 'composition'
                     fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
                                      f"Type: {testType}\n" +
                                      f"Status: {currentSeries['series status']}\n" +
                                      f"Database: {currentSeries['database']}\n" +
-                                     f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
+                                     f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}"
                                      )
                     # Create connections from sources to test series
                     edgeStarts.append(sourceIndex)
@@ -104,14 +108,20 @@ def makeNetwork():
                         names[sampleIndex] = sample
                         types[sampleIndex] = testType
                         details[sampleIndex] = f"Status: {currentSample['status']}"
-                        tempComp = 'composition'
                         fullDetails[sampleIndex] = (
                                          f"Name: {series} sample {sample}\n" +
                                          f"Type: {testType}\n" +
                                          f"Status: {currentSample['status']}\n" +
                                          f"Database: {currentSeries['database']}\n" +
-                                         f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}"
+                                         f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}\n" +
+                                         f"Temperature: {currentSample['temperature']}\n"
                                          )
+                        if testType == 'vapor pressures':
+                            fullDetails[sampleIndex] += f"Vapor pressures:\n{nlString.join([f'{key}: {currentSample[ppString][key]} atm' for key in currentSample[ppString].keys()])}\n"
+                        elif testType == 'solubility limits':
+                            fullDetails[sampleIndex] += f"Solubility limits:\n{nlString.join([f'{key}: {currentSample[frString][key]}' for key in currentSample[frString].keys()])}\n"
+                        elif testType == 'heat capacities':
+                            fullDetails[sampleIndex] += f"Heat capacity: {currentSample['heat capacity']} J/mol.K"
                         samplePos += sampleSpace
                         x[seriesIndex] += x[sampleIndex]
                         # Create connections from series to test samples
@@ -137,13 +147,12 @@ def makeNetwork():
                     names[seriesIndex] = series
                     types[seriesIndex] = testType
                     details[seriesIndex] = f"Status: {currentSeries['series status']}"
-                    tempComp = 'composition'
                     fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
                                      f"Type: {testType}\n" +
                                      f"Status: {currentSeries['series status']}\n" +
                                      f"Database: {currentSeries['database']}\n" +
-                                     f"Composition: {''.join([f'{key}: {currentSeries[tempComp][key]} ' for key in currentSeries['composition'].keys()])}\n" +
+                                     f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}\n" +
                                      f"Target temperature: {currentSeries['target temperature']}K\n" +
                                      f"Low temperature phases: {' '.join(currentSeries['phases low'])}\n" +
                                      f"High temperature phases: {' '.join(currentSeries['phases high'])}\n" +

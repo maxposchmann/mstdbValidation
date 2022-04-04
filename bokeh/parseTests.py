@@ -2,23 +2,30 @@ import json
 
 class jsonTestData:
     def __init__(self, database):
-        f = open(database,)
+        self.database = database
+
+        self.mstdbReferences = []
+
+        # Set data filters empty
+        self.seriesStatusFilter = []
+        self.seriesTypeFilter = []
+        self.sampleStatusFilter = []
+
+        # Call data filter tool (with empty filters)
+        self.filter()
+
+    def filter(self):
+        f = open(self.database,)
         try:
             self.data = json.load(f)
             f.close()
         except:
             print('Failed to load test file')
             exit()
-
-        self.mstdbReferences = []
         self.nRefs = 0
         self.nSources = 0
         self.nSeries = 0
         self.nSamples = 0
-
-        self.seriesStatusFilter = []
-        self.seriesTypeFilter = []
-        self.sampleStatusFilter = []
 
         delSeriesList = []
         delSourceList = []

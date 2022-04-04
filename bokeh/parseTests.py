@@ -11,8 +11,10 @@ class jsonTestData:
             exit()
 
         self.mstdbReferences = []
-        self.experimentalReferences = []
-        self.testSeries = []
+        self.nRefs = 0
+        self.nSources = 0
+        self.nSeries = 0
+        self.nSamples = 0
 
         for source in self.data['sources'].keys():
             mstdbParentRefs = self.data['sources'][source]['mstdb references']

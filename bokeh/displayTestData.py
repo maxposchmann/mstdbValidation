@@ -14,12 +14,10 @@ import testRunner
 filename = 'verificationData-tested.json'
 data = parseTests.jsonTestData(filename)
 
-nExpRef = len(data.experimentalReferences)
-nTestSeries = len(data.testSeries)
+nExpRef = data.nSources
+nTestSeries = data.nSeries
 totalNodes = nExpRef + nTestSeries
 node_indices = list(range(totalNodes))
-
-seriesNames = [list(series.keys())[0] for series in data.testSeries]
 
 x = [0 for i in node_indices]
 y = [0 for i in node_indices]
@@ -40,7 +38,8 @@ edgeStarts = []
 edgeEnds   = []
 i = -1
 j = nExpRef - 1
-for source in data.experimentalReferences:
+for sourceName in data.data['sources']:
+    source = data.data['sources'][sourceName]
     i += 1
     # Calculate node reference positions
     y[i] = level1

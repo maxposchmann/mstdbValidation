@@ -333,8 +333,8 @@ atomic_number_map = [
 def run():
     # Get data
     data = parseTests.jsonTestData(infilename)
-    nExpRef = len(data.experimentalReferences)
-    nTestSeries = len(data.testSeries)
+    nExpRef = data.nSources
+    nTestSeries = data.nSeries
 
     for sourceName in data.data['sources']:
         source = data.data['sources'][sourceName]

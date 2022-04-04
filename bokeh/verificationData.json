@@ -666,6 +666,1291 @@
           }
         }
       }
+    },
+    "ORNL-2896": {
+      "mstdb references": ["mstdb-1:capelli2014"],
+      "url": "http://moltensalt.org/references/static/downloads/pdf/ORNL-2896.pdf",
+      "title": "PHASE EQUILIBRIA IN MOLTEN SALT BFEEDER FEACTOR FUELS. I. THE SYSTEM LiF-BeFz-UF4-ThF",
+      "authors": "C. F. Weaver, R. E. Thoma, H. Insley, H. A. Friedman",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "table11-p47-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 55,
+              "Be": 35,
+              "U": 3,
+              "Th": 7,
+              "F": 165
+            },
+            "error": 3,
+            "target temperature": 700,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 56,
+              "Be": 35,
+              "U": 2,
+              "Th": 7,
+              "F": 162
+            },
+            "error": 3,
+            "target temperature": 705,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 57,
+              "Be": 35,
+              "U": 3,
+              "Th": 5,
+              "F": 159
+            },
+            "error": 3,
+            "target temperature": 761,
+            "phases low": ["MSFL","SSadsoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p47-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 57,
+              "Be": 35,
+              "U": 3,
+              "Th": 5,
+              "F": 159
+            },
+            "error": 3,
+            "target temperature": 753,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL","SSadsoln"]
+          },
+          "table11-p47-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 57,
+              "Be": 35,
+              "U": 3,
+              "Th": 5,
+              "F": 159
+            },
+            "error": 3,
+            "target temperature": 706,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 58,
+              "Be": 35,
+              "U": 2,
+              "Th": 5,
+              "F": 156
+            },
+            "error": 3,
+            "target temperature": 771,
+            "phases low": ["MSFL","SSadsoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p47-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 58,
+              "Be": 35,
+              "U": 2,
+              "Th": 5,
+              "F": 156
+            },
+            "error": 2,
+            "target temperature": 733,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL","SSadsoln"]
+          },
+          "table11-p47-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 58,
+              "Be": 35,
+              "U": 2,
+              "Th": 5,
+              "F": 156
+            },
+            "error": 3,
+            "target temperature": 706,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 59,
+              "Be": 35,
+              "U": 3,
+              "Th": 3,
+              "F": 153
+            },
+            "error": 2,
+            "target temperature": 752,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p47-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 59,
+              "Be": 35,
+              "U": 3,
+              "Th": 3,
+              "F": 153
+            },
+            "error": 2,
+            "target temperature": 707,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 35,
+              "U": 2,
+              "Th": 3,
+              "F": 150
+            },
+            "error": 2,
+            "target temperature": 722,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p47-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 35,
+              "U": 2,
+              "Th": 3,
+              "F": 150
+            },
+            "error": 2,
+            "target temperature": 713,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p47-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 35,
+              "U": 2,
+              "Th": 3,
+              "F": 150
+            },
+            "error": 5,
+            "target temperature": 698,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p48-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 36,
+              "U": 3,
+              "Th": 1,
+              "F": 148
+            },
+            "error": 2,
+            "target temperature": 722,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 36,
+              "U": 3,
+              "Th": 1,
+              "F": 148
+            },
+            "error": 2,
+            "target temperature": 705,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p48-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 37,
+              "U": 2,
+              "Th": 1,
+              "F": 146
+            },
+            "error": 2,
+            "target temperature": 707,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 37,
+              "U": 2,
+              "Th": 1,
+              "F": 146
+            },
+            "error": 2,
+            "target temperature": 704,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p48-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 38,
+              "U": 1,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 715,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Be": 38,
+              "U": 1,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 706,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p48-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 61,
+              "Be": 36,
+              "U": 2,
+              "Th": 1,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 710,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 61,
+              "Be": 36,
+              "U": 2,
+              "Th": 1,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 707,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p48-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 61,
+              "Be": 37.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 142
+            },
+            "error": 3,
+            "target temperature": 712,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 34,
+              "U": 3,
+              "Th": 1,
+              "F": 146
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 34,
+              "U": 3,
+              "Th": 1,
+              "F": 146
+            },
+            "error": 2,
+            "target temperature": 716,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p48-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36,
+              "U": 1,
+              "Th": 1,
+              "F": 142
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p48-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36,
+              "U": 1,
+              "Th": 1,
+              "F": 142
+            },
+            "error": 2,
+            "target temperature": 711,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p48-14": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36,
+              "U": 1,
+              "Th": 1,
+              "F": 142
+            },
+            "error": 5,
+            "target temperature": 693,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p49-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 141
+            },
+            "error": 2,
+            "target temperature": 725,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p49-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 141
+            },
+            "error": 3,
+            "target temperature": 721,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p49-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 62,
+              "Be": 36.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 141
+            },
+            "error": 5,
+            "target temperature": 706,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p49-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35,
+              "U": 1,
+              "Th": 1,
+              "F": 141
+            },
+            "error": 3,
+            "target temperature": 723,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p49-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35,
+              "U": 1,
+              "Th": 1,
+              "F": 141
+            },
+            "error": 3,
+            "target temperature": 711,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p49-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35,
+              "U": 2,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 3,
+            "target temperature": 689,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p49-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35,
+              "U": 2,
+              "Th": 1,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 715,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p49-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35,
+              "U": 2,
+              "Th": 1,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 711,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p49-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 140
+            },
+            "error": 2,
+            "target temperature": 729,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p49-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 63,
+              "Be": 35.5,
+              "U": 0.5,
+              "Th": 1,
+              "F": 140
+            },
+            "error": 3,
+            "target temperature": 721,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p49-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 64,
+              "Be": 32,
+              "U": 3,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p49-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 64,
+              "Be": 32,
+              "U": 3,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 716,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p49-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 64,
+              "Be": 33,
+              "U": 2,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 715,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 64,
+              "Be": 33,
+              "U": 2,
+              "Th": 1,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 713,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p50-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 3,
+              "Th": 7,
+              "F": 155
+            },
+            "error": 2,
+            "target temperature": 750,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 3,
+              "Th": 7,
+              "F": 155
+            },
+            "error": 2,
+            "target temperature": 710,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p50-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 5,
+              "Th": 5,
+              "F": 155
+            },
+            "error": 3,
+            "target temperature": 720,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 5,
+              "Th": 5,
+              "F": 155
+            },
+            "error": 3,
+            "target temperature": 710,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p50-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 5,
+              "Th": 5,
+              "F": 155
+            },
+            "error": 3,
+            "target temperature": 703,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p50-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 8,
+              "Th": 2,
+              "F": 155
+            },
+            "error": 3,
+            "target temperature": 715,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 8,
+              "Th": 2,
+              "F": 155
+            },
+            "error": 2,
+            "target temperature": 705,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p50-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 25,
+              "U": 8,
+              "Th": 2,
+              "F": 155
+            },
+            "error": 2,
+            "target temperature": 697,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p50-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 30,
+              "U": 1,
+              "Th": 4,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 721,
+            "phases low": ["MSFL","SSafsoln","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 30,
+              "U": 1,
+              "Th": 4,
+              "F": 145
+            },
+            "error": 2,
+            "target temperature": 698,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSafsoln","Li2BeF4(s)"]
+          },
+          "table11-p50-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 30.5,
+              "U": 0.5,
+              "Th": 4,
+              "F": 144
+            },
+            "error": 1,
+            "target temperature": 726,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p50-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 30.5,
+              "U": 0.5,
+              "Th": 4,
+              "F": 144
+            },
+            "error": 2,
+            "target temperature": 721,
+            "phases low": ["MSFL","Li2BeF4(s)","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p51-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 31,
+              "U": 3,
+              "Th": 1,
+              "F": 143
+            },
+            "error": 2,
+            "target temperature": 722,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 31,
+              "U": 3,
+              "Th": 1,
+              "F": 143
+            },
+            "error": 2,
+            "target temperature": 716,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p51-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 33,
+              "U": 1,
+              "Th": 1,
+              "F": 139
+            },
+            "error": 1,
+            "target temperature": 738,
+            "phases low": ["MSFL","Li2BeF4(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 33,
+              "U": 1,
+              "Th": 1,
+              "F": 139
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","Li2BeF4(s)"]
+          },
+          "table11-p51-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Be": 33,
+              "U": 1,
+              "Th": 1,
+              "F": 139
+            },
+            "error": 2,
+            "target temperature": 681,
+            "phases low": ["SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p51-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 66.4,
+              "Be": 24.9,
+              "U": 5.4,
+              "Th": 3.3,
+              "F": 151
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67,
+              "Be": 18.5,
+              "U": 0.5,
+              "Th": 14,
+              "F": 162
+            },
+            "error": 4,
+            "target temperature": 772,
+            "phases low": ["MSFL","SSafsoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 3,
+              "Th": 12,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 763,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 3,
+              "Th": 12,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 753,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p51-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 3,
+              "Th": 12,
+              "F": 162.5
+            },
+            "error": 2,
+            "target temperature": 702,
+            "phases low": ["MSFL","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln","SSafsoln"]
+          },
+          "table11-p51-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 6,
+              "Th": 9,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 763,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p51-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 6,
+              "Th": 9,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 735,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p51-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 6,
+              "Th": 9,
+              "F": 162.5
+            },
+            "error": 2,
+            "target temperature": 702,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln","Li2BeF4(s)"]
+          },
+          "table11-p52-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 9,
+              "Th": 6,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 757,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 9,
+              "Th": 6,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 711,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p52-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 12,
+              "Th": 3,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 757,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67.5,
+              "Be": 17.5,
+              "U": 12,
+              "Th": 3,
+              "F": 162.5
+            },
+            "error": 3,
+            "target temperature": 706,
+            "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p52-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 68,
+              "Be": 18.7,
+              "U": 10.8,
+              "Th": 2.5,
+              "F": 158.6
+            },
+            "error": 2,
+            "target temperature": 719,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 69.7,
+              "Be": 12.4,
+              "U": 16.2,
+              "Th": 1.7,
+              "F": 166.1
+            },
+            "error": 2,
+            "target temperature": 734,
+            "phases low": ["MSFL","SSaesoln","FLi_solid(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 6,
+              "Th": 18,
+              "F": 178
+            },
+            "error": 2,
+            "target temperature": 813,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 6,
+              "Th": 18,
+              "F": 178
+            },
+            "error": 3,
+            "target temperature": 804,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p52-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 12,
+              "Th": 12,
+              "F": 178
+            },
+            "error": 2,
+            "target temperature": 789,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 12,
+              "Th": 12,
+              "F": 178
+            },
+            "error": 2,
+            "target temperature": 776,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p52-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 18,
+              "Th": 6,
+              "F": 178
+            },
+            "error": 3,
+            "target temperature": 767,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-12": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 18,
+              "Th": 6,
+              "F": 178
+            },
+            "error": 2,
+            "target temperature": 749,
+            "phases low": ["MSFL","SSaesoln","FLi_solid(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p52-13": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 24,
+              "Th": 0,
+              "F": 178
+            },
+            "error": 3,
+            "target temperature": 753,
+            "phases low": ["MSFL","U6F31Li7_S1(s)"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p52-14": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 6,
+              "U": 24,
+              "Th": 0,
+              "F": 178
+            },
+            "error": 2,
+            "target temperature": 735,
+            "phases low": ["MSFL","U6F31Li7_S1(s)","FLi_solid(s)"],
+            "phases high": ["MSFL","U6F31Li7_S1(s)"]
+          },
+          "table11-p53-01": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 5,
+              "Th": 15,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 785,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p53-02": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 5,
+              "Th": 15,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 783,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p53-03": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 5,
+              "Th": 15,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 758,
+            "phases low": ["MSFL","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln","SSafsoln"]
+          },
+          "table11-p53-04": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 10,
+              "Th": 10,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 766,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p53-05": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 10,
+              "Th": 10,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 762,
+            "phases low": ["MSFL","SSaesoln","SSafsoln"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p53-06": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 10,
+              "Th": 10,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 728,
+            "phases low": ["MSFL","SSafsoln","FLi_solid(s)"],
+            "phases high": ["MSFL","SSaesoln","SSafsoln"]
+          },
+          "table11-p53-07": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 15,
+              "Th": 5,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 748,
+            "phases low": ["MSFL","SSaesoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p53-08": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 70,
+              "Be": 10,
+              "U": 15,
+              "Th": 5,
+              "F": 170
+            },
+            "error": 3,
+            "target temperature": 744,
+            "phases low": ["MSFL","SSaesoln","FLi_solid(s)"],
+            "phases high": ["MSFL","SSaesoln"]
+          },
+          "table11-p53-09": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 71,
+              "Be": 16,
+              "U": 1,
+              "Th": 12,
+              "F": 155
+            },
+            "error": 2,
+            "target temperature": 786,
+            "phases low": ["MSFL","SSafsoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p53-10": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 71.4,
+              "Be": 6.2,
+              "U": 21.6,
+              "Th": 0.8,
+              "F": 173.4
+            },
+            "error": 1,
+            "target temperature": 756,
+            "phases low": ["MSFL","SSafsoln"],
+            "phases high": ["MSFL"]
+          },
+          "table11-p53-11": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 71.4,
+              "Be": 6.2,
+              "U": 21.6,
+              "Th": 0.8,
+              "F": 173.4
+            },
+            "error": 2,
+            "target temperature": 753,
+            "phases low": ["MSFL","SSafsoln","FLi_solid(s)"],
+            "phases high": ["MSFL","SSafsoln"]
+          }
+        }
+      }
     }
   }
 }

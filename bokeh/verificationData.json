@@ -1951,6 +1951,214 @@
           }
         }
       }
+    },
+    "richards-1917": {
+      "mstdb references": ["mstdb-25:sangster1987"],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/ja02254a004",
+      "title": "THE MELTING POINTS OF THE CHLORIDES OF LITHIUM, RUBIDIUM AND CAESIUM, AND THE FREEZING POINTS OF BINARY AND TERNARY MIXTURES OF THESE SALTS, INCLUDING ALSO POTASSIUM AND SODIUM CHLORIDE.",
+      "authors": "Theodore W. Richards and W. Buell Meldrum",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-KCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 20,
+              "K": 80,
+              "Cl": 100
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 872.6277957175747,
+                "fractions": {
+                  "LiCl": 0.34367754974666276
+                }
+              },
+              "2": {
+                "temperature": 825.3622716917147,
+                "fractions": {
+                  "LiCl": 0.3961450940421867
+                }
+              },
+              "3": {
+                "temperature": 799.2865423842771,
+                "fractions": {
+                  "LiCl": 0.42730096312378374
+                }
+              },
+              "4": {
+                "temperature": 749.5726936794917,
+                "fractions": {
+                  "LiCl": 0.47812245105694495
+                }
+              },
+              "5": {
+                "temperature": 658.2828632005283,
+                "fractions": {
+                  "LiCl": 0.55679028384762
+                }
+              }
+            }
+          },
+          "KCl-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 80,
+              "K": 20,
+              "Cl": 100
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 660.7753863009002,
+                "fractions": {
+                  "KCl": 0.38737639509
+                }
+              },
+              "2": {
+                "temperature": 684.4550254274858,
+                "fractions": {
+                  "KCl": 0.3561388259
+                }
+              }
+            }
+          },
+          "LiCl-RbCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 20,
+              "Rb": 80,
+              "Cl": 100
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 805.7448692999103,
+                "fractions": {
+                  "LiCl": 0.34520976169014767
+                }
+              },
+              "2": {
+                "temperature": 610.9476931772369,
+                "fractions": {
+                  "LiCl": 0.5238718352925735
+                }
+              },
+              "3": {
+                "temperature": 600.3534654910779,
+                "fractions": {
+                  "LiCl": 0.5353486920615619
+                }
+              },
+              "4": {
+                "temperature": 597.1028724955902,
+                "fractions": {
+                  "LiCl": 0.5501216795935889
+                }
+              },
+              "5": {
+                "temperature": 596.2992648329232,
+                "fractions": {
+                  "LiCl": 0.5648986851639294
+                }
+              }
+            }
+          },
+          "LiCl-CsCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 20,
+              "Cs": 80,
+              "Cl": 100
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 799.9629121670218,
+                "fractions": {
+                  "LiCl": 0.2565303167687472
+                }
+              },
+              "2": {
+                "temperature": 714.4068223611869,
+                "fractions": {
+                  "LiCl": 0.364764214815043
+                }
+              },
+              "3": {
+                "temperature": 641.0722657584115,
+                "fractions": {
+                  "LiCl": 0.4565978198124112
+                }
+              },
+              "4": {
+                "temperature": 630.488752841088,
+                "fractions": {
+                  "LiCl": 0.48121098317379496
+                }
+              },
+              "5": {
+                "temperature": 628.8761801313364,
+                "fractions": {
+                  "LiCl": 0.5041968410182781
+                }
+              },
+              "6": {
+                "temperature": 626.439909567351,
+                "fractions": {
+                  "LiCl": 0.5173291295723602
+                }
+              },
+              "7": {
+                "temperature": 617.4837021669281,
+                "fractions": {
+                  "LiCl": 0.5370188566538044
+                }
+              },
+              "8": {
+                "temperature": 606.9042072879179,
+                "fractions": {
+                  "LiCl": 0.5665581349873365
+                }
+              }
+            }
+          },
+          "CsCl-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 80,
+              "Cs": 20,
+              "Cl": 100
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 611.8356796444839,
+                "fractions": {
+                  "LiCl": 0.6125432441373473
+                }
+              },
+              "2": {
+                "temperature": 680.4021641154357,
+                "fractions": {
+                  "LiCl": 0.6750532055239992
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

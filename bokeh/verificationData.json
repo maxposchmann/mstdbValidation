@@ -1387,7 +1387,8 @@
             "error": 2,
             "target temperature": 698,
             "phases low": ["MSFL","SSaesoln","Li2BeF4(s)"],
-            "phases high": ["MSFL","SSafsoln","Li2BeF4(s)"]
+            "phases high": ["MSFL","SSafsoln","Li2BeF4(s)"],
+            "comment": "FactSage8.0 does not converge for this composition at 700 K (or any other tested temperature)"
           },
           "table11-p50-12": {
             "database": "fluoride",

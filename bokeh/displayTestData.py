@@ -2,7 +2,7 @@ from bokeh.io import show, output_file
 from bokeh.models import (Circle, MultiLine,
                           GraphRenderer, StaticLayoutProvider, NodesAndLinkedEdges,
                           Div, Column, Row,
-                          HoverTool, TapTool, BoxSelectTool,
+                          HoverTool, TapTool, ZoomInTool, ZoomOutTool, PanTool,
                           CheckboxButtonGroup, CustomJS)
 from bokeh.layouts import column
 from bokeh.plotting import figure, curdoc
@@ -192,12 +192,12 @@ def makeNetwork():
     graph.inspection_policy = NodesAndLinkedEdges()
 
     plot = figure(title="MSTDB Tests", x_range=(-1,1), y_range=(-1,1),
-                  tools="", toolbar_location=None, plot_width=1800, plot_height=600)
+                  tools=["xpan","xzoom_in","xzoom_out"], toolbar_location="right", plot_width=1800, plot_height=600)
     plot.axis.visible = False
     plot.xgrid.visible = False
     plot.ygrid.visible = False
 
-    plot.add_tools(node_hover_tool, TapTool(), BoxSelectTool())
+    plot.add_tools(node_hover_tool, TapTool())
 
     graph_layout = dict(zip(node_indices, zip(x, y)))
     graph.edge_renderer.data_source.data = dict(start=edgeStarts,end=edgeEnds)

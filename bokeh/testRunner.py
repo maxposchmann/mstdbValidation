@@ -2,8 +2,8 @@ import json
 import parseTests
 import subprocess
 
-def runVaporPressures(series):
-    inputScript = 'vaporPressure.ti'
+def runVaporPressures(series,name):
+    inputScript = f'vaporPressures/{name}.ti'
     if series['database'] == 'fluoride':
         datapath = fluoridepath
     elif series['database'] == 'chloride':
@@ -59,8 +59,8 @@ def runVaporPressures(series):
                 sampleStatus = 'fail'
         series['samples'][sample]['status'] = sampleStatus
 
-def runPhaseTransitions(series):
-    inputScript = 'phaseTransitions.ti'
+def runPhaseTransitions(series,name):
+    inputScript = f'phaseTransitions/{name}.ti'
     if series['database'] == 'fluoride':
         datapath = fluoridepath
     elif series['database'] == 'chloride':
@@ -184,8 +184,8 @@ def runPhaseTransitions(series):
                 print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
 
-def runSolubilityLimits(series):
-    inputScript = 'solubilityLimits.ti'
+def runSolubilityLimits(series,name):
+    inputScript = f'solubilityLimits/{name}.ti'
     if series['database'] == 'fluoride':
         datapath = fluoridepath
     elif series['database'] == 'chloride':
@@ -243,8 +243,8 @@ def runSolubilityLimits(series):
                 sampleStatus = 'fail'
         series['samples'][sample]['status'] = sampleStatus
 
-def runHeatCapacities(series):
-    inputScript = 'heatCapacities.ti'
+def runHeatCapacities(series,name):
+    inputScript = f'heatCapacities/{name}.ti'
     if series['database'] == 'fluoride':
         datapath = fluoridepath
     elif series['database'] == 'chloride':
@@ -342,24 +342,25 @@ def run():
         for testType in source['tests']:
             for series in source['tests'][testType]:
                 print(series)
+                name = f'{sourceName}-{series}'
                 currentSeries = source['tests'][testType][series]
                 if 'enabled' in currentSeries.keys():
                     if currentSeries['enabled'] in ['false', 'False', 'FALSE', 0]:
                         print('disabled')
                         continue
                 if testType in ['vapor pressures']:
-                    runVaporPressures(currentSeries)
+                    runVaporPressures(currentSeries,name)
                     for sample in currentSeries['samples']:
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
                 elif testType == 'phase transitions':
-                    runPhaseTransitions(currentSeries)
+                    runPhaseTransitions(currentSeries,name)
                     print(currentSeries['status'])
                 elif testType in ['solubility limits']:
-                    runSolubilityLimits(currentSeries)
+                    runSolubilityLimits(currentSeries,name)
                     for sample in currentSeries['samples']:
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
                 elif testType in ['heat capacities']:
-                    runHeatCapacities(currentSeries)
+                    runHeatCapacities(currentSeries,name)
                     for sample in currentSeries['samples']:
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
     with open(outfilename, 'w') as outfile:

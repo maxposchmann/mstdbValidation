@@ -174,7 +174,7 @@ def runPhaseTransitions(series,name):
     for phase in out["2"]["pure condensed phases"].keys():
         p = out["2"]["pure condensed phases"][phase]
         # If phase is supposed to be there, make sure it has non-zero moles
-        if phase in plo:
+        if phase in phi:
             if p['moles'] <= 0.0:
                 series['status'] = 'fail'
         # Otherwise, should have zero

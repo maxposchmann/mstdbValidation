@@ -50,9 +50,9 @@ def runVaporPressures(series,name):
         for species in s['partial pressures']:
             try:
                 # Calculate bounds
-                lb = (10**(-logErr)) * o[species]['mole fraction']*press
-                ub = (10**( logErr)) * o[species]['mole fraction']*press
-                calculated = s['partial pressures'][species]
+                lb = (10**(-logErr)) * s['partial pressures'][species]
+                ub = (10**( logErr)) * s['partial pressures'][species]
+                calculated = o[species]['mole fraction']*press
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
             except KeyError:
@@ -234,9 +234,9 @@ def runSolubilityLimits(series,name):
         for species in s['fractions']:
             try:
                 # Calculate bounds
-                lb = o[species]['mole fraction'] - err
-                ub = o[species]['mole fraction'] + err
-                calculated = s['fractions'][species]
+                lb = s['fractions'][species] - err
+                ub = s['fractions'][species] + err
+                calculated = o[species]['mole fraction']
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
             except KeyError:
@@ -291,9 +291,9 @@ def runHeatCapacities(series,name):
         sampleStatus = 'pass'
         try:
             # Calculate bounds
-            lb = (1 - relErr) * o['heat capacity']
-            ub = (1 + relErr) * o['heat capacity']
-            calculated = s['heat capacity']
+            lb = (1 - relErr) * s['heat capacity']
+            ub = (1 + relErr) * s['heat capacity']
+            calculated = o['heat capacity']
             if not (calculated >= lb and calculated <= ub):
                 sampleStatus = 'fail'
         except KeyError:

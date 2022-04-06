@@ -3104,7 +3104,7 @@
               "Al": 0.5,
               "Cl": 2
             },
-            "logarithmic error": 1,
+            "logarithmic error": 0.5,
             "samples": {
               "1": {
                 "temperature": 773,
@@ -3131,7 +3131,7 @@
                   "AlCl3": 0.749,
                   "NaAlCl4": 0.0377
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "4": {
                 "temperature": 973,
@@ -3194,7 +3194,7 @@
                   "AlCl3": 0.77,
                   "NaAlCl4": 0.0363
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "11": {
                 "temperature": 831,
@@ -3206,6 +3206,12 @@
                 "status": "fail"
               }
             },
+            "exclude": [
+              "Cl2",
+              "Cl",
+              "Na",
+              "Al"
+            ],
             "series status": "incomplete",
             "series type": "vapor pressures"
           }

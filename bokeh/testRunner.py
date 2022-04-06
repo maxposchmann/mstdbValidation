@@ -46,13 +46,20 @@ def runVaporPressures(series,name):
         except KeyError:
             series['samples'][sample]['status'] = 'fail'
             continue
+        # Check list of excluded species
+        adjustedTotal = 1
+        try:
+            for species in series['exclude']:
+                adjustedTotal -= o[species]['mole fraction']*press
+        except:
+            pass
         sampleStatus = 'pass'
         for species in s['partial pressures']:
             try:
                 # Calculate bounds
                 lb = (10**(-logErr)) * s['partial pressures'][species]
                 ub = (10**( logErr)) * s['partial pressures'][species]
-                calculated = o[species]['mole fraction']*press
+                calculated = o[species]['mole fraction']*press / adjustedTotal
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
             except KeyError:

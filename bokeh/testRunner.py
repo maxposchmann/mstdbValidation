@@ -243,7 +243,10 @@ def runSolubilityLimits(series,name):
         except KeyError:
             s['status'] = 'fail'
             continue
-        sampleStatus = 'pass'
+        s['status'] = 'pass'
+        # Make sure phase is stable
+        if out[sample]['solution phases'][phase]['moles'] <= 0.0:
+            s['status'] = 'fail'
         for species in s['fractions']:
             try:
                 # Calculate bounds
@@ -251,10 +254,9 @@ def runSolubilityLimits(series,name):
                 ub = s['fractions'][species] + err
                 calculated = o[species]['mole fraction']
                 if not (calculated >= lb and calculated <= ub):
-                    sampleStatus = 'fail'
+                    s['status'] = 'fail'
             except KeyError:
-                sampleStatus = 'fail'
-        s['status'] = sampleStatus
+                s['status'] = 'fail'
 
 def runHeatCapacities(series,name):
     inputScript = f'heatCapacities/{name}.ti'

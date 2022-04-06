@@ -2160,6 +2160,389 @@
           }
         }
       }
-    }
+    },
+    "dewing-1981": {
+        "mstdb references": ["mstdb-26:robelin2004"],
+        "url": "https://link.springer.com/article/10.1007/BF02654140",
+        "title": "Thermodynamics of the system NaCl-AlCl3",
+        "authors": "E. W. Dewing",
+        "type": "experiment",
+        "tests": {
+          "vapor pressures": {
+            "NaCl-AlCl3": {
+              "database": "chloride",
+              "composition": {
+                "Na": 0.5,
+                "Al": 0.5,
+                "Cl": 2
+              },
+              "logarithmic error": 1,
+              "samples": {
+                "1": {
+                  "temperature": 773,
+                  "partial pressures": {
+                    "Al2Cl6": 0.662,
+                    "AlCl3": 0.314,
+                    "NaAlCl4": 0.0048
+                  }
+                },
+                "2": {
+                  "temperature": 873,
+                  "partial pressures": {
+                    "Al2Cl6": 0.326,
+                    "AlCl3": 0.632,
+                    "NaAlCl4": 0.0193
+                  }
+                },
+                "3": {
+                  "temperature": 923,
+                  "partial pressures": {
+                    "Al2Cl6": 0.190,
+                    "AlCl3": 0.749,
+                    "NaAlCl4": 0.0377
+                  }
+                },
+                "4": {
+                  "temperature": 973,
+                  "partial pressures": {
+                    "Al2Cl6": 0.102,
+                    "AlCl3": 0.809,
+                    "NaAlCl4": 0.0735
+                  }
+                },
+                "5": {
+                  "temperature": 1023,
+                  "partial pressures": {
+                    "Al2Cl6": 0.0535,
+                    "AlCl3": 0.829,
+                    "NaAlCl4": 0.103
+                  }
+                },
+                "6": {
+                  "temperature": 1073,
+                  "partial pressures": {
+                    "Al2Cl6": 0.0245,
+                    "AlCl3": 0.767,
+                    "NaAlCl4": 0.194
+                  }
+                },
+                "7": {
+                  "temperature": 1123,
+                  "partial pressures": {
+                    "Al2Cl6": 0.0107,
+                    "AlCl3": 0.674,
+                    "NaAlCl4": 0.296
+                  }
+                },
+                "8": {
+                  "temperature": 1118,
+                  "partial pressures": {
+                    "Al2Cl6": 0.0120,
+                    "AlCl3": 0.693,
+                    "NaAlCl4": 0.275
+                  }
+                },
+                "9": {
+                  "temperature": 1027,
+                  "partial pressures": {
+                    "Al2Cl6": 0.0435,
+                    "AlCl3": 0.783,
+                    "NaAlCl4": 0.160
+                  }
+                },
+                "10": {
+                  "temperature": 929,
+                  "partial pressures": {
+                    "Al2Cl6": 0.183,
+                    "AlCl3": 0.770,
+                    "NaAlCl4": 0.0363
+                  }
+                },
+                "11": {
+                  "temperature": 831,
+                  "partial pressures": {
+                    "Al2Cl6": 0.469,
+                    "AlCl3": 0.471,
+                    "NaAlCl4": 0.0133
+                  }
+                }
+              }
+            }
+          },
+          "solubility limits": {
+            "AlCl3-NaCl": {
+              "database": "chloride",
+              "composition": {
+                "Na": 0.55,
+                "Al": 0.45,
+                "Cl": 1.9
+              },
+              "error": 0.1,
+              "phase": "MSCL",
+              "fraction type": "endmembers",
+              "samples": {
+                "1": {
+                  "temperature": 1128.2539674676016,
+                  "fractions": {
+                    "AlCl3": 0.4766253968706129
+                  }
+                },
+                "2": {
+                  "temperature": 1047.3102591556585,
+                  "fractions": {
+                    "AlCl3": 0.5017767913595377
+                  }
+                },
+                "3": {
+                  "temperature": 976.6366674696451,
+                  "fractions": {
+                    "AlCl3": 0.5103913684550796
+                  }
+                },
+                "4": {
+                  "temperature": 913.7458579000395,
+                  "fractions": {
+                    "AlCl3": 0.5127210384308849
+                  }
+                },
+                "5": {
+                  "temperature": 885.0023624909509,
+                  "fractions": {
+                    "AlCl3": 0.5200029600804053
+                  }
+                },
+                "6": {
+                  "temperature": 858.8242288154538,
+                  "fractions": {
+                    "AlCl3": 0.5229853339781932
+                  }
+                },
+                "7": {
+                  "temperature": 857.5567199088937,
+                  "fractions": {
+                    "AlCl3": 0.5262925116777649
+                  }
+                },
+                "8": {
+                  "temperature": 843.2023115874761,
+                  "fractions": {
+                    "AlCl3": 0.5312562197296171
+                  }
+                },
+                "9": {
+                  "temperature": 840.554587784033,
+                  "fractions": {
+                    "AlCl3": 0.5292727181526621
+                  }
+                },
+                "10": {
+                  "temperature": 830.0503894858933,
+                  "fractions": {
+                    "AlCl3": 0.5279524479803025
+                  }
+                },
+                "11": {
+                  "temperature": 813.0482573610325,
+                  "fractions": {
+                    "AlCl3": 0.5309326544551997
+                  }
+                },
+                "12": {
+                  "temperature": 807.8091627493077,
+                  "fractions": {
+                    "AlCl3": 0.5312645797893389
+                  }
+                },
+                "13": {
+                  "temperature": 796.054794927735,
+                  "fractions": {
+                    "AlCl3": 0.534574234543643
+                  }
+                },
+                "14": {
+                  "temperature": 784.3264361808522,
+                  "fractions": {
+                    "AlCl3": 0.539868010138585
+                  }
+                },
+                "15": {
+                  "temperature": 772.563398667716,
+                  "fractions": {
+                    "AlCl3": 0.542516291279343
+                  }
+                },
+                "16": {
+                  "temperature": 767.3546479764628,
+                  "fractions": {
+                    "AlCl3": 0.5451630242608934
+                  }
+                },
+                "17": {
+                  "temperature": 759.4591598697316,
+                  "fractions": {
+                    "AlCl3": 0.5428500744045315
+                  }
+                },
+                "18": {
+                  "temperature": 743.7548805719022,
+                  "fractions": {
+                    "AlCl3": 0.5448379108272682
+                  }
+                },
+                "19": {
+                  "temperature": 724.1440382556332,
+                  "fractions": {
+                    "AlCl3": 0.5488107969861675
+                  }
+                },
+                "20": {
+                  "temperature": 725.5112486151713,
+                  "fractions": {
+                    "AlCl3": 0.553109415842375
+                  }
+                },
+                "21": {
+                  "temperature": 700.6483071498325,
+                  "fractions": {
+                    "AlCl3": 0.5564221669150946
+                  }
+                },
+                "22": {
+                  "temperature": 702.0025129720259,
+                  "fractions": {
+                    "AlCl3": 0.5597287253509832
+                  }
+                },
+                "23": {
+                  "temperature": 702.0371917382793,
+                  "fractions": {
+                    "AlCl3": 0.5623742198051672
+                  }
+                },
+                "24": {
+                  "temperature": 691.515654057013,
+                  "fractions": {
+                    "AlCl3": 0.5597312024057155
+                  }
+                },
+                "25": {
+                  "temperature": 664.0570069376109,
+                  "fractions": {
+                    "AlCl3": 0.5650286935827562
+                  }
+                },
+                "26": {
+                  "temperature": 656.2698899754213,
+                  "fractions": {
+                    "AlCl3": 0.5709829138957196
+                  }
+                },
+                "27": {
+                  "temperature": 657.6327654891778,
+                  "fractions": {
+                    "AlCl3": 0.5749508459451542
+                  }
+                },
+                "28": {
+                  "temperature": 644.5632054574467,
+                  "fractions": {
+                    "AlCl3": 0.5779301235245269
+                  }
+                },
+                "29": {
+                  "temperature": 643.2740223219786,
+                  "fractions": {
+                    "AlCl3": 0.5795838671902335
+                  }
+                },
+                "30": {
+                  "temperature": 645.9304158169851,
+                  "fractions": {
+                    "AlCl3": 0.5822287423807344
+                  }
+                },
+                "31": {
+                  "temperature": 609.3131065300734,
+                  "fractions": {
+                    "AlCl3": 0.588851148207758
+                  }
+                },
+                "32": {
+                  "temperature": 606.7217357217919,
+                  "fractions": {
+                    "AlCl3": 0.5911665751188522
+                  }
+                },
+                "33": {
+                  "temperature": 592.5060424653876,
+                  "fractions": {
+                    "AlCl3": 0.6067122609874407
+                  }
+                },
+                "34": {
+                  "temperature": 583.3300409147513,
+                  "fractions": {
+                    "AlCl3": 0.6067144284103315
+                  }
+                },
+                "35": {
+                  "temperature": 585.9864344097579,
+                  "fractions": {
+                    "AlCl3": 0.6093593036008325
+                  }
+                },
+                "36": {
+                  "temperature": 583.3777242183497,
+                  "fractions": {
+                    "AlCl3": 0.6103519832848346
+                  }
+                },
+                "37": {
+                  "temperature": 542.9708927491032,
+                  "fractions": {
+                    "AlCl3": 0.6278879826308922
+                  }
+                },
+                "38": {
+                  "temperature": 548.275010047553,
+                  "fractions": {
+                    "AlCl3": 0.6325163593983482
+                  }
+                },
+                "39": {
+                  "temperature": 541.8247595244301,
+                  "fractions": {
+                    "AlCl3": 0.6404543909201081
+                  }
+                },
+                "40": {
+                  "temperature": 532.7224503520821,
+                  "fractions": {
+                    "AlCl3": 0.6460782340581401
+                  }
+                },
+                "41": {
+                  "temperature": 530.2069393449799,
+                  "fractions": {
+                    "AlCl3": 0.654180680087762
+                  }
+                },
+                "42": {
+                  "temperature": 488.5607754667543,
+                  "fractions": {
+                    "AlCl3": 0.6771733213774158
+                  }
+                },
+                "43": {
+                  "temperature": 488.7731829100561,
+                  "fractions": {
+                    "AlCl3": 0.6933769749092933
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
   }
 }

@@ -84,6 +84,7 @@ def runPhaseTransitions(series,name):
     err = series['error']
     plo = series['phases low']
     phi = series['phases high']
+    phaseMolTol = 1e-6
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
@@ -126,7 +127,7 @@ def runPhaseTransitions(series,name):
                 series['status'] = 'fail'
         # Otherwise, should have zero
         else:
-            if p['moles'] >  0.0:
+            if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
     for phase in out["1"]["pure condensed phases"].keys():
         p = out["1"]["pure condensed phases"][phase]
@@ -136,7 +137,7 @@ def runPhaseTransitions(series,name):
                 series['status'] = 'fail'
         # Otherwise, should have zero
         else:
-            if p['moles'] >  0.0:
+            if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
     # Now reverse: if it is supposed to be there, ensure it is
     for phase in plo:
@@ -168,7 +169,7 @@ def runPhaseTransitions(series,name):
                 series['status'] = 'fail'
         # Otherwise, should have zero
         else:
-            if p['moles'] >  0.0:
+            if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
     for phase in out["2"]["pure condensed phases"].keys():
         p = out["2"]["pure condensed phases"][phase]
@@ -178,7 +179,7 @@ def runPhaseTransitions(series,name):
                 series['status'] = 'fail'
         # Otherwise, should have zero
         else:
-            if p['moles'] >  0.0:
+            if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
     # Now reverse: if it is supposed to be there, ensure it is
     for phase in phi:

@@ -10,7 +10,7 @@ from bokeh.colors import RGB
 from bokeh.palettes import Spectral4
 from bokeh.events import Tap
 import parseTests
-import testRunner
+# import testRunner
 
 def makeNetwork():
     nExpRef      = data.nSources

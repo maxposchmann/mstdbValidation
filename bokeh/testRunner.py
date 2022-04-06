@@ -365,3 +365,5 @@ def run():
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
     with open(outfilename, 'w') as outfile:
         json.dump(data.data, outfile, indent=2)
+
+run()

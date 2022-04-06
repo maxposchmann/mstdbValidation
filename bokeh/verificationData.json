@@ -2558,6 +2558,402 @@
           }
         }
       }
+    },
+    "fischer-1960": {
+      "mstdb references": ["mstdb-26:robelin2004"],
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/zaac.19603060102",
+      "title": "Über thermische Eigenschaften von Halogeniden. 15. Über das Schmelzdiagramm des Systems: AlCl3—NaCl—KCl2) (mit Beobachtungen bei der Elektrolyse von Natrium-aluminium-chlorid-Schmelzen)",
+      "authors": "Werner Fischer, Anna-Luise Simon",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "robelin2004-f16-01": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.89074355083,
+              "K": 0.10925644916540214,
+              "Al": 0.10925644916540214,
+              "Cl": 1.3277693475
+            },
+            "error": 15,
+            "target temperature": 1040.0843555513961,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f16-02": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.75265553869,
+              "K": 0.24734446130500756,
+              "Al": 0.24734446130500756,
+              "Cl": 1.74203338392
+            },
+            "error": 15,
+            "target temperature": 1017.055203117793,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f16-03": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.33080424886,
+              "K": 0.6691957511380879,
+              "Al": 0.6691957511380879,
+              "Cl": 3.00758725341
+            },
+            "error": 15,
+            "target temperature": 923.2914574879842,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f16-04": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.18816388467,
+              "K": 0.8118361153262519,
+              "Al": 0.8118361153262519,
+              "Cl": 3.43550834598
+            },
+            "error": 15,
+            "target temperature": 840.346399898391,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f16-05": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.33080424886,
+              "K": 0.6691957511380879,
+              "Al": 0.6691957511380879,
+              "Cl": 3.00758725341
+            },
+            "error": 15,
+            "target temperature": 528.5778011003189,
+            "phases low": ["SScssoln","MSCL","KAlCl4_S1(s)"],
+            "phases high": ["SScssoln","MSCL"]
+          },
+          "robelin2004-f17-01": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.11413454270597129,
+              "K": 0.88586545729,
+              "Al": 0.11413454270597129,
+              "Cl": 1.34240362812
+            },
+            "error": 15,
+            "target temperature": 984.829134720701,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-02": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.25472411186696897,
+              "K": 0.74527588813,
+              "Al": 0.25472411186696897,
+              "Cl": 1.7641723356
+            },
+            "error": 15,
+            "target temperature": 910.458926615553,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-03": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.346182917611489,
+              "K": 0.65381708238,
+              "Al": 0.346182917611489,
+              "Cl": 2.03854875283
+            },
+            "error": 15,
+            "target temperature": 901.2584884994523,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-04": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.49811035525321234,
+              "K": 0.50188964474,
+              "Al": 0.49811035525321234,
+              "Cl": 2.49433106576
+            },
+            "error": 15,
+            "target temperature": 963.3614457831325,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-05": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.5623582766439909,
+              "K": 0.43764172335,
+              "Al": 0.5623582766439909,
+              "Cl": 2.68707482993
+            },
+            "error": 15,
+            "target temperature": 969.4950711938662,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-06": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.6757369614512471,
+              "K": 0.32426303854,
+              "Al": 0.6757369614512471,
+              "Cl": 3.02721088435
+            },
+            "error": 15,
+            "target temperature": 943.4271631982474,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-07": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.8450491307634164,
+              "K": 0.15495086923,
+              "Al": 0.8450491307634164,
+              "Cl": 3.53514739229
+            },
+            "error": 15,
+            "target temperature": 836.0887185104052,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f17-08": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.5623582766439909,
+              "K": 0.43764172335,
+              "Al": 0.5623582766439909,
+              "Cl": 2.68707482993
+            },
+            "error": 15,
+            "target temperature": 507.93975903614455,
+            "phases low": ["SScssoln","MSCL","KAlCl4_S1(s)"],
+            "phases high": ["SScssoln","MSCL"]
+          },
+          "robelin2004-f17-09": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.6757369614512471,
+              "K": 0.32426303854,
+              "Al": 0.6757369614512471,
+              "Cl": 3.02721088435
+            },
+            "error": 15,
+            "target temperature": 438.16976998904704,
+            "phases low": ["SScssoln","MSCL","KAlCl4_S1(s)"],
+            "phases high": ["SScssoln","MSCL"]
+          },
+          "robelin2004-f17-10": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.6757369614512471,
+              "K": 0.32426303854,
+              "Al": 0.6757369614512471,
+              "Cl": 3.02721088435
+            },
+            "error": 15,
+            "target temperature": 399.06790799561884,
+            "phases low": ["SScssoln","KAlCl4_S1(s)","NaAlCl4_S1(s)"],
+            "phases high": ["SScssoln","MSCL","KAlCl4_S1(s)"]
+          },
+          "robelin2004-f18-01": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.60931630353,
+              "K": 0.39068369646882045,
+              "Al": 1,
+              "Cl": 4
+            },
+            "error": 15,
+            "target temperature": 419.3735117241198,
+            "phases low": ["KAlCl4_S1(s)","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f18-02": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.52516904583,
+              "K": 0.4748309541697971,
+              "Al": 1,
+              "Cl": 4
+            },
+            "error": 15,
+            "target temperature": 443.84603295942566,
+            "phases low": ["KAlCl4_S1(s)","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f18-03": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.41247182569,
+              "K": 0.5875281743050338,
+              "Al": 1,
+              "Cl": 4
+            },
+            "error": 15,
+            "target temperature": 469.63483147910586,
+            "phases low": ["KAlCl4_S1(s)","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f18-04": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.20961682945,
+              "K": 0.7903831705484599,
+              "Al": 1,
+              "Cl": 4
+            },
+            "error": 15,
+            "target temperature": 500.6834897752289,
+            "phases low": ["KAlCl4_S1(s)","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-01": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.66164542294,
+              "K": 0.33835457705677857,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 942.2436974789917,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-02": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.49246813441,
+              "K": 0.5075318655851679,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 942.2436974789917,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-03": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.32792584009,
+              "K": 0.6720741599073001,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 917.5378151260505,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-04": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.16280417149,
+              "K": 0.8371958285052141,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 848.966386554622,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-05": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.08227114716,
+              "K": 0.9177288528389338,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 840.3949579831934,
+            "phases low": ["SScssoln","MSCL"],
+            "phases high": ["MSCL"]
+          },
+          "robelin2004-f19-06": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.49246813441,
+              "K": 0.5075318655851679,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 488.4621848739497,
+            "phases low": ["SScssoln","KAlCl4_S1(s)","MSCL"],
+            "phases high": ["SScssoln","MSCL"]
+          },
+          "robelin2004-f19-07": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.66222479721,
+              "K": 0.33777520278099643,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 431.48739495798327,
+            "phases low": ["SScssoln","KAlCl4_S1(s)","MSCL"],
+            "phases high": ["SScssoln","MSCL"]
+          },
+          "robelin2004-f19-08": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.66222479721,
+              "K": 0.33777520278099643,
+              "Al": 0.4,
+              "Cl": 2.2
+            },
+            "error": 15,
+            "target temperature": 394.68067226890776,
+            "phases low": ["SScssoln","KAlCl4_S1(s)","NaAlCl4_S1(s)"],
+            "phases high": ["SScssoln","KAlCl4_S1(s)","MSCL"]
+          }
+        },
+        "solubility limits": {
+          "AlCl3-KCl": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.8,
+              "Al": 0.2,
+              "Cl": 1.4
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 840.8184526616845,
+                "fractions": {
+                  "AlCl3": 0.40048515610956775
+                }
+              },
+              "2": {
+                "temperature": 726.2276407281968,
+                "fractions": {
+                  "AlCl3": 0.45037828294603316
+                }
+              },
+              "3": {
+                "temperature": 593.4735522290306,
+                "fractions": {
+                  "AlCl3": 0.47987563202884603
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)"
     }
   }
 }

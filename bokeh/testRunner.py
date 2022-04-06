@@ -36,7 +36,9 @@ def runVaporPressures(series,name):
         out = json.load(f)
         f.close()
     except:
-        print('Failed to Thermochimica output file')
+        print('Failed to open Thermochimica output file')
+        for sample in series['samples']:
+            series['samples'][sample]['status'] = 'fail'
         return
     # Check output against experiment
     for sample in series['samples']:
@@ -44,7 +46,7 @@ def runVaporPressures(series,name):
         try:
             o = out[sample]['solution phases']['gas_ideal']['species']
         except KeyError:
-            series['samples'][sample]['status'] = 'fail'
+            s['status'] = 'fail'
             continue
         # Check list of excluded species
         adjustedTotal = 1
@@ -64,7 +66,7 @@ def runVaporPressures(series,name):
                     sampleStatus = 'fail'
             except KeyError:
                 sampleStatus = 'fail'
-        series['samples'][sample]['status'] = sampleStatus
+        s['status'] = sampleStatus
 
 def runPhaseTransitions(series,name):
     inputScript = f'phaseTransitions/{name}.ti'
@@ -103,7 +105,8 @@ def runPhaseTransitions(series,name):
         out = json.load(f)
         f.close()
     except:
-        print('Failed to Thermochimica output file')
+        print('Failed to open Thermochimica output file')
+        series['status'] = 'fail'
         return
     # Check output against experiment
     # Low temperature check
@@ -227,7 +230,9 @@ def runSolubilityLimits(series,name):
         out = json.load(f)
         f.close()
     except:
-        print('Failed to Thermochimica output file')
+        print('Failed to open Thermochimica output file')
+        for sample in series['samples']:
+            series['samples'][sample]['status'] = 'fail'
         return
     # Check output against experiment
     for sample in series['samples']:
@@ -235,7 +240,7 @@ def runSolubilityLimits(series,name):
         try:
             o = out[sample]['solution phases'][phase][fracType]
         except KeyError:
-            series['samples'][sample]['status'] = 'fail'
+            s['status'] = 'fail'
             continue
         sampleStatus = 'pass'
         for species in s['fractions']:
@@ -248,7 +253,7 @@ def runSolubilityLimits(series,name):
                     sampleStatus = 'fail'
             except KeyError:
                 sampleStatus = 'fail'
-        series['samples'][sample]['status'] = sampleStatus
+        s['status'] = sampleStatus
 
 def runHeatCapacities(series,name):
     inputScript = f'heatCapacities/{name}.ti'
@@ -285,7 +290,9 @@ def runHeatCapacities(series,name):
         out = json.load(f)
         f.close()
     except:
-        print('Failed to Thermochimica output file')
+        print('Failed to open Thermochimica output file')
+        for sample in series['samples']:
+            series['samples'][sample]['status'] = 'fail'
         return
     # Check output against experiment
     for sample in series['samples']:
@@ -293,7 +300,7 @@ def runHeatCapacities(series,name):
         try:
             o = out[sample]
         except KeyError:
-            series['samples'][sample]['status'] = 'fail'
+            s['status'] = 'fail'
             continue
         sampleStatus = 'pass'
         try:
@@ -305,7 +312,7 @@ def runHeatCapacities(series,name):
                 sampleStatus = 'fail'
         except KeyError:
             sampleStatus = 'fail'
-        series['samples'][sample]['status'] = sampleStatus
+        s['status'] = sampleStatus
 
 # Set file names for input/output
 infilename  = 'verificationData.json'

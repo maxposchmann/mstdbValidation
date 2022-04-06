@@ -2917,6 +2917,19 @@
             "target temperature": 394.68067226890776,
             "phases low": ["SScssoln","KAlCl4_S1(s)","NaAlCl4_S1(s)"],
             "phases high": ["SScssoln","KAlCl4_S1(s)","MSCL"]
+          },
+          "eutectic": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.35,
+              "K": 0.15,
+              "Al": 0.5,
+              "Cl": 2
+            },
+            "error": 15,
+            "target temperature": 396,
+            "phases low": ["SScssoln","KAlCl4_S1(s)","NaAlCl4_S1(s)"],
+            "phases high": ["MSCL"]
           }
         },
         "solubility limits": {

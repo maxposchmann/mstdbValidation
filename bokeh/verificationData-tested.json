@@ -356,7 +356,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "fail"
+            "status": "pass"
           },
           "2LiF.BeF2-BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -1158,7 +1158,7 @@
               "SSaesoln"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p48-03": {
             "database": "fluoride",
@@ -1202,7 +1202,7 @@
               "SSaesoln"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p48-05": {
             "database": "fluoride",
@@ -1311,7 +1311,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p48-10": {
             "database": "fluoride",
@@ -1376,7 +1376,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-13": {
             "database": "fluoride",
@@ -1510,7 +1510,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-05": {
             "database": "fluoride",
@@ -2022,7 +2022,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-02": {
             "database": "fluoride",
@@ -2552,7 +2552,7 @@
               "SSaesoln"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p52-13": {
             "database": "fluoride",
@@ -2573,7 +2573,7 @@
               "MSFL"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p52-14": {
             "database": "fluoride",
@@ -2596,7 +2596,7 @@
               "U6F31Li7_S1(s)"
             ],
             "series status": "incomplete",
-            "status": "pass"
+            "status": "fail"
           },
           "table11-p53-01": {
             "database": "fluoride",
@@ -3214,6 +3214,27 @@
             ],
             "series status": "incomplete",
             "series type": "vapor pressures"
+          }
+        },
+        "phase transitions": {
+          "NaCl-AlCl3-eutectic": {
+            "database": "chloride",
+            "composition": {
+              "Na": 40,
+              "Al": 60,
+              "Cl": 220
+            },
+            "error": 5,
+            "target temperature": 386,
+            "phases low": [
+              "AlCl3_S1(s)",
+              "NaAlCl4_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "incomplete",
+            "status": "pass"
           }
         },
         "solubility limits": {

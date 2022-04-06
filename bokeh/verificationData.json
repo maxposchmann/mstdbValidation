@@ -2270,6 +2270,20 @@
             "exclude": ["Cl2","Cl","Na","Al"]
           }
         },
+        "phase transitions": {
+          "NaCl-AlCl3-eutectic": {
+            "database": "chloride",
+            "composition": {
+              "Na": 40,
+              "Al": 60,
+              "Cl": 220
+            },
+            "error": 5,
+            "target temperature": 386,
+            "phases low": ["AlCl3_S1(s)","NaAlCl4_S1(s)"],
+            "phases high": ["MSCL"]
+          }
+        },
         "solubility limits": {
           "AlCl3-NaCl": {
             "database": "chloride",

@@ -247,12 +247,24 @@ def runSolubilityLimits(series,name):
         # Make sure phase is stable
         if out[sample]['solution phases'][phase]['moles'] <= 0.0:
             s['status'] = 'fail'
+        # Calculate adjusted total pairs for multiple coordination cases
+        multipleCoordPairs = ['Al2Cl6','Pu2Cl6']
+        totalPairs = 1
+        for pair in multipleCoordPairs:
+            if pair in o.keys():
+                totalPairs += o[pair]['mole fraction']
         for species in s['fractions']:
             try:
                 # Calculate bounds
                 lb = s['fractions'][species] - err
                 ub = s['fractions'][species] + err
                 calculated = o[species]['mole fraction']
+                # Need to handle multiple coordination number cases specially
+                if species == 'AlCl3':
+                    calculated = calculated + 2*o['Al2Cl6']['mole fraction']
+                if species == 'PuCl3':
+                    calculated = calculated + 2*o['Pu2Cl6']['mole fraction']
+                calculated = calculated / totalPairs
                 if not (calculated >= lb and calculated <= ub):
                     s['status'] = 'fail'
             except KeyError:

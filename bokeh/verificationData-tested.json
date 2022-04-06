@@ -2978,7 +2978,7 @@
                 "fractions": {
                   "LiCl": 0.5648986851639294
                 },
-                "status": "pass"
+                "status": "fail"
               }
             },
             "series status": "incomplete",
@@ -3028,14 +3028,14 @@
                 "fractions": {
                   "LiCl": 0.5041968410182781
                 },
-                "status": "pass"
+                "status": "fail"
               },
               "6": {
                 "temperature": 626.439909567351,
                 "fractions": {
                   "LiCl": 0.5173291295723602
                 },
-                "status": "pass"
+                "status": "fail"
               },
               "7": {
                 "temperature": 617.4837021669281,
@@ -4185,6 +4185,380 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)"
+    },
+    "sato-1978": {
+      "mstdb references": [
+        "mstdb-26:robelin2004"
+      ],
+      "url": "https://www.jstage.jst.go.jp/article/jinstmet1952/42/9/42_9_905/_pdf/-char/ja",
+      "title": "Phase diagram of LiCl-AlCl3 and NaCl-AlCl3 two-component system",
+      "authors": "Yuzuru Sato, Tatsuhiko Ejima",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 99,
+              "Al": 1,
+              "Cl": 102
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 881,
+                "fractions": {
+                  "AlCl3": 0.015
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 877,
+                "fractions": {
+                  "AlCl3": 0.04
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 874,
+                "fractions": {
+                  "AlCl3": 0.07
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 869,
+                "fractions": {
+                  "AlCl3": 0.155
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 865,
+                "fractions": {
+                  "AlCl3": 0.245
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 861,
+                "fractions": {
+                  "AlCl3": 0.28
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 842,
+                "fractions": {
+                  "AlCl3": 0.36
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 825,
+                "fractions": {
+                  "AlCl3": 0.39
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 805,
+                "fractions": {
+                  "AlCl3": 0.4175
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 763,
+                "fractions": {
+                  "AlCl3": 0.45
+                },
+                "status": "fail"
+              },
+              "11": {
+                "temperature": 726,
+                "fractions": {
+                  "AlCl3": 0.465
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 704,
+                "fractions": {
+                  "AlCl3": 0.47
+                },
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 650,
+                "fractions": {
+                  "AlCl3": 0.48
+                },
+                "status": "pass"
+              },
+              "14": {
+                "temperature": 558,
+                "fractions": {
+                  "AlCl3": 0.4925
+                },
+                "status": "pass"
+              },
+              "15": {
+                "temperature": 416,
+                "fractions": {
+                  "AlCl3": 0.5
+                },
+                "status": "fail"
+              },
+              "16": {
+                "temperature": 412,
+                "fractions": {
+                  "AlCl3": 0.525
+                },
+                "status": "pass"
+              },
+              "17": {
+                "temperature": 404,
+                "fractions": {
+                  "AlCl3": 0.545
+                },
+                "status": "fail"
+              },
+              "18": {
+                "temperature": 390,
+                "fractions": {
+                  "AlCl3": 0.56
+                },
+                "status": "fail"
+              },
+              "19": {
+                "temperature": 388,
+                "fractions": {
+                  "AlCl3": 0.575
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "AlCl3-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 5,
+              "Al": 95,
+              "Cl": 290
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 409,
+                "fractions": {
+                  "AlCl3": 0.595
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 423,
+                "fractions": {
+                  "AlCl3": 0.62
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 448,
+                "fractions": {
+                  "AlCl3": 0.69
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 452,
+                "fractions": {
+                  "AlCl3": 0.705
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 461,
+                "fractions": {
+                  "AlCl3": 0.78
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "NaCl-AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Na": 97,
+              "Al": 3,
+              "Cl": 106
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 1067,
+                "fractions": {
+                  "AlCl3": 0.045
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1051,
+                "fractions": {
+                  "AlCl3": 0.155
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1033,
+                "fractions": {
+                  "AlCl3": 0.24
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 991,
+                "fractions": {
+                  "AlCl3": 0.335
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 961,
+                "fractions": {
+                  "AlCl3": 0.375
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 926,
+                "fractions": {
+                  "AlCl3": 0.4
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 878,
+                "fractions": {
+                  "AlCl3": 0.425
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 842,
+                "fractions": {
+                  "AlCl3": 0.44
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 765,
+                "fractions": {
+                  "AlCl3": 0.46
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 661,
+                "fractions": {
+                  "AlCl3": 0.4825
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 427,
+                "fractions": {
+                  "AlCl3": 0.5
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 423,
+                "fractions": {
+                  "AlCl3": 0.525
+                },
+                "status": "fail"
+              },
+              "13": {
+                "temperature": 415,
+                "fractions": {
+                  "AlCl3": 0.555
+                },
+                "status": "fail"
+              },
+              "14": {
+                "temperature": 404,
+                "fractions": {
+                  "AlCl3": 0.58
+                },
+                "status": "fail"
+              },
+              "15": {
+                "temperature": 399,
+                "fractions": {
+                  "AlCl3": 0.595
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "AlCl3-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 5,
+              "Al": 95,
+              "Cl": 290
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 393,
+                "fractions": {
+                  "AlCl3": 0.61
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 400,
+                "fractions": {
+                  "AlCl3": 0.615
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 438,
+                "fractions": {
+                  "AlCl3": 0.67
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 460,
+                "fractions": {
+                  "AlCl3": 0.75
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

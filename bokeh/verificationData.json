@@ -2967,6 +2967,327 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)"
+    },
+    "sato-1978": {
+      "mstdb references": ["mstdb-26:robelin2004"],
+      "url": "https://www.jstage.jst.go.jp/article/jinstmet1952/42/9/42_9_905/_pdf/-char/ja",
+      "title": "Phase diagram of LiCl-AlCl3 and NaCl-AlCl3 two-component system",
+      "authors": "Yuzuru Sato, Tatsuhiko Ejima",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 99,
+              "Al": 1,
+              "Cl": 102
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 881,
+                "fractions": {
+                  "AlCl3": 0.015
+                }
+              },
+              "2": {
+                "temperature": 877,
+                "fractions": {
+                  "AlCl3": 0.04
+                }
+              },
+              "3": {
+                "temperature": 874,
+                "fractions": {
+                  "AlCl3": 0.07
+                }
+              },
+              "4": {
+                "temperature": 869,
+                "fractions": {
+                  "AlCl3": 0.155
+                }
+              },
+              "5": {
+                "temperature": 865,
+                "fractions": {
+                  "AlCl3": 0.245
+                }
+              },
+              "6": {
+                "temperature": 861,
+                "fractions": {
+                  "AlCl3": 0.28
+                }
+              },
+              "7": {
+                "temperature": 842,
+                "fractions": {
+                  "AlCl3": 0.36
+                }
+              },
+              "8": {
+                "temperature": 825,
+                "fractions": {
+                  "AlCl3": 0.39
+                }
+              },
+              "9": {
+                "temperature": 805,
+                "fractions": {
+                  "AlCl3": 0.4175
+                }
+              },
+              "10": {
+                "temperature": 763,
+                "fractions": {
+                  "AlCl3": 0.45
+                }
+              },
+              "11": {
+                "temperature": 726,
+                "fractions": {
+                  "AlCl3": 0.465
+                }
+              },
+              "12": {
+                "temperature": 704,
+                "fractions": {
+                  "AlCl3": 0.47
+                }
+              },
+              "13": {
+                "temperature": 650,
+                "fractions": {
+                  "AlCl3": 0.48
+                }
+              },
+              "14": {
+                "temperature": 558,
+                "fractions": {
+                  "AlCl3": 0.4925
+                }
+              },
+              "15": {
+                "temperature": 416,
+                "fractions": {
+                  "AlCl3": 0.50
+                }
+              },
+              "16": {
+                "temperature": 412,
+                "fractions": {
+                  "AlCl3": 0.525
+                }
+              },
+              "17": {
+                "temperature": 404,
+                "fractions": {
+                  "AlCl3": 0.545
+                }
+              },
+              "18": {
+                "temperature": 390,
+                "fractions": {
+                  "AlCl3": 0.56
+                }
+              },
+              "19": {
+                "temperature": 388,
+                "fractions": {
+                  "AlCl3": 0.575
+                }
+              }
+            }
+          },
+          "AlCl3-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 5,
+              "Al": 95,
+              "Cl": 290
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 409,
+                "fractions": {
+                  "AlCl3": 0.595
+                }
+              },
+              "2": {
+                "temperature": 423,
+                "fractions": {
+                  "AlCl3": 0.62
+                }
+              },
+              "3": {
+                "temperature": 448,
+                "fractions": {
+                  "AlCl3": 0.69
+                }
+              },
+              "4": {
+                "temperature": 452,
+                "fractions": {
+                  "AlCl3": 0.705
+                }
+              },
+              "5": {
+                "temperature": 461,
+                "fractions": {
+                  "AlCl3": 0.78
+                }
+              }
+            }
+          },
+          "NaCl-AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Na": 97,
+              "Al": 3,
+              "Cl": 106
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 1067,
+                "fractions": {
+                  "AlCl3": 0.045
+                }
+              },
+              "2": {
+                "temperature": 1051,
+                "fractions": {
+                  "AlCl3": 0.155
+                }
+              },
+              "3": {
+                "temperature": 1033,
+                "fractions": {
+                  "AlCl3": 0.24
+                }
+              },
+              "4": {
+                "temperature": 991,
+                "fractions": {
+                  "AlCl3": 0.335
+                }
+              },
+              "5": {
+                "temperature": 961,
+                "fractions": {
+                  "AlCl3": 0.375
+                }
+              },
+              "6": {
+                "temperature": 926,
+                "fractions": {
+                  "AlCl3": 0.4
+                }
+              },
+              "7": {
+                "temperature": 878,
+                "fractions": {
+                  "AlCl3": 0.425
+                }
+              },
+              "8": {
+                "temperature": 842,
+                "fractions": {
+                  "AlCl3": 0.44
+                }
+              },
+              "9": {
+                "temperature": 765,
+                "fractions": {
+                  "AlCl3": 0.46
+                }
+              },
+              "10": {
+                "temperature": 661,
+                "fractions": {
+                  "AlCl3": 0.4825
+                }
+              },
+              "11": {
+                "temperature": 427,
+                "fractions": {
+                  "AlCl3": 0.50
+                }
+              },
+              "12": {
+                "temperature": 423,
+                "fractions": {
+                  "AlCl3": 0.525
+                }
+              },
+              "13": {
+                "temperature": 415,
+                "fractions": {
+                  "AlCl3": 0.555
+                }
+              },
+              "14": {
+                "temperature": 404,
+                "fractions": {
+                  "AlCl3": 0.58
+                }
+              },
+              "15": {
+                "temperature": 399,
+                "fractions": {
+                  "AlCl3": 0.595
+                }
+              }
+            }
+          },
+          "AlCl3-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 5,
+              "Al": 95,
+              "Cl": 290
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 393,
+                "fractions": {
+                  "AlCl3": 0.61
+                }
+              },
+              "2": {
+                "temperature": 400,
+                "fractions": {
+                  "AlCl3": 0.615
+                }
+              },
+              "3": {
+                "temperature": 438,
+                "fractions": {
+                  "AlCl3": 0.67
+                }
+              },
+              "4": {
+                "temperature": 460,
+                "fractions": {
+                  "AlCl3": 0.75
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

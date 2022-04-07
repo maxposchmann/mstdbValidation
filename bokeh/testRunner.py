@@ -1,6 +1,8 @@
 import json
 import parseTests
 import subprocess
+import copy
+import collections.abc
 
 def runVaporPressures(series,name):
     inputScript = f'vaporPressures/{name}.ti'
@@ -354,8 +356,8 @@ def runHeatCapacities(series,name):
         s['status'] = sampleStatus
 
 # Set file names for input/output
-infilename  = 'verificationData.json'
-outfilename = 'verificationData-tested.json'
+infilename  = 'validationData.json'
+outfilename = 'validationData.json'
 
 # Set path to Thermochimica and outputs
 thermopath  = '/media/max/data/thermochimicastuff/thermochimica/bin/RunCalculationList'
@@ -383,12 +385,16 @@ atomic_number_map = [
     'Sg','Bh','Hs','Mt','Ds','Rg','Cn','Nh','Fl','Mc','Lv','Ts', 'Og'
 ]
 
-def run():
-    # Get data
-    data = parseTests.jsonTestData(infilename)
-    nExpRef = data.nSources
-    nTestSeries = data.nSeries
+# utility to recursively update a dict with another dict
+def updateDictWithDict(d, u):
+    for k, v in u.items():
+        if isinstance(v, collections.abc.Mapping):
+            d[k] = updateDictWithDict(d.get(k, {}), v)
+        else:
+            d[k] = v
+    return d
 
+def run(data):
     for sourceName in data.data['sources']:
         source = data.data['sources'][sourceName]
         # Loop over all associated test series and execture
@@ -416,7 +422,49 @@ def run():
                     runHeatCapacities(currentSeries,name)
                     for sample in currentSeries['samples']:
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
+
+def runAll():
+    # Get data
+    data = parseTests.jsonTestData(infilename)
+
+    run(data)
+
     with open(outfilename, 'w') as outfile:
         json.dump(data.data, outfile, indent=2)
 
-run()
+def runNew():
+    # Get data
+    data = parseTests.jsonTestData(infilename)
+    fullData = copy.deepcopy(data)
+    data.seriesStatusFilter = ['incomplete']
+    data.filter()
+
+    run(data)
+
+    for sourceName in fullData.data['sources']:
+        source = fullData.data['sources'][sourceName]
+        # Loop over all associated test series and execture
+        for testType in source['tests']:
+            for series in source['tests'][testType]:
+                print(f"{series}: {source['tests'][testType][series]['series status']}")
+
+    for sourceName in data.data['sources']:
+        source = data.data['sources'][sourceName]
+        # Loop over all associated test series and execture
+        for testType in source['tests']:
+            for series in source['tests'][testType]:
+                print(f"{series}: {source['tests'][testType][series]['series status']}")
+
+    updateDictWithDict(fullData.data, data.data)
+
+    for sourceName in fullData.data['sources']:
+        source = fullData.data['sources'][sourceName]
+        # Loop over all associated test series and execture
+        for testType in source['tests']:
+            for series in source['tests'][testType]:
+                print(f"{series}: {source['tests'][testType][series]['series status']}")
+
+    with open(outfilename, 'w') as outfile:
+        json.dump(fullData.data, outfile, indent=2)
+
+runAll()

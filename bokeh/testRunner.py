@@ -467,4 +467,4 @@ def runNew():
     with open(outfilename, 'w') as outfile:
         json.dump(fullData.data, outfile, indent=2)
 
-runAll()
+runNew()

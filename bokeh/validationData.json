@@ -75,7 +75,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "vapor pressures"
           },
           "LiF-BeF2-ZrF4": {
@@ -210,7 +210,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "vapor pressures"
           },
           "LiF-BeF2-ThF4": {
@@ -278,7 +278,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "vapor pressures"
           }
         }
@@ -314,7 +314,7 @@
               "UF8Li4_S1(s)",
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "LiF-2LiF.BeF2-7LiF.6UF4": {
@@ -335,7 +335,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "2LiF.BeF2-7LiF.6UF4": {
@@ -355,7 +355,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "2LiF.BeF2-BeF2-7LiF.6UF4": {
@@ -376,7 +376,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "BeF2-LiF.4UF4-7LiF.6UF4": {
@@ -399,7 +399,7 @@
               "U4F17Li_S1(s)",
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "BeF2-UF4-LiF.4UF4": {
@@ -422,7 +422,7 @@
               "UF4_solid(s)",
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           }
         },
@@ -670,7 +670,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           }
         }
@@ -811,7 +811,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "heat capacities"
           }
         }
@@ -847,7 +847,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-02": {
@@ -870,7 +870,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-03": {
@@ -891,7 +891,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-04": {
@@ -913,7 +913,7 @@
               "MSFL",
               "SSadsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-05": {
@@ -936,7 +936,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-06": {
@@ -957,7 +957,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-07": {
@@ -979,7 +979,7 @@
               "MSFL",
               "SSadsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-08": {
@@ -1002,7 +1002,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-09": {
@@ -1023,7 +1023,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-10": {
@@ -1046,7 +1046,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-11": {
@@ -1067,7 +1067,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-12": {
@@ -1090,7 +1090,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p47-13": {
@@ -1113,7 +1113,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-01": {
@@ -1134,7 +1134,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-02": {
@@ -1157,7 +1157,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-03": {
@@ -1178,7 +1178,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-04": {
@@ -1201,7 +1201,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-05": {
@@ -1222,7 +1222,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-06": {
@@ -1245,7 +1245,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-07": {
@@ -1266,7 +1266,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-08": {
@@ -1289,7 +1289,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-09": {
@@ -1310,7 +1310,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-10": {
@@ -1331,7 +1331,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-11": {
@@ -1354,7 +1354,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-12": {
@@ -1375,7 +1375,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "table11-p48-13": {
@@ -1398,7 +1398,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p48-14": {
@@ -1421,7 +1421,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-01": {
@@ -1442,7 +1442,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-02": {
@@ -1465,7 +1465,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-03": {
@@ -1488,7 +1488,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-04": {
@@ -1509,7 +1509,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "table11-p49-05": {
@@ -1532,7 +1532,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "table11-p49-06": {
@@ -1555,7 +1555,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-07": {
@@ -1576,7 +1576,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-08": {
@@ -1599,7 +1599,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-09": {
@@ -1620,7 +1620,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-10": {
@@ -1643,7 +1643,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-11": {
@@ -1664,7 +1664,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-12": {
@@ -1687,7 +1687,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p49-13": {
@@ -1708,7 +1708,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-01": {
@@ -1731,7 +1731,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-02": {
@@ -1752,7 +1752,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-03": {
@@ -1775,7 +1775,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-04": {
@@ -1796,7 +1796,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-05": {
@@ -1819,7 +1819,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-06": {
@@ -1842,7 +1842,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-07": {
@@ -1863,7 +1863,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-08": {
@@ -1886,7 +1886,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-09": {
@@ -1909,7 +1909,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-10": {
@@ -1931,7 +1931,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-11": {
@@ -1956,7 +1956,7 @@
               "Li2BeF4(s)"
             ],
             "comment": "FactSage8.0 does not converge for this composition at 700 K (or any other tested temperature)",
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-12": {
@@ -1977,7 +1977,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p50-13": {
@@ -2000,7 +2000,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-01": {
@@ -2021,7 +2021,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "table11-p51-02": {
@@ -2044,7 +2044,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-03": {
@@ -2065,7 +2065,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-04": {
@@ -2088,7 +2088,7 @@
               "MSFL",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-05": {
@@ -2111,7 +2111,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-06": {
@@ -2132,7 +2132,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-07": {
@@ -2153,7 +2153,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-08": {
@@ -2174,7 +2174,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-09": {
@@ -2197,7 +2197,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-10": {
@@ -2220,7 +2220,7 @@
               "SSaesoln",
               "SSafsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-11": {
@@ -2241,7 +2241,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-12": {
@@ -2264,7 +2264,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p51-13": {
@@ -2288,7 +2288,7 @@
               "SSaesoln",
               "Li2BeF4(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-01": {
@@ -2309,7 +2309,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-02": {
@@ -2332,7 +2332,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-03": {
@@ -2353,7 +2353,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-04": {
@@ -2376,7 +2376,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-05": {
@@ -2397,7 +2397,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-06": {
@@ -2419,7 +2419,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-07": {
@@ -2440,7 +2440,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-08": {
@@ -2463,7 +2463,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-09": {
@@ -2484,7 +2484,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "table11-p52-10": {
@@ -2507,7 +2507,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-11": {
@@ -2528,7 +2528,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-12": {
@@ -2551,7 +2551,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-13": {
@@ -2572,7 +2572,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p52-14": {
@@ -2595,7 +2595,7 @@
               "MSFL",
               "U6F31Li7_S1(s)"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-01": {
@@ -2616,7 +2616,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-02": {
@@ -2639,7 +2639,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-03": {
@@ -2662,7 +2662,7 @@
               "SSaesoln",
               "SSafsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-04": {
@@ -2683,7 +2683,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-05": {
@@ -2706,7 +2706,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-06": {
@@ -2730,7 +2730,7 @@
               "SSaesoln",
               "SSafsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-07": {
@@ -2751,7 +2751,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-08": {
@@ -2774,7 +2774,7 @@
               "MSFL",
               "SSaesoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-09": {
@@ -2795,7 +2795,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-10": {
@@ -2816,7 +2816,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "table11-p53-11": {
@@ -2839,7 +2839,7 @@
               "MSFL",
               "SSafsoln"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           }
         }
@@ -2902,7 +2902,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "KCl-LiCl": {
@@ -2931,7 +2931,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "LiCl-RbCl": {
@@ -2981,7 +2981,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "LiCl-CsCl": {
@@ -3052,7 +3052,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "CsCl-LiCl": {
@@ -3081,7 +3081,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
@@ -3212,7 +3212,7 @@
               "Na",
               "Al"
             ],
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "vapor pressures"
           }
         },
@@ -3233,7 +3233,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           }
         },
@@ -3551,7 +3551,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           }
         }
@@ -3584,7 +3584,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f16-02": {
@@ -3604,7 +3604,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f16-03": {
@@ -3624,7 +3624,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f16-04": {
@@ -3644,7 +3644,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f16-05": {
@@ -3666,7 +3666,7 @@
               "SScssoln",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-01": {
@@ -3686,7 +3686,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-02": {
@@ -3706,7 +3706,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f17-03": {
@@ -3726,7 +3726,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-04": {
@@ -3746,7 +3746,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-05": {
@@ -3766,7 +3766,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-06": {
@@ -3786,7 +3786,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-07": {
@@ -3806,7 +3806,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-08": {
@@ -3828,7 +3828,7 @@
               "SScssoln",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-09": {
@@ -3850,7 +3850,7 @@
               "SScssoln",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f17-10": {
@@ -3873,7 +3873,7 @@
               "MSCL",
               "KAlCl4_S1(s)"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f18-01": {
@@ -3893,7 +3893,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f18-02": {
@@ -3913,7 +3913,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f18-03": {
@@ -3933,7 +3933,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f18-04": {
@@ -3953,7 +3953,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f19-01": {
@@ -3973,7 +3973,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-02": {
@@ -3993,7 +3993,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "robelin2004-f19-03": {
@@ -4013,7 +4013,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-04": {
@@ -4033,7 +4033,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-05": {
@@ -4053,7 +4053,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-06": {
@@ -4075,7 +4075,7 @@
               "SScssoln",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-07": {
@@ -4097,7 +4097,7 @@
               "SScssoln",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           },
           "robelin2004-f19-08": {
@@ -4120,7 +4120,7 @@
               "KAlCl4_S1(s)",
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "eutectic": {
@@ -4141,7 +4141,7 @@
             "phases high": [
               "MSCL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail"
           }
         },
@@ -4179,7 +4179,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
@@ -4341,7 +4341,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "AlCl3-LiCl": {
@@ -4391,7 +4391,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "NaCl-AlCl3": {
@@ -4511,7 +4511,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "AlCl3-NaCl": {
@@ -4554,7 +4554,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
@@ -4586,7 +4586,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           },
           "liquid->NaBeF3+BeF2": {
@@ -4605,7 +4605,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "pass",
             "status": "pass"
           }
         },
@@ -4706,7 +4706,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           }
         }
@@ -4776,7 +4776,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "vapor pressures"
           },
           "NaF-24.5BeF2": {
@@ -4832,7 +4832,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "fail",
             "series type": "vapor pressures"
           },
           "NaF-39.5BeF2": {
@@ -4888,7 +4888,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "fail",
             "series type": "vapor pressures"
           },
           "NaF-58.8BeF2": {
@@ -4944,7 +4944,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "fail",
             "series type": "vapor pressures"
           },
           "NaF-73.9BeF2": {
@@ -5008,7 +5008,7 @@
                 "status": "fail"
               }
             },
-            "series status": "incomplete",
+            "series status": "fail",
             "series type": "vapor pressures"
           }
         }

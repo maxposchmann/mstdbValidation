@@ -5127,11 +5127,11 @@
       "type": "experiment",
       "tests": {
         "solubility limits": {
-          "CaF2-BeF2": {
+          "CaF2-10BeF2": {
             "database": "fluoride",
             "composition": {
-              "Be": 0.9,
-              "Ca": 0.1,
+              "Be": 0.1,
+              "Ca": 0.9,
               "F": 2
             },
             "error": 0.1,
@@ -5144,46 +5144,62 @@
                 "fractions": {
                   "BeF2": 0.2985294117647058
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "2": {
                 "temperature": 1073.2645219310796,
                 "fractions": {
                   "BeF2": 0.39264705882352946
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "3": {
                 "temperature": 972.6713812696726,
                 "fractions": {
                   "BeF2": 0.49411764705882355
                 },
-                "status": "fail"
-              },
-              "4": {
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CaF2-55BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.55,
+              "Ca": 0.45,
+              "F": 2
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
                 "temperature": 881.2467808527164,
                 "fractions": {
                   "BeF2": 0.5941176470588235
                 },
-                "status": "fail"
+                "status": "pass"
               },
-              "5": {
+              "2": {
                 "temperature": 841.8072190655274,
                 "fractions": {
                   "BeF2": 0.6955882352941177
                 },
-                "status": "fail"
+                "status": "pass"
               },
-              "6": {
+              "3": {
                 "temperature": 764.1376773085885,
                 "fractions": {
                   "BeF2": 0.7941176470588235
                 },
-                "status": "fail"
+                "status": "pass"
               }
             },
             "series type": "solubility limits",
-            "series status": "incomplete"
+            "series status": "pass"
           }
         }
       }

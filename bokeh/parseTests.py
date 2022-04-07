@@ -47,9 +47,7 @@ class jsonTestData:
                         seriesStatus = 'unknown'
                         for sample in series['samples'].keys():
                             # If no status, write incomplete status
-                            try:
-                                series['samples'][sample]['status']
-                            except KeyError:
+                            if 'status' not in list(series['samples'][sample].keys()):
                                 series['samples'][sample]['status'] = 'incomplete'
                             sampleStatus = series['samples'][sample]['status']
                             if sampleStatus == 'pass':
@@ -64,7 +62,6 @@ class jsonTestData:
                                     seriesStatus = 'partial'
                             else:
                                 seriesStatus = 'incomplete'
-                                sampleStatus = 'incomplete'
                             if (sampleStatus in self.sampleStatusFilter) or (not self.sampleStatusFilter):
                                 seriesSamples += 1
                             else:

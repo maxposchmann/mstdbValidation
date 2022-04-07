@@ -94,11 +94,16 @@ def runPhaseTransitions(series,name):
     plo = series['phases low']
     phi = series['phases high']
     phaseMolTol = 1e-6
+    # Check for alternative units
+    if "temperature unit" in series.keys():
+        tseriesunit = series["temperature unit"]
+    else:
+        tseriesunit = tunit
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'data file         = {datapath}\n')
-        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'temperature unit  = {tseriesunit}\n')
         inputFile.write(f'pressure unit     = {punit}\n')
         inputFile.write(f'mass unit         = {munit}\n')
         inputFile.write(f'nEl               = {nElements}\n')
@@ -219,11 +224,16 @@ def runSolubilityLimits(series,name):
     err = series['error']
     phase = series['phase']
     fracType = series['fraction type']
+    # Check for alternative units
+    if "temperature unit" in series.keys():
+        tseriesunit = series["temperature unit"]
+    else:
+        tseriesunit = tunit
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'data file         = {datapath}\n')
-        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'temperature unit  = {tseriesunit}\n')
         inputFile.write(f'pressure unit     = {punit}\n')
         inputFile.write(f'mass unit         = {munit}\n')
         inputFile.write(f'nEl               = {nElements}\n')
@@ -292,12 +302,17 @@ def runHeatCapacities(series,name):
     nElements = len(elements)
     compString = " ".join([str(series['composition'][element]) for element in elements])
     relErr = series['relative error']
+    # Check for alternative units
+    if "temperature unit" in series.keys():
+        tseriesunit = series["temperature unit"]
+    else:
+        tseriesunit = tunit
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'heat capacity     = .TRUE.\n')
         inputFile.write(f'data file         = {datapath}\n')
-        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'temperature unit  = {tseriesunit}\n')
         inputFile.write(f'pressure unit     = {punit}\n')
         inputFile.write(f'mass unit         = {munit}\n')
         inputFile.write(f'nEl               = {nElements}\n')

@@ -3675,6 +3675,94 @@
         }
       },
       "comment": "Assumes only NaF and BeF2 in gas phase"
+    },
+    "thoma-1975": {
+      "mstdb references": ["mstdb-46:robelin2013"],
+      "url": "https://link.springer.com/chapter/10.1007/978-1-4615-8270-0_6",
+      "title": "Advances in Molten Salt Chemistry: Chapter 6 Phase Diagrams of Binary and Ternary Fluoride Systems",
+      "authors": "R.E. Thoma",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "BeF2-AlF3": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.95,
+              "Al": 0.05,
+              "F": 2.05
+            },
+            "error": 0.1,
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "false",
+            "samples": {
+              "1": {
+                "temperature": 773.4931506849316,
+                "fractions": {
+                  "AlF3": 0.06303317535545026
+                }
+              },
+              "2": {
+                "temperature": 723.6301369863015,
+                "fractions": {
+                  "AlF3": 0.11374407582938388
+                }
+              },
+              "3": {
+                "temperature": 674.2465753424659,
+                "fractions": {
+                  "AlF3": 0.1744075829383886
+                }
+              }
+            }
+          },
+          "AlF3-BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.5,
+              "Al": 0.5,
+              "F": 2.5
+            },
+            "error": 0.1,
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "false",
+            "samples": {
+              "1": {
+                "temperature": 823.8356164383563,
+                "fractions": {
+                  "AlF3": 0.30947867298578197
+                }
+              },
+              "2": {
+                "temperature": 873.2191780821919,
+                "fractions": {
+                  "AlF3": 0.31943127962085305
+                }
+              },
+              "3": {
+                "temperature": 924.041095890411,
+                "fractions": {
+                  "AlF3": 0.3421800947867298
+                }
+              },
+              "4": {
+                "temperature": 974.3835616438357,
+                "fractions": {
+                  "AlF3": 0.36113744075829385
+                }
+              },
+              "5": {
+                "temperature": 1023.7671232876713,
+                "fractions": {
+                  "AlF3": 0.4170616113744076
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2013). Also, no Al in fluoride database."
     }
   }
 }

@@ -441,28 +441,7 @@ def runNew():
 
     run(data)
 
-    for sourceName in fullData.data['sources']:
-        source = fullData.data['sources'][sourceName]
-        # Loop over all associated test series and execture
-        for testType in source['tests']:
-            for series in source['tests'][testType]:
-                print(f"{series}: {source['tests'][testType][series]['series status']}")
-
-    for sourceName in data.data['sources']:
-        source = data.data['sources'][sourceName]
-        # Loop over all associated test series and execture
-        for testType in source['tests']:
-            for series in source['tests'][testType]:
-                print(f"{series}: {source['tests'][testType][series]['series status']}")
-
     updateDictWithDict(fullData.data, data.data)
-
-    for sourceName in fullData.data['sources']:
-        source = fullData.data['sources'][sourceName]
-        # Loop over all associated test series and execture
-        for testType in source['tests']:
-            for series in source['tests'][testType]:
-                print(f"{series}: {source['tests'][testType][series]['series status']}")
 
     with open(outfilename, 'w') as outfile:
         json.dump(fullData.data, outfile, indent=2)

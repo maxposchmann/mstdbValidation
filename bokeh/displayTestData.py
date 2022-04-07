@@ -290,7 +290,7 @@ buttonRow = Column(
                 Column(Div(text='Elements'),seriesElementsButtonGroup)
             )
 
-filename = 'verificationData-tested.json'
+filename = 'validationData.json'
 data = parseTests.jsonTestData(filename)
 
 div=Div(text='')

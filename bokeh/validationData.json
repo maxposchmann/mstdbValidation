@@ -4610,7 +4610,7 @@
           }
         },
         "solubility limits": {
-          "NaF-BeF2": {
+          "NaF-5BeF2": {
             "database": "fluoride",
             "composition": {
               "Na": 95,
@@ -4676,37 +4676,52 @@
                   "BeF2": 0.28942307692307695
                 },
                 "status": "fail"
-              },
-              "9": {
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "NaF-34BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 66,
+              "Be": 34,
+              "F": 134
+            },
+            "error": 0.1,
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
                 "temperature": 813.2454923717058,
                 "fractions": {
                   "BeF2": 0.3509615384615385
                 },
-                "status": "fail"
+                "status": "pass"
               },
-              "10": {
+              "2": {
                 "temperature": 753.6061026352288,
                 "fractions": {
                   "BeF2": 0.38076923076923075
                 },
-                "status": "fail"
+                "status": "pass"
               },
-              "11": {
+              "3": {
                 "temperature": 688.4188626907073,
                 "fractions": {
                   "BeF2": 0.3903846153846154
                 },
-                "status": "fail"
+                "status": "pass"
               },
-              "12": {
+              "4": {
                 "temperature": 647.50346740638,
                 "fractions": {
                   "BeF2": 0.39999999999999997
                 },
-                "status": "fail"
+                "status": "pass"
               }
             },
-            "series status": "partial",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }

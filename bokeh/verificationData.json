@@ -3288,6 +3288,393 @@
           }
         }
       }
+    },
+    "thilo-1951": {
+      "mstdb references": ["mstdb-46:robelin2013"],
+      "url": "https://doi.org/10.1515/zpch-1951-19706",
+      "title": "Über das System NaF–BeF2 und seine Beziehungen zum System CaO–SiO2",
+      "authors": "Erich Thilo and Hansjürgen Sehröder",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "liquid->Na2BeF4+NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.69711538461,
+              "Be": 0.30288461538461536,
+              "F": 1.30288461538461536
+            },
+            "error": 15,
+            "target temperature": 846.5325936199722,
+            "phases low": ["NaF_solid(s)","Na2BeF4_S3(s3)"],
+            "phases high": ["MSFL"]
+          },
+          "liquid->NaBeF3+BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.38653846153,
+              "Be": 0.6134615384615385,
+              "F": 1.6134615384615385
+            },
+            "error": 15,
+            "target temperature": 613.5228848821081,
+            "phases low": ["BeF2_Solid_I_Hi_quar(s2)","NaBeF3_S1(s)"],
+            "phases high": ["MSFL"]
+          }
+        },
+        "solubility limits": {
+          "NaF-BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 95,
+              "Be": 5,
+              "F": 105
+            },
+            "error": 0.1,
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "samples": {
+              "1": {
+                "temperature": 1193.2732316227462,
+                "fractions": {
+                  "BeF2": 0.10096153846153846
+                }
+              },
+              "2": {
+                "temperature": 1148.890429958391,
+                "fractions": {
+                  "BeF2": 0.15
+                }
+              },
+              "3": {
+                "temperature": 1111.4424410540914,
+                "fractions": {
+                  "BeF2": 0.17980769230769234
+                }
+              },
+              "4": {
+                "temperature": 1058.7378640776699,
+                "fractions": {
+                  "BeF2": 0.2096153846153846
+                }
+              },
+              "5": {
+                "temperature": 974.133148404993,
+                "fractions": {
+                  "BeF2": 0.24951923076923077
+                }
+              },
+              "6": {
+                "temperature": 954.7156726768376,
+                "fractions": {
+                  "BeF2": 0.2615384615384615
+                }
+              },
+              "7": {
+                "temperature": 891.6088765603329,
+                "fractions": {
+                  "BeF2": 0.2798076923076923
+                }
+              },
+              "8": {
+                "temperature": 868.7239944521497,
+                "fractions": {
+                  "BeF2": 0.28942307692307695
+                }
+              },
+              "9": {
+                "temperature": 813.2454923717058,
+                "fractions": {
+                  "BeF2": 0.3509615384615385
+                }
+              },
+              "10": {
+                "temperature": 753.6061026352288,
+                "fractions": {
+                  "BeF2": 0.38076923076923075
+                }
+              },
+              "11": {
+                "temperature": 688.4188626907073,
+                "fractions": {
+                  "BeF2": 0.3903846153846154
+                }
+              },
+              "12": {
+                "temperature": 647.50346740638,
+                "fractions": {
+                  "BeF2": 0.39999999999999997
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2013)"
+    },
+    "sense-1958": {
+      "mstdb references": ["mstdb-46:robelin2013"],
+      "url": "https://pubs.acs.org/doi/10.1021/j150562a020",
+      "title": "Vapor Pressures and Molecular Composition of Vapors of the Sodium Fluoride-Beryllium Fluoride System",
+      "authors": "Karl A. Sense and Richard W. Stone",
+      "type": "experiment",
+      "tests": {
+        "vapor pressures": {
+          "NaF-15.0BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 85,
+              "Be": 15,
+              "F": 115
+            },
+            "logarithmic error": 1,
+            "temperature unit": "C",
+            "vapor pressure unit": "mmHG",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1061,
+                "partial pressures": {
+                  "NaF": 1.082,
+                  "BeF2": 0.43
+                }
+              },
+              "2": {
+                "temperature": 1009,
+                "partial pressures": {
+                  "NaF": 0.499,
+                  "BeF2": 0.16
+                }
+              },
+              "3": {
+                "temperature": 960.4,
+                "partial pressures": {
+                  "NaF": 0.169,
+                  "BeF2": 0.074
+                }
+              },
+              "4": {
+                "temperature": 929.9,
+                "partial pressures": {
+                  "NaF": 0.112,
+                  "BeF2": 0.029
+                }
+              },
+              "5": {
+                "temperature": 887,
+                "partial pressures": {
+                  "NaF": 0.0540,
+                  "BeF2": 0.013
+                }
+              }
+            }
+          },
+          "NaF-24.5BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 24.5,
+              "Be": 75.5,
+              "F": 124.5
+            },
+            "logarithmic error": 1,
+            "temperature unit": "C",
+            "vapor pressure unit": "mmHG",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1035,
+                "partial pressures": {
+                  "NaF": 0.915,
+                  "BeF2": 0.453
+                }
+              },
+              "2": {
+                "temperature": 996.4,
+                "partial pressures": {
+                  "NaF": 0.437,
+                  "BeF2": 0.260
+                }
+              },
+              "3": {
+                "temperature": 947.0,
+                "partial pressures": {
+                  "NaF": 0.171,
+                  "BeF2": 0.102
+                }
+              },
+              "4": {
+                "temperature": 910.0,
+                "partial pressures": {
+                  "NaF": 0.0747,
+                  "BeF2": 0.0356
+                }
+              },
+              "5": {
+                "temperature": 882.9,
+                "partial pressures": {
+                  "NaF": 0.0486,
+                  "BeF2": 0.0194
+                }
+              }
+            }
+          },
+          "NaF-39.5BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 39.5,
+              "Be": 60.5,
+              "F": 139.5
+            },
+            "logarithmic error": 1,
+            "temperature unit": "C",
+            "vapor pressure unit": "mmHG",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1026,
+                "partial pressures": {
+                  "NaF": 2.52,
+                  "BeF2": 3.56
+                }
+              },
+              "2": {
+                "temperature": 994.2,
+                "partial pressures": {
+                  "NaF": 1.52,
+                  "BeF2": 2.28
+                }
+              },
+              "3": {
+                "temperature": 946.9,
+                "partial pressures": {
+                  "NaF": 0.672,
+                  "BeF2": 1.02
+                }
+              },
+              "4": {
+                "temperature": 896.3,
+                "partial pressures": {
+                  "NaF": 0.257,
+                  "BeF2": 0.409
+                }
+              },
+              "5": {
+                "temperature": 855.4,
+                "partial pressures": {
+                  "NaF": 0.113,
+                  "BeF2": 0.189
+                }
+              }
+            }
+          },
+          "NaF-58.8BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 41.2,
+              "Be": 58.8,
+              "F": 158.8
+            },
+            "logarithmic error": 1,
+            "temperature unit": "C",
+            "vapor pressure unit": "mmHG",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 988.6,
+                "partial pressures": {
+                  "NaF": 2.26,
+                  "BeF2": 30.3
+                }
+              },
+              "2": {
+                "temperature": 938.8,
+                "partial pressures": {
+                  "NaF": 0.993,
+                  "BeF2": 14.25
+                }
+              },
+              "3": {
+                "temperature": 896.4,
+                "partial pressures": {
+                  "NaF": 0.477,
+                  "BeF2": 6.03
+                }
+              },
+              "4": {
+                "temperature": 840.3,
+                "partial pressures": {
+                  "NaF": 0.131,
+                  "BeF2": 2.24
+                }
+              },
+              "5": {
+                "temperature": 802.2,
+                "partial pressures": {
+                  "NaF": 0.0556,
+                  "BeF2": 0.980
+                }
+              }
+            }
+          },
+          "NaF-73.9BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 73.9,
+              "Be": 26.1,
+              "F": 173.9
+            },
+            "logarithmic error": 1,
+            "temperature unit": "C",
+            "vapor pressure unit": "mmHG",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 976.9,
+                "partial pressures": {
+                  "NaF": 1.36,
+                  "BeF2": 48.5
+                }
+              },
+              "2": {
+                "temperature": 937.0,
+                "partial pressures": {
+                  "NaF": 0.684,
+                  "BeF2": 23.6
+                }
+              },
+              "3": {
+                "temperature": 871.0,
+                "partial pressures": {
+                  "NaF": 0.170,
+                  "BeF2": 7.67
+                }
+              },
+              "4": {
+                "temperature": 813.7,
+                "partial pressures": {
+                  "NaF": 0.0512,
+                  "BeF2":2.32
+                }
+              },
+              "5": {
+                "temperature": 752.5,
+                "partial pressures": {
+                  "NaF": 0.00817,
+                  "BeF2": 0.482
+                }
+              },
+              "6": {
+                "temperature": 657.4,
+                "partial pressures": {
+                  "NaF": 0.00167,
+                  "BeF2": 0.0483
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "Assumes only NaF and BeF2 in gas phase"
     }
   }
 }

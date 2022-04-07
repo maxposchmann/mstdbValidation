@@ -15,11 +15,20 @@ def runVaporPressures(series,name):
     nElements = len(elements)
     compString = " ".join([str(series['composition'][element]) for element in elements])
     logErr = series['logarithmic error']
+    # Check for alternative units
+    if "temperature unit" in series.keys():
+        tseriesunit = series["temperature unit"]
+    else:
+        tseriesunit = tunit
+    vaporPressureScale = 1
+    if "vapor pressure unit" in series.keys():
+        if series["vapor pressure unit"] == 'mmHG':
+            vaporPressureScale = 1/760
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
         inputFile.write(f'data file         = {datapath}\n')
-        inputFile.write(f'temperature unit  = {tunit}\n')
+        inputFile.write(f'temperature unit  = {tseriesunit}\n')
         inputFile.write(f'pressure unit     = {punit}\n')
         inputFile.write(f'mass unit         = {munit}\n')
         inputFile.write(f'nEl               = {nElements}\n')
@@ -59,8 +68,8 @@ def runVaporPressures(series,name):
         for species in s['partial pressures']:
             try:
                 # Calculate bounds
-                lb = (10**(-logErr)) * s['partial pressures'][species]
-                ub = (10**( logErr)) * s['partial pressures'][species]
+                lb = (10**(-logErr)) * s['partial pressures'][species] * vaporPressureScale
+                ub = (10**( logErr)) * s['partial pressures'][species] * vaporPressureScale
                 calculated = o[species]['mole fraction']*press / adjustedTotal
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'

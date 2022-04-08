@@ -5513,6 +5513,270 @@
           }
         }
       }
+    },
+    "seifert-1977": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/zaac.19774360131",
+      "title": "L\u00f6sungskalorimetrische Messungen an Doppelchloriden des Magnesiums",
+      "authors": "Prof. Dr. H.-J. Seifert,Dr. G. Thiel",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "RbCl-liquid": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.98,
+              "Mg": 0.02,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 698.8645429548766,
+                "fractions": {
+                  "MgCl2": 0.056173673584525824
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 675.2125603424493,
+                "fractions": {
+                  "MgCl2": 0.09908132840790379
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 649.1144251074295,
+                "fractions": {
+                  "MgCl2": 0.12875734527189414
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 602.5638965129582,
+                "fractions": {
+                  "MgCl2": 0.17963264734658912
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 556.7414538854033,
+                "fractions": {
+                  "MgCl2": 0.2135669129105296
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 538.4106873757837,
+                "fractions": {
+                  "MgCl2": 0.22841113474043323
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 517.6151280498461,
+                "fractions": {
+                  "MgCl2": 0.24325825615602759
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 491.18724778782314,
+                "fractions": {
+                  "MgCl2": 0.25705324219245135
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 477.8024702813177,
+                "fractions": {
+                  "MgCl2": 0.26024527181130497
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "RbCl-RbMgCl3": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.525,
+              "Mg": 0.475,
+              "Cl": 1.475
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 549.3532267003791,
+                "fractions": {
+                  "MgCl2": 0.45920821427772573
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 526.1734001950177,
+                "fractions": {
+                  "MgCl2": 0.4168850330842728
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 517.0393324656668,
+                "fractions": {
+                  "MgCl2": 0.40207312092349323
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 498.76150410622745,
+                "fractions": {
+                  "MgCl2": 0.3793312561253749
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "MgCl2-RbMgCl3": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.48,
+              "Mg": 0.52,
+              "Cl": 1.52
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 550.6453649294281,
+                "fractions": {
+                  "MgCl2": 0.5417900716529047
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 539.6806437742995,
+                "fractions": {
+                  "MgCl2": 0.5767420917942554
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 530.8330758225088,
+                "fractions": {
+                  "MgCl2": 0.608515337565624
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "MgCl2-liquid": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.04,
+              "Mg": 0.96,
+              "Cl": 1.96
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 691.281339343484,
+                "fractions": {
+                  "MgCl2": 0.9402482376732402
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 671.2787338586277,
+                "fractions": {
+                  "MgCl2": 0.8920981319212076
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 654.4309811618059,
+                "fractions": {
+                  "MgCl2": 0.8540025466646894
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 633.3668166442845,
+                "fractions": {
+                  "MgCl2": 0.8095593541048608
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 615.7902323727972,
+                "fractions": {
+                  "MgCl2": 0.7889341868609003
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 601.7332894805515,
+                "fractions": {
+                  "MgCl2": 0.7693636403552739
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 577.8417803787521,
+                "fractions": {
+                  "MgCl2": 0.7323351026329068
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 551.1177074384314,
+                "fractions": {
+                  "MgCl2": 0.7064268902606232
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 534.954049851334,
+                "fractions": {
+                  "MgCl2": 0.6826237770997351
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 512.806703676426,
+                "fractions": {
+                  "MgCl2": 0.6572395612844005
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

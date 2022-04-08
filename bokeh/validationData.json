@@ -5292,6 +5292,138 @@
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "klemm-1940": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/zaac.19402450306",
+      "title": "\u00dcber bin\u00e4re Systeme aus Halogeniden. I. Das System Natriumchlorid-Magnesiumchlorid",
+      "authors": "Wilhelm Klemm,Paul Weiss",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaCl-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.9,
+              "Mg": 0.1,
+              "Cl": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 732.554093014965,
+                "fractions": {
+                  "MgCl2": 0.15247108307045215
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 707.6765392244882,
+                "fractions": {
+                  "MgCl2": 0.19453207150368035
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 681.9706030976643,
+                "fractions": {
+                  "MgCl2": 0.22082018927444796
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 655.405703744769,
+                "fractions": {
+                  "MgCl2": 0.24921135646687698
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 589.4562161790896,
+                "fractions": {
+                  "MgCl2": 0.29968454258675076
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 508.9637166737804,
+                "fractions": {
+                  "MgCl2": 0.35120925341745524
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "MgCl2-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.05,
+              "Mg": 0.95,
+              "Cl": 1.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 698.7712042492718,
+                "fractions": {
+                  "MgCl2": 0.900105152471083
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 669.8614702048919,
+                "fractions": {
+                  "MgCl2": 0.7991587802313355
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 640.0945718103069,
+                "fractions": {
+                  "MgCl2": 0.6992639327024185
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 588.0881710829069,
+                "fractions": {
+                  "MgCl2": 0.5993690851735016
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 553.958099275053,
+                "fractions": {
+                  "MgCl2": 0.5499474237644585
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 508.7100751766578,
+                "fractions": {
+                  "MgCl2": 0.49947423764458465
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

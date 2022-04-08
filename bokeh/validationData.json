@@ -5218,6 +5218,80 @@
           }
         }
       }
+    },
+    "kravchuk-1979": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "n/a",
+      "title": "Refinement of the phase diagram of the systems LiCl-MCl sub 2(M double bond Mg, Ca, Sr, Ba, Mn) by directed crystallization",
+      "authors": "IF Kravchuk",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.08,
+              "Mg": 0.92,
+              "Cl": 1.92
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 692.5699240660892,
+                "fractions": {
+                  "MgCl2": 0.9007695145063024
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 674.9659760114982,
+                "fractions": {
+                  "MgCl2": 0.8300030102220356
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 650.2445911397718,
+                "fractions": {
+                  "MgCl2": 0.7099222853944874
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 645.8302489156841,
+                "fractions": {
+                  "MgCl2": 0.7002692240834721
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 624.3604126124064,
+                "fractions": {
+                  "MgCl2": 0.62306593234208
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 620.523015479325,
+                "fractions": {
+                  "MgCl2": 0.5994802067301781
+                },
+                "status": "pass"
+              }
+            },
+            "comment": "First 3 samples don't converge at all in FactSage, 4th converges to incorrect assemblage that Thermochimica finds for 1 through 3",
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

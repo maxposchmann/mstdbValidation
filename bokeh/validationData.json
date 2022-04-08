@@ -5424,6 +5424,95 @@
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "perry-1993": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "https://link.springer.com/article/10.1007/BF02667805",
+      "title": "The magnesium chloride-potassium chloride phase diagram",
+      "authors": "G. S. Perry & H. Fletcher ",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KCl-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.95,
+              "Mg": 0.05,
+              "Cl": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 710,
+                "fractions": {
+                  "MgCl2": 0.1
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 635,
+                "fractions": {
+                  "MgCl2": 0.2
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 560.5,
+                "fractions": {
+                  "MgCl2": 0.25
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "MgCl2-KCl": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.05,
+              "Mg": 0.95,
+              "Cl": 1.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 683.5,
+                "fractions": {
+                  "MgCl2": 0.9
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 635.5,
+                "fractions": {
+                  "MgCl2": 0.8
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 595,
+                "fractions": {
+                  "MgCl2": 0.7
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

@@ -6079,7 +6079,7 @@
               "Li": 0.02,
               "K": 0.98,
               "Mg": 0.98,
-              "Cl": 2.98
+              "Cl": 2.96
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -6158,6 +6158,126 @@
                 "temperature": 483.00060793989894,
                 "fractions": {
                   "LiCl": 0.6994195702306435
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
+    },
+    "orekhova-1985": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "Could not be found online",
+      "title": "The system KMgCl3-NaCl",
+      "authors": "A.I. Orekhova, N.P. Podlesnyak, L.Kh. Kvznetsova, G.G. Arkhipov, and N.A. Krasil\u2019nikova",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KMgCl3-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.05,
+              "K": 0.95,
+              "Mg": 0.95,
+              "Cl": 2.9
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 481.3650306748466,
+                "fractions": {
+                  "NaCl": 0.09032629772084297
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 456.05828220858893,
+                "fractions": {
+                  "NaCl": 0.09030245716647062
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 459.4325153374233,
+                "fractions": {
+                  "NaCl": 0.17994294160653546
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 436.23466257668707,
+                "fractions": {
+                  "NaCl": 0.17992108776502747
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 424.00306748466255,
+                "fractions": {
+                  "NaCl": 0.2400131917734194
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 408.8190184049079,
+                "fractions": {
+                  "NaCl": 0.3001025143838011
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "NaCl-KMgCl3": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.95,
+              "K": 0.05,
+              "Mg": 0.05,
+              "Cl": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 736.963190184049,
+                "fractions": {
+                  "NaCl": 0.8998935121904703
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 669.4785276073619,
+                "fractions": {
+                  "NaCl": 0.7998299373788105
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 608.7423312883436,
+                "fractions": {
+                  "NaCl": 0.699254585333291
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 509.62423312883436,
+                "fractions": {
+                  "NaCl": 0.6001974792587177
                 },
                 "status": "fail"
               }

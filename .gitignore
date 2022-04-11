@@ -5,6 +5,7 @@ mstdb/
 *.jpg
 *.jpeg
 *.ti
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

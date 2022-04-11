@@ -6313,63 +6313,56 @@
             "enabled": "true",
             "samples": {
               "1": {
-                "temperature": 603.6181048886226,
+                "temperature": 581.1329540375948,
                 "fractions": {
                   "CaCl2": 0.10039137302838408
                 },
                 "status": "pass"
               },
               "2": {
-                "temperature": 589.2584014173742,
+                "temperature": 568.052705229576,
                 "fractions": {
                   "CaCl2": 0.15072256299282766
                 },
                 "status": "pass"
               },
               "3": {
-                "temperature": 566.4930893240371,
+                "temperature": 548.1181064736161,
                 "fractions": {
                   "CaCl2": 0.23041364767963568
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "4": {
-                "temperature": 559.4923218780697,
+                "temperature": 541.8941613474904,
                 "fractions": {
                   "CaCl2": 0.2492897259086666
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "5": {
-                "temperature": 544.104989538157,
+                "temperature": 528.2206286627423,
                 "fractions": {
                   "CaCl2": 0.27027200791698236
                 },
                 "status": "pass"
               },
               "6": {
-                "temperature": 536.3981392487167,
+                "temperature": 521.0554722052854,
                 "fractions": {
-                  "CaCl2": 0.2996310888048107
+                  "CaCl2": 0.30010493179433373
                 },
-                "status": "pass"
+                "status": "fail"
               },
               "7": {
-                "temperature": 528.3488680782355,
+                "temperature": 514.2104024936158,
                 "fractions": {
                   "CaCl2": 0.3190324972268587
                 },
                 "status": "pass"
-              },
-              "8": {
-                "temperature": 507.7475827079693,
-                "fractions": {
-                  "CaCl2": 0.3017608937856408
-                },
-                "status": "pass"
               }
             },
-            "series status": "partial",
+            "series status": "incomplete",
             "series type": "solubility limits"
           },
           "CaCl2-LiCl": {
@@ -6386,91 +6379,95 @@
             "enabled": "true",
             "samples": {
               "1": {
-                "temperature": 782.6412348799715,
+                "temperature": 739.8920724802734,
                 "fractions": {
                   "CaCl2": 0.8984008965201249
                 },
                 "status": "pass"
               },
               "2": {
-                "temperature": 758.9182429963435,
+                "temperature": 718.83733292522,
                 "fractions": {
                   "CaCl2": 0.8486381699791088
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "3": {
-                "temperature": 734.4968590056081,
+                "temperature": 696.8511507085949,
                 "fractions": {
                   "CaCl2": 0.7983521478314157
                 },
                 "status": "pass"
               },
               "4": {
-                "temperature": 709.7253633974663,
+                "temperature": 675.1752865679977,
                 "fractions": {
                   "CaCl2": 0.7491147514834169
                 },
                 "status": "pass"
               },
               "5": {
-                "temperature": 669.931296088467,
+                "temperature": 639.8454270821717,
                 "fractions": {
                   "CaCl2": 0.6988466336955168
                 },
                 "status": "pass"
               },
               "6": {
-                "temperature": 610.6060544406474,
+                "temperature": 587.1846449536273,
                 "fractions": {
                   "CaCl2": 0.5998591252418104
                 },
                 "status": "pass"
               },
               "7": {
-                "temperature": 588.9800700060468,
+                "temperature": 567.9918138547415,
                 "fractions": {
                   "CaCl2": 0.54904573831476
                 },
                 "status": "pass"
               },
               "8": {
-                "temperature": 574.6731030127339,
+                "temperature": 555.2917291115314,
                 "fractions": {
                   "CaCl2": 0.5239051687445218
                 },
                 "status": "pass"
               },
               "9": {
-                "temperature": 566.3055818469323,
+                "temperature": 548.177858170312,
                 "fractions": {
                   "CaCl2": 0.4987576815807269
                 },
                 "status": "pass"
               },
               "10": {
-                "temperature": 552.697373186268,
+                "temperature": 536.0984095791575,
                 "fractions": {
                   "CaCl2": 0.4736162981759526
                 },
                 "status": "pass"
               },
               "11": {
-                "temperature": 526.5279946872881,
+                "temperature": 512.2508073398528,
                 "fractions": {
                   "CaCl2": 0.4249046389382389
                 },
                 "status": "pass"
               },
               "12": {
-                "temperature": 518.5098526878106,
+                "temperature": 505.1374248321213,
                 "fractions": {
                   "CaCl2": 0.3997567448571762
                 },
                 "status": "pass"
               }
             },
-            "series status": "partial",
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
             "series type": "solubility limits"
           }
         }

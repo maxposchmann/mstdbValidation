@@ -6815,6 +6815,200 @@
           }
         }
       }
+    },
+    "shakno-1960": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "I.V. Shakno and V.E. Plyushchev",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "RbCl-RbCaCl3": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.97,
+              "Ca": 0.03,
+              "Cl": 1.03
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 700.0381970970207,
+                "fractions": {
+                  "CaCl2": 0.049690144044664375
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 670.0916730328495,
+                "fractions": {
+                  "CaCl2": 0.0993286224237665
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 618.1436210847976,
+                "fractions": {
+                  "CaCl2": 0.15005641811800516
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "RbCaCl3-RbCl": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.52,
+              "Ca": 0.48,
+              "Cl": 1.48
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 849.7708174178763,
+                "fractions": {
+                  "CaCl2": 0.4494068899911774
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 837.8533231474408,
+                "fractions": {
+                  "CaCl2": 0.3993602134146943
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 808.2123758594347,
+                "fractions": {
+                  "CaCl2": 0.3503918111103267
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 760.847975553858,
+                "fractions": {
+                  "CaCl2": 0.2999203717719311
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 717.1504965622613,
+                "fractions": {
+                  "CaCl2": 0.24943946696808908
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 626.0886172650879,
+                "fractions": {
+                  "CaCl2": 0.200113348948722
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "RbCaCl3-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.48,
+              "Ca": 0.52,
+              "Cl": 1.52
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 850.9931245225364,
+                "fractions": {
+                  "CaCl2": 0.5495586135143972
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 841.8258212375861,
+                "fractions": {
+                  "CaCl2": 0.599143454255969
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 825.6302521008404,
+                "fractions": {
+                  "CaCl2": 0.6492626994008754
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 799.6562261268144,
+                "fractions": {
+                  "CaCl2": 0.6994071857869725
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 749.5416348357526,
+                "fractions": {
+                  "CaCl2": 0.7490977242260304
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CaCl2-RbCaCl3": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.01,
+              "Ca": 0.99,
+              "Cl": 1.99
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 759.9312452253629,
+                "fractions": {
+                  "CaCl2": 0.9483481382415452
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 726.3177998472116,
+                "fractions": {
+                  "CaCl2": 0.8988737279301827
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

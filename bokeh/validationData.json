@@ -7270,6 +7270,7 @@
                 "status": "fail"
               }
             },
+            "comment": "FactSage 8.0 also finds SScrsoln instead of MSCL for samples 2 through 7",
             "series status": "partial",
             "series type": "solubility limits"
           },

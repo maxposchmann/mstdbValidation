@@ -7027,7 +7027,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "CsCaCl3-CsCl": {
@@ -7093,7 +7093,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "CsCaCl3-CaCl2": {
@@ -7159,7 +7159,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "CaCl2-CsCaCl3": {
@@ -7190,12 +7190,150 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "grjotheim-1970": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "http://actachemscand.org/pdf/acta_vol_24_p0077-0086.pdf",
+      "title": "The Phase Diagram of the System MgCl2-CaCl2, and Thermodynamic Properties of Molten Mixtures in this System.",
+      "authors": "Grjotheim, Kai; Holm, Jan L\u00fctzow; Malmo, Jardar",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "CaCl2-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.03,
+              "Ca": 0.97,
+              "Cl": 2
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 756.6,
+                "fractions": {
+                  "MgCl2": 0.074
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 739,
+                "fractions": {
+                  "MgCl2": 0.143
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 726,
+                "fractions": {
+                  "MgCl2": 0.184
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 712.2,
+                "fractions": {
+                  "MgCl2": 0.228
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 685.4,
+                "fractions": {
+                  "MgCl2": 0.31
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 653.5,
+                "fractions": {
+                  "MgCl2": 0.403
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 632.6,
+                "fractions": {
+                  "MgCl2": 0.467
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "MgCl2-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.95,
+              "Ca": 0.05,
+              "Cl": 2
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 696.5,
+                "fractions": {
+                  "MgCl2": 0.909
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 682.7,
+                "fractions": {
+                  "MgCl2": 0.825
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 661.5,
+                "fractions": {
+                  "MgCl2": 0.724
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 647.9,
+                "fractions": {
+                  "MgCl2": 0.659
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 628.9,
+                "fractions": {
+                  "MgCl2": 0.579
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 621.1,
+                "fractions": {
+                  "MgCl2": 0.549
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

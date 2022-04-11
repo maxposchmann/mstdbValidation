@@ -9001,6 +9001,127 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "KCl-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.95,
+              "Ce": 0.05,
+              "Cl": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 704.1111168415896,
+                "fractions": {
+                  "CeCl3": 0.10191082802547766
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 628.8642048531422,
+                "fractions": {
+                  "CeCl3": 0.1953290870488323
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "KCl-CeCl3-mid": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.65,
+              "Ce": 0.35,
+              "Cl": 1.7
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 627.14806983161,
+                "fractions": {
+                  "CeCl3": 0.3694267515923567
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 618.6640965471003,
+                "fractions": {
+                  "CeCl3": 0.3991507430997877
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 593.188968256015,
+                "fractions": {
+                  "CeCl3": 0.45010615711252655
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 557.3886639676114,
+                "fractions": {
+                  "CeCl3": 0.4989384288747346
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeCl3-KCl": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.05,
+              "Ce": 0.95,
+              "Cl": 2.9
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 795.0817452745042,
+                "fractions": {
+                  "CeCl3": 0.9002123142250532
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 742.1884267258052,
+                "fractions": {
+                  "CeCl3": 0.8025477707006371
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 689.9023956264989,
+                "fractions": {
+                  "CeCl3": 0.7048832271762209
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 544.6665721137729,
+                "fractions": {
+                  "CeCl3": 0.5498938428874734
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

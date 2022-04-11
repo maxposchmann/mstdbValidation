@@ -7005,6 +7005,193 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "CsCl-CsCaCl3": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.97,
+              "Ca": 0.03,
+              "Cl": 1.03
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 639.6597965309685,
+                "fractions": {
+                  "CaCl2": 0.049744722625091414
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "CsCaCl3-CsCl": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.52,
+              "Ca": 0.48,
+              "Cl": 1.48
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 897.96708611588,
+                "fractions": {
+                  "CaCl2": 0.4488313832772701
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 880.2039596648636,
+                "fractions": {
+                  "CaCl2": 0.39857784003745733
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 849.1614187932026,
+                "fractions": {
+                  "CaCl2": 0.3494248381438665
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 800.4102286901232,
+                "fractions": {
+                  "CaCl2": 0.2992423521470073
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 749.4456054690392,
+                "fractions": {
+                  "CaCl2": 0.24906494166750198
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 708.442615566358,
+                "fractions": {
+                  "CaCl2": 0.1999347796020033
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 656.3700914988891,
+                "fractions": {
+                  "CaCl2": 0.14868981863907615
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "CsCaCl3-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.48,
+              "Ca": 0.52,
+              "Cl": 1.52
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 901.9513249426572,
+                "fractions": {
+                  "CaCl2": 0.5488757517581382
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 893.7066122571206,
+                "fractions": {
+                  "CaCl2": 0.5991889323268582
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 868.8599668991676,
+                "fractions": {
+                  "CaCl2": 0.6484700910336333
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 837.9275647540849,
+                "fractions": {
+                  "CaCl2": 0.6988352956552303
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 804.7817294909976,
+                "fractions": {
+                  "CaCl2": 0.749205575794181
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 774.4020934817245,
+                "fractions": {
+                  "CaCl2": 0.7990344674153902
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 736.2754415594359,
+                "fractions": {
+                  "CaCl2": 0.8488811233473376
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "CaCl2-CsCaCl3": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.01,
+              "Ca": 0.99,
+              "Cl": 1.99
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 750.2201294172332,
+                "fractions": {
+                  "CaCl2": 0.9489026520001135
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 719.1769964018811,
+                "fractions": {
+                  "CaCl2": 0.899214605985473
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
           }
         }
       },

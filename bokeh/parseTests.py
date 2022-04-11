@@ -150,6 +150,6 @@ class jsonTestData:
             del self.data['sources'][item]
 
         self.nRefs = len(self.mstdbReferences)
-        print(self.nSources)
-        print(self.nSeries)
-        print(self.nSamples)
+        print(f'{self.nSources} sources')
+        print(f'{self.nSeries} test series')
+        print(f'{self.nSamples} test samples')

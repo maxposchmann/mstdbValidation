@@ -7335,6 +7335,171 @@
           }
         }
       }
+    },
+    "qiao-1989": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "Z.Y. Qiao, M.S. Wang, C.G. Zheng, S.Z. Duan",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.95,
+              "Ce": 0.05,
+              "Cl": 1.1
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 858.7112171837709,
+                "fractions": {
+                  "CeCl3": 0.09200438116100768
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 839.618138424821,
+                "fractions": {
+                  "CeCl3": 0.09967141292442497
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 856.801909307876,
+                "fractions": {
+                  "CeCl3": 0.11062431544359258
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 839.618138424821,
+                "fractions": {
+                  "CeCl3": 0.12924424972617743
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 811.9331742243437,
+                "fractions": {
+                  "CeCl3": 0.18674698795180722
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 804.7732696897375,
+                "fractions": {
+                  "CeCl3": 0.20536692223439218
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 787.112171837709,
+                "fractions": {
+                  "CeCl3": 0.22289156626506024
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 773.7470167064439,
+                "fractions": {
+                  "CeCl3": 0.24096385542168675
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeCl3-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.05,
+              "Ce": 0.95,
+              "Cl": 2.9
+            },
+            "error": 0.1,
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1068.7350835322197,
+                "fractions": {
+                  "CeCl3": 0.8685651697699891
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1038.1861575178998,
+                "fractions": {
+                  "CeCl3": 0.6933187294633077
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 995.2267303102626,
+                "fractions": {
+                  "CeCl3": 0.6144578313253013
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 945.5847255369929,
+                "fractions": {
+                  "CeCl3": 0.5750273822562979
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 917.8997613365156,
+                "fractions": {
+                  "CeCl3": 0.47973713033954
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 914.0811455847256,
+                "fractions": {
+                  "CeCl3": 0.463855421686747
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 881.145584725537,
+                "fractions": {
+                  "CeCl3": 0.4173055859802848
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 863.4844868735083,
+                "fractions": {
+                  "CeCl3": 0.38170865279299016
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 789.9761336515514,
+                "fractions": {
+                  "CeCl3": 0.28860898138006574
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Lu (2019)."
     }
   }
 }

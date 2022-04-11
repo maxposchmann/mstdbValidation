@@ -5223,7 +5223,7 @@
       "mstdb references": [
         "mstdb-19:pelton2001"
       ],
-      "url": "n/a",
+      "url": "Could not be found online",
       "title": "Refinement of the phase diagram of the systems LiCl-MCl sub 2(M double bond Mg, Ca, Sr, Ba, Mn) by directed crystallization",
       "authors": "IF Kravchuk",
       "type": "experiment",
@@ -6057,6 +6057,112 @@
               }
             },
             "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
+    },
+    "orekhova-1984": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "Could not be found online",
+      "title": "Enthalpy of mixing of KMgCl3-LiCl",
+      "authors": "A.I. Orekhova, N.P. Podlesnyak, L.Kh. Kvznetsova, N.A. Krasil\u2019nikova, and T.A. Puzanova",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KMgCl3-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.02,
+              "K": 0.98,
+              "Mg": 0.98,
+              "Cl": 2.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 487.86208934339095,
+                "fractions": {
+                  "LiCl": 0.04954710175691232
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 475.84287980111196,
+                "fractions": {
+                  "LiCl": 0.0988929720109904
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 470.17409496768414,
+                "fractions": {
+                  "LiCl": 0.19970486046250974
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 453.720999738484,
+                "fractions": {
+                  "LiCl": 0.24905667426308514
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 449.93665877590115,
+                "fractions": {
+                  "LiCl": 0.30000008490780705
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 440.1500151135897,
+                "fractions": {
+                  "LiCl": 0.39867272115936503
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "LiCl-KMgCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.9,
+              "K": 0.1,
+              "Mg": 0.1,
+              "Cl": 1.2
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 541.3061198151048,
+                "fractions": {
+                  "LiCl": 0.7990733161932771
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 483.00060793989894,
+                "fractions": {
+                  "LiCl": 0.6994195702306435
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
             "series type": "solubility limits"
           }
         }

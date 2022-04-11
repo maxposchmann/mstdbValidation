@@ -6288,6 +6288,194 @@
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "grube-1924": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/zaac.19241330135",
+      "title": "\u00dcber Doppelsalzbildung im festen Zustand in dem System Lithiumchlorid\u2014Calciumchlorid",
+      "authors": "G. Grube,W. R\u00fcdel",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiCl-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.95,
+              "Ca": 0.05,
+              "Cl": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 603.6181048886226,
+                "fractions": {
+                  "CaCl2": 0.10039137302838408
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 589.2584014173742,
+                "fractions": {
+                  "CaCl2": 0.15072256299282766
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 566.4930893240371,
+                "fractions": {
+                  "CaCl2": 0.23041364767963568
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 559.4923218780697,
+                "fractions": {
+                  "CaCl2": 0.2492897259086666
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 544.104989538157,
+                "fractions": {
+                  "CaCl2": 0.27027200791698236
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 536.3981392487167,
+                "fractions": {
+                  "CaCl2": 0.2996310888048107
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 528.3488680782355,
+                "fractions": {
+                  "CaCl2": 0.3190324972268587
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 507.7475827079693,
+                "fractions": {
+                  "CaCl2": 0.3017608937856408
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "CaCl2-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.05,
+              "Ca": 0.95,
+              "Cl": 1.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 782.6412348799715,
+                "fractions": {
+                  "CaCl2": 0.8984008965201249
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 758.9182429963435,
+                "fractions": {
+                  "CaCl2": 0.8486381699791088
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 734.4968590056081,
+                "fractions": {
+                  "CaCl2": 0.7983521478314157
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 709.7253633974663,
+                "fractions": {
+                  "CaCl2": 0.7491147514834169
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 669.931296088467,
+                "fractions": {
+                  "CaCl2": 0.6988466336955168
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 610.6060544406474,
+                "fractions": {
+                  "CaCl2": 0.5998591252418104
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 588.9800700060468,
+                "fractions": {
+                  "CaCl2": 0.54904573831476
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 574.6731030127339,
+                "fractions": {
+                  "CaCl2": 0.5239051687445218
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 566.3055818469323,
+                "fractions": {
+                  "CaCl2": 0.4987576815807269
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 552.697373186268,
+                "fractions": {
+                  "CaCl2": 0.4736162981759526
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 526.5279946872881,
+                "fractions": {
+                  "CaCl2": 0.4249046389382389
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 518.5098526878106,
+                "fractions": {
+                  "CaCl2": 0.3997567448571762
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

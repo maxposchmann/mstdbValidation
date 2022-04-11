@@ -6362,7 +6362,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "CaCl2-LiCl": {
@@ -6705,6 +6705,116 @@
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "seltveit-1958": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "http://actachemscand.org/pdf/acta_vol_12_p1030-1041.pdf",
+      "title": "Determination of the solidus curve by a tracer technique. The system CaCl2\u2013NaCl",
+      "authors": "A Seltveit, H Flood",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaCl-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.9,
+              "Ca": 0.1,
+              "Cl": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 729.6,
+                "fractions": {
+                  "CaCl2": 0.254
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 703.8,
+                "fractions": {
+                  "CaCl2": 0.308
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 659,
+                "fractions": {
+                  "CaCl2": 0.379
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 632,
+                "fractions": {
+                  "CaCl2": 0.378
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 602.5,
+                "fractions": {
+                  "CaCl2": 0.431
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 590.8,
+                "fractions": {
+                  "CaCl2": 0.44
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 572,
+                "fractions": {
+                  "CaCl2": 0.501
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "CaCl2-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.1,
+              "Ca": 0.9,
+              "Cl": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 695.8,
+                "fractions": {
+                  "CaCl2": 0.6978
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 566.5,
+                "fractions": {
+                  "CaCl2": 0.5485
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

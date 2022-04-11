@@ -31,7 +31,7 @@ def makeNetwork():
     level1   = 0.75
     level2   = 0
     level3   = -0.75
-    leftLim  = -0.95
+    leftLim  = 0
     rightLim = 0.95
 
     compString = 'composition'
@@ -44,8 +44,8 @@ def makeNetwork():
     sourceIndex = -1
     seriesIndex = nExpRef - 1
     sampleIndex = nExpRef + nTestSeries - 1
-    samplePos   = leftLim
     sampleSpace = 0.01
+    samplePos   = leftLim + 5*sampleSpace
     for sourceName in data.data['sources']:
         source = data.data['sources'][sourceName]
         sourceIndex += 1
@@ -191,7 +191,7 @@ def makeNetwork():
     graph.selection_policy = NodesAndLinkedEdges()
     graph.inspection_policy = NodesAndLinkedEdges()
 
-    plot = figure(title="MSTDB Tests", x_range=(-1,1), y_range=(-1,1),
+    plot = figure(title="MSTDB Tests", x_range=(leftLim,samplePos+5*sampleSpace), y_range=(-1,1),
                   tools=["xpan","xzoom_in","xzoom_out"], toolbar_location="right", plot_width=1800, plot_height=600)
     plot.axis.visible = False
     plot.xgrid.visible = False

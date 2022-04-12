@@ -8828,7 +8828,7 @@
       ],
       "url": "https://link.springer.com/article/10.1007/BF01914643",
       "title": "Thermochemical studies on the systems ACl/CeCl3 (A=Na-Cs)",
-      "authors": "H. J. Seifert, J. Sandrock & G. Thiel ",
+      "authors": "H. J. Seifert, J. Sandrock & G. Thiel",
       "type": "experiment",
       "tests": {
         "solubility limits": {
@@ -9371,6 +9371,131 @@
         },
         "comment": "Kelvin and Celcius axis labels are not aligned."
       }
+    },
+    "morozov-1958": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Vzaimodeistvie Khloridov Redkozemelnykh Metallov s Khloridami Shchelochnykh i Shchelochnozemelnykh Metallov",
+      "authors": "IC SUN, IS Morozov",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "MgCl2-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.995,
+              "Ce": 0.005,
+              "Cl": 2.005
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 971.2464589235127,
+                "fractions": {
+                  "CeCl3": 0.0146484375
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 967.7053824362606,
+                "fractions": {
+                  "CeCl3": 0.048828125
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 955.6657223796034,
+                "fractions": {
+                  "CeCl3": 0.1298828125
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 938.6685552407932,
+                "fractions": {
+                  "CeCl3": 0.22607421875
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 937.6062322946175,
+                "fractions": {
+                  "CeCl3": 0.27880859374999994
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "CeCl3-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.05,
+              "Ce": 0.95,
+              "Cl": 2.95
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1032.1529745042492,
+                "fractions": {
+                  "CeCl3": 0.876953125
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 1015.5099150141643,
+                "fractions": {
+                  "CeCl3": 0.67431640625
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 981.8696883852691,
+                "fractions": {
+                  "CeCl3": 0.4912109375
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 947.1671388101983,
+                "fractions": {
+                  "CeCl3": 0.3671875
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 937.6062322946175,
+                "fractions": {
+                  "CeCl3": 0.33740234374999994
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 935.4815864022662,
+                "fractions": {
+                  "CeCl3": 0.3251953125
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Lu (2019)."
     }
   }
 }

@@ -1,6 +1,6 @@
 from bokeh.io import show, output_file
 from bokeh.models import (Circle, MultiLine,
-                          GraphRenderer, StaticLayoutProvider, NodesAndLinkedEdges,
+                          GraphRenderer, StaticLayoutProvider, NodesOnly,
                           Div, Column, Row,
                           HoverTool, TapTool, ZoomInTool, ZoomOutTool, PanTool,
                           CheckboxButtonGroup, CustomJS)
@@ -192,8 +192,8 @@ def makeNetwork():
     graph.edge_renderer.selection_glyph = MultiLine(line_width=5)
     graph.edge_renderer.hover_glyph = MultiLine(line_color=Spectral4[1], line_width=5)
 
-    graph.selection_policy = NodesAndLinkedEdges()
-    graph.inspection_policy = NodesAndLinkedEdges()
+    graph.selection_policy = NodesOnly()
+    graph.inspection_policy = NodesOnly()
 
     plot = figure(title="MSTDB Tests", x_range=(leftLim,samplePos+5*sampleSpace), y_range=(-1,1),
                   tools=["xpan","xzoom_in","xzoom_out"], toolbar_location="right", plot_width=1800, plot_height=600)

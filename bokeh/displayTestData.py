@@ -3,7 +3,7 @@ from bokeh.models import (Circle, MultiLine,
                           GraphRenderer, StaticLayoutProvider, NodesOnly,
                           Div, Column, Row,
                           HoverTool, TapTool, ZoomInTool, ZoomOutTool, PanTool,
-                          CheckboxButtonGroup, CustomJS)
+                          CheckboxButtonGroup, Button)
 from bokeh.layouts import column
 from bokeh.plotting import figure, curdoc
 from bokeh.colors import RGB
@@ -269,6 +269,19 @@ def seriesElementsCallback(active):
     plot = makeNetwork()
     layout.children[1] = plot
 
+def resetFiltersButtonCallback():
+    sampleStatusButtonGroup.active = []
+    seriesStatusButtonGroup.active = []
+    seriesTypeButtonGroup.active = []
+    seriesDatabaseButtonGroup.active = []
+
+def resetElementsButtonCallback():
+    seriesElementsButtonGroup.active = []
+
+def resetAllButtonCallback():
+    resetFiltersButtonCallback()
+    resetElementsButtonCallback()
+
 sampleStatusButtonGroup = CheckboxButtonGroup(labels=sampleStatusOptions, active=[], width = 10)
 sampleStatusButtonGroup.on_click(sampleStatusCallback)
 
@@ -284,6 +297,15 @@ seriesDatabaseButtonGroup.on_click(seriesDatabaseCallback)
 seriesElementsButtonGroup = CheckboxButtonGroup(labels=elementOptions, active=[], width = 10)
 seriesElementsButtonGroup.on_click(seriesElementsCallback)
 
+resetFiltersButton = Button(label="Samples/Series", width = 120)
+resetFiltersButton.on_click(resetFiltersButtonCallback)
+
+resetElementsButton = Button(label="Elements", width = 120)
+resetElementsButton.on_click(resetElementsButtonCallback)
+
+resetAllButton = Button(label="All", width = 120)
+resetAllButton.on_click(resetAllButtonCallback)
+
 buttonRow = Column(
                 Row(
                     Column(Div(text='Sample Status', width = 200),sampleStatusButtonGroup),
@@ -291,7 +313,10 @@ buttonRow = Column(
                     Column(Div(text='Series Type', width = 450),seriesTypeButtonGroup),
                     Column(Div(text='Database'),seriesDatabaseButtonGroup)
                 ),
-                Column(Div(text='Elements'),seriesElementsButtonGroup)
+                Row(
+                    Column(Div(text='Elements', width = 800),seriesElementsButtonGroup),
+                    Column(Div(text='Reset'), Row(resetFiltersButton, resetElementsButton, resetAllButton))
+                )
             )
 
 filename = 'validationData.json'

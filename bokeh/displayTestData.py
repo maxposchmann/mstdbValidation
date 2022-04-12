@@ -64,6 +64,8 @@ def makeNetwork():
                          f"URL: {source['url']}\n" +
                          f"Type: {source['type']}\n"
                          )
+        if "comment" in source.keys():
+            fullDetails[sourceIndex] += f"Comment: {source['comment']}\n"
         # Loop over all associated test series to add nodes and edges
         for testType in source['tests']:
             if testType in ['vapor pressures','solubility limits','heat capacities']:
@@ -84,8 +86,10 @@ def makeNetwork():
                                      f"Type: {testType}\n" +
                                      f"Status: {currentSeries['series status']}\n" +
                                      f"Database: {currentSeries['database']}\n" +
-                                     f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}"
+                                     f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}\n"
                                      )
+                    if "comment" in currentSeries.keys():
+                        fullDetails[seriesIndex] += f"Comment: {currentSeries['comment']}\n"
                     # Create connections from sources to test series
                     edgeStarts.append(sourceIndex)
                     edgeEnds.append(seriesIndex)

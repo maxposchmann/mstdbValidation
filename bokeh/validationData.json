@@ -10246,6 +10246,420 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)."
+    },
+    "romberger-1972": {
+      "mstdb references": [
+        "mstdb-11:benes2009"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j100652a012",
+      "title": "New electrochemical measurements of the liquidus in the lithium fluoride-beryllium fluoride system. Congruency of lithium beryllium fluoride (Li2BeF4)",
+      "authors": "K. A. Romberger, J. Braustein, and R. E. Thoma",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiF-BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.95,
+              "Be": 0.05,
+              "F": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 781.928638009148,
+                "fractions": {
+                  "BeF2": 0.12069510121796
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 780.8415165506927,
+                "fractions": {
+                  "BeF2": 0.1269289012346826
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 768.2512843857711,
+                "fractions": {
+                  "BeF2": 0.1393035981382213
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 765.0961392555982,
+                "fractions": {
+                  "BeF2": 0.1434377874190581
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 750.392360885305,
+                "fractions": {
+                  "BeF2": 0.15995596391642436
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 744.1124189807289,
+                "fractions": {
+                  "BeF2": 0.16406228225828928
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 721.0227395894302,
+                "fractions": {
+                  "BeF2": 0.18778974163639572
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 715.7768095207128,
+                "fractions": {
+                  "BeF2": 0.1929458653462035
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 695.8650365264141,
+                "fractions": {
+                  "BeF2": 0.2094175902786165
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 692.7250655741259,
+                "fractions": {
+                  "BeF2": 0.21147074944954897
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 686.4375365806075,
+                "fractions": {
+                  "BeF2": 0.21661758284636606
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 675.9532635321152,
+                "fractions": {
+                  "BeF2": 0.22588931521102945
+                },
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 660.2496152262038,
+                "fractions": {
+                  "BeF2": 0.2366753685931679
+                },
+                "status": "pass"
+              },
+              "14": {
+                "temperature": 656.0566647157011,
+                "fractions": {
+                  "BeF2": 0.24028001003353805
+                },
+                "status": "pass"
+              },
+              "15": {
+                "temperature": 652.9242808523554,
+                "fractions": {
+                  "BeF2": 0.24129265414951834
+                },
+                "status": "pass"
+              },
+              "16": {
+                "temperature": 645.6027400229782,
+                "fractions": {
+                  "BeF2": 0.24538968217839263
+                },
+                "status": "pass"
+              },
+              "17": {
+                "temperature": 631.9784960221978,
+                "fractions": {
+                  "BeF2": 0.2567145737139884
+                },
+                "status": "fail"
+              },
+              "18": {
+                "temperature": 629.8725369057684,
+                "fractions": {
+                  "BeF2": 0.25981753825286374
+                },
+                "status": "pass"
+              },
+              "19": {
+                "temperature": 625.7364895623335,
+                "fractions": {
+                  "BeF2": 0.25561831678109237
+                },
+                "status": "pass"
+              },
+              "20": {
+                "temperature": 610.0366348008932,
+                "fractions": {
+                  "BeF2": 0.2658841126357547
+                },
+                "status": "pass"
+              },
+              "21": {
+                "temperature": 604.2736988142465,
+                "fractions": {
+                  "BeF2": 0.27051533366159103
+                },
+                "status": "pass"
+              },
+              "22": {
+                "temperature": 594.887927857623,
+                "fractions": {
+                  "BeF2": 0.27199249342710347
+                },
+                "status": "pass"
+              },
+              "23": {
+                "temperature": 580.7770262946826,
+                "fractions": {
+                  "BeF2": 0.27863042205891925
+                },
+                "status": "pass"
+              },
+              "24": {
+                "temperature": 565.6169387179988,
+                "fractions": {
+                  "BeF2": 0.2862995754326963
+                },
+                "status": "pass"
+              },
+              "25": {
+                "temperature": 555.6800199432054,
+                "fractions": {
+                  "BeF2": 0.2919341502615223
+                },
+                "status": "pass"
+              },
+              "26": {
+                "temperature": 538.9575339793198,
+                "fractions": {
+                  "BeF2": 0.2995893681658135
+                },
+                "status": "pass"
+              },
+              "27": {
+                "temperature": 526.9412108993953,
+                "fractions": {
+                  "BeF2": 0.30468510484118216
+                },
+                "status": "pass"
+              },
+              "28": {
+                "temperature": 515.9664867442718,
+                "fractions": {
+                  "BeF2": 0.30979013182954135
+                },
+                "status": "pass"
+              },
+              "29": {
+                "temperature": 512.3246840519391,
+                "fractions": {
+                  "BeF2": 0.30923735820659803
+                },
+                "status": "pass"
+              },
+              "30": {
+                "temperature": 500.30456742754336,
+                "fractions": {
+                  "BeF2": 0.3148533524094427
+                },
+                "status": "pass"
+              },
+              "31": {
+                "temperature": 494.55680561878137,
+                "fractions": {
+                  "BeF2": 0.3174035433253747
+                },
+                "status": "pass"
+              },
+              "32": {
+                "temperature": 483.5896685526003,
+                "fractions": {
+                  "BeF2": 0.32146805525878164
+                },
+                "status": "pass"
+              },
+              "33": {
+                "temperature": 479.41189221998235,
+                "fractions": {
+                  "BeF2": 0.32299166658924744
+                },
+                "status": "pass"
+              },
+              "34": {
+                "temperature": 476.2795083566366,
+                "fractions": {
+                  "BeF2": 0.3240043107052277
+                },
+                "status": "pass"
+              },
+              "35": {
+                "temperature": 468.96934816067295,
+                "fractions": {
+                  "BeF2": 0.32654056615167365
+                },
+                "status": "fail"
+              },
+              "36": {
+                "temperature": 461.6516008757669,
+                "fractions": {
+                  "BeF2": 0.3301173366530719
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "Li2BeF4-BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.665,
+              "Be": 0.335,
+              "F": 1.335
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 455.81658754416776,
+                "fractions": {
+                  "BeF2": 0.34463345070095414
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 456.27669029502954,
+                "fractions": {
+                  "BeF2": 0.3529622162970671
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 454.64600810734646,
+                "fractions": {
+                  "BeF2": 0.36231291632215096
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 453.5702672823048,
+                "fractions": {
+                  "BeF2": 0.3669859437564452
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 452.4983200017342,
+                "fractions": {
+                  "BeF2": 0.37113871366326334
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 450.3658060740066,
+                "fractions": {
+                  "BeF2": 0.37788348089447127
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 446.6595131256639,
+                "fractions": {
+                  "BeF2": 0.38617508523862176
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 443.99102555765114,
+                "fractions": {
+                  "BeF2": 0.39499623742323886
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 422.3840801196593,
+                "fractions": {
+                  "BeF2": 0.4296630403478293
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 408.1745464004682,
+                "fractions": {
+                  "BeF2": 0.4498276646940236
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 392.85512995599504,
+                "fractions": {
+                  "BeF2": 0.47934763422179694
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 379.1208731655504,
+                "fractions": {
+                  "BeF2": 0.5057599940541998
+                },
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 372.8029958162624,
+                "fractions": {
+                  "BeF2": 0.5150688876708257
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "BeF2=LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.25,
+              "Be": 0.75,
+              "F": 1.75
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 437.35286466801074,
+                "fractions": {
+                  "BeF2": 0.5910868737167756
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

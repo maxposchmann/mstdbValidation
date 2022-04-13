@@ -9586,6 +9586,116 @@
         }
       },
       "comment": "No access, data read from Lu (2019)."
+    },
+    "ionov-1960": {
+      "mstdb references": [
+        "mstdb-40:robelin2004"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "V.I Ionov, I.S Morozov, B.G Korshunov",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaCl-FeCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.98,
+              "Fe": 0.02,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 770.1382886776146,
+                "fractions": {
+                  "FeCl2": 0.05373134328358206
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 737.8133102852204,
+                "fractions": {
+                  "FeCl2": 0.1265671641791045
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 671.2618841832325,
+                "fractions": {
+                  "FeCl2": 0.23522388059701485
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 523.8980121002594,
+                "fractions": {
+                  "FeCl2": 0.3367164179104477
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 474.4598098530683,
+                "fractions": {
+                  "FeCl2": 0.3695522388059701
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "FeCl2-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.1,
+              "Fe": 0.9,
+              "Cl": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 622.2990492653414,
+                "fractions": {
+                  "FeCl2": 0.8083582089552239
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 575.2376836646499,
+                "fractions": {
+                  "FeCl2": 0.688955223880597
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 499.1789109766638,
+                "fractions": {
+                  "FeCl2": 0.5820895522388061
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 426.92307692307696,
+                "fractions": {
+                  "FeCl2": 0.5086567164179105
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

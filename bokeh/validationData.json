@@ -9771,7 +9771,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "FeCl2-KCl": {
@@ -9830,7 +9830,7 @@
                 "status": "pass"
               }
             },
-            "series status": "incomplete",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
@@ -9996,6 +9996,168 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)."
+    },
+    "seifert-1982": {
+      "mstdb references": [
+        "mstdb-40:robelin2004"
+      ],
+      "url": "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1029.5498&rep=rep1&type=pdf",
+      "title": "Thermal analysis by EMF-measurements on solid electrolytes",
+      "authors": "H. J. Seifert and G. Thiel",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KCl-NiCl2": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.95,
+              "Ni": 0.05,
+              "Cl": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 727.4510558212205,
+                "fractions": {
+                  "NiCl2": 0.09797491240945033
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 647.2704890866909,
+                "fractions": {
+                  "NiCl2": 0.2019080535959472
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 630.8401590833766,
+                "fractions": {
+                  "NiCl2": 0.20876438142133424
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 602.9517423417451,
+                "fractions": {
+                  "NiCl2": 0.233639653662232
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 585.3377562615406,
+                "fractions": {
+                  "NiCl2": 0.24956278703659857
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 515.7970740021779,
+                "fractions": {
+                  "NiCl2": 0.28299441314331714
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "KCl-KNiCl3": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.55,
+              "Ni": 0.45,
+              "Cl": 1.45
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 635.0104753562804,
+                "fractions": {
+                  "NiCl2": 0.40356975877089163
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 603.3938378864636,
+                "fractions": {
+                  "NiCl2": 0.35675320178968806
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 557.7082642867288,
+                "fractions": {
+                  "NiCl2": 0.3037046955636571
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 515.7970740021779,
+                "fractions": {
+                  "NiCl2": 0.28299441314331714
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "NiCl2-KCl": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.2,
+              "Ni": 0.8,
+              "Cl": 1.8
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 802.8088158704606,
+                "fractions": {
+                  "NiCl2": 0.6054844704322715
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 785.5295085459968,
+                "fractions": {
+                  "NiCl2": 0.586093964537664
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 750.0887742057668,
+                "fractions": {
+                  "NiCl2": 0.5493199895838266
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 694.1358718810661,
+                "fractions": {
+                  "NiCl2": 0.4991692213910327
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

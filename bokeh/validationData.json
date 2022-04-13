@@ -11283,6 +11283,155 @@
           }
         }
       }
+    },
+    "vorobei-1973": {
+      "mstdb references": [
+        "mstdb-20:benes2008"
+      ],
+      "url": "Could not be found online",
+      "title": "Thermographic study of systems containing UCl3, CaCl2, MgCl2",
+      "authors": "Vorobei, M.P. and Desyatnik, V.N. and Skiba, O.V. and Emel'yanov, N.M.",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "UCl3-PuCl3-i": {
+            "database": "chloride",
+            "composition": {
+              "U": 0.92,
+              "Pu": 0.08,
+              "Cl": 3
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1097.5577376629583,
+                "fractions": {
+                  "PuCl3": 0.10027700831024935
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1096.8915929988575,
+                "fractions": {
+                  "PuCl3": 0.15013850415512467
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1087.6857386848847,
+                "fractions": {
+                  "PuCl3": 0.19999999999999998
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1081.8957682308608,
+                "fractions": {
+                  "PuCl3": 0.24986149584487535
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "UCl3-PuCl3-ii": {
+            "database": "chloride",
+            "composition": {
+              "U": 0.72,
+              "Pu": 0.28,
+              "Cl": 3
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1073.031502302883,
+                "fractions": {
+                  "PuCl3": 0.2997229916897507
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1065.192190778533,
+                "fractions": {
+                  "PuCl3": 0.3501385041551247
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1057.3526900085399,
+                "fractions": {
+                  "PuCl3": 0.4
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1047.1186641150045,
+                "fractions": {
+                  "PuCl3": 0.4398891966759003
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "UCl3-PuCl3-iii": {
+            "database": "chloride",
+            "composition": {
+              "U": 0.54,
+              "Pu": 0.46,
+              "Cl": 3
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1038.2509917654488,
+                "fractions": {
+                  "PuCl3": 0.4797783933518006
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1029.390321504692,
+                "fractions": {
+                  "PuCl3": 0.5401662049861495
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1021.8888134534727,
+                "fractions": {
+                  "PuCl3": 0.5795013850415512
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1015.0742670871074,
+                "fractions": {
+                  "PuCl3": 0.6299168975069253
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Benes (2008)."
     }
   }
 }

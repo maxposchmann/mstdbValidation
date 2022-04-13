@@ -1,7 +1,7 @@
 mstdb/
 *.pdf
 *.png
-*.docx
+*.docx*
 *.jpg
 *.jpeg
 *.ti

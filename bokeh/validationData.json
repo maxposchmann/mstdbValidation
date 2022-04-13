@@ -10158,6 +10158,94 @@
           }
         }
       }
+    },
+    "tronina-1969": {
+      "mstdb references": [
+        "mstdb-40:robelin2004"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "E.M Tronina, I.V Vasilkova, M.P Susarev, E.K Smirnova",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaCl-KFeCl3": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.975,
+              "K": 0.025,
+              "Fe": 0.025,
+              "Cl": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 767.4015901055669,
+                "fractions": {
+                  "NaCl": 0.89972144846
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 727.6693816228445,
+                "fractions": {
+                  "NaCl": 0.79947229551
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 689.4691758210272,
+                "fractions": {
+                  "NaCl": 0.70159680638
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 655.8619882050145,
+                "fractions": {
+                  "NaCl": 0.60093896713
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 605.4371544535164,
+                "fractions": {
+                  "NaCl": 0.50088028169
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 521.3734406027552,
+                "fractions": {
+                  "NaCl": 0.40098603122
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 433.2390365684415,
+                "fractions": {
+                  "NaCl": 0.30103014116
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 410.3244742212045,
+                "fractions": {
+                  "NaCl": 0.2606284658
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)."
     }
   }
 }

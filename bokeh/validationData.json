@@ -10660,6 +10660,256 @@
           }
         }
       }
+    },
+    "barton-1960": {
+      "mstdb references": [
+        "mstdb-11:benes2009"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j100832a005",
+      "title": "SOLUBILITY OF PLUTONIUM TRIFLUORIDE IN FUSED-ALKALI FLUORIDE\u2014BERYLLIUM FLUORIDE MIXTURES",
+      "authors": "C. J. Barton",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiF-28.7BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.713,
+              "Be": 0.287,
+              "Pu": 0.03,
+              "F": 1.377
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 651.7821935784145,
+                "fractions": {
+                  "PuF3": 0.012464942655227922
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 603.8698875867017,
+                "fractions": {
+                  "PuF3": 0.008296958520834907
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 554.3669883708153,
+                "fractions": {
+                  "PuF3": 0.005485619903321094
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF-31.9BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.684,
+              "Be": 0.319,
+              "Pu": 0.03,
+              "F": 1.409
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 527.3115832886223,
+                "fractions": {
+                  "PuF3": 0.002373867844049357
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 560.415974453286,
+                "fractions": {
+                  "PuF3": 0.0030041455079503105
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 582.0997821547929,
+                "fractions": {
+                  "PuF3": 0.0038403265247350603
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 604.0036975506958,
+                "fractions": {
+                  "PuF3": 0.0056542368362814755
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 655.6328177017007,
+                "fractions": {
+                  "PuF3": 0.00840935333238562
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF-37.0BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.63,
+              "Be": 0.37,
+              "Pu": 0.03,
+              "F": 1.46
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 661.0030575899984,
+                "fractions": {
+                  "PuF3": 0.0071074953044395475
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 600.1272810720311,
+                "fractions": {
+                  "PuF3": 0.004149247305844584
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 556.2170565686471,
+                "fractions": {
+                  "PuF3": 0.0026083286292412893
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 542.1939662695463,
+                "fractions": {
+                  "PuF3": 0.0022722942666299974
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF-43.7BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.563,
+              "Be": 0.437,
+              "Pu": 0.03,
+              "F": 1.527
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 649.7478942707356,
+                "fractions": {
+                  "PuF3": 0.009620539246865704
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 651.9113492827914,
+                "fractions": {
+                  "PuF3": 0.008580806778946869
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 608.8394732929532,
+                "fractions": {
+                  "PuF3": 0.004778900371481842
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 557.7611071966489,
+                "fractions": {
+                  "PuF3": 0.0030041455079503105
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 568.4061746510921,
+                "fractions": {
+                  "PuF3": 0.0027898491158882717
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 494.8184515536824,
+                "fractions": {
+                  "PuF3": 0.0014872658461041839
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF-48.3BeF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.517,
+              "Be": 0.483,
+              "Pu": 0.03,
+              "F": 1.573
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 655.0727551277658,
+                "fractions": {
+                  "PuF3": 0.00920889350573608
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 604.0770021396665,
+                "fractions": {
+                  "PuF3": 0.004559057727146034
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 555.2937678170875,
+                "fractions": {
+                  "PuF3": 0.0037635928054533386
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

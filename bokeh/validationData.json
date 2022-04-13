@@ -9695,7 +9695,168 @@
             "series type": "solubility limits"
           }
         }
-      }
+      },
+      "comment": "No access, data read from Robelin (2004)."
+    },
+    "bol'shakov-1957": {
+      "mstdb references": [
+        "mstdb-40:robelin2004"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "K.A Bol'shakov, P.I Fedorov, G.D Agashkina",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaCl-NiCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.98,
+              "Ni": 0.02,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 784.4559585492227,
+                "fractions": {
+                  "NiCl2": 0.03727571197150875
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 769.9481865284972,
+                "fractions": {
+                  "NiCl2": 0.062320950861702945
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 757.5129533678755,
+                "fractions": {
+                  "NiCl2": 0.08736825074917245
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 746.1139896373055,
+                "fractions": {
+                  "NiCl2": 0.11002994629041099
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 727.4611398963729,
+                "fractions": {
+                  "NiCl2": 0.130297793496317
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 704.6632124352329,
+                "fractions": {
+                  "NiCl2": 0.16368801035445027
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 672.5388601036268,
+                "fractions": {
+                  "NiCl2": 0.2137753966389256
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 649.7409326424868,
+                "fractions": {
+                  "NiCl2": 0.24239234380732147
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 645.0777202072537,
+                "fractions": {
+                  "NiCl2": 0.25491753949901275
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 616.062176165803,
+                "fractions": {
+                  "NiCl2": 0.2769650578521935
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 588.6010362694299,
+                "fractions": {
+                  "NiCl2": 0.2918542174187245
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "NiCl-NaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.4,
+              "Ni": 0.6,
+              "Cl": 1.6
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 813.9896373056993,
+                "fractions": {
+                  "NiCl2": 0.4973289475311312
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 768.9119170984454,
+                "fractions": {
+                  "NiCl2": 0.44477815425327993
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 704.1450777202072,
+                "fractions": {
+                  "NiCl2": 0.412494177682697
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 638.3419689119169,
+                "fractions": {
+                  "NiCl2": 0.3796125119022593
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 583.9378238341967,
+                "fractions": {
+                  "NiCl2": 0.33600232480492653
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)."
     }
   }
 }

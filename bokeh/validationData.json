@@ -9693,6 +9693,145 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "KCl-FeCl2": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.99,
+              "Fe": 0.01,
+              "Cl": 1.01
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 751.2499999999999,
+                "fractions": {
+                  "FeCl2": 0.030864197530864196
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 739.9999999999999,
+                "fractions": {
+                  "FeCl2": 0.05679012345679013
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 717.4999999999999,
+                "fractions": {
+                  "FeCl2": 0.09135802469135801
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 694.9999999999999,
+                "fractions": {
+                  "FeCl2": 0.13271604938271603
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 657.4999999999999,
+                "fractions": {
+                  "FeCl2": 0.16049382716049382
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 629.375,
+                "fractions": {
+                  "FeCl2": 0.20123456790123456
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 546.25,
+                "fractions": {
+                  "FeCl2": 0.24197530864197536
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 486.87499999999994,
+                "fractions": {
+                  "FeCl2": 0.278395061728395
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 393.75,
+                "fractions": {
+                  "FeCl2": 0.3271604938271605
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "FeCl2-KCl": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.05,
+              "Fe": 0.95,
+              "Cl": 1.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 642.4999999999999,
+                "fractions": {
+                  "FeCl2": 0.9197530864197532
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 621.25,
+                "fractions": {
+                  "FeCl2": 0.8456790123456792
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 588.125,
+                "fractions": {
+                  "FeCl2": 0.7734567901234568
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 540.625,
+                "fractions": {
+                  "FeCl2": 0.7
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 469.37499999999994,
+                "fractions": {
+                  "FeCl2": 0.6370370370370371
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 410.62499999999994,
+                "fractions": {
+                  "FeCl2": 0.5814814814814815
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "incomplete",
+            "series type": "solubility limits"
           }
         }
       },

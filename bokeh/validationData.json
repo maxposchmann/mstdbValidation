@@ -11465,6 +11465,381 @@
         }
       },
       "comment": "It is not clear how the eutectic was determined."
+    },
+    "bjorklund-1959": {
+      "mstdb references": [
+        "mstdb-20:benes2008"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j150580a049",
+      "title": "Phase Equilibria in the Binary Systems PuCl2\u2013NaCl and PuCl2\u2013LiCl",
+      "authors": "C. W. Bjorklund, J. G. Reavis, J. A. Leary, and K. A. Walsh",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "PuCl3-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.02,
+              "Pu": 0.98,
+              "Cl": 2.96
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 759,
+                "fractions": {
+                  "PuCl3": 0.948
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 731,
+                "fractions": {
+                  "PuCl3": 0.833
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 670,
+                "fractions": {
+                  "PuCl3": 0.619
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 622,
+                "fractions": {
+                  "PuCl3": 0.506
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 564,
+                "fractions": {
+                  "PuCl3": 0.396
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 479,
+                "fractions": {
+                  "PuCl3": 0.295
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 469,
+                "fractions": {
+                  "PuCl3": 0.28
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "LiCl-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.995,
+              "Pu": 0.005,
+              "Cl": 1.01
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 604,
+                "fractions": {
+                  "PuCl3": 0.01
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 603,
+                "fractions": {
+                  "PuCl3": 0.011
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 598,
+                "fractions": {
+                  "PuCl3": 0.027
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 595,
+                "fractions": {
+                  "PuCl3": 0.041
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 583,
+                "fractions": {
+                  "PuCl3": 0.065
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 565,
+                "fractions": {
+                  "PuCl3": 0.103
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 530,
+                "fractions": {
+                  "PuCl3": 0.174
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "PuCl3-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.01,
+              "Pu": 0.99,
+              "Cl": 2.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 765,
+                "fractions": {
+                  "PuCl3": 0.976
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 761,
+                "fractions": {
+                  "PuCl3": 0.957
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 755,
+                "fractions": {
+                  "PuCl3": 0.927
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 746,
+                "fractions": {
+                  "PuCl3": 0.896
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 741,
+                "fractions": {
+                  "PuCl3": 0.872
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 734,
+                "fractions": {
+                  "PuCl3": 0.828
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 715,
+                "fractions": {
+                  "PuCl3": 0.787
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 676,
+                "fractions": {
+                  "PuCl3": 0.701
+                },
+                "status": "fail"
+              },
+              "9": {
+                "temperature": 648,
+                "fractions": {
+                  "PuCl3": 0.644
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 624,
+                "fractions": {
+                  "PuCl3": 0.603
+                },
+                "status": "fail"
+              },
+              "11": {
+                "temperature": 617,
+                "fractions": {
+                  "PuCl3": 0.594
+                },
+                "status": "fail"
+              },
+              "12": {
+                "temperature": 587,
+                "fractions": {
+                  "PuCl3": 0.553
+                },
+                "status": "fail"
+              },
+              "13": {
+                "temperature": 579,
+                "fractions": {
+                  "PuCl3": 0.541
+                },
+                "status": "fail"
+              },
+              "14": {
+                "temperature": 562,
+                "fractions": {
+                  "PuCl3": 0.518
+                },
+                "status": "fail"
+              },
+              "15": {
+                "temperature": 556,
+                "fractions": {
+                  "PuCl3": 0.51
+                },
+                "status": "fail"
+              },
+              "16": {
+                "temperature": 549,
+                "fractions": {
+                  "PuCl3": 0.502
+                },
+                "status": "fail"
+              },
+              "17": {
+                "temperature": 550,
+                "fractions": {
+                  "PuCl3": 0.499
+                },
+                "status": "fail"
+              },
+              "18": {
+                "temperature": 541,
+                "fractions": {
+                  "PuCl3": 0.484
+                },
+                "status": "fail"
+              },
+              "19": {
+                "temperature": 534,
+                "fractions": {
+                  "PuCl3": 0.477
+                },
+                "status": "fail"
+              },
+              "20": {
+                "temperature": 511,
+                "fractions": {
+                  "PuCl3": 0.439
+                },
+                "status": "fail"
+              },
+              "21": {
+                "temperature": 466,
+                "fractions": {
+                  "PuCl3": 0.374
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "NaCl-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.99,
+              "Pu": 0.01,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 792,
+                "fractions": {
+                  "PuCl3": 0.025
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 777,
+                "fractions": {
+                  "PuCl3": 0.051
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 751,
+                "fractions": {
+                  "PuCl3": 0.098
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 704,
+                "fractions": {
+                  "PuCl3": 0.156
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 646,
+                "fractions": {
+                  "PuCl3": 0.21
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 541,
+                "fractions": {
+                  "PuCl3": 0.292
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 485,
+                "fractions": {
+                  "PuCl3": 0.332
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

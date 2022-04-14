@@ -11840,6 +11840,186 @@
           }
         }
       }
+    },
+    "desyatnik-1969": {
+      "mstdb references": [
+        "mstdb-20:benes2008"
+      ],
+      "url": "https://link.springer.com/article/10.1007/BF01218787",
+      "title": "Fusibility diagrams of systems based on magnesium and uranium chlorides",
+      "authors": "V. N. Desyatnik, Yu. A. Izmodenov, Yu. T. Mel'nikov, I. F. Nichkov & S. P. Raspopin ",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "MgCl2-UCl3": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.98,
+              "U": 0.02,
+              "Cl": 2.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 711.0181565239479,
+                "fractions": {
+                  "UCl3": 0.051277965509719164
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 706.6322261689377,
+                "fractions": {
+                  "UCl3": 0.08838362308469808
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 705.4468395865024,
+                "fractions": {
+                  "UCl3": 0.1524662332400978
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 702.7253895576615,
+                "fractions": {
+                  "UCl3": 0.19125589238853632
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 689.0426415775521,
+                "fractions": {
+                  "UCl3": 0.2452380210394358
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 682.8959182365494,
+                "fractions": {
+                  "UCl3": 0.2983663891160814
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "UCl3-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.02,
+              "U": 0.98,
+              "Cl": 2.96
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 832.0692345730698,
+                "fractions": {
+                  "UCl3": 0.950349001094248
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 821.8267536342154,
+                "fractions": {
+                  "UCl3": 0.9103128044682488
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 802.2519993108765,
+                "fractions": {
+                  "UCl3": 0.8167484069897823
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 790.967542398444,
+                "fractions": {
+                  "UCl3": 0.7375062547369892
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 783.6149704447141,
+                "fractions": {
+                  "UCl3": 0.7046329446919551
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 781.1939241881778,
+                "fractions": {
+                  "UCl3": 0.6881945257013095
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 769.7764640788471,
+                "fractions": {
+                  "UCl3": 0.6334044996475002
+                },
+                "status": "fail"
+              },
+              "8": {
+                "temperature": 758.2626913096935,
+                "fractions": {
+                  "UCl3": 0.5963211856688174
+                },
+                "status": "fail"
+              },
+              "9": {
+                "temperature": 750.491706115854,
+                "fractions": {
+                  "UCl3": 0.5634484636131595
+                },
+                "status": "fail"
+              },
+              "10": {
+                "temperature": 732.8966532232696,
+                "fractions": {
+                  "UCl3": 0.4905389569421258
+                },
+                "status": "fail"
+              },
+              "11": {
+                "temperature": 722.6931559800578,
+                "fractions": {
+                  "UCl3": 0.44333575780952783
+                },
+                "status": "fail"
+              },
+              "12": {
+                "temperature": 710.7793152393323,
+                "fractions": {
+                  "UCl3": 0.4028803247582924
+                },
+                "status": "fail"
+              },
+              "13": {
+                "temperature": 699.5440730376883,
+                "fractions": {
+                  "UCl3": 0.39151331413744017
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

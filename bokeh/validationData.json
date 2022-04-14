@@ -11847,7 +11847,7 @@
       ],
       "url": "https://link.springer.com/article/10.1007/BF01218787",
       "title": "Fusibility diagrams of systems based on magnesium and uranium chlorides",
-      "authors": "V. N. Desyatnik, Yu. A. Izmodenov, Yu. T. Mel'nikov, I. F. Nichkov & S. P. Raspopin ",
+      "authors": "V. N. Desyatnik, Yu. A. Izmodenov, Yu. T. Mel'nikov, I. F. Nichkov & S. P. Raspopin",
       "type": "experiment",
       "tests": {
         "solubility limits": {
@@ -12016,6 +12016,234 @@
               }
             },
             "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
+    },
+    "johnson-1961": {
+      "mstdb references": [
+        "mstdb-20:benes2008"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j100829a030",
+      "title": "PHASE EQUILIBRIA IN FUSED SALT SYSTEMS: BINARY SYSTEMS OF PLUTONIUM(III) CHLORIDE WITH THE CHLORIDES OF MAGNESIUM, CALCIUM, STRONTIUM AND BARIUM",
+      "authors": "K. W. R. Johnson, Milton Kahn, and J. A. Leary",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "MgCl2-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.95,
+              "Pu": 0.05,
+              "Cl": 2.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 699,
+                "fractions": {
+                  "PuCl3": 0.1
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 683,
+                "fractions": {
+                  "PuCl3": 0.2
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 664,
+                "fractions": {
+                  "PuCl3": 0.3
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "PuCl3-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.05,
+              "U": 0.95,
+              "Cl": 2.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 752,
+                "fractions": {
+                  "PuCl3": 0.91
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 748,
+                "fractions": {
+                  "PuCl3": 0.9
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 731,
+                "fractions": {
+                  "PuCl3": 0.8
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 712,
+                "fractions": {
+                  "PuCl3": 0.7
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 701,
+                "fractions": {
+                  "PuCl3": 0.65
+                },
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 690,
+                "fractions": {
+                  "PuCl3": 0.58
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 680,
+                "fractions": {
+                  "PuCl3": 0.523
+                },
+                "status": "fail"
+              },
+              "8": {
+                "temperature": 674,
+                "fractions": {
+                  "PuCl3": 0.5
+                },
+                "status": "fail"
+              },
+              "9": {
+                "temperature": 671,
+                "fractions": {
+                  "PuCl3": 0.48
+                },
+                "status": "fail"
+              },
+              "10": {
+                "temperature": 651,
+                "fractions": {
+                  "PuCl3": 0.408
+                },
+                "status": "fail"
+              },
+              "11": {
+                "temperature": 652,
+                "fractions": {
+                  "PuCl3": 0.4
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "fail",
+            "series type": "solubility limits"
+          },
+          "CaCl2-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Ca": 0.95,
+              "Pu": 0.05,
+              "Cl": 2.05
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 742,
+                "fractions": {
+                  "PuCl3": 0.091
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 700,
+                "fractions": {
+                  "PuCl3": 0.2
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 660,
+                "fractions": {
+                  "PuCl3": 0.3
+                },
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 619,
+                "fractions": {
+                  "PuCl3": 0.4
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "PuCl3-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Ca": 0.05,
+              "U": 0.95,
+              "Cl": 2.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 747,
+                "fractions": {
+                  "PuCl3": 0.9
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 714,
+                "fractions": {
+                  "PuCl3": 0.75
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 677,
+                "fractions": {
+                  "PuCl3": 0.6
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "fail",
             "series type": "solubility limits"
           }
         }

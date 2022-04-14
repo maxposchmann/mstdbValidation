@@ -11432,6 +11432,39 @@
         }
       },
       "comment": "No access, data read from Benes (2008)."
+    },
+    "taube-1978": {
+      "mstdb references": [
+        "mstdb-20:benes2008"
+      ],
+      "url": "https://inis.iaea.org/collection/NCLCollectionStore/_Public/11/541/11541842.pdf",
+      "title": "Fast reactors using molten chloride salts as fuel",
+      "authors": "M Taube",
+      "type": "unknown",
+      "tests": {
+        "phase transitions": {
+          "NaCl-UCl3 eutectic": {
+            "database": "chloride",
+            "composition": {
+              "Na": 68,
+              "U": 32,
+              "Cl": 164
+            },
+            "error": 10,
+            "target temperature": 793,
+            "phases low": [
+              "NaCl_S1(s)",
+              "UCl3_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          }
+        }
+      },
+      "comment": "It is not clear how the eutectic was determined."
     }
   }
 }

@@ -1,0 +1,3 @@
+Systems with apparently no experimental data:
+
+NaCl-UCl3: MSTDB paper references Benes and Konings (2008) "Thermodynamic evaluation of the NaCl–MgCl2–UCl3–PuCl3 system". For the NaCl-UCl3 system, it points to a report "Fast Reactors Using Molten Chloride Salts as Fuel" for the only datapoint, which is a eutectic transition. However, while this report does contain the cited value, there is no evidence that any experiments were completed to determine it.

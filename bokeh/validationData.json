@@ -12073,7 +12073,7 @@
             "database": "chloride",
             "composition": {
               "Mg": 0.05,
-              "U": 0.95,
+              "Pu": 0.95,
               "Cl": 2.95
             },
             "error": 0.1,
@@ -12087,80 +12087,80 @@
                 "fractions": {
                   "PuCl3": 0.91
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "2": {
                 "temperature": 748,
                 "fractions": {
                   "PuCl3": 0.9
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "3": {
                 "temperature": 731,
                 "fractions": {
                   "PuCl3": 0.8
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "4": {
                 "temperature": 712,
                 "fractions": {
                   "PuCl3": 0.7
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "5": {
                 "temperature": 701,
                 "fractions": {
                   "PuCl3": 0.65
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "6": {
                 "temperature": 690,
                 "fractions": {
                   "PuCl3": 0.58
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "7": {
                 "temperature": 680,
                 "fractions": {
                   "PuCl3": 0.523
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "8": {
                 "temperature": 674,
                 "fractions": {
                   "PuCl3": 0.5
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "9": {
                 "temperature": 671,
                 "fractions": {
                   "PuCl3": 0.48
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "10": {
                 "temperature": 651,
                 "fractions": {
                   "PuCl3": 0.408
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "11": {
                 "temperature": 652,
                 "fractions": {
                   "PuCl3": 0.4
                 },
-                "status": "fail"
+                "status": "pass"
               }
             },
-            "series status": "fail",
+            "series status": "pass",
             "series type": "solubility limits"
           },
           "CaCl2-PuCl3": {
@@ -12212,7 +12212,7 @@
             "database": "chloride",
             "composition": {
               "Ca": 0.05,
-              "U": 0.95,
+              "Pu": 0.95,
               "Cl": 2.95
             },
             "error": 0.1,
@@ -12226,24 +12226,24 @@
                 "fractions": {
                   "PuCl3": 0.9
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "2": {
                 "temperature": 714,
                 "fractions": {
                   "PuCl3": 0.75
                 },
-                "status": "fail"
+                "status": "pass"
               },
               "3": {
                 "temperature": 677,
                 "fractions": {
                   "PuCl3": 0.6
                 },
-                "status": "fail"
+                "status": "pass"
               }
             },
-            "series status": "fail",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }

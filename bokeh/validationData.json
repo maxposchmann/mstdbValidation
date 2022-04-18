@@ -12248,6 +12248,103 @@
           }
         }
       }
+    },
+    "bukhalova-1965": {
+      "mstdb references": [
+        "mstdb-02:benes2008"
+      ],
+      "url": "Could not be found online",
+      "title": "Systems of Fluorides of Sodium, Potassium, and Lanthanum",
+      "authors": "G.A. Bukhalova, E.P. Babaeva, T.M. Khliyan",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KF-LaF3": {
+            "database": "fluoride",
+            "composition": {
+              "K": 0.95,
+              "La": 0.05,
+              "F": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1057.7096483318303,
+                "fractions": {
+                  "LaF3": 0.0988304093567251
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1001.4427412082956,
+                "fractions": {
+                  "LaF3": 0.1502923976608187
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 915.9603246167717,
+                "fractions": {
+                  "LaF3": 0.19883040935672514
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LaF3-KF": {
+            "database": "fluoride",
+            "composition": {
+              "K": 0.55,
+              "La": 0.45,
+              "F": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1020.9197475202883,
+                "fractions": {
+                  "LaF3": 0.3514619883040935
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1023.0838593327321,
+                "fractions": {
+                  "LaF3": 0.3421052631578947
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 986.29395852119,
+                "fractions": {
+                  "LaF3": 0.2994152046783625
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 926.78088367899,
+                "fractions": {
+                  "LaF3": 0.24736842105263152
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Benes (2008)."
     }
   }
 }

@@ -12510,6 +12510,144 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "RbF-LaF3": {
+            "database": "fluoride",
+            "composition": {
+              "Rb": 0.95,
+              "La": 0.05,
+              "F": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1001.1265526562656,
+                "fractions": {
+                  "LaF3": 0.10010483005399862
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 953.135687317508,
+                "fractions": {
+                  "LaF3": 0.15218656786218
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 891.008322506142,
+                "fractions": {
+                  "LaF3": 0.20137455167093732
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "RbF-Rb2LaF5": {
+            "database": "fluoride",
+            "composition": {
+              "Rb": 0.7,
+              "La": 0.3,
+              "F": 1.6
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 941.9529505678139,
+                "fractions": {
+                  "LaF3": 0.2822927036615508
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 931.1452683399345,
+                "fractions": {
+                  "LaF3": 0.2515212859647189
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "RbF-RbLaF4": {
+            "database": "fluoride",
+            "composition": {
+              "Rb": 0.55,
+              "La": 0.45,
+              "F": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1011.4474974602788,
+                "fractions": {
+                  "LaF3": 0.33965956162145805
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 960.3995210414846,
+                "fractions": {
+                  "LaF3": 0.3030721132609093
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LaF3-RbF": {
+            "database": "fluoride",
+            "composition": {
+              "Rb": 0.4,
+              "La": 0.6,
+              "F": 2.2
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1332.016876527421,
+                "fractions": {
+                  "LaF3": 0.4998720184323092
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1094.5779154932707,
+                "fractions": {
+                  "LaF3": 0.38132858202535
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1022.2993527762831,
+                "fractions": {
+                  "LaF3": 0.35148317857318145
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

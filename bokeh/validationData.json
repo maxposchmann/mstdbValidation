@@ -12648,6 +12648,70 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "CsF-LaF3": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 0.775,
+              "La": 0.225,
+              "F": 1.45
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1042.701565493053,
+                "fractions": {
+                  "LaF3": 0.19249582203574858
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 942.7428944562437,
+                "fractions": {
+                  "LaF3": 0.1299255077152962
+                },
+                "status": "fail"
+              }
+            },
+            "comment": "Appropriate La-Cs-F intermediate compounds do not exist in database.",
+            "series status": "incomplete",
+            "series type": "solubility limits"
+          },
+          "LaF3-CsF": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 0.725,
+              "La": 0.275,
+              "F": 1.55
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1044.7312916335889,
+                "fractions": {
+                  "LaF3": 0.3029359588019007
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 1004.9953963941646,
+                "fractions": {
+                  "LaF3": 0.352365465545065
+                },
+                "status": "fail"
+              }
+            },
+            "comment": "Appropriate La-Cs-F intermediate compounds do not exist in database.",
+            "series status": "incomplete",
+            "series type": "solubility limits"
           }
         }
       }

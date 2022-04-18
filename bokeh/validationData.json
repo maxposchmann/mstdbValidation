@@ -12345,6 +12345,88 @@
         }
       },
       "comment": "No access, data read from Benes (2008)."
+    },
+    "abdoun-1997": {
+      "mstdb references": [
+        "mstdb-02:benes2008"
+      ],
+      "url": "https://www.academia.edu/download/32493149/159_MF_LaF3_JPHas_Eq.pdf",
+      "title": "Calorimetric and thermal analysis investigations of the MF-LaF3 mixtures (M= alkali metal)",
+      "authors": "F Abdoun, AT Gaune-Escard, G Hatem",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiF-LaF3": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.95,
+              "La": 0.05,
+              "F": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1078.6973555337904,
+                "fractions": {
+                  "LaF3": 0.09968102073365229
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1057.8354554358473,
+                "fractions": {
+                  "LaF3": 0.14992025518341304
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "LaF3-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.55,
+              "La": 0.45,
+              "F": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1185.651322233105,
+                "fractions": {
+                  "LaF3": 0.23418394471026052
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1145.690499510284,
+                "fractions": {
+                  "LaF3": 0.21238702817650187
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1086.3369245837416,
+                "fractions": {
+                  "LaF3": 0.17889420520999463
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

@@ -13998,6 +13998,304 @@
             },
             "series status": "partial",
             "series type": "heat capacities"
+          },
+          "Cs3LaF6": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 3,
+              "La": 1,
+              "F": 6
+            },
+            "relative error": 0.1,
+            "samples": {
+              "1": {
+                "temperature": 303.0354891933715,
+                "heat capacity": 311.9450223237923,
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 317.9239385523524,
+                "heat capacity": 269.671582341829,
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 330.6479877842569,
+                "heat capacity": 298.15448679189876,
+                "status": "fail"
+              },
+              "4": {
+                "temperature": 346.5776447801269,
+                "heat capacity": 291.28740131927316,
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 366.0224023611638,
+                "heat capacity": 631.3138158141951,
+                "status": "fail"
+              },
+              "6": {
+                "temperature": 376.30535258610973,
+                "heat capacity": 291.68195342577155,
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 393.28851494686353,
+                "heat capacity": 298.9858644448773,
+                "status": "fail"
+              },
+              "8": {
+                "temperature": 407.107061970301,
+                "heat capacity": 270.85523866132417,
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 418.76530810932684,
+                "heat capacity": 306.4025046372685,
+                "status": "fail"
+              },
+              "10": {
+                "temperature": 435.7607681980755,
+                "heat capacity": 292.4710576387679,
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 451.7027229219402,
+                "heat capacity": 264.3686141485359,
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 468.689984525359,
+                "heat capacity": 264.5940724951065,
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 483.5353918363584,
+                "heat capacity": 296.64438557476524,
+                "status": "pass"
+              },
+              "14": {
+                "temperature": 498.4012953606822,
+                "heat capacity": 293.30243529174686,
+                "status": "pass"
+              },
+              "15": {
+                "temperature": 511.1417415632462,
+                "heat capacity": 293.4715290516747,
+                "status": "pass"
+              },
+              "16": {
+                "temperature": 528.1576978653195,
+                "heat capacity": 244.1478186904974,
+                "status": "fail"
+              },
+              "17": {
+                "temperature": 539.8118447616803,
+                "heat capacity": 286.77353733897644,
+                "status": "pass"
+              },
+              "18": {
+                "temperature": 557.8936041566321,
+                "heat capacity": 230.38546545192412,
+                "status": "fail"
+              },
+              "19": {
+                "temperature": 571.6711587534203,
+                "heat capacity": 273.0393663937257,
+                "status": "pass"
+              },
+              "20": {
+                "temperature": 592.9011365150288,
+                "heat capacity": 280.3996419994737,
+                "status": "pass"
+              },
+              "21": {
+                "temperature": 603.5263735024955,
+                "heat capacity": 266.3836481210096,
+                "status": "fail"
+              },
+              "22": {
+                "temperature": 615.2051158548459,
+                "heat capacity": 266.53865073427687,
+                "status": "fail"
+              },
+              "23": {
+                "temperature": 629.0277621209483,
+                "heat capacity": 231.32957227818815,
+                "status": "fail"
+              },
+              "24": {
+                "temperature": 648.1138359688049,
+                "heat capacity": 274.0539289532926,
+                "status": "fail"
+              },
+              "25": {
+                "temperature": 660.8747783846935,
+                "heat capacity": 238.8307593505433,
+                "status": "fail"
+              },
+              "26": {
+                "temperature": 674.6605314668116,
+                "heat capacity": 267.3277549472732,
+                "status": "fail"
+              },
+              "27": {
+                "temperature": 693.7834984986524,
+                "heat capacity": 246.34603756955948,
+                "status": "fail"
+              },
+              "28": {
+                "temperature": 703.3183369372509,
+                "heat capacity": 281.8651212521818,
+                "status": "fail"
+              },
+              "29": {
+                "temperature": 719.2643909037806,
+                "heat capacity": 246.68422508941512,
+                "status": "fail"
+              },
+              "30": {
+                "temperature": 733.0357966365714,
+                "heat capacity": 299.95580504001873,
+                "status": "pass"
+              },
+              "31": {
+                "temperature": 751.107307924861,
+                "heat capacity": 261.2638648343054,
+                "status": "fail"
+              },
+              "32": {
+                "temperature": 766.4999641316267,
+                "heat capacity": 265.007412797152,
+                "status": "fail"
+              },
+              "33": {
+                "temperature": 777.6335072095432,
+                "heat capacity": 289.92995419096314,
+                "status": "fail"
+              },
+              "34": {
+                "temperature": 795.661976449851,
+                "heat capacity": 325.5617670468714,
+                "status": "pass"
+              },
+              "35": {
+                "temperature": 809.4846227159533,
+                "heat capacity": 290.3526885907827,
+                "status": "fail"
+              },
+              "36": {
+                "temperature": 825.430676682483,
+                "heat capacity": 255.17179242801603,
+                "status": "fail"
+              },
+              "37": {
+                "temperature": 841.8850367394626,
+                "heat capacity": 258.92943153752367,
+                "status": "fail"
+              },
+              "38": {
+                "temperature": 857.2879410528906,
+                "heat capacity": 244.97684781903217,
+                "status": "fail"
+              },
+              "39": {
+                "temperature": 867.9029299336948,
+                "heat capacity": 248.65698562190664,
+                "status": "fail"
+              },
+              "40": {
+                "temperature": 883.8161899589052,
+                "heat capacity": 270.10371083942255,
+                "status": "fail"
+              },
+              "41": {
+                "temperature": 901.8569569272078,
+                "heat capacity": 284.50016567772445,
+                "status": "fail"
+              },
+              "42": {
+                "temperature": 912.4862931573393,
+                "heat capacity": 263.40571912672476,
+                "status": "fail"
+              },
+              "43": {
+                "temperature": 930.5352586109718,
+                "heat capacity": 263.6452686199559,
+                "status": "fail"
+              },
+              "44": {
+                "temperature": 944.3374086637494,
+                "heat capacity": 263.8284535265443,
+                "status": "fail"
+              },
+              "45": {
+                "temperature": 959.2135602947357,
+                "heat capacity": 242.79037156218737,
+                "status": "fail"
+              },
+              "46": {
+                "temperature": 971.9273614199778,
+                "heat capacity": 288.96940769359526,
+                "status": "fail"
+              },
+              "47": {
+                "temperature": 987.8631672798451,
+                "heat capacity": 271.4846432121667,
+                "status": "fail"
+              },
+              "48": {
+                "temperature": 1005.9162319761425,
+                "heat capacity": 264.6457400328627,
+                "status": "fail"
+              },
+              "49": {
+                "temperature": 1018.6156857520574,
+                "heat capacity": 335.5993605181443,
+                "status": "fail"
+              },
+              "50": {
+                "temperature": 1033.479539655049,
+                "heat capacity": 335.79663657139326,
+                "status": "fail"
+              },
+              "51": {
+                "temperature": 1051.4670164687075,
+                "heat capacity": 442.2129761526562,
+                "status": "pass"
+              },
+              "52": {
+                "temperature": 1058.8374547802296,
+                "heat capacity": 548.4884042673116,
+                "status": "fail"
+              },
+              "53": {
+                "temperature": 1061.8708943522684,
+                "heat capacity": 810.4334265911043,
+                "status": "fail"
+              },
+              "54": {
+                "temperature": 1068.974881890571,
+                "heat capacity": 1376.808278420562,
+                "status": "fail"
+              },
+              "55": {
+                "temperature": 1070.4957009192553,
+                "heat capacity": 2417.3690035765894,
+                "status": "fail"
+              },
+              "56": {
+                "temperature": 1082.3384129782025,
+                "heat capacity": 301.05256595510673,
+                "status": "fail"
+              },
+              "57": {
+                "temperature": 1086.5606329230677,
+                "heat capacity": 343.57964657696175,
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "heat capacities"
           }
         }
       }

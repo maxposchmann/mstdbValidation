@@ -12424,6 +12424,92 @@
             },
             "series status": "partial",
             "series type": "solubility limits"
+          },
+          "NaF-LaF3": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.95,
+              "La": 0.05,
+              "F": 1.1
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1183.2595217006199,
+                "fractions": {
+                  "LaF3": 0.13597434007096526
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1051.4614703277234,
+                "fractions": {
+                  "LaF3": 0.2517320186906965
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "NaF-NaLaF4": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.55,
+              "La": 0.45,
+              "F": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1047.2099202834365,
+                "fractions": {
+                  "LaF3": 0.3196384379160191
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LaF3-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.3,
+              "La": 0.7,
+              "F": 2.4
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1371.7449069973425,
+                "fractions": {
+                  "LaF3": 0.49886959473435766
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1181.8423383525242,
+                "fractions": {
+                  "LaF3": 0.37908885506224044
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

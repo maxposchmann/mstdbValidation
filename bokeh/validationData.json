@@ -14294,6 +14294,7 @@
                 "status": "fail"
               }
             },
+            "comment": "Appropriate La-Cs-F intermediate compounds do not exist in database.",
             "series status": "partial",
             "series type": "heat capacities"
           }

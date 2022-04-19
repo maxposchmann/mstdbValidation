@@ -14300,6 +14300,180 @@
           }
         }
       }
+    },
+    "il'ichev-1961": {
+      "mstdb references": [
+        "mstdb-40:robelin2004"
+      ],
+      "url": "Could not be found online",
+      "title": "Fusion diagrams of some chloride systems",
+      "authors": "V.A. Il'ichev, A.M. Vladimirova",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "FeCl2-0.25MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.25,
+              "Fe": 0.75,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 681.0176579925651,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.36MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.36282051282051286,
+              "Fe": 0.63717948717,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 682.0631970260223,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.47MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.469871794871795,
+              "Fe": 0.53012820512,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 690.0092936802974,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.57MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.5705128205128206,
+              "Fe": 0.42948717948,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 696.0734200743494,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.67MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.6660256410256411,
+              "Fe": 0.33397435897,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 698.0947955390335,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.76MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.7557692307692307,
+              "Fe": 0.24423076923,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 705.0650557620818,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.84MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.8416666666666668,
+              "Fe": 0.15833333333,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 706.0408921933085,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "FeCl2-0.92MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.9217948717948721,
+              "Fe": 0.0782051282,
+              "Cl": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 709.0381040892194,
+            "phases low": [
+              "SScjsoln",
+              "MSCL"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)."
     }
   }
 }

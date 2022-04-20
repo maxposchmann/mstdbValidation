@@ -14474,6 +14474,171 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)."
+    },
+    "thoma-1959": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j150578a013",
+      "title": "Phase Equilibria in the Fused Salt Systems LiF\u2013ThF4and NaF\u2013ThF4",
+      "authors": "R. E. Thoma, H. Insley, B. S. Landau, H. A. Friedman, and W. R. Grimes",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiF-ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.975,
+              "Th": 0.025,
+              "F": 1.075
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 823,
+                "fractions": {
+                  "ThF4": 0.05
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 778,
+                "fractions": {
+                  "ThF4": 0.1
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 712,
+                "fractions": {
+                  "ThF4": 0.15
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 630,
+                "fractions": {
+                  "ThF4": 0.2
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "7LiF.6ThF4-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.57,
+              "Th": 0.43,
+              "F": 2.29
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 600,
+                "fractions": {
+                  "ThF4": 0.3
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 658,
+                "fractions": {
+                  "ThF4": 0.333
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF.2ThF4-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.35,
+              "Th": 0.65,
+              "F": 2.95
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 810,
+                "fractions": {
+                  "ThF4": 0.465
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 845,
+                "fractions": {
+                  "ThF4": 0.5
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 895,
+                "fractions": {
+                  "ThF4": 0.62
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "ThF4-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.05,
+              "Th": 0.95,
+              "F": 3.85
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 967,
+                "fractions": {
+                  "ThF4": 0.667
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1040,
+                "fractions": {
+                  "ThF4": 0.8
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1062,
+                "fractions": {
+                  "ThF4": 0.9
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

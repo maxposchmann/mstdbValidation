@@ -14867,6 +14867,82 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "5NaF.3UF4-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.627,
+              "U": 0.373,
+              "F": 2.119
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 677,
+                "fractions": {
+                  "UF4": 0.35
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 673,
+                "fractions": {
+                  "UF4": 0.35
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 682,
+                "fractions": {
+                  "UF4": 0.37
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 677,
+                "fractions": {
+                  "UF4": 0.37
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "7NaF.6UF4-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.55,
+              "U": 0.45,
+              "F": 2.35
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 693,
+                "fractions": {
+                  "UF4": 0.385
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 708,
+                "fractions": {
+                  "UF4": 0.4
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

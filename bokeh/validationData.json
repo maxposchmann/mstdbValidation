@@ -14750,6 +14750,126 @@
           }
         }
       }
+    },
+    "barton-1958": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/abs/10.1111/j.1151-2916.1958.tb13520.x",
+      "title": "Phase Equilibria in the Alkali Fluoride-Uranium Tetrafluoride Fused Salt Systems: I, The Systems LiF-UF4 and NaF-UF4",
+      "authors": "C. J. BARTON, H. A. FRIEDMAN, W. R. GRIMES, H. INSLEY, R. E. MOORE, R. E. THOMA",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "LiF-UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.9,
+              "U": 0.1,
+              "F": 1.3
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 525,
+                "fractions": {
+                  "UF4": 0.25
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 503,
+                "fractions": {
+                  "UF4": 0.28
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "7LiF.6UF4-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.56,
+              "U": 0.44,
+              "F": 2.32
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 565,
+                "fractions": {
+                  "UF4": 0.333
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 603,
+                "fractions": {
+                  "UF4": 0.375
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 612,
+                "fractions": {
+                  "UF4": 0.4
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF.4UF4-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.25,
+              "U": 0.75,
+              "F": 3.25
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 683,
+                "fractions": {
+                  "UF4": 0.462
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 718,
+                "fractions": {
+                  "UF4": 0.5
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 804,
+                "fractions": {
+                  "UF4": 0.6
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

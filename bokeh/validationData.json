@@ -14946,6 +14946,96 @@
           }
         }
       }
+    },
+    "weaver-1960": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1960.tb12984.x",
+      "title": "Phase Equilibria in the Systems UF4-ThF4 and Li F-UF4-ThF4",
+      "authors": "C. F. WEAVER, R. E. THOMA, H. INSLEY, H. A. FRIEDMAN",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "ThF4-0.4UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Th": 0.6,
+              "U": 0.4,
+              "F": 4
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 1053.0247715854202,
+            "phases low": [
+              "SSausoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "ThF4-0.5UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Th": 0.5,
+              "U": 0.5,
+              "F": 4
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 1062.6789005062947,
+            "phases low": [
+              "SSausoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "ThF4-0.6UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Th": 0.4,
+              "U": 0.6,
+              "F": 4
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 1051.0352854454811,
+            "phases low": [
+              "SSausoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "ThF4-0.7UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Th": 0.3,
+              "U": 0.7,
+              "F": 4
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 1049.413590425016,
+            "phases low": [
+              "SSausoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          }
+        }
+      },
+      "comment": "The two-phase region is very narrow, so easier to test with only one phase on either side.\nTests fail due to gas predicted stable."
     }
   }
 }

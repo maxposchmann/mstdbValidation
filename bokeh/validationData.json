@@ -15036,6 +15036,141 @@
         }
       },
       "comment": "The two-phase region is very narrow, so easier to test with only one phase on either side.\nTests fail due to gas predicted stable."
+    },
+    "thoma-1960": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j150578a013",
+      "title": "Phase Equilibria in the Fused Salt Systems LiF\u2013ThF4and NaF\u2013ThF4",
+      "authors": "R. E. Thoma, H. Insley, B. S. Landau, H. A. Friedman, and W. R. Grimes",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "ThF4-BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.1,
+              "Th": 0.9,
+              "F": 3.8
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1039.2687714852732,
+                "fractions": {
+                  "ThF4": 0.8521831095554329
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 964.6377231739418,
+                "fractions": {
+                  "ThF4": 0.6806319824341953
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 894.7023422862387,
+                "fractions": {
+                  "ThF4": 0.501804718215217
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 876.9089122837155,
+                "fractions": {
+                  "ThF4": 0.4507178608944316
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 824.8299520590965,
+                "fractions": {
+                  "ThF4": 0.3497091155717565
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 815.2897301959688,
+                "fractions": {
+                  "ThF4": 0.30107746240692324
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 788.0706068040648,
+                "fractions": {
+                  "ThF4": 0.24996197296770117
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 776.7602042185845,
+                "fractions": {
+                  "ThF4": 0.20010987575450107
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 754.9647198615635,
+                "fractions": {
+                  "ThF4": 0.20065120174369605
+                },
+                "status": "pass"
+              },
+              "10": {
+                "temperature": 739.5291448123074,
+                "fractions": {
+                  "ThF4": 0.15017904021559986
+                },
+                "status": "pass"
+              },
+              "11": {
+                "temperature": 725.3934679400801,
+                "fractions": {
+                  "ThF4": 0.1513511675641046
+                },
+                "status": "pass"
+              },
+              "12": {
+                "temperature": 714.7637939704337,
+                "fractions": {
+                  "ThF4": 0.14038327669542405
+                },
+                "status": "pass"
+              },
+              "13": {
+                "temperature": 694.6855209166571,
+                "fractions": {
+                  "ThF4": 0.11966614949902743
+                },
+                "status": "pass"
+              },
+              "14": {
+                "temperature": 691.1065061120623,
+                "fractions": {
+                  "ThF4": 0.10082174179913495
+                },
+                "status": "pass"
+              },
+              "15": {
+                "temperature": 605.5701996911309,
+                "fractions": {
+                  "ThF4": 0.051351704416325306
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

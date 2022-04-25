@@ -15294,6 +15294,98 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "K3CeCl6-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.57,
+              "K": 1.29,
+              "Ce": 0.43,
+              "Cl": 3.15
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 810.3865942191242,
+                "fractions": {
+                  "LiCl": 0.25842273668
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 760.9389694138019,
+                "fractions": {
+                  "LiCl": 0.37111979765
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 747.7468988371573,
+                "fractions": {
+                  "LiCl": 0.42853554383
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "LiCl-K3CeCl6": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.99,
+              "K": 0.03,
+              "Ce": 0.01,
+              "Cl": 1.05
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 851.6250939180886,
+                "fractions": {
+                  "LiCl": 0.88259958071
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 823.4075597219528,
+                "fractions": {
+                  "LiCl": 0.81474182104
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 813.5330989734941,
+                "fractions": {
+                  "LiCl": 0.7806180847
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 782.0275609161431,
+                "fractions": {
+                  "LiCl": 0.69284467713
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 734.5376306767578,
+                "fractions": {
+                  "LiCl": 0.56930542917
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
           }
         }
       },

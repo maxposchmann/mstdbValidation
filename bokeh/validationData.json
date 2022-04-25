@@ -9582,6 +9582,77 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "0.5KMgCl3-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.48,
+              "Mg": 0.48,
+              "Ce": 0.04,
+              "Cl": 3
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 738.3080319251787,
+                "fractions": {
+                  "CeCl3": 0.05890473999079615
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeCl3-0.5KMgCl3": {
+            "database": "chloride",
+            "composition": {
+              "K": 0.02,
+              "Mg": 0.02,
+              "Ce": 0.96,
+              "Cl": 3
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1046.016930317146,
+                "fractions": {
+                  "CeCl3": 0.8591808559595036
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 994.6134945147236,
+                "fractions": {
+                  "CeCl3": 0.6705016106764845
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 839.4784968003196,
+                "fractions": {
+                  "CeCl3": 0.3741371375977913
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 760.8832636895204,
+                "fractions": {
+                  "CeCl3": 0.30280717901518656
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       },

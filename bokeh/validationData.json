@@ -15503,6 +15503,190 @@
         }
       },
       "comment": "No access, data read from Lu (2019) supplementary information."
+    },
+    "chai-1990": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "L. Chai, C.G. Zheng, Y.P. Ye",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "CeCl3_85.2CaCl2-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 10,
+              "Ca": 85.2,
+              "Ce": 14.8,
+              "Cl": 224.8
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 878.6994027869941,
+                "fractions": {
+                  "LiCl": 0.36442615454961136
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 799.867285998673,
+                "fractions": {
+                  "LiCl": 0.5016003657978967
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 748.1088254810884,
+                "fractions": {
+                  "LiCl": 0.5875628715134888
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "LiCl-CeCl3_85.2CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Li": 1000,
+              "Ca": 85.2,
+              "Ce": 14.8,
+              "Cl": 1214.8
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 824.552090245521,
+                "fractions": {
+                  "LiCl": 0.8353909465020577
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 783.9416058394163,
+                "fractions": {
+                  "LiCl": 0.7540009144947416
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 763.2382216323824,
+                "fractions": {
+                  "LiCl": 0.7091906721536351
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CaCl2_84.5LiCl-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 84.5,
+              "Ca": 15.5,
+              "Ce": 10000,
+              "Cl": 30115.5
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 991.7717319177174,
+                "fractions": {
+                  "CeCl3": 0.5994513031550068
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 856.4034505640345,
+                "fractions": {
+                  "CeCl3": 0.3699131229995427
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 789.5155938951561,
+                "fractions": {
+                  "CeCl3": 0.2793781435756745
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeCl3-CaCl2_84.5LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 84.5,
+              "Ca": 15.5,
+              "Ce": 1,
+              "Cl": 118.5
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 807.8301260783014,
+                "fractions": {
+                  "CeCl3": 0.05898491083676269
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 802.2561380225615,
+                "fractions": {
+                  "CeCl3": 0.08641975308641975
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 771.9973457199735,
+                "fractions": {
+                  "CeCl3": 0.1133973479652492
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 762.4419376244194,
+                "fractions": {
+                  "CeCl3": 0.1289437585733882
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 738.9515593895158,
+                "fractions": {
+                  "CeCl3": 0.1678097850937357
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Lu (2019) supplementary information."
     }
   }
 }

@@ -15390,6 +15390,119 @@
         }
       },
       "comment": "No access, data read from Lu (2019) supplementary information."
+    },
+    "kojima-1952": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "T. Kojima",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "K2CeCl5-NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.1,
+              "K": 1.8,
+              "Ce": 0.9,
+              "Cl": 4.6
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 871.1409395973157,
+                "fractions": {
+                  "NaCl": 0.20742358078
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "NaCl-K2CeCl5": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.995,
+              "K": 0.01,
+              "Ce": 0.005,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1065.771812080537,
+                "fractions": {
+                  "NaCl": 0.95945945945
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1051.006711409396,
+                "fractions": {
+                  "NaCl": 0.90563991323
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 1026.8456375838928,
+                "fractions": {
+                  "NaCl": 0.84439834024
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 1012.0805369127519,
+                "fractions": {
+                  "NaCl": 0.78063241106
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 982.55033557047,
+                "fractions": {
+                  "NaCl": 0.69778188539
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 939.5973154362418,
+                "fractions": {
+                  "NaCl": 0.60391822827
+                },
+                "status": "fail"
+              },
+              "7": {
+                "temperature": 883.2214765100673,
+                "fractions": {
+                  "NaCl": 0.49234303215
+                },
+                "status": "fail"
+              },
+              "8": {
+                "temperature": 821.4765100671143,
+                "fractions": {
+                  "NaCl": 0.36170212766
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Lu (2019) supplementary information."
     }
   }
 }

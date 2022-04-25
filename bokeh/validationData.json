@@ -9497,7 +9497,7 @@
       },
       "comment": "No access, data read from Lu (2019)."
     },
-    "korshunov-1960": {
+    "sun-1958": {
       "mstdb references": [
         "mstdb-31:lu2019"
       ],
@@ -15687,6 +15687,97 @@
         }
       },
       "comment": "No access, data read from Lu (2019) supplementary information."
+    },
+    "korshunov-1960": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "TERMICHESKII ANALIZ SISTEM NDCL3-FECL2, FECL2-NACL, FECL2-KCL, FECL2-CSCL I NDCL3-FECL2-KCL",
+      "authors": "B.G. Korshunov, I.S. Morozov, V.I. Ionov",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "CeCl3_20NaCl-CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 20,
+              "Ca": 1,
+              "Ce": 80,
+              "Cl": 261
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 916.9559412550068,
+                "fractions": {
+                  "CaCl2": 0.058823131302566264
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 845.9279038718294,
+                "fractions": {
+                  "CaCl2": 0.20532599533633167
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "CaCl2-CeCl3_20NaCl": {
+            "database": "chloride",
+            "composition": {
+              "Na": 20,
+              "Ca": 2000,
+              "Ce": 80,
+              "Cl": 2260
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1020.5607476635515,
+                "fractions": {
+                  "CaCl2": 0.9054265902924331
+                },
+                "status": "fail"
+              },
+              "2": {
+                "temperature": 960.747663551402,
+                "fractions": {
+                  "CaCl2": 0.7500925965803869
+                },
+                "status": "fail"
+              },
+              "3": {
+                "temperature": 887.5834445927906,
+                "fractions": {
+                  "CaCl2": 0.5790827093574844
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 819.7596795727638,
+                "fractions": {
+                  "CaCl2": 0.5191358062670351
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

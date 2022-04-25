@@ -15849,6 +15849,118 @@
           }
         }
       }
+    },
+    "zheng-1992": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "C.G. Zheng, X.L. Zhang",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "MgCl2_18.1CaCl2-CeCl3": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 81.9,
+              "Ca": 18.1,
+              "Ce": 1,
+              "Cl": 203
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 946.5025200800619,
+                "fractions": {
+                  "CeCl3": 0.028545119705340696
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 934.4958486647944,
+                "fractions": {
+                  "CeCl3": 0.08057090239410682
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 938.8472463650444,
+                "fractions": {
+                  "CeCl3": 0.10865561694290977
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 926.8388834144655,
+                "fractions": {
+                  "CeCl3": 0.15561694290976064
+                },
+                "status": "fail"
+              },
+              "5": {
+                "temperature": 913.1820424150942,
+                "fractions": {
+                  "CeCl3": 0.26703499079189685
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "CeCl3-MgCl2_18.1CaCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 81.9,
+              "Ca": 18.1,
+              "Ce": 1000,
+              "Cl": 3200
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1062.3367053320885,
+                "fractions": {
+                  "CeCl3": 0.8360957642725598
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 1051.6249810855597,
+                "fractions": {
+                  "CeCl3": 0.7651933701657458
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 990.0856962543874,
+                "fractions": {
+                  "CeCl3": 0.5165745856353591
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 922.216993840351,
+                "fractions": {
+                  "CeCl3": 0.3176795580110497
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

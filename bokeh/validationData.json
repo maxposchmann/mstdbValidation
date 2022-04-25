@@ -15171,6 +15171,133 @@
           }
         }
       }
+    },
+    "tian-1998": {
+      "mstdb references": [
+        "mstdb-31:lu2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "S.J. Tian, Q.F. Li, S.X. Liu, C.G. Zheng",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "K2CeCl5-LiCl": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.1,
+              "K": 1.8,
+              "Ce": 0.9,
+              "Cl": 4.6
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 887.3825503355706,
+                "fractions": {
+                  "LiCl": 0.10421539166
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 840.6711409395975,
+                "fractions": {
+                  "LiCl": 0.26937027191
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 789.9328859060404,
+                "fractions": {
+                  "LiCl": 0.40209465135
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiCl-K2CeCl5": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.995,
+              "K": 0.01,
+              "Ce": 0.005,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 875.3020134228191,
+                "fractions": {
+                  "LiCl": 0.95867470214
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 860.0000000000002,
+                "fractions": {
+                  "LiCl": 0.92286767286
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 840.6711409395975,
+                "fractions": {
+                  "LiCl": 0.88878446331
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 835.8389261744969,
+                "fractions": {
+                  "LiCl": 0.87700021201
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 829.3959731543625,
+                "fractions": {
+                  "LiCl": 0.8472654699
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 803.2214765100673,
+                "fractions": {
+                  "LiCl": 0.77626379187
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 782.6845637583895,
+                "fractions": {
+                  "LiCl": 0.71599931953
+                },
+                "status": "pass"
+              },
+              "8": {
+                "temperature": 754.4966442953022,
+                "fractions": {
+                  "LiCl": 0.66201227213
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Lu (2019) supplementary information."
     }
   }
 }

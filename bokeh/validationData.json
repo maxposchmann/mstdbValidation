@@ -15848,7 +15848,8 @@
             "series type": "solubility limits"
           }
         }
-      }
+      },
+      "comment": "No access, data read from Lu (2019) supplementary information."
     },
     "zheng-1992": {
       "mstdb references": [
@@ -16080,7 +16081,102 @@
             "series type": "solubility limits"
           }
         }
-      }
+      },
+      "comment": "No access, data read from Lu (2019) supplementary information."
+    },
+    "einarsrud-1987": {
+      "mstdb references": [
+        "mstdb-28:robelin2004"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0277538700809420",
+      "title": "Structure and stability of solid and molten complexes in the MgCl2-AlCl3 system",
+      "authors": "M.-A. Einarsrud, H. Justnes, E. Rytter, H.A. \u00d8ye",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "MgCl2-AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.9,
+              "Al": 0.1,
+              "Cl": 2.1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 698.7713271931148,
+                "fractions": {
+                  "MgCl2": 0.7992277992277992
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 690.5105786652573,
+                "fractions": {
+                  "MgCl2": 0.6983590733590734
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 673.9381228295333,
+                "fractions": {
+                  "MgCl2": 0.6008687258687258
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 667.1124773516532,
+                "fractions": {
+                  "MgCl2": 0.564189189189189
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 643.1906330212893,
+                "fractions": {
+                  "MgCl2": 0.5014478764478763
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 597.2744130303487,
+                "fractions": {
+                  "MgCl2": 0.43291505791505785
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 476.06093348935514,
+                "fractions": {
+                  "MgCl2": 0.401061776061776
+                },
+                "status": "fail"
+              },
+              "8": {
+                "temperature": 370.49250717197634,
+                "fractions": {
+                  "MgCl2": 0.36389961389961384
+                },
+                "status": "pass"
+              },
+              "9": {
+                "temperature": 251.73873244753122,
+                "fractions": {
+                  "MgCl2": 0.30019305019305015
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)."
     }
   }
 }

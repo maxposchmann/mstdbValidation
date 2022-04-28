@@ -16408,6 +16408,155 @@
         }
       },
       "comment": "No access, data read from Wang (2019)."
+    },
+    "seifert-1993": {
+      "mstdb references": [
+        "mstdb-35:wang2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Ternary chlorides in the systems ACl/BeCl2 (A=Cs-Na, Tl)",
+      "authors": "HJ Seifert, E Spundflasche",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KCl-BeCl2": {
+            "database": "chloride",
+            "composition": {
+              "Be": 0.02,
+              "K": 0.98,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 737.9518072289156,
+                "fractions": {
+                  "BeCl2": 0.10422094841063055
+                },
+                "status": "q"
+              },
+              "2": {
+                "temperature": 665.6626506024097,
+                "fractions": {
+                  "BeCl2": 0.20323084940072955
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 601.8072289156627,
+                "fractions": {
+                  "BeCl2": 0.2522146951537259
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "K2BeCl4-BeCl2": {
+            "database": "chloride",
+            "composition": {
+              "Be": 0.34,
+              "K": 0.66,
+              "Cl": 1.34
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 531.3253012048192,
+                "fractions": {
+                  "BeCl2": 0.351224596143825
+                },
+                "status": "q"
+              },
+              "2": {
+                "temperature": 468.0722891566265,
+                "fractions": {
+                  "BeCl2": 0.4116727462219906
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 424.69879518072287,
+                "fractions": {
+                  "BeCl2": 0.450234497133924
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 382.53012048192767,
+                "fractions": {
+                  "BeCl2": 0.48879624804585736
+                },
+                "status": "fail"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "BeCl2-KCl": {
+            "database": "chloride",
+            "composition": {
+              "Be": 0.98,
+              "K": 0.02,
+              "Cl": 1.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 414.4578313253012,
+                "fractions": {
+                  "BeCl2": 0.9468473163105784
+                },
+                "status": "q"
+              },
+              "2": {
+                "temperature": 412.6506024096385,
+                "fractions": {
+                  "BeCl2": 0.938509640437728
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 406.0240963855421,
+                "fractions": {
+                  "BeCl2": 0.9197498697238145
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 403.61445783132524,
+                "fractions": {
+                  "BeCl2": 0.8926524231370504
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 395.78313253012044,
+                "fractions": {
+                  "BeCl2": 0.8202188639916623
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Wang (2019)."
     }
   }
 }

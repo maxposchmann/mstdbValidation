@@ -16259,6 +16259,137 @@
         }
       },
       "comment": "No access, data read from Robelin (2004)."
+    },
+    "novoselova-1964": {
+      "mstdb references": [
+        "mstdb-35:wang2019"
+      ],
+      "url": "Could not be found online",
+      "title": "Potassium fluoride-beryllium fluoride system",
+      "authors": "A.V. Novoselova, Yu.M. Korenev, M.P. Borzenkova",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "KF-BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.02,
+              "K": 0.98,
+              "F": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 816.3097199341021,
+                "fractions": {
+                  "BeF2": 0.06784492588369434
+                }
+              },
+              "2": {
+                "temperature": 755.6836902800659,
+                "fractions": {
+                  "BeF2": 0.12941847206385398
+                }
+              },
+              "3": {
+                "temperature": 727.3476112026359,
+                "fractions": {
+                  "BeF2": 0.15165336374002286
+                }
+              }
+            }
+          },
+          "K2BeF4-BeF2": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.34,
+              "K": 0.66,
+              "F": 1.34
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 770.840197693575,
+                "fractions": {
+                  "BeF2": 0.3694412770809577
+                }
+              },
+              "2": {
+                "temperature": 741.1861614497528,
+                "fractions": {
+                  "BeF2": 0.40022805017103763
+                }
+              },
+              "3": {
+                "temperature": 691.7627677100494,
+                "fractions": {
+                  "BeF2": 0.43671607753705804
+                }
+              },
+              "4": {
+                "temperature": 503.29489291598014,
+                "fractions": {
+                  "BeF2": 0.4714937286202964
+                }
+              }
+            }
+          },
+          "BeF2-KF": {
+            "database": "fluoride",
+            "composition": {
+              "Be": 0.98,
+              "K": 0.02,
+              "F": 1.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 554.6952224052717,
+                "fractions": {
+                  "BeF2": 0.9486887115165334
+                }
+              },
+              "2": {
+                "temperature": 525.7001647446457,
+                "fractions": {
+                  "BeF2": 0.8939566704675028
+                }
+              },
+              "3": {
+                "temperature": 492.7512355848434,
+                "fractions": {
+                  "BeF2": 0.8511972633979477
+                }
+              },
+              "4": {
+                "temperature": 453.21252059308057,
+                "fractions": {
+                  "BeF2": 0.8061573546180159
+                }
+              },
+              "5": {
+                "temperature": 405.76606260296523,
+                "fractions": {
+                  "BeF2": 0.7537058152793614
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Wang (2019)."
     }
   }
 }

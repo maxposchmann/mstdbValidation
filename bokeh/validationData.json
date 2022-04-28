@@ -16287,21 +16287,26 @@
                 "temperature": 816.3097199341021,
                 "fractions": {
                   "BeF2": 0.06784492588369434
-                }
+                },
+                "status": "pass"
               },
               "2": {
                 "temperature": 755.6836902800659,
                 "fractions": {
                   "BeF2": 0.12941847206385398
-                }
+                },
+                "status": "pass"
               },
               "3": {
                 "temperature": 727.3476112026359,
                 "fractions": {
                   "BeF2": 0.15165336374002286
-                }
+                },
+                "status": "pass"
               }
-            }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           },
           "K2BeF4-BeF2": {
             "database": "fluoride",
@@ -16320,27 +16325,33 @@
                 "temperature": 770.840197693575,
                 "fractions": {
                   "BeF2": 0.3694412770809577
-                }
+                },
+                "status": "pass"
               },
               "2": {
                 "temperature": 741.1861614497528,
                 "fractions": {
                   "BeF2": 0.40022805017103763
-                }
+                },
+                "status": "pass"
               },
               "3": {
                 "temperature": 691.7627677100494,
                 "fractions": {
                   "BeF2": 0.43671607753705804
-                }
+                },
+                "status": "pass"
               },
               "4": {
                 "temperature": 503.29489291598014,
                 "fractions": {
                   "BeF2": 0.4714937286202964
-                }
+                },
+                "status": "fail"
               }
-            }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
           },
           "BeF2-KF": {
             "database": "fluoride",
@@ -16359,33 +16370,40 @@
                 "temperature": 554.6952224052717,
                 "fractions": {
                   "BeF2": 0.9486887115165334
-                }
+                },
+                "status": "pass"
               },
               "2": {
                 "temperature": 525.7001647446457,
                 "fractions": {
                   "BeF2": 0.8939566704675028
-                }
+                },
+                "status": "pass"
               },
               "3": {
                 "temperature": 492.7512355848434,
                 "fractions": {
                   "BeF2": 0.8511972633979477
-                }
+                },
+                "status": "pass"
               },
               "4": {
                 "temperature": 453.21252059308057,
                 "fractions": {
                   "BeF2": 0.8061573546180159
-                }
+                },
+                "status": "pass"
               },
               "5": {
                 "temperature": 405.76606260296523,
                 "fractions": {
                   "BeF2": 0.7537058152793614
-                }
+                },
+                "status": "pass"
               }
-            }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       },

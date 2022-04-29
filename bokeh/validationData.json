@@ -16557,6 +16557,85 @@
         }
       },
       "comment": "No access, data read from Wang (2019). Also, no Be in Chloride database."
+    },
+    "eichelberger-1963": {
+      "mstdb references": [
+        "mstdb-1:capelli2014"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1963.tb11727.x",
+      "title": "Phase Equilibria for the Ternary Fused-Salt System NaF\u2013BeF2\u2013UF4",
+      "authors": "J. F. EICHELBERGER,C. R. HUDGENS,L. V. JONES,G. PISH,T. B. RHINEHAMMER,P. A. TUCKER,L. J. WITTENBERG",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "table-2-c-eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 72.5,
+              "Be": 17,
+              "U": 10.5,
+              "F": 148.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 486,
+            "phases low": [
+              "NaF_solid(s)",
+              "Na2BeF4_S3(s3)",
+              "UNa2F6_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "table-2-f-eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 56,
+              "Be": 43.5,
+              "U": 0.5,
+              "F": 145
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 339,
+            "phases low": [
+              "NaBeF3_S1(s)",
+              "Na2BeF4_S2(s2)",
+              "U6Na7F31_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "table-2-h-eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 43.5,
+              "Be": 56,
+              "U": 0.5,
+              "F": 157.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 345,
+            "phases low": [
+              "NaBeF3_S1(s)",
+              "BeF2_Solid_II_Low_qua(s)",
+              "U6Na7F31_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          }
+        }
+      }
     }
   }
 }

@@ -17560,19 +17560,18 @@
               "La": 0.25,
               "F": 1.55
             },
-            "error": 30,
+            "error": 20,
             "temperature unit": "K",
             "target temperature": 1022,
             "phases low": [
-              "NaF_solid(s)",
               "LaNaF4_S1(s)",
               "MSFL"
             ],
             "phases high": [
               "MSFL"
             ],
-            "series status": "fail",
-            "status": "fail"
+            "series status": "pass",
+            "status": "pass"
           },
           "NaF-CaF2-LaF3-3": {
             "database": "fluoride",
@@ -17608,14 +17607,13 @@
             "target temperature": 1042,
             "phases low": [
               "FLi_solid(s)",
-              "SSaqsoln",
               "MSFL"
             ],
             "phases high": [
               "MSFL"
             ],
-            "series status": "fail",
-            "status": "fail"
+            "series status": "pass",
+            "status": "pass"
           },
           "LiF-CaF2-LaF3-2": {
             "database": "fluoride",

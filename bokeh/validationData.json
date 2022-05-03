@@ -17519,6 +17519,149 @@
           }
         }
       }
+    },
+    "mstdb-11:beilmann2011": {
+      "mstdb references": [
+        "mstdb-11:beilmann2011"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021961411001480",
+      "title": "Thermodynamic investigation of the (LiF + NaF + CaF2 + LaF3) system",
+      "authors": "M. Beilmann, O. Bene\u0161, R.J.M. Konings, Th. Fangh\u00e4nel",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "phase transitions": {
+          "NaF-CaF2-LaF3-1": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.762,
+              "Ca": 0.107,
+              "La": 0.131,
+              "F": 1.369
+            },
+            "error": 30,
+            "temperature unit": "K",
+            "target temperature": 1123,
+            "phases low": [
+              "NaF_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "NaF-CaF2-LaF3-2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.7,
+              "Ca": 0.05,
+              "La": 0.25,
+              "F": 1.55
+            },
+            "error": 30,
+            "temperature unit": "K",
+            "target temperature": 1022,
+            "phases low": [
+              "NaF_solid(s)",
+              "LaNaF4_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "NaF-CaF2-LaF3-3": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.6,
+              "Ca": 0.2,
+              "La": 0.2,
+              "F": 1.6
+            },
+            "error": 30,
+            "temperature unit": "K",
+            "target temperature": 1080,
+            "phases low": [
+              "CaF2_alpha(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LiF-CaF2-LaF3-1": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.809,
+              "Ca": 0.049,
+              "La": 0.142,
+              "F": 1.333
+            },
+            "error": 10,
+            "temperature unit": "K",
+            "target temperature": 1042,
+            "phases low": [
+              "FLi_solid(s)",
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "LiF-CaF2-LaF3-2": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.765,
+              "Ca": 0.103,
+              "La": 0.132,
+              "F": 1.367
+            },
+            "error": 25,
+            "temperature unit": "K",
+            "target temperature": 1038,
+            "phases low": [
+              "FLi_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LiF-CaF2-LaF3-3": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.625,
+              "Ca": 0.205,
+              "La": 0.17,
+              "F": 1.545
+            },
+            "error": 10,
+            "temperature unit": "K",
+            "target temperature": 1011,
+            "phases low": [
+              "SSapsoln",
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          }
+        }
+      }
     }
   }
 }

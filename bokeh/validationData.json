@@ -17301,6 +17301,110 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "NaF-KF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.98,
+              "K": 0.02,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 974.5,
+                "fractions": {
+                  "KF": 0.0505
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 954.6,
+                "fractions": {
+                  "KF": 0.1004
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 913.2,
+                "fractions": {
+                  "KF": 0.1989
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 869.5,
+                "fractions": {
+                  "KF": 0.2996
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 827.8,
+                "fractions": {
+                  "KF": 0.387
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 802.7,
+                "fractions": {
+                  "KF": 0.4369
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "KF-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.05,
+              "K": 0.95,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 830.2,
+                "fractions": {
+                  "KF": 0.9082
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 794.1,
+                "fractions": {
+                  "KF": 0.7974
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 762.0,
+                "fractions": {
+                  "KF": 0.7015
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 756.6,
+                "fractions": {
+                  "KF": 0.6895
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

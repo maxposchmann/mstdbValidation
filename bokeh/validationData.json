@@ -17405,6 +17405,117 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          },
+          "NaF-RbF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.98,
+              "Rb": 0.02,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 974.1,
+                "fractions": {
+                  "RbF": 0.0526
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 951.4,
+                "fractions": {
+                  "RbF": 0.1085
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 919.4,
+                "fractions": {
+                  "RbF": 0.1914
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 873.0,
+                "fractions": {
+                  "RbF": 0.3005
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 841.8,
+                "fractions": {
+                  "RbF": 0.3725
+                },
+                "status": "pass"
+              },
+              "6": {
+                "temperature": 771,
+                "fractions": {
+                  "RbF": 0.5107
+                },
+                "status": "pass"
+              },
+              "7": {
+                "temperature": 723,
+                "fractions": {
+                  "RbF": 0.5994
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "RbF-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.01,
+              "Rb": 0.99,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 787,
+                "fractions": {
+                  "RbF": 0.9798
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 775,
+                "fractions": {
+                  "RbF": 0.9403
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 750,
+                "fractions": {
+                  "RbF": 0.8826
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 708,
+                "fractions": {
+                  "RbF": 0.7711
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
           }
         }
       }

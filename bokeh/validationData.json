@@ -17659,6 +17659,73 @@
             ],
             "series status": "fail",
             "status": "fail"
+          },
+          "LiF-NaF-CaF2-LaF3-1": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.526,
+              "Na": 0.278,
+              "Ca": 0.147,
+              "La": 0.049,
+              "F": 1.245
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 928,
+            "phases low": [
+              "SSamsoln",
+              "CaF2_alpha(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "LiF-NaF-CaF2-LaF3-2": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.65,
+              "Na": 0.22,
+              "Ca": 0.11,
+              "La": 0.02,
+              "F": 1.15
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 983,
+            "phases low": [
+              "SSamsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LiF-NaF-CaF2-LaF3-3": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.408,
+              "Na": 0.393,
+              "Ca": 0.065,
+              "La": 0.134,
+              "F": 1.333
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 868,
+            "phases low": [
+              "LaNaF4_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
           }
         }
       }

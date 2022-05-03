@@ -17194,6 +17194,116 @@
         }
       },
       "comment": "No access, data read from Beilmann (2011)."
+    },
+    "holm-1965": {
+      "mstdb references": [
+        "mstdb-11:beilmann2011"
+      ],
+      "url": "http://actachemscand.org/doi/10.3891/acta.chem.scand.19-0638",
+      "title": "Phase Relations in the Systems NaF-LiF, NaF-KF, and NaF-RbF",
+      "authors": "Holm, Jan L\u00fctzow",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaF-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.07,
+              "Na": 0.93,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 954.9,
+                "fractions": {
+                  "LiF": 0.1
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 908.8,
+                "fractions": {
+                  "LiF": 0.1989
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 858.2,
+                "fractions": {
+                  "LiF": 0.3
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 801,
+                "fractions": {
+                  "LiF": 0.4
+                },
+                "status": "pass"
+              },
+              "5": {
+                "temperature": 732.7,
+                "fractions": {
+                  "LiF": 0.5
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "LiF-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.95,
+              "Na": 0.05,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 806.4,
+                "fractions": {
+                  "LiF": 0.9
+                },
+                "status": "pass"
+              },
+              "2": {
+                "temperature": 760.2,
+                "fractions": {
+                  "LiF": 0.8
+                },
+                "status": "pass"
+              },
+              "3": {
+                "temperature": 705.6,
+                "fractions": {
+                  "LiF": 0.7
+                },
+                "status": "pass"
+              },
+              "4": {
+                "temperature": 672.7,
+                "fractions": {
+                  "LiF": 0.6443
+                },
+                "status": "pass"
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

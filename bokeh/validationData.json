@@ -16985,6 +16985,215 @@
         }
       },
       "comment": "Data read from Chartrand-2001 for convenience."
+    },
+    "svantner-1979": {
+      "mstdb references": [
+        "mstdb-11:beilmann2011"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/crat.19790140319",
+      "title": "Solid solution with fluorite structure in the CaF2 - LaF3 system",
+      "authors": "Dr. M. \u0160vantner, Dr. E. Mariani, Dr. P. P. Fedorov, Dr. B. P. Sobolev",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "LaF3-CaF2-1": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.13818630475,
+              "La": 0.8618136952498459,
+              "F": 2.861813695249846
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1719.6321294625554,
+            "phases low": [
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LaF3-CaF2-2": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.1949413942,
+              "La": 0.8050586057988895,
+              "F": 2.8050586057988895
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1694.4880613529199,
+            "phases low": [
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LaF3-CaF2-3": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.24922887106,
+              "La": 0.7507711289327577,
+              "F": 2.7507711289327577
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1666.4895895526709,
+            "phases low": [
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "LaF3-CaF2-4": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.28747686613,
+              "La": 0.7125231338679827,
+              "F": 2.7125231338679825
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1655.6836957294754,
+            "phases low": [
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "LaF3-CaF2-5": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.30413325108,
+              "La": 0.6958667489204196,
+              "F": 2.6958667489204196
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1642.779338871679,
+            "phases low": [
+              "SSaqsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "CaF2-LaF3-1": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.92843923504,
+              "La": 0.07156076495990132,
+              "F": 2.0715607649599015
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1678.616394848886,
+            "phases low": [
+              "SSapsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "CaF2-LaF3-2": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.869216533,
+              "La": 0.13078346699568172,
+              "F": 2.1307834669956818
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1660.1553890266216,
+            "phases low": [
+              "SSapsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "CaF2-LaF3-3": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.79518815546,
+              "La": 0.20481184454040713,
+              "F": 2.2048118445404072
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1652.4499985941884,
+            "phases low": [
+              "SSapsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "CaF2-LaF3-4": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.71684145589,
+              "La": 0.28315854410857505,
+              "F": 2.283158544108575
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1656.9075786468816,
+            "phases low": [
+              "SSapsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          },
+          "CaF2-LaF3-5": {
+            "database": "fluoride",
+            "composition": {
+              "Ca": 0.6341764343,
+              "La": 0.3658235657001851,
+              "F": 2.365823565700185
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 1637.067003179339,
+            "phases low": [
+              "SSapsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass"
+          }
+        }
+      },
+      "comment": "No access, data read from Beilmann (2011)."
     }
   }
 }

@@ -17727,6 +17727,439 @@
           }
         }
       }
+    },
+    "thoma-1959-iii": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/abs/10.1111/j.1151-2916.1959.tb09137.x",
+      "title": "Phase Equilibria in the Alkali Fluoride-Uranium Tetrafluoride Fused Salt Systems: III, The System NaF–LiF–UF4",
+      "authors": "R. E. THOMA, HERBERT INSLEY, B. S. LANDAU, H. A. FRIEDMAN, W. R. GRIMES",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "5NaF-75LiF-20UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 75,
+              "Na": 5,
+              "U": 20,
+              "F": 160
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 650,
+            "phases low": [
+              "FLi_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "65NaF-9LiF-26UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 9,
+              "Na": 65,
+              "U": 26,
+              "F": 178
+            },
+            "error": 6,
+            "temperature unit": "C",
+            "target temperature": 592,
+            "phases low": [
+              "UNa2F6_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "7NaF-65LiF-28UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 65,
+              "Na": 7,
+              "U": 28,
+              "F": 184
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 465,
+            "phases low": [
+              "FLi_solid(s)",
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "65NaF-5LiF-30UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 5,
+              "Na": 65,
+              "U": 30,
+              "F": 190
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 632,
+            "phases low": [
+              "UNa2F6_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "65NaF-2LiF-33UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 2,
+              "Na": 65,
+              "U": 33,
+              "F": 199
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 661,
+            "phases low": [
+              "U3Na5F17_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "21.7NaF-45LiF-33.3UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 45,
+              "Na": 21.7,
+              "U": 33.3,
+              "F": 199.9
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 499,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "16.7NaF-50LiF-33.3UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 50,
+              "Na": 16.7,
+              "U": 33.3,
+              "F": 199.9
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 518,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "63NaF-3LiF-34UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 3,
+              "Na": 63,
+              "U": 34,
+              "F": 202
+            },
+            "error": 1,
+            "temperature unit": "C",
+            "target temperature": 651,
+            "phases low": [
+              "U3Na5F17_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "63NaF-2LiF-35UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 2,
+              "Na": 63,
+              "U": 35,
+              "F": 205
+            },
+            "error": 2,
+            "temperature unit": "C",
+            "target temperature": 662,
+            "phases low": [
+              "U3Na5F17_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "24.8NaF-40LiF-35.2UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 40,
+              "Na": 24.8,
+              "U": 35.2,
+              "F": 205.6
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 551,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "9.3NaF-55LiF-35.7UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 55,
+              "Na": 9.3,
+              "U": 35.7,
+              "F": 207.1
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 555,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "21.8NaF-32LiF-46.2UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 32,
+              "Na": 21.8,
+              "U": 46.2,
+              "F": 238.6
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 603,
+            "phases low": [
+              "U4F17Li_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "13.8NaF-40LiF-46.2UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 40,
+              "Na": 13.8,
+              "U": 46.2,
+              "F": 238.6
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 642,
+            "phases low": [
+              "U4F17Li_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "18NaF-35LiF-47UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 35,
+              "Na": 18,
+              "U": 47,
+              "F": 241
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 631,
+            "phases low": [
+              "U4F17Li_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "28NaF-25LiF-47UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 25,
+              "Na": 28,
+              "U": 47,
+              "F": 241
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 610,
+            "phases low": [
+              "SSawsoln",
+              "U2NaF9_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "38NaF-15LiF-47UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 15,
+              "Na": 38,
+              "U": 47,
+              "F": 241
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 674,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "30NaF-20LiF-50UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 20,
+              "Na": 30,
+              "U": 50,
+              "F": 250
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 627,
+            "phases low": [
+              "U2NaF9_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "35NaF-15LiF-50UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 15,
+              "Na": 35,
+              "U": 50,
+              "F": 250
+            },
+            "error": 3,
+            "temperature unit": "C",
+            "target temperature": 641,
+            "phases low": [
+              "U2NaF9_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "45NaF-5LiF-50UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 5,
+              "Na": 45,
+              "U": 50,
+              "F": 250
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 656,
+            "phases low": [
+              "SSawsoln",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "15NaF-32LiF-53UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 32,
+              "Na": 15,
+              "U": 53,
+              "F": 259
+            },
+            "error": 6,
+            "temperature unit": "C",
+            "target temperature": 728,
+            "phases low": [
+              "UF4_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "25NaF-22LiF-53UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 22,
+              "Na": 25,
+              "U": 53,
+              "F": 259
+            },
+            "error": 6,
+            "temperature unit": "C",
+            "target temperature": 728,
+            "phases low": [
+              "UF4_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          },
+          "35NaF-10LiF-55UF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 32,
+              "Na": 15,
+              "U": 53,
+              "F": 265
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 713,
+            "phases low": [
+              "UF4_solid(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ]
+          }
+        }
+      }
     }
   }
 }

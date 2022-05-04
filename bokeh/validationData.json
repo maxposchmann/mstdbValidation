@@ -17733,7 +17733,7 @@
         "mstdb-22:benes2010"
       ],
       "url": "https://ceramics.onlinelibrary.wiley.com/doi/abs/10.1111/j.1151-2916.1959.tb09137.x",
-      "title": "Phase Equilibria in the Alkali Fluoride-Uranium Tetrafluoride Fused Salt Systems: III, The System NaF–LiF–UF4",
+      "title": "Phase Equilibria in the Alkali Fluoride-Uranium Tetrafluoride Fused Salt Systems: III, The System NaF\u2013LiF\u2013UF4",
       "authors": "R. E. THOMA, HERBERT INSLEY, B. S. LANDAU, H. A. FRIEDMAN, W. R. GRIMES",
       "type": "experiment",
       "tests": {
@@ -17755,7 +17755,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "65NaF-9LiF-26UF4": {
             "database": "fluoride",
@@ -17774,7 +17776,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "7NaF-65LiF-28UF4": {
             "database": "fluoride",
@@ -17794,7 +17798,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "65NaF-5LiF-30UF4": {
             "database": "fluoride",
@@ -17813,7 +17819,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "65NaF-2LiF-33UF4": {
             "database": "fluoride",
@@ -17832,7 +17840,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "21.7NaF-45LiF-33.3UF4": {
             "database": "fluoride",
@@ -17851,7 +17861,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "16.7NaF-50LiF-33.3UF4": {
             "database": "fluoride",
@@ -17870,7 +17882,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "63NaF-3LiF-34UF4": {
             "database": "fluoride",
@@ -17889,7 +17903,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "63NaF-2LiF-35UF4": {
             "database": "fluoride",
@@ -17908,7 +17924,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "24.8NaF-40LiF-35.2UF4": {
             "database": "fluoride",
@@ -17927,7 +17945,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "9.3NaF-55LiF-35.7UF4": {
             "database": "fluoride",
@@ -17946,7 +17966,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "21.8NaF-32LiF-46.2UF4": {
             "database": "fluoride",
@@ -17965,7 +17987,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "13.8NaF-40LiF-46.2UF4": {
             "database": "fluoride",
@@ -17984,7 +18008,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "18NaF-35LiF-47UF4": {
             "database": "fluoride",
@@ -18003,7 +18029,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "28NaF-25LiF-47UF4": {
             "database": "fluoride",
@@ -18023,7 +18051,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "38NaF-15LiF-47UF4": {
             "database": "fluoride",
@@ -18042,7 +18072,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "30NaF-20LiF-50UF4": {
             "database": "fluoride",
@@ -18061,7 +18093,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "35NaF-15LiF-50UF4": {
             "database": "fluoride",
@@ -18080,7 +18114,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "45NaF-5LiF-50UF4": {
             "database": "fluoride",
@@ -18099,7 +18135,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "15NaF-32LiF-53UF4": {
             "database": "fluoride",
@@ -18118,7 +18156,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "25NaF-22LiF-53UF4": {
             "database": "fluoride",
@@ -18137,7 +18177,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           },
           "35NaF-10LiF-55UF4": {
             "database": "fluoride",
@@ -18156,7 +18198,9 @@
             ],
             "phases high": [
               "MSFL"
-            ]
+            ],
+            "series status": "fail",
+            "status": "fail"
           }
         }
       }

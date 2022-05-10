@@ -18204,6 +18204,86 @@
           }
         }
       }
+    },
+    "thoma-1972": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://doi.org/10.1016/0022-1902(72)80578-5",
+      "title": "High-temperature phase equilibria in lithium-, sodium-, and thorium-fluoride mixtures",
+      "authors": "Roy E. Thoma",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "30LiF-56.5NaF-13.5ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 30,
+              "Na": 56.5,
+              "Th": 13.5,
+              "F": 140.5
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 505,
+            "phases low": [
+              "FLi_solid(s)",
+              "NaF_solid(s)",
+              "ThNa2F6_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "43.5LiF-32.5NaF-24ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 43.5,
+              "Na": 32.5,
+              "Th": 24,
+              "F": 172
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 509,
+            "phases low": [
+              "FLi_solid(s)",
+              "ThNa2F6_S1(s)",
+              "SSaasoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          },
+          "54.5LiF-13.5NaF-32ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 54.5,
+              "Na": 13.5,
+              "Th": 32,
+              "F": 196
+            },
+            "error": 4,
+            "temperature unit": "C",
+            "target temperature": 525,
+            "phases low": [
+              "FLi_solid(s)",
+              "ThF7Li3_S1(s)",
+              "SSaasoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail"
+          }
+        }
+      },
+      "comment": "Calculation finds SSamsoln instead of FLi_solid(s)+NaF_solid(s)."
     }
   }
 }

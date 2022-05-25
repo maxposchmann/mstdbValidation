@@ -329,7 +329,7 @@
             "target temperature": 700,
             "phases low": [
               "FLi_solid(s)",
-              "Li2BeF4(s)",
+              "F4BeLi2_Li2BeF4(s)",
               "U6F31Li7_S1(s)"
             ],
             "phases high": [
@@ -349,7 +349,7 @@
             "error": 20,
             "target temperature": 711,
             "phases low": [
-              "Li2BeF4(s)",
+              "F4BeLi2_Li2BeF4(s)",
               "U6F31Li7_S1(s)"
             ],
             "phases high": [
@@ -369,8 +369,8 @@
             "error": 20,
             "target temperature": 623,
             "phases low": [
-              "Li2BeF4(s)",
-              "BeF2_Solid_I_Hi_quar(s2)",
+              "F4BeLi2_Li2BeF4(s)",
+              "F2Be_Solid_I_Hi_quar(s2)",
               "U6F31Li7_S1(s)"
             ],
             "phases high": [
@@ -390,12 +390,12 @@
             "error": 20,
             "target temperature": 654,
             "phases low": [
-              "BeF2_Solid_I_Hi_quar(s2)",
+              "F2Be_Solid_I_Hi_quar(s2)",
               "U6F31Li7_S1(s)",
               "MSFL"
             ],
             "phases high": [
-              "BeF2_Solid_I_Hi_quar(s2)",
+              "F2Be_Solid_I_Hi_quar(s2)",
               "U4F17Li_S1(s)",
               "MSFL"
             ],
@@ -413,12 +413,12 @@
             "error": 20,
             "target temperature": 756,
             "phases low": [
-              "BeF2_Solid_I_Hi_quar(s2)",
+              "F2Be_Solid_I_Hi_quar(s2)",
               "U4F17Li_S1(s)",
               "MSFL"
             ],
             "phases high": [
-              "BeF2_Solid_I_Hi_quar(s2)",
+              "F2Be_Solid_I_Hi_quar(s2)",
               "UF4_solid(s)",
               "MSFL"
             ],
@@ -841,7 +841,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -864,7 +864,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -930,7 +930,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -996,7 +996,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1040,7 +1040,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1084,7 +1084,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1106,12 +1106,12 @@
             "target temperature": 698,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1151,7 +1151,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1195,7 +1195,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1217,7 +1217,7 @@
             "target temperature": 715,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1239,11 +1239,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1261,7 +1261,7 @@
             "target temperature": 710,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1283,11 +1283,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1305,7 +1305,7 @@
             "target temperature": 712,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1348,7 +1348,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1370,7 +1370,7 @@
             "target temperature": 719,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1392,11 +1392,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1414,12 +1414,12 @@
             "target temperature": 693,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1437,7 +1437,7 @@
             "target temperature": 725,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1459,11 +1459,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1481,12 +1481,12 @@
             "target temperature": 706,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1504,7 +1504,7 @@
             "target temperature": 723,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1526,11 +1526,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "pass",
             "status": "pass"
@@ -1548,12 +1548,12 @@
             "target temperature": 689,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1571,7 +1571,7 @@
             "target temperature": 715,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1593,11 +1593,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1615,7 +1615,7 @@
             "target temperature": 729,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1637,11 +1637,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1659,7 +1659,7 @@
             "target temperature": 719,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1681,11 +1681,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1703,7 +1703,7 @@
             "target temperature": 715,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1725,11 +1725,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1769,7 +1769,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1813,7 +1813,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1835,12 +1835,12 @@
             "target temperature": 703,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1880,7 +1880,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -1902,12 +1902,12 @@
             "target temperature": 697,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -1926,7 +1926,7 @@
             "phases low": [
               "MSFL",
               "SSafsoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1948,12 +1948,12 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSafsoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "comment": "FactSage8.0 does not converge for this composition at 700 K (or any other tested temperature)",
             "series status": "fail",
@@ -1972,7 +1972,7 @@
             "target temperature": 726,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -1993,12 +1993,12 @@
             "target temperature": 721,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)",
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -2016,7 +2016,7 @@
             "target temperature": 722,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -2038,11 +2038,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -2060,7 +2060,7 @@
             "target temperature": 738,
             "phases low": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL"
@@ -2082,11 +2082,11 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -2104,12 +2104,12 @@
             "target temperature": 681,
             "phases low": [
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -2286,7 +2286,7 @@
             "phases high": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
             "status": "fail"
@@ -2326,7 +2326,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -2370,7 +2370,7 @@
             "phases low": [
               "MSFL",
               "SSaesoln",
-              "Li2BeF4(s)"
+              "F4BeLi2_Li2BeF4(s)"
             ],
             "phases high": [
               "MSFL",
@@ -4581,7 +4581,7 @@
             "target temperature": 846.5325936199722,
             "phases low": [
               "NaF_solid(s)",
-              "Na2BeF4_S3(s3)"
+              "Na2F4Be_S3(s3)"
             ],
             "phases high": [
               "MSFL"
@@ -4599,8 +4599,8 @@
             "error": 15,
             "target temperature": 613.5228848821081,
             "phases low": [
-              "BeF2_Solid_I_Hi_quar(s2)",
-              "NaBeF3_S1(s)"
+              "F2Be_Solid_I_Hi_quar(s2)",
+              "NaF3Be_S1(s)"
             ],
             "phases high": [
               "MSFL"
@@ -16581,7 +16581,7 @@
             "target temperature": 486,
             "phases low": [
               "NaF_solid(s)",
-              "Na2BeF4_S3(s3)",
+              "Na2F4Be_S3(s3)",
               "UNa2F6_S1(s)"
             ],
             "phases high": [
@@ -16602,8 +16602,8 @@
             "temperature unit": "C",
             "target temperature": 339,
             "phases low": [
-              "NaBeF3_S1(s)",
-              "Na2BeF4_S2(s2)",
+              "NaF3Be_S1(s)",
+              "Na2F4Be_S2(s2)",
               "U6Na7F31_S1(s)"
             ],
             "phases high": [
@@ -16624,8 +16624,8 @@
             "temperature unit": "C",
             "target temperature": 345,
             "phases low": [
-              "NaBeF3_S1(s)",
-              "BeF2_Solid_II_Low_qua(s)",
+              "NaF3Be_S1(s)",
+              "F2Be_Solid_II_Low_qua(s)",
               "U6Na7F31_S1(s)"
             ],
             "phases high": [

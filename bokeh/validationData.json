@@ -9368,9 +9368,9 @@
             "series status": "partial",
             "series type": "solubility limits"
           }
-        },
-        "comment": "Kelvin and Celcius axis labels are not aligned."
-      }
+        }
+      },
+      "comment": "Kelvin and Celcius axis labels are not aligned."
     },
     "morozov-1958": {
       "mstdb references": [

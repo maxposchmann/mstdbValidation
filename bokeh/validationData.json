@@ -10328,7 +10328,7 @@
       "type": "experiment",
       "tests": {
         "solubility limits": {
-          "LiF-BeF": {
+          "LiF-BeF2": {
             "database": "fluoride",
             "composition": {
               "Li": 0.95,

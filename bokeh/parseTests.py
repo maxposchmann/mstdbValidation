@@ -12,6 +12,7 @@ class jsonTestData:
         self.seriesElementsFilter = []
         self.seriesDatabaseFilter = []
         self.sampleStatusFilter = []
+        self.sourceFilter = []
 
         # Call data filter tool (with empty filters)
         self.filter()
@@ -130,6 +131,8 @@ class jsonTestData:
 
             # Check source filters for source inclusion
             includeSource = True
+            if (sourceName not in self.sourceFilter) and self.sourceFilter:
+                includeSource = False
             if sourceSeries <= 0:
                 includeSource = False
             # if sourceSamples <= 0:

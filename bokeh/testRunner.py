@@ -448,4 +448,18 @@ def runNew():
     with open(outfilename, 'w') as outfile:
         json.dump(fullData.data, outfile, indent=2)
 
+def runSource(sourceName):
+    # Get data
+    data = parseTests.jsonTestData(infilename)
+    fullData = copy.deepcopy(data)
+    data.sourceFilter = [sourceName]
+    data.filter()
+
+    run(data)
+
+    updateDictWithDict(fullData.data, data.data)
+
+    with open(outfilename, 'w') as outfile:
+        json.dump(fullData.data, outfile, indent=2)
+
 runNew()

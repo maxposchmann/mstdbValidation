@@ -449,7 +449,7 @@ def runNew():
         json.dump(fullData.data, outfile, indent=2)
 
 def runSource(sourceNames):
-    # sourceNames is array of type names to include
+    # sourceNames is array of source names to include
     # e.g. ['vorobei-1973','thoma-1959']
     # Get data
     data = parseTests.jsonTestData(infilename)

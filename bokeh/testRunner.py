@@ -362,12 +362,13 @@ infilename  = 'validationData.json'
 outfilename = 'validationData.json'
 
 # Set path to Thermochimica and outputs
-thermopath  = '/media/max/data/thermochimicastuff/thermochimica/bin/RunCalculationList'
-outjsonpath = '/media/max/data/thermochimicastuff/thermochimica/thermoout.json'
+thermopath  = '../thermochimica/bin/RunCalculationList'
+outjsonpath = '../thermochimica/thermoout.json'
 
 # Set MSTDB database paths
-fluoridepath = '/media/max/data/mstdbValidation/mstdb/Models and Documentation/MSTDB-TC_V1.2_Fluorides_8-0.dat'
-chloridepath = '/media/max/data/mstdbValidation/mstdb/Models and Documentation/MSTDB-TC_V1.2_Chlorides_8-0.dat'
+fluoridepath = '../mstdb/Models and Documentation/MSTDB-TC_V1.3_Fluorides_8-0.dat'
+# fluoridepath = '../MSTDB-TC_V1.2_Fluorides_8-0.dat'
+chloridepath = '../mstdb/Models and Documentation/MSTDB-TC_V1.3_Chlorides_8-0.dat'
 
 # Set units
 tunit = 'K'

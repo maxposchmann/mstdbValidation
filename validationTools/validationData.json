@@ -315,7 +315,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "LiF-2LiF.BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -336,7 +336,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "2LiF.BeF2-7LiF.6UF4": {
             "database": "fluoride",
@@ -423,7 +423,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           }
         },
         "solubility limits": {
@@ -848,7 +848,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-02": {
             "database": "fluoride",
@@ -871,7 +871,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-03": {
             "database": "fluoride",
@@ -892,7 +892,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-04": {
             "database": "fluoride",
@@ -914,7 +914,7 @@
               "SSadsoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-05": {
             "database": "fluoride",
@@ -937,7 +937,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-06": {
             "database": "fluoride",
@@ -958,7 +958,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-07": {
             "database": "fluoride",
@@ -1024,7 +1024,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-10": {
             "database": "fluoride",
@@ -1047,7 +1047,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-11": {
             "database": "fluoride",
@@ -1068,7 +1068,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p47-12": {
             "database": "fluoride",
@@ -1114,7 +1114,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-01": {
             "database": "fluoride",
@@ -1135,7 +1135,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-02": {
             "database": "fluoride",
@@ -1158,7 +1158,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-03": {
             "database": "fluoride",
@@ -1179,7 +1179,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-04": {
             "database": "fluoride",
@@ -1202,7 +1202,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-05": {
             "database": "fluoride",
@@ -1223,7 +1223,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-06": {
             "database": "fluoride",
@@ -1267,7 +1267,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-08": {
             "database": "fluoride",
@@ -1290,7 +1290,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-09": {
             "database": "fluoride",
@@ -1311,7 +1311,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-10": {
             "database": "fluoride",
@@ -1355,7 +1355,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-12": {
             "database": "fluoride",
@@ -1399,7 +1399,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p48-14": {
             "database": "fluoride",
@@ -1422,7 +1422,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-01": {
             "database": "fluoride",
@@ -1443,7 +1443,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-02": {
             "database": "fluoride",
@@ -1556,7 +1556,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-07": {
             "database": "fluoride",
@@ -1577,7 +1577,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-08": {
             "database": "fluoride",
@@ -1600,7 +1600,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-09": {
             "database": "fluoride",
@@ -1621,7 +1621,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-10": {
             "database": "fluoride",
@@ -1665,7 +1665,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-12": {
             "database": "fluoride",
@@ -1688,7 +1688,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p49-13": {
             "database": "fluoride",
@@ -1709,7 +1709,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p50-01": {
             "database": "fluoride",
@@ -1732,7 +1732,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p50-02": {
             "database": "fluoride",
@@ -1797,7 +1797,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p50-05": {
             "database": "fluoride",
@@ -1864,7 +1864,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p50-08": {
             "database": "fluoride",
@@ -2001,7 +2001,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-01": {
             "database": "fluoride",
@@ -2045,7 +2045,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-03": {
             "database": "fluoride",
@@ -2112,7 +2112,7 @@
               "F4BeLi2_Li2BeF4(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-06": {
             "database": "fluoride",
@@ -2133,7 +2133,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-07": {
             "database": "fluoride",
@@ -2242,7 +2242,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p51-12": {
             "database": "fluoride",
@@ -2310,7 +2310,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-02": {
             "database": "fluoride",
@@ -2354,7 +2354,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-04": {
             "database": "fluoride",
@@ -2398,7 +2398,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-06": {
             "database": "fluoride",
@@ -2420,7 +2420,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-07": {
             "database": "fluoride",
@@ -2529,7 +2529,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-12": {
             "database": "fluoride",
@@ -2552,7 +2552,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-13": {
             "database": "fluoride",
@@ -2573,7 +2573,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p52-14": {
             "database": "fluoride",
@@ -2596,7 +2596,7 @@
               "U6F31Li7_S1(s)"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-01": {
             "database": "fluoride",
@@ -2617,7 +2617,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-02": {
             "database": "fluoride",
@@ -2684,7 +2684,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-05": {
             "database": "fluoride",
@@ -2752,7 +2752,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-08": {
             "database": "fluoride",
@@ -2775,7 +2775,7 @@
               "SSaesoln"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-09": {
             "database": "fluoride",
@@ -2796,7 +2796,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "table11-p53-10": {
             "database": "fluoride",
@@ -3605,7 +3605,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f16-03": {
             "database": "chloride",
@@ -3707,7 +3707,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f17-03": {
             "database": "chloride",
@@ -3894,7 +3894,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f18-02": {
             "database": "chloride",
@@ -3974,7 +3974,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-02": {
             "database": "chloride",
@@ -4014,7 +4014,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-04": {
             "database": "chloride",
@@ -4034,7 +4034,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-05": {
             "database": "chloride",
@@ -4054,7 +4054,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-06": {
             "database": "chloride",
@@ -4076,7 +4076,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-07": {
             "database": "chloride",
@@ -4098,7 +4098,7 @@
               "MSCL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "robelin2004-f19-08": {
             "database": "chloride",
@@ -15045,7 +15045,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "ThF4-0.5UF4": {
             "database": "fluoride",
@@ -15064,7 +15064,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "ThF4-0.6UF4": {
             "database": "fluoride",
@@ -15083,7 +15083,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "ThF4-0.7UF4": {
             "database": "fluoride",
@@ -15102,7 +15102,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           }
         }
       },
@@ -17094,7 +17094,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "CaF2-LaF3-1": {
             "database": "fluoride",
@@ -17550,7 +17550,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "NaF-CaF2-LaF3-2": {
             "database": "fluoride",
@@ -17656,7 +17656,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "LiF-NaF-CaF2-LaF3-1": {
             "database": "fluoride",
@@ -17679,7 +17679,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "LiF-NaF-CaF2-LaF3-2": {
             "database": "fluoride",
@@ -17723,7 +17723,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           }
         }
       }
@@ -17778,7 +17778,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "7NaF-65LiF-28UF4": {
             "database": "fluoride",
@@ -17884,7 +17884,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "63NaF-3LiF-34UF4": {
             "database": "fluoride",
@@ -17926,7 +17926,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "24.8NaF-40LiF-35.2UF4": {
             "database": "fluoride",
@@ -17947,7 +17947,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "9.3NaF-55LiF-35.7UF4": {
             "database": "fluoride",
@@ -17968,7 +17968,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "21.8NaF-32LiF-46.2UF4": {
             "database": "fluoride",
@@ -17989,7 +17989,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "13.8NaF-40LiF-46.2UF4": {
             "database": "fluoride",
@@ -18010,7 +18010,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "18NaF-35LiF-47UF4": {
             "database": "fluoride",
@@ -18031,7 +18031,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "28NaF-25LiF-47UF4": {
             "database": "fluoride",
@@ -18137,7 +18137,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "15NaF-32LiF-53UF4": {
             "database": "fluoride",
@@ -18158,7 +18158,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "25NaF-22LiF-53UF4": {
             "database": "fluoride",
@@ -18179,7 +18179,7 @@
               "MSFL"
             ],
             "series status": "fail",
-            "status": "fail"
+            "status": "pass"
           },
           "35NaF-10LiF-55UF4": {
             "database": "fluoride",

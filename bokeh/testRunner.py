@@ -448,11 +448,13 @@ def runNew():
     with open(outfilename, 'w') as outfile:
         json.dump(fullData.data, outfile, indent=2)
 
-def runSource(sourceName):
+def runSource(sourceNames):
+    # sourceNames is array of type names to include
+    # e.g. ['vorobei-1973','thoma-1959']
     # Get data
     data = parseTests.jsonTestData(infilename)
     fullData = copy.deepcopy(data)
-    data.sourceFilter = [sourceName]
+    data.sourceFilter = sourceNames
     data.filter()
 
     run(data)
@@ -462,4 +464,24 @@ def runSource(sourceName):
     with open(outfilename, 'w') as outfile:
         json.dump(fullData.data, outfile, indent=2)
 
-runNew()
+def runTestType(testTypes):
+    # testTypes is array of type names to include
+    # e.g. ['phase transitions','heat capacities']
+    # Set in/out-put names
+    infilename  = 'validationData.json'
+    outfilename = 'phaseTransitions.json'
+    # Get data
+    data = parseTests.jsonTestData(infilename)
+    fullData = copy.deepcopy(data)
+    data.seriesTypeFilter = testTypes
+    data.filter()
+
+    run(data)
+
+    # updateDictWithDict(fullData.data, data.data)
+
+    with open(outfilename, 'w') as outfile:
+        json.dump(fullData.data, outfile, indent=2)
+
+
+runTestType(['phase transitions'])

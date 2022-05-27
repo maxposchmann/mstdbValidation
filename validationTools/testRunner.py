@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../optima/python')
+import findTransition
 import json
 import parseTests
 import subprocess
@@ -210,6 +213,55 @@ def runPhaseTransitions(series,name):
             except KeyError:
                 print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
+
+def runPhaseTransitionsOptima(series,name):
+    if series['database'] == 'fluoride':
+        datapath = fluoridepath
+    elif series['database'] == 'chloride':
+        datapath = chloridepath
+    else:
+        print('database not recognized')
+        return
+    elements = list(series['composition'].keys())
+    nElements = len(elements)
+    target = series['target temperature']
+    err = series['error']
+    plo = series['phases low']
+    phi = series['phases high']
+    phaseMolTol = 1e-6
+    # Check for alternative units
+    if "temperature unit" in series.keys():
+        tseriesunit = series["temperature unit"]
+    else:
+        tseriesunit = tunit
+    transitionTest = findTransition.transitionFinder(datapath)
+    for phase in plo + phi:
+        if '(s' in phase or '(l' in phase:
+            transitionTest.transitionStoichiometricPhases.append(phase)
+        else:
+            transitionTest.transitionSolutionPhases.append(phase)
+    transitionTest.targetTemperature = target
+    for element in elements:
+        transitionTest.targetComposition[element] = series['composition'][element]
+    transitionTest.thermochimica_path = '../thermochimica'
+    transitionTest.tempRange = 30
+    transitionTest.tunit = tseriesunit
+    transitionTest.maxIts = 100
+    transitionTest.findTransition()
+    print(f'Temperature: {transitionTest.bestBeta[0]}')
+    i = 0
+    for element in transitionTest.targetComposition.keys():
+        i += 1
+        print(f'{element}: {transitionTest.bestBeta[i]*transitionTest.totalMass}')
+    print()
+    print(transitionTest.bestNorm)
+    print(transitionTest.tol)
+
+    # If it converged within set bounds, it passed
+    if transitionTest.bestNorm < transitionTest.tol:
+        series['status'] = 'pass'
+    else:
+        series['status'] = 'fail'
 
 def runSolubilityLimits(series,name):
     inputScript = f'solubilityLimits/{name}.ti'

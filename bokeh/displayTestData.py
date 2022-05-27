@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../validationTools')
 from bokeh.io import show, output_file
 from bokeh.models import (Circle, MultiLine,
                           GraphRenderer, StaticLayoutProvider, NodesOnly,
@@ -319,7 +321,7 @@ buttonRow = Column(
                 )
             )
 
-filename = 'validationData.json'
+filename = '../validationTools/validationData.json'
 data = parseTests.jsonTestData(filename)
 
 div=Div(text='')

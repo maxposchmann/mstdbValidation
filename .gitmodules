@@ -1,3 +1,6 @@
 [submodule "thermochimica"]
 	path = thermochimica
 	url = https://github.com/ORNL-CEES/thermochimica.git
+[submodule "optima"]
+	path = optima
+	url = https://github.com/maxposchmann/Optima.git

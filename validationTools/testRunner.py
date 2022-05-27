@@ -248,14 +248,9 @@ def runPhaseTransitionsOptima(series,name):
     transitionTest.tunit = tseriesunit
     transitionTest.maxIts = 100
     transitionTest.findTransition()
-    print(f'Temperature: {transitionTest.bestBeta[0]}')
     i = 0
     for element in transitionTest.targetComposition.keys():
         i += 1
-        print(f'{element}: {transitionTest.bestBeta[i]*transitionTest.totalMass}')
-    print()
-    print(transitionTest.bestNorm)
-    print(transitionTest.tol)
 
     # If it converged within set bounds, it passed
     if transitionTest.bestNorm < transitionTest.tol:
@@ -468,6 +463,9 @@ def run(data):
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
                 elif testType == 'phase transitions':
                     runPhaseTransitions(currentSeries,name)
+                    if currentSeries['status'] == 'fail':
+                        print('First attempt failed, retrying with Optima')
+                        runPhaseTransitionsOptima(currentSeries,name)
                     print(currentSeries['status'])
                 elif testType in ['solubility limits']:
                     runSolubilityLimits(currentSeries,name)
@@ -477,6 +475,7 @@ def run(data):
                     runHeatCapacities(currentSeries,name)
                     for sample in currentSeries['samples']:
                         print(f"{sample}: {currentSeries['samples'][sample]['status']}")
+                print()
 
 def runAll():
     # Get data
@@ -522,10 +521,10 @@ def runTestType(testTypes):
     # e.g. ['phase transitions','heat capacities']
     # Set in/out-put names
     infilename  = 'validationData.json'
-    outfilename = 'phaseTransitions.json'
+    outfilename = 'phaseTransitions-hybrid.json'
     # Get data
     data = parseTests.jsonTestData(infilename)
-    fullData = copy.deepcopy(data)
+    # fullData = copy.deepcopy(data)
     data.seriesTypeFilter = testTypes
     data.filter()
 
@@ -534,7 +533,7 @@ def runTestType(testTypes):
     # updateDictWithDict(fullData.data, data.data)
 
     with open(outfilename, 'w') as outfile:
-        json.dump(fullData.data, outfile, indent=2)
+        json.dump(data.data, outfile, indent=2)
 
 
-runTestType(['phase transitions'])
+runNew()

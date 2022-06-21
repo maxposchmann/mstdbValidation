@@ -6,6 +6,7 @@ import parseTests
 import subprocess
 import copy
 import collections.abc
+import numpy as np
 
 def runVaporPressures(series,name):
     inputScript = f'vaporPressures/{name}.ti'
@@ -69,6 +70,9 @@ def runVaporPressures(series,name):
                 adjustedTotal -= o[species]['mole fraction']*press
         except:
             pass
+        # Create a results dict
+        s['results'] = dict()
+        # Loop over species
         sampleStatus = 'pass'
         for species in s['partial pressures']:
             try:
@@ -78,8 +82,11 @@ def runVaporPressures(series,name):
                 calculated = o[species]['mole fraction']*press / adjustedTotal
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
+                # Save result
+                s['results'][species] = calculated / vaporPressureScale
             except KeyError:
                 sampleStatus = 'fail'
+                s['results'][species] = 'Species not found'
         s['status'] = sampleStatus
 
 def runPhaseTransitions(series,name):
@@ -127,16 +134,19 @@ def runPhaseTransitions(series,name):
     except:
         print('Failed to open Thermochimica output file')
         series['status'] = 'fail'
+        series['results'] = 'no Thermochimica output'
         return
     # Check output against experiment
     # Low temperature check
     series['status'] = 'pass'
+    series['results'] = f'Transition found between {target - err} {tseriesunit} and {target + err} {tseriesunit} at original composition'
+
     # Check if run converged
     try:
         out["1"]["solution phases"].keys()
     except KeyError:
-        print('Low temperature run did not converge')
         series['status'] = 'fail'
+        series['results'] = 'Low temperature run did not converge'
         return
     for phase in out["1"]["solution phases"].keys():
         p = out["1"]["solution phases"][phase]
@@ -144,41 +154,48 @@ def runPhaseTransitions(series,name):
         if phase in plo:
             if p['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at low T check'
         # Otherwise, should have zero
         else:
             if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
+                series['results'] = f'Extraneous phase {phase} present at low T check'
     for phase in out["1"]["pure condensed phases"].keys():
         p = out["1"]["pure condensed phases"][phase]
         # If phase is supposed to be there, make sure it has non-zero moles
         if phase in plo:
             if p['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at low T check'
         # Otherwise, should have zero
         else:
             if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
+                series['results'] = f'Extraneous phase {phase} present at low T check'
     # Now reverse: if it is supposed to be there, ensure it is
     for phase in plo:
         try:
             if out["1"]["solution phases"][phase]['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at low T check'
         except KeyError:
             # If not in solution phases, check pure condensed
             try:
                 if out["1"]["pure condensed phases"][phase]['moles'] <= 0.0:
                     series['status'] = 'fail'
+                    series['results'] = f'Required phase {phase} missing at low T check'
             except KeyError:
-                print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} not found in Thermochimica output'
+
 
     # High temperature check
     # Check if run converged
     try:
         out["2"]["solution phases"].keys()
     except KeyError:
-        print('High temperature run did not converge')
         series['status'] = 'fail'
+        series['results'] = 'High temperature run did not converge'
         return
     for phase in out["2"]["solution phases"].keys():
         p = out["2"]["solution phases"][phase]
@@ -186,33 +203,40 @@ def runPhaseTransitions(series,name):
         if phase in phi:
             if p['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at high T check'
         # Otherwise, should have zero
         else:
             if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
+                series['results'] = f'Extraneous phase {phase} present at high T check'
     for phase in out["2"]["pure condensed phases"].keys():
         p = out["2"]["pure condensed phases"][phase]
         # If phase is supposed to be there, make sure it has non-zero moles
         if phase in phi:
             if p['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at high T check'
         # Otherwise, should have zero
         else:
             if p['moles'] > phaseMolTol:
                 series['status'] = 'fail'
+                series['results'] = f'Extraneous phase {phase} present at high T check'
     # Now reverse: if it is supposed to be there, ensure it is
     for phase in phi:
         try:
             if out["2"]["solution phases"][phase]['moles'] <= 0.0:
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} missing at high T check'
         except KeyError:
             # If not in solution phases, check pure condensed
             try:
                 if out["2"]["pure condensed phases"][phase]['moles'] <= 0.0:
                     series['status'] = 'fail'
+                    series['results'] = f'Required phase {phase} missing at high T check'
             except KeyError:
                 print(f'Phase {phase} not found in Thermochimica output')
                 series['status'] = 'fail'
+                series['results'] = f'Required phase {phase} not found in Thermochimica output'
 
 def runPhaseTransitionsOptima(series,name):
     if series['database'] == 'fluoride':
@@ -236,6 +260,7 @@ def runPhaseTransitionsOptima(series,name):
         tseriesunit = tunit
     transitionTest = findTransition.transitionFinder(datapath)
     for phase in plo + phi:
+        # Detect stoichiometric phases (liable to break)
         if '(s' in phase or '(l' in phase:
             transitionTest.transitionStoichiometricPhases.append(phase)
         else:
@@ -248,9 +273,21 @@ def runPhaseTransitionsOptima(series,name):
     transitionTest.tunit = tseriesunit
     transitionTest.maxIts = 100
     transitionTest.findTransition()
+
+    # Check for bad output
+    if transitionTest.bestNorm == np.Infinity:
+        series['status'] = 'fail'
+        series['results'] = 'Attempt to find transition with Optima failed'
+        return
+
+    # Create a results dict
+    series['results'] = dict()
     i = 0
+    series['results']['temperature'] = transitionTest.bestBeta[i]
     for element in transitionTest.targetComposition.keys():
         i += 1
+        series['results'][element] = transitionTest.bestBeta[i]
+    series['results']['norm'] = transitionTest.bestNorm
 
     # If it converged within set bounds, it passed
     if transitionTest.bestNorm < transitionTest.tol:
@@ -306,15 +343,20 @@ def runSolubilityLimits(series,name):
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
+        # Create a results dict
+        s['results'] = dict()
         try:
             o = out[sample]['solution phases'][phase][fracType]
         except KeyError:
             s['status'] = 'fail'
+            s['results'] = 'phase not found'
             continue
         s['status'] = 'pass'
         # Make sure phase is stable
         if out[sample]['solution phases'][phase]['moles'] <= 0.0:
             s['status'] = 'fail'
+            s['results'] = 'phase not stable'
+            continue
         # Calculate adjusted total pairs for multiple coordination cases
         multipleCoordPairs = ['Al2Cl6','Pu2Cl6','Be2F4']
         totalPairs = 1
@@ -335,10 +377,12 @@ def runSolubilityLimits(series,name):
                 if species == 'BeF2':
                     calculated = calculated + 2*o['Be2F4']['mole fraction']
                 calculated = calculated / totalPairs
+                s['results'][species] = calculated
                 if not (calculated >= lb and calculated <= ub):
                     s['status'] = 'fail'
             except KeyError:
                 s['status'] = 'fail'
+                s['results'][species] = 'species not found'
 
 def runHeatCapacities(series,name):
     inputScript = f'heatCapacities/{name}.ti'
@@ -391,6 +435,7 @@ def runHeatCapacities(series,name):
             o = out[sample]
         except KeyError:
             s['status'] = 'fail'
+            s['results'] = 'no output for sample'
             continue
         sampleStatus = 'pass'
         try:
@@ -398,10 +443,12 @@ def runHeatCapacities(series,name):
             lb = (1 - relErr) * s['heat capacity']
             ub = (1 + relErr) * s['heat capacity']
             calculated = o['heat capacity']
+            s['results'] = calculated
             if not (calculated >= lb and calculated <= ub):
                 sampleStatus = 'fail'
         except KeyError:
             sampleStatus = 'fail'
+            s['results'] = 'no heat capacity found for sample'
         s['status'] = sampleStatus
 
 # Set file names for input/output

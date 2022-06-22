@@ -180,6 +180,11 @@ def makeNetwork():
                     samplePos += sampleSpace
                     names[seriesIndex] = series
                     types[seriesIndex] = testType
+                    tunit = 'K'
+                    try:
+                        tunit = currentSeries["temperature unit"]
+                    except KeyError:
+                        pass
                     details[seriesIndex] = f"Status: {currentSeries['series status']}"
                     fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
@@ -187,11 +192,23 @@ def makeNetwork():
                                      f"Status: {currentSeries['series status']}\n" +
                                      f"Database: {currentSeries['database']}\n" +
                                      f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}\n" +
-                                     f"Target temperature: {currentSeries['target temperature']}K\n" +
+                                     f"Target temperature: {currentSeries['target temperature']} {tunit}\n" +
                                      f"Low temperature phases: {' '.join(currentSeries['phases low'])}\n" +
                                      f"High temperature phases: {' '.join(currentSeries['phases high'])}\n" +
-                                     f"Error tolerance: {currentSeries['error']}K\n"
+                                     f"Error tolerance: {currentSeries['error']} {tunit}\n"
                                      )
+
+                    # Write results
+                    if resstring in currentSeries.keys():
+                        fullDetails[seriesIndex] += f"\nResults:\n"
+                        # Check if result is just a string: likely containing debug info
+                        if isinstance(currentSeries[resstring], str):
+                            fullDetails[seriesIndex] += f"{currentSeries[resstring]}"
+                        else:
+                            fullDetails[seriesIndex] += f"Temperature: {currentSeries[resstring]['temperature']} {tunit}\n"
+                            fullDetails[seriesIndex] += f"Concentrations:\n{nlString.join([f'{key}: {currentSeries[resstring][key]}' for key in currentSeries[compString].keys()])}\n"
+                            fullDetails[seriesIndex] += f"Norm: {currentSeries[resstring]['norm']}\n"
+
                     # Create connections from sources to test series
                     edgeStarts.append(sourceIndex)
                     edgeEnds.append(seriesIndex)

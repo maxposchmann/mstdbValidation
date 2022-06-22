@@ -40,6 +40,7 @@ def makeNetwork():
     ppString   = 'partial pressures'
     frString   = 'fractions'
     nlString   = '\n'
+    resstring  = 'results'
 
     edgeStarts = []
     edgeEnds   = []
@@ -82,6 +83,16 @@ def makeNetwork():
                     size[seriesIndex] = 20
                     names[seriesIndex] = series
                     types[seriesIndex] = testType
+                    tunit = 'K'
+                    try:
+                        tunit = currentSeries["temperature unit"]
+                    except KeyError:
+                        pass
+                    punit = 'atm'
+                    try:
+                        punit = currentSeries["vapor pressure unit"]
+                    except KeyError:
+                        pass
                     details[seriesIndex] = f"Status: {currentSeries['series status']}"
                     fullDetails[seriesIndex] = (
                                      f"Name: {series}\n" +
@@ -120,14 +131,31 @@ def makeNetwork():
                                          f"Status: {currentSample['status']}\n" +
                                          f"Database: {currentSeries['database']}\n" +
                                          f"Composition: {''.join([f'{key}: {currentSeries[compString][key]} ' for key in currentSeries[compString].keys()])}\n" +
-                                         f"Temperature: {currentSample['temperature']}\n"
+                                         f"Temperature: {currentSample['temperature']} {tunit}\n" +
+                                         f"\nTargets:\n"
                                          )
+                        # Write targets
                         if testType == 'vapor pressures':
-                            fullDetails[sampleIndex] += f"Vapor pressures:\n{nlString.join([f'{key}: {currentSample[ppString][key]} atm' for key in currentSample[ppString].keys()])}\n"
+                            fullDetails[sampleIndex] += f"Vapor pressures:\n{nlString.join([f'{key}: {currentSample[ppString][key]} {punit}' for key in currentSample[ppString].keys()])}\n"
                         elif testType == 'solubility limits':
                             fullDetails[sampleIndex] += f"Solubility limits:\n{nlString.join([f'{key}: {currentSample[frString][key]}' for key in currentSample[frString].keys()])}\n"
                         elif testType == 'heat capacities':
-                            fullDetails[sampleIndex] += f"Heat capacity: {currentSample['heat capacity']} J/mol.K"
+                            fullDetails[sampleIndex] += f"Heat capacity: {currentSample['heat capacity']} J/mol.K\n"
+
+                        # Write results
+                        if resstring in currentSample.keys():
+                            fullDetails[sampleIndex] += f"\nResults:\n"
+                            # Check if result is just a string: likely containing debug info
+                            if isinstance(currentSample[resstring], str):
+                                fullDetails[sampleIndex] += f"{currentSample[resstring]}"
+                            else:
+                                if testType == 'vapor pressures':
+                                    fullDetails[sampleIndex] += f"Vapor pressures:\n{nlString.join([f'{key}: {currentSample[resstring][key]} {punit}' for key in currentSample[resstring].keys()])}\n"
+                                elif testType == 'solubility limits':
+                                    fullDetails[sampleIndex] += f"Solubility limits:\n{nlString.join([f'{key}: {currentSample[resstring][key]}' for key in currentSample[resstring].keys()])}\n"
+                                elif testType == 'heat capacities':
+                                    fullDetails[sampleIndex] += f"Heat capacity: {currentSample[resstring]} J/mol.K\n"
+
                         samplePos += sampleSpace
                         x[seriesIndex] += x[sampleIndex]
                         # Create connections from series to test samples

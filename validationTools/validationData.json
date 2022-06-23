@@ -11883,7 +11883,7 @@
       },
       "comment": "Kelvin and Celcius axis labels are not aligned."
     },
-    "morozov-1958": {
+    "sun-1958": {
       "mstdb references": [
         "mstdb-31:lu2019"
       ],
@@ -12036,21 +12036,7 @@
             },
             "series status": "partial",
             "series type": "solubility limits"
-          }
-        }
-      },
-      "comment": "No access, data read from Lu (2019)."
-    },
-    "sun-1958": {
-      "mstdb references": [
-        "mstdb-31:lu2019"
-      ],
-      "url": "Could not be found online",
-      "title": "Unknown",
-      "authors": "IC SUN, IS Morozov",
-      "type": "experiment",
-      "tests": {
-        "solubility limits": {
+          },
           "CaCl2-CeCl3": {
             "database": "chloride",
             "composition": {

@@ -21020,6 +21020,90 @@
             "series status": "pass",
             "series type": "solubility limits"
           }
+        },
+        "phase transitions": {
+          "LiF-NaF-CaF2 eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 53,
+              "Na": 36,
+              "Ca": 11,
+              "F": 111
+            },
+            "error": 10,
+            "temperature unit": "C",
+            "target temperature": 616,
+            "phases low": [
+              "SSamsoln",
+              "NaF_solid(s)",
+              "CaF2_alpha(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": "Transition found between 606 C and 626 C at original composition"
+          },
+          "LiF-KF-RbF eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 40,
+              "K": 32.5,
+              "Rb": 27.5,
+              "F": 100
+            },
+            "error": 10,
+            "temperature unit": "C",
+            "target temperature": 440,
+            "phases low": [
+              "SSamsoln",
+              "FLi_solid(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail",
+            "results": {
+              "temperature": 440.3248378328515,
+              "Li": 0.2762452819113476,
+              "K": 0.0625,
+              "Rb": 0.13775155149641274,
+              "F": 0.6,
+              "norm": 1.3325935567279574e-09
+            }
+          },
+          "LiF-NaF-RbF eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 42,
+              "Na": 6,
+              "Rb": 52,
+              "F": 100
+            },
+            "error": 10,
+            "temperature unit": "C",
+            "target temperature": 430,
+            "phases low": [
+              "SSamsoln",
+              "RbF_S1(s)",
+              "NaF_solid(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 433.92949439724447,
+              "Li": 0.21191905540330536,
+              "Na": 0.030029905171559877,
+              "Rb": 0.26025999265584443,
+              "F": 0.5045691793776743,
+              "norm": 8.972052370135038e-12
+            }
+          }
         }
       },
       "comment": "Data read from Chartrand-2001 for convenience."
@@ -22915,6 +22999,149 @@
         }
       },
       "comment": "Eutectic quoted from \"Thermodynamic properties and phase diagrams of fluoride salts for nuclear applications\" by Bene\u0161 and Konings."
+    },
+    "bukhalova-1960": {
+      "mstdb references": [
+        "mstdb-04:chartrand2001"
+      ],
+      "url": "Could not be found online",
+      "title": "CHETVERNAYA SISTEMA IZ FTORIDOV LITIYA, NATRIYA, KALIYA I KALTSIYA",
+      "authors": "G.A. Bukhalova and V.T. Berezhnaya",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "LiF-KF-CaF2 peritectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.95468613982,
+              "K": 0.55662975172,
+              "Ca": 0.24434205423,
+              "F": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 684,
+            "phases low": [
+              "MSFL",
+              "CaKF3_S1(s)",
+              "SSamsoln"
+            ],
+            "phases high": [
+              "MSFL",
+              "CaF2_alpha(s)",
+              "CaKF3_S1(s)"
+            ],
+            "series status": "fail",
+            "status": "fail",
+            "results": {
+              "temperature": 654.0,
+              "Li": 0.15446758366619942,
+              "K": 0.04821098187254577,
+              "Ca": 0.16501129291158484,
+              "F": 0.6325298599816848,
+              "norm": 0.0017122654602507762
+            }
+          },
+          "LiF-KF-CaF2 eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.83119440034,
+              "K": 1.07134343836,
+              "Ca": 0.04873108065,
+              "F": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 490,
+            "phases low": [
+              "KF_S1(s)",
+              "CaKF3_S1(s)",
+              "SSamsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 490.21796067417307,
+              "Li": 0.20197021056253173,
+              "K": 0.17113908474147596,
+              "Ca": 1e-06,
+              "F": 0.4061665102584332,
+              "norm": 8.586208048595992e-11
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Chartrand (2001)."
+    },
+    "bukhalova-1959": {
+      "mstdb references": [
+        "mstdb-04:chartrand2001"
+      ],
+      "url": "Could not be found online",
+      "title": "DIAGRAMMA PLAVKOSTI V TROINOI SISTEME IZ FTORIDOV NATRIYA, KALIYA I KALTSIYA",
+      "authors": "G.A. Bukhalova and V.T. Berezhnaya",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "NaF-KF-CaF2 eutectic 1": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.86639622602,
+              "K": 0.35388330736,
+              "Ca": 0.38986023331,
+              "F": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 759,
+            "phases low": [
+              "CaKF3_S1(s)",
+              "SSamsoln",
+              "CaF2_alpha(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": "Transition found between 739 C and 779 C at original composition"
+          },
+          "NaF-KF-CaF2 eutectic 2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.6732802619,
+              "K": 1.0067962642,
+              "Ca": 0.15996173695,
+              "F": 2
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 676,
+            "phases low": [
+              "NaF_solid(s)",
+              "CaKF3_S1(s)",
+              "SSamsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 676.6759999999999,
+              "Na": 0.17515632281847976,
+              "K": 0.26192173073216685,
+              "Ca": 0.04161463096623558,
+              "F": 0.5203073154831178,
+              "norm": 0.0
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Chartrand (2001)."
     }
   }
 }

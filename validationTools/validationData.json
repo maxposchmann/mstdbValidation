@@ -22871,6 +22871,50 @@
         }
       },
       "comment": "Calculation finds SSamsoln instead of FLi_solid(s)+NaF_solid(s)."
+    },
+    "bergmann-1941": {
+      "mstdb references": [
+        "mstdb-02:benes2008"
+      ],
+      "url": "Could not be found online",
+      "title": "Das Schmelzdiagramm des systems LiF-KF-NaF",
+      "authors": "AG Bergmann, EP Dergunov",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "FLiNaK eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 46.5,
+              "Na": 11.5,
+              "K": 42,
+              "F": 100
+            },
+            "error": 10,
+            "temperature unit": "K",
+            "target temperature": 727,
+            "phases low": [
+              "FLi_solid(s)",
+              "NaF_solid(s)",
+              "SSamsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 726.0416760618423,
+              "Li": 0.1325,
+              "Na": 0.05755743250066468,
+              "K": 0.21020995341471807,
+              "F": 0.6,
+              "norm": 2.4004314993389063e-12
+            }
+          }
+        }
+      },
+      "comment": "Eutectic quoted from \"Thermodynamic properties and phase diagrams of fluoride salts for nuclear applications\" by Bene\u0161 and Konings."
     }
   }
 }

@@ -66,6 +66,7 @@ def makeNetwork():
                          f"Authors: {source['authors']}\n" +
                          f"URL: {source['url']}\n" +
                          f"Type: {source['type']}\n"
+                         f"Reference code: {sourceName}\n"
                          )
         if "comment" in source.keys():
             fullDetails[sourceIndex] += f"Comment: {source['comment']}\n"

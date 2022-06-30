@@ -282,7 +282,12 @@ def runPhaseTransitionsOptima(series,name):
     transitionTest.tempRange = 30
     transitionTest.tunit = tseriesunit
     transitionTest.maxIts = 100
-    transitionTest.findTransition()
+    try:
+        transitionTest.findTransition()
+    except:
+        series['status'] = 'fail'
+        series['results'] = 'Attempt to find transition with Optima failed'
+        return
 
     # Check for bad output
     if transitionTest.bestNorm == np.Infinity:

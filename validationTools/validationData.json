@@ -2,7 +2,7 @@
   "sources": {
     "ORNL-4415": {
       "mstdb references": [
-        "mstdb-1:capelli2014"
+        "mstdb-01:capelli2014"
       ],
       "url": "http://moltensalt.org/references/static/downloads/pdf/ORNL-4415.pdf",
       "title": "LIQUID-VAPOR EQUILIBRIA IN LiF-BeF2 AND LiF-BeF2-ThF4 SYSTEMS",
@@ -379,7 +379,7 @@
     },
     "jones-1962": {
       "mstdb references": [
-        "mstdb-1:capelli2014"
+        "mstdb-01:capelli2014"
       ],
       "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1962.tb11084.x",
       "title": "Phase Equilibria in the Ternary Fused-Salt System LiF-BeF2-UF4",
@@ -18936,7 +18936,7 @@
     },
     "thoma-1960": {
       "mstdb references": [
-        "mstdb-1:capelli2014"
+        "mstdb-01:capelli2014"
       ],
       "url": "https://pubs.acs.org/doi/pdf/10.1021/j150578a013",
       "title": "Phase Equilibria in the Fused Salt Systems LiF\u2013ThF4and NaF\u2013ThF4",

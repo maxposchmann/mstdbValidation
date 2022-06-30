@@ -23358,6 +23358,171 @@
           }
         }
       }
+    },
+    "barton-1970": {
+      "mstdb references": [
+        "mstdb-06:benes2013"
+      ],
+      "url": "https://pubs.acs.org/doi/abs/10.1021/ic50084a026",
+      "title": "Solubility of cerium trifluoride in molten mixtures of lithium, beryllium, and thorium fluorides",
+      "authors": "Charles J. Barton, Max A. Bredig, L. O. Gilpatrick, and Judy A. Fredricksen",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "CeF3 in LiF-27ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 73,
+              "Ce": 10,
+              "Th": 27,
+              "F": 211
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 600,
+                "fractions": {
+                  "CeF3": 0.0265
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.02448352776896376
+                }
+              },
+              "2": {
+                "temperature": 800,
+                "fractions": {
+                  "CeF3": 0.089
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.07876943624467057
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeF3 in LiF-33ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 67,
+              "Ce": 10,
+              "Th": 33,
+              "F": 229
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 600,
+                "fractions": {
+                  "CeF3": 0.0254
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.02057267318625495
+                }
+              },
+              "2": {
+                "temperature": 800,
+                "fractions": {
+                  "CeF3": 0.0791
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.07719945963253955
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeF3 in LiF-20ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 80,
+              "Ce": 15,
+              "Th": 20,
+              "F": 205
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 600,
+                "fractions": {
+                  "CeF3": 0.033
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.03974276687032914
+                }
+              },
+              "2": {
+                "temperature": 800,
+                "fractions": {
+                  "CeF3": 0.1007
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.08909293574033009
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeF3 in LiF-40ThF4": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 60,
+              "Ce": 5,
+              "Th": 40,
+              "F": 235
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 600,
+                "fractions": {
+                  "CeF3": 0.0277
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.021268862403536388
+                }
+              },
+              "2": {
+                "temperature": 800,
+                "fractions": {
+                  "CeF3": 0.07
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.0476190476188672
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

@@ -23774,6 +23774,81 @@
           }
         }
       }
+    },
+    "sementsova-1968": {
+      "mstdb references": [
+        "mstdb-02:benes2008",
+        "mstdb-51:sangster1991"
+      ],
+      "url": "Could not be found online",
+      "title": "Unknown",
+      "authors": "D.V. Sementsova and G.A. Bukhalova",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "LiF-KF-CsF eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.455,
+              "K": 0.3,
+              "Cs": 0.245,
+              "F": 1
+            },
+            "error": 6,
+            "temperature unit": "C",
+            "target temperature": 388,
+            "phases low": [
+              "SSamsoln",
+              "KF_S1(s)",
+              "CsF2Li_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 386.15581087824137,
+              "Li": 0.22775660762846445,
+              "K": 0.15014989350491745,
+              "Cs": 0.12262244227183108,
+              "F": 0.500543156504535,
+              "norm": 9.656605248902247e-13
+            }
+          },
+          "LiF-KF-CsF peritectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.37,
+              "K": 0.275,
+              "Cs": 0.355,
+              "F": 1
+            },
+            "error": 6,
+            "temperature unit": "C",
+            "target temperature": 402,
+            "phases low": [
+              "SSamsoln",
+              "KF_S1(s)",
+              "MSFL"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "incomplete",
+            "status": "fail",
+            "results": {
+              "temperature": 402.40199999999993,
+              "Li": 0.184815,
+              "K": 0.1373625,
+              "Cs": 0.1773225,
+              "F": 0.4995,
+              "norm": 0.00018202761525684013
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Sangster (1991)."
     }
   }
 }

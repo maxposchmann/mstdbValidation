@@ -4039,7 +4039,7 @@
                   "LiCl": 0.5648986851639294
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -4102,7 +4102,7 @@
                   "LiCl": 0.5041968410182781
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "6": {
                 "temperature": 626.439909567351,
@@ -4110,7 +4110,7 @@
                   "LiCl": 0.5173291295723602
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "7": {
                 "temperature": 617.4837021669281,
@@ -4118,7 +4118,7 @@
                   "LiCl": 0.5370188566538044
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "8": {
                 "temperature": 606.9042072879179,
@@ -4126,7 +4126,7 @@
                   "LiCl": 0.5665581349873365
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -5678,7 +5678,7 @@
                   "AlCl3": 0.45
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "11": {
                 "temperature": 726,
@@ -5726,7 +5726,7 @@
                   "AlCl3": 0.5
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "16": {
                 "temperature": 412,
@@ -5744,7 +5744,7 @@
                   "AlCl3": 0.545
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "18": {
                 "temperature": 390,
@@ -5752,7 +5752,7 @@
                   "AlCl3": 0.56
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "19": {
                 "temperature": 388,
@@ -5760,7 +5760,7 @@
                   "AlCl3": 0.575
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -5958,7 +5958,7 @@
                   "AlCl3": 0.525
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "13": {
                 "temperature": 415,
@@ -5966,7 +5966,7 @@
                   "AlCl3": 0.555
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "14": {
                 "temperature": 404,
@@ -5974,7 +5974,7 @@
                   "AlCl3": 0.58
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "15": {
                 "temperature": 399,
@@ -5982,7 +5982,7 @@
                   "AlCl3": 0.595
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -6155,7 +6155,7 @@
                   "BeF2": 0.24951923076923077
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "6": {
                 "temperature": 954.7156726768376,
@@ -6892,7 +6892,7 @@
                   "MgCl2": 0.9007695145063024
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "2": {
                 "temperature": 674.9659760114982,
@@ -6900,7 +6900,7 @@
                   "MgCl2": 0.8300030102220356
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "3": {
                 "temperature": 650.2445911397718,
@@ -6908,7 +6908,7 @@
                   "MgCl2": 0.7099222853944874
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "4": {
                 "temperature": 645.8302489156841,
@@ -6978,7 +6978,7 @@
                   "MgCl2": 0.15247108307045215
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "2": {
                 "temperature": 707.6765392244882,
@@ -8002,7 +8002,7 @@
                   "LiCl": 0.24905667426308514
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "5": {
                 "temperature": 449.93665877590115,
@@ -8010,7 +8010,7 @@
                   "LiCl": 0.30000008490780705
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "6": {
                 "temperature": 440.1500151135897,
@@ -8018,7 +8018,7 @@
                   "LiCl": 0.39867272115936503
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -8295,7 +8295,7 @@
                   "CaCl2": 0.30010493179433373
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "7": {
                 "temperature": 514.2104024936158,
@@ -8803,7 +8803,7 @@
                   "CaCl2": 0.379
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "4": {
                 "temperature": 632,
@@ -8811,7 +8811,7 @@
                   "CaCl2": 0.378
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "5": {
                 "temperature": 602.5,
@@ -8819,7 +8819,7 @@
                   "CaCl2": 0.431
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "6": {
                 "temperature": 590.8,
@@ -8827,7 +8827,7 @@
                   "CaCl2": 0.44
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "7": {
                 "temperature": 572,
@@ -9402,7 +9402,7 @@
                   "MgCl2": 0.143
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "3": {
                 "temperature": 726,
@@ -9410,7 +9410,7 @@
                   "MgCl2": 0.184
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "4": {
                 "temperature": 712.2,
@@ -9418,7 +9418,7 @@
                   "MgCl2": 0.228
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "5": {
                 "temperature": 685.4,
@@ -9426,7 +9426,7 @@
                   "MgCl2": 0.31
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "6": {
                 "temperature": 653.5,
@@ -9434,7 +9434,7 @@
                   "MgCl2": 0.403
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "7": {
                 "temperature": 632.6,
@@ -9442,7 +9442,7 @@
                   "MgCl2": 0.467
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "comment": "FactSage 8.0 also finds SScrsoln instead of MSCL for samples 2 through 7",
@@ -9488,7 +9488,7 @@
                   "MgCl2": 0.724
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "4": {
                 "temperature": 647.9,
@@ -10987,7 +10987,7 @@
                 "temperature": 877.2579756550723,
                 "heat capacity": 312.64749531961735,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "98": {
                 "temperature": 883.473323893708,
@@ -10999,7 +10999,7 @@
                 "temperature": 887.4369578821183,
                 "heat capacity": 331.9246705334732,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "100": {
                 "temperature": 891.6936231770649,
@@ -11011,7 +11011,7 @@
                 "temperature": 897.106990997812,
                 "heat capacity": 426.8704309112311,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "102": {
                 "temperature": 916.956006340552,
@@ -11652,7 +11652,7 @@
                   "CeCl3": 0.503447162090543
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -12066,7 +12066,7 @@
                   "CeCl3": 0.2528117359413203
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "3": {
                 "temperature": 933.498935415188,
@@ -13114,7 +13114,7 @@
                   "BeF2": 0.1393035981382213
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "4": {
                 "temperature": 765.0961392555982,
@@ -13152,7 +13152,7 @@
                   "BeF2": 0.18778974163639572
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "8": {
                 "temperature": 715.7768095207128,
@@ -13250,7 +13250,7 @@
                   "BeF2": 0.2567145737139884
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "18": {
                 "temperature": 629.8725369057684,
@@ -13298,7 +13298,7 @@
                   "BeF2": 0.27199249342710347
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "23": {
                 "temperature": 580.7770262946826,
@@ -14691,7 +14691,7 @@
                   "PuCl3": 0.396
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "6": {
                 "temperature": 479,
@@ -14699,7 +14699,7 @@
                   "PuCl3": 0.295
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "7": {
                 "temperature": 469,
@@ -14707,7 +14707,7 @@
                   "PuCl3": 0.28
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -14792,7 +14792,7 @@
                   "PuCl3": 0.174
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -14907,7 +14907,7 @@
                   "PuCl3": 0.603
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "11": {
                 "temperature": 617,
@@ -14925,7 +14925,7 @@
                   "PuCl3": 0.553
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "13": {
                 "temperature": 579,
@@ -14933,7 +14933,7 @@
                   "PuCl3": 0.541
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "14": {
                 "temperature": 562,
@@ -14941,7 +14941,7 @@
                   "PuCl3": 0.518
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "15": {
                 "temperature": 556,
@@ -14949,7 +14949,7 @@
                   "PuCl3": 0.51
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "16": {
                 "temperature": 549,
@@ -14957,7 +14957,7 @@
                   "PuCl3": 0.502
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "17": {
                 "temperature": 550,
@@ -14965,7 +14965,7 @@
                   "PuCl3": 0.499
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "18": {
                 "temperature": 541,
@@ -14973,7 +14973,7 @@
                   "PuCl3": 0.484
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "19": {
                 "temperature": 534,
@@ -14981,7 +14981,7 @@
                   "PuCl3": 0.477
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "20": {
                 "temperature": 511,
@@ -14989,7 +14989,7 @@
                   "PuCl3": 0.439
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "21": {
                 "temperature": 466,
@@ -14997,7 +14997,7 @@
                   "PuCl3": 0.374
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -15072,7 +15072,7 @@
                   "PuCl3": 0.292
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "7": {
                 "temperature": 485,
@@ -15080,7 +15080,7 @@
                   "PuCl3": 0.332
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -15355,7 +15355,7 @@
                   "PuCl3": 0.1
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "2": {
                 "temperature": 683,
@@ -15547,7 +15547,7 @@
                   "PuCl3": 0.3
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "4": {
                 "temperature": 619,
@@ -15555,7 +15555,7 @@
                   "PuCl3": 0.4
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -15768,7 +15768,7 @@
                   "LaF3": 0.14992025518341304
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               }
             },
             "series status": "partial",
@@ -16119,7 +16119,7 @@
                   "LaF3": 0.1299255077152962
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "comment": "Appropriate La-Cs-F intermediate compounds do not exist in database.",
@@ -16365,7 +16365,7 @@
                 "temperature": 775.2028713595114,
                 "heat capacity": 163.39530102803786,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "33": {
                 "temperature": 790.294953034196,
@@ -16377,7 +16377,7 @@
                 "temperature": 804.6727587081697,
                 "heat capacity": 163.37799746683368,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "35": {
                 "temperature": 818.3280351923486,
@@ -16389,7 +16389,7 @@
                 "temperature": 833.4246186065335,
                 "heat capacity": 164.30057270567198,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "37": {
                 "temperature": 847.0806453806292,
@@ -16413,7 +16413,7 @@
                 "temperature": 898.1176163852065,
                 "heat capacity": 168.02041632649605,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "41": {
                 "temperature": 911.7811460584692,
@@ -17552,7 +17552,7 @@
                 "temperature": 747.3240248972627,
                 "heat capacity": 158.33193146043095,
                 "status": "fail",
-                "results": "no heat capacity found for sample"
+                "results": "No heat capacity found for sample (test error)"
               },
               "27": {
                 "temperature": 770.395978438959,
@@ -18494,7 +18494,7 @@
                   "ThF4": 0.21
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "6": {
                 "temperature": 627,
@@ -18502,7 +18502,7 @@
                   "ThF4": 0.22
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -19063,7 +19063,7 @@
                   "ThF4": 0.1513511675641046
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "12": {
                 "temperature": 714.7637939704337,
@@ -19376,7 +19376,7 @@
                   "LiCl": 0.56930542917
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "partial",
@@ -20028,7 +20028,7 @@
                   "MgCl2": 0.292817679558011
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               },
               "3": {
                 "temperature": 863.1081376995858,
@@ -20036,7 +20036,7 @@
                   "MgCl2": 0.3457642725598527
                 },
                 "status": "fail",
-                "results": "phase not stable"
+                "results": "Phase not stable"
               }
             },
             "series status": "fail",
@@ -20897,7 +20897,7 @@
                   "LiF": 0.8533
                 },
                 "status": "fail",
-                "results": "phase not found"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               }
             },
             "series status": "partial",
@@ -23249,7 +23249,7 @@
                   "CeF3": 0.6982986737252048
                 },
                 "status": "fail",
-                "results": "No Thermochimica output (likely convergence failure)"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "2": {
                 "temperature": 1418.6830015313935,
@@ -23257,7 +23257,7 @@
                   "CeF3": 0.599154734725049
                 },
                 "status": "fail",
-                "results": "No Thermochimica output (likely convergence failure)"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               },
               "3": {
                 "temperature": 1342.1133231240428,
@@ -23275,7 +23275,7 @@
                   "CeF3": 0.3987732857788317
                 },
                 "status": "fail",
-                "results": "No Thermochimica output (likely convergence failure)"
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
               }
             },
             "series status": "partial",

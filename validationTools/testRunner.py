@@ -54,14 +54,24 @@ def runVaporPressures(series,name):
         print('Failed to open Thermochimica output file')
         for sample in series['samples']:
             series['samples'][sample]['status'] = 'fail'
+            series['samples'][sample]['results'] = 'Failed to open Thermochimica output file'
         return
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
+        # Check for no convergence/output
+        try:
+            o = out[sample]['solution phases']
+        except KeyError:
+            s['status'] = 'fail'
+            s['results'] = 'No Thermochimica output (likely Thermochimica convergence failure)'
+            continue
+        # Check if phase missing (naming or test parsing issue)
         try:
             o = out[sample]['solution phases']['gas_ideal']['species']
         except KeyError:
             s['status'] = 'fail'
+            s['results'] = 'Phase not found (check name and input masses)'
             continue
         # Check list of excluded species
         adjustedTotal = 1
@@ -339,23 +349,32 @@ def runSolubilityLimits(series,name):
         print('Failed to open Thermochimica output file')
         for sample in series['samples']:
             series['samples'][sample]['status'] = 'fail'
+            series['samples'][sample]['results'] = 'Failed to open Thermochimica output file'
         return
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
         # Create a results dict
         s['results'] = dict()
+        # Check for no convergence/output
+        try:
+            o = out[sample]['solution phases']
+        except KeyError:
+            s['status'] = 'fail'
+            s['results'] = 'No Thermochimica output (likely Thermochimica convergence failure)'
+            continue
+        # Check if phase missing (naming or test parsing issue)
         try:
             o = out[sample]['solution phases'][phase][fracType]
         except KeyError:
             s['status'] = 'fail'
-            s['results'] = 'phase not found'
+            s['results'] = 'Phase not found (check name and input masses)'
             continue
         s['status'] = 'pass'
         # Make sure phase is stable
         if out[sample]['solution phases'][phase]['moles'] <= 0.0:
             s['status'] = 'fail'
-            s['results'] = 'phase not stable'
+            s['results'] = 'Phase not stable'
             continue
         # Calculate adjusted total pairs for multiple coordination cases
         multipleCoordPairs = ['Al2Cl6','Pu2Cl6','Be2F4']
@@ -382,7 +401,7 @@ def runSolubilityLimits(series,name):
                     s['status'] = 'fail'
             except KeyError:
                 s['status'] = 'fail'
-                s['results'][species] = 'species not found'
+                s['results'][species] = 'Species not found (check name and input masses)'
 
 def runHeatCapacities(series,name):
     inputScript = f'heatCapacities/{name}.ti'
@@ -427,6 +446,7 @@ def runHeatCapacities(series,name):
         print('Failed to open Thermochimica output file')
         for sample in series['samples']:
             series['samples'][sample]['status'] = 'fail'
+            series['samples'][sample]['results'] = 'Failed to open Thermochimica output file'
         return
     # Check output against experiment
     for sample in series['samples']:
@@ -435,7 +455,7 @@ def runHeatCapacities(series,name):
             o = out[sample]
         except KeyError:
             s['status'] = 'fail'
-            s['results'] = 'no output for sample'
+            s['results'] = 'No output for sample (likely Thermochimica convergence failure)'
             continue
         sampleStatus = 'pass'
         try:
@@ -448,7 +468,7 @@ def runHeatCapacities(series,name):
                 sampleStatus = 'fail'
         except KeyError:
             sampleStatus = 'fail'
-            s['results'] = 'no heat capacity found for sample'
+            s['results'] = 'No heat capacity found for sample (test error)'
         s['status'] = sampleStatus
 
 # Set file names for input/output

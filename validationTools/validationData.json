@@ -23835,7 +23835,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail",
             "results": {
               "temperature": 402.40199999999993,
@@ -23849,6 +23849,121 @@
         }
       },
       "comment": "No access, data read from Sangster (1991)."
+    },
+    "thoma-1963": {
+      "mstdb references": [
+        "mstdb-22:benes2010"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1963.tb13768.x",
+      "title": "Phase Equilibria in the System NaF-ThF4-UF4",
+      "authors": "R. E. THOMA,HERBERT INSLEY,G. M. HEBERT,H. A. FRIEDMAN,C. F. WEAVER",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "NaF-ThF-UF eutectic 1": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 78.5,
+              "Th": 6.5,
+              "U": 15,
+              "F": 164.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 615,
+            "phases low": [
+              "NaF_solid(s)",
+              "4NaF.(Th,U)F4ss",
+              "SSaxsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "comment": "Phase 4NaF.(Th,U)F4 ss specified in reference does not appear in database",
+            "series status": "fail",
+            "status": "fail",
+            "results": "Attempt to find transition with Optima failed"
+          },
+          "NaF-ThF-UF eutectic 2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 75.5,
+              "Th": 10.5,
+              "U": 14,
+              "F": 173.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 585,
+            "phases low": [
+              "SSaxsoln",
+              "SSagsoln",
+              "delta2NaF.(U,Th)F4ss"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "comment": "Second allotrope of phase 4NaF.(Th,U)F4 ss specified in reference does not appear in database",
+            "series status": "fail",
+            "status": "fail",
+            "results": "Attempt to find transition with Optima failed"
+          },
+          "NaF-ThF-UF eutectic 3": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 64.5,
+              "Th": 27,
+              "U": 8.5,
+              "F": 206.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 668,
+            "phases low": [
+              "SSagsoln",
+              "delta2NaF.(U,Th)F4ss",
+              "SSaysoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "comment": "Second allotrope of phase 4NaF.(Th,U)F4 ss specified in reference does not appear in database",
+            "series status": "fail",
+            "status": "fail",
+            "results": "Attempt to find transition with Optima failed"
+          },
+          "NaF-ThF-UF eutectic 4": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 58.5,
+              "Th": 40,
+              "U": 1.5,
+              "F": 224.5
+            },
+            "error": 20,
+            "temperature unit": "C",
+            "target temperature": 700,
+            "phases low": [
+              "SSaysoln",
+              "ThNaF5_S1(s)",
+              "SSahsoln"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "fail",
+            "status": "fail",
+            "results": {
+              "temperature": 700.6999999999999,
+              "Na": 0.1800970724191063,
+              "Th": 0.12314329738058552,
+              "U": 0.004617873651771957,
+              "F": 0.6911417565485362,
+              "norm": 0.0017048153789840724
+            }
+          }
+        }
+      }
     }
   }
 }

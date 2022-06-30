@@ -1075,7 +1075,7 @@
     },
     "ORNL-2896": {
       "mstdb references": [
-        "mstdb-1:capelli2014"
+        "mstdb-01:capelli2014"
       ],
       "url": "http://moltensalt.org/references/static/downloads/pdf/ORNL-2896.pdf",
       "title": "PHASE EQUILIBRIA IN MOLTEN SALT BREEDER REACTOR FUELS. I. THE SYSTEM LiF-BeFz-UF4-ThF",
@@ -20714,7 +20714,7 @@
     },
     "eichelberger-1963": {
       "mstdb references": [
-        "mstdb-1:capelli2014"
+        "mstdb-01:capelli2014"
       ],
       "url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/j.1151-2916.1963.tb11727.x",
       "title": "Phase Equilibria for the Ternary Fused-Salt System NaF\u2013BeF2\u2013UF4",
@@ -23142,6 +23142,148 @@
         }
       },
       "comment": "No access, data read from Chartrand (2001)."
+    },
+    "barton-1961": {
+      "mstdb references": [
+        "mstdb-07:vanderMeer2006"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/0022190261804569",
+      "title": "Phase equilibria in the systems NaF-PuF3 and NaF-CeF3",
+      "authors": "C.J. Barton, J.D. Redman, R.A. Strehlow",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaF-CeF3": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.93,
+              "Ce": 0.07,
+              "F": 1.14
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1182.8483920367535,
+                "fractions": {
+                  "CeF3": 0.10006117577439333
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.13312214703427025
+                }
+              },
+              "2": {
+                "temperature": 1152.220520673813,
+                "fractions": {
+                  "CeF3": 0.1502077177437735
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.16402965951483747
+                }
+              },
+              "3": {
+                "temperature": 1094.0275650842268,
+                "fractions": {
+                  "CeF3": 0.19984646080152257
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.21185447770039662
+                }
+              },
+              "4": {
+                "temperature": 1064.9310872894334,
+                "fractions": {
+                  "CeF3": 0.22544912214762958
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.23166874516300634
+                }
+              },
+              "5": {
+                "temperature": 1037.366003062787,
+                "fractions": {
+                  "CeF3": 0.2447846652725521
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.2484465276694769
+                }
+              },
+              "6": {
+                "temperature": 1025.8805513016846,
+                "fractions": {
+                  "CeF3": 0.2500125950123751
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.2549405054428392
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CeF3-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.2,
+              "Ce": 0.8,
+              "F": 2.6
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1558.039816232772,
+                "fractions": {
+                  "CeF3": 0.6982986737252048
+                },
+                "status": "fail",
+                "results": "No Thermochimica output (likely convergence failure)"
+              },
+              "2": {
+                "temperature": 1418.6830015313935,
+                "fractions": {
+                  "CeF3": 0.599154734725049
+                },
+                "status": "fail",
+                "results": "No Thermochimica output (likely convergence failure)"
+              },
+              "3": {
+                "temperature": 1342.1133231240428,
+                "fractions": {
+                  "CeF3": 0.498933622285575
+                },
+                "status": "pass",
+                "results": {
+                  "CeF3": 0.5072317963727356
+                }
+              },
+              "4": {
+                "temperature": 1149.157733537519,
+                "fractions": {
+                  "CeF3": 0.3987732857788317
+                },
+                "status": "fail",
+                "results": "No Thermochimica output (likely convergence failure)"
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from van der Meer (2006). Convergence failures need investigation."
     }
   }
 }

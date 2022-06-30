@@ -23532,6 +23532,7 @@
       "title": "Thermodynamic Investigation of the CaF2-ThF4 and the LiF-CaF2-ThF4 Systems",
       "authors": "E. Capelli, O. Bene\u0161, P. E. Raison, M. Beilmann, C. K\u00fcnzel, and R. J. M. Konings",
       "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
       "tests": {
         "solubility limits": {
           "ThF4-CaF2": {
@@ -23737,6 +23738,39 @@
             },
             "series status": "pass",
             "series type": "solubility limits"
+          }
+        },
+        "phase transitions": {
+          "LiF-CaF2-ThF4 eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 66.9,
+              "Ca": 28.8,
+              "Th": 4.3,
+              "F": 141.7
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 805.7,
+            "phases low": [
+              "ThF5Li_S1(s)",
+              "ThF7Li3_S1(s)",
+              "ThCaF8Li2_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "incomplete",
+            "status": "fail",
+            "results": {
+              "temperature": 835.7,
+              "Li": 0.376789408357468,
+              "Ca": 0.019155978485726116,
+              "Th": 0.11779064956557717,
+              "F": 0.4862639635912288,
+              "norm": 0.034312802364188565
+            },
+            "comment": "Collection of phases found at low temperature does not match experimental reference."
           }
         }
       }

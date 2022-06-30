@@ -23284,6 +23284,80 @@
         }
       },
       "comment": "No access, data read from van der Meer (2006). Convergence failures need investigation."
+    },
+    "mstdb-07:vanderMeer2006": {
+      "mstdb references": [
+        "mstdb-07:vanderMeer2006"
+      ],
+      "url": "https://pubs.acs.org/doi/abs/10.1021/cm051531v",
+      "title": "Modeling and Calculation of the LiF-NaF-MF3 (M = La, Ce, Pu) Phase Diagrams",
+      "authors": "J. P. M. van der Meer, R. J. M. Konings, K. Hack, and H. A. J. Oonk",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "phase transitions": {
+          "LiF-NaF-CeF3 eutectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.465,
+              "Na": 0.43,
+              "Ce": 0.105,
+              "F": 1.21
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 884,
+            "phases low": [
+              "SSamsoln",
+              "FLi_solid(s)",
+              "CeNaF4_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 896.6603890643573,
+              "Li": 0.11040723981900452,
+              "Na": 0.19475069180747157,
+              "Ce": 0.047339681272590285,
+              "F": 0.44751131221719453,
+              "norm": 5.403197502711847e-14
+            }
+          },
+          "LiF-NaF-CeF3 peritectic": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.561,
+              "Na": 0.243,
+              "Ce": 0.196,
+              "F": 1.392
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 936,
+            "phases low": [
+              "MSFL",
+              "SSamsoln",
+              "CeNaF4_S1(s)"
+            ],
+            "phases high": [
+              "MSFL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 935.064,
+              "Li": 0.2342972408026756,
+              "Na": 0.10148704013377927,
+              "Ce": 0.08185785953177258,
+              "F": 0.5813578595317725,
+              "norm": 9.703345888976729e-22
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -23760,7 +23760,7 @@
             "phases high": [
               "MSFL"
             ],
-            "series status": "incomplete",
+            "series status": "fail",
             "status": "fail",
             "results": {
               "temperature": 835.7,

@@ -24244,6 +24244,70 @@
         }
       },
       "comment": "No access, data read from Lu (2019)."
+    },
+    "ghosh-2014": {
+      "mstdb references": [],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0364591613001053",
+      "title": "Experimental investigations and thermodynamic modelling of KCl-LiCl-UCl3 system",
+      "authors": "Suddhasattwa Ghosha, B. Prabhakara Reddy, K. Nagarajan, K.C. Hari Kumar",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "LiCl-KCl-UCl3 eutectic 1": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.456,
+              "K": 0.213,
+              "U": 0.331,
+              "Cl": 1.662
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 702,
+            "phases low": [
+              "SSccsoln",
+              "UCl3_S1(s)",
+              "UK2Cl5_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "fail",
+            "status": "fail",
+            "results": {
+              "temperature": 702.7019999999999,
+              "Li": 0.17112847483095417,
+              "K": 0.07993501126972201,
+              "U": 0.12421825694966192,
+              "Cl": 0.6237182569496619,
+              "norm": 0.0038083183323028265
+            }
+          },
+          "LiCl-KCl-UCl3 eutectic 2": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.576,
+              "K": 0.41932,
+              "U": 0.00468,
+              "Cl": 1.00936
+            },
+            "error": 20,
+            "temperature unit": "K",
+            "target temperature": 625,
+            "phases low": [
+              "SSccsoln",
+              "SScbsoln",
+              "UK2Cl5_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": "Transition found between 605 K and 645 K at original composition"
+          }
+        }
+      }
     }
   }
 }

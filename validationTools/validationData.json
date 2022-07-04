@@ -23964,6 +23964,186 @@
           }
         }
       }
+    },
+    "knapstad-1981": {
+      "mstdb references": [
+        "mstdb-28:robelin-2004"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/bbpc.19810851211",
+      "title": "Vapour Pressure of Ternary LiCl-NaCl-AlCl3 Melts",
+      "authors": "B. Knapstad, H. Linga and H.A. 0ye",
+      "type": "experiment",
+      "tests": {
+        "vapor pressures": {
+          "(0.6LiCl-0.4NaCl)-0.1AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.648321,
+              "Na": 0.313511,
+              "Al": 0.038168,
+              "Cl": 1.076336
+            },
+            "logarithmic error": 1,
+            "exclude": [
+              "Cl2",
+              "Cl",
+              "Na",
+              "Al",
+              "Na2",
+              "Al2"
+            ],
+            "vapor pressure unit": "Pa",
+            "samples": {
+              "1": {
+                "temperature": 1045.89903466,
+                "partial pressures": {
+                  "total": 11069.807746780894
+                },
+                "status": "pass",
+                "results": {
+                  "total": 10481.50387960703
+                }
+              },
+              "2": {
+                "temperature": 1027.5917718,
+                "partial pressures": {
+                  "total": 9332.346183838952
+                },
+                "status": "pass",
+                "results": {
+                  "total": 8563.945650500651
+                }
+              },
+              "3": {
+                "temperature": 1007.37273909,
+                "partial pressures": {
+                  "total": 7678.054022173346
+                },
+                "status": "pass",
+                "results": {
+                  "total": 6782.026271718202
+                }
+              },
+              "4": {
+                "temperature": 976.971332876,
+                "partial pressures": {
+                  "total": 5366.856653080846
+                },
+                "status": "pass",
+                "results": {
+                  "total": 4673.989731244914
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "vapor pressures"
+          },
+          "(0.6LiCl-0.4NaCl)-0.02AlCl3": {
+            "database": "chloride",
+            "composition": {
+              "Li": 0.669171,
+              "Na": 0.323593,
+              "Al": 0.0072359,
+              "Cl": 1.0144718
+            },
+            "logarithmic error": 1,
+            "exclude": [
+              "Cl2",
+              "Cl",
+              "Na",
+              "Al",
+              "Na2",
+              "Al2"
+            ],
+            "vapor pressure unit": "Pa",
+            "samples": {
+              "1": {
+                "temperature": 1112.42945525,
+                "partial pressures": {
+                  "total": 6258.625385583813
+                },
+                "status": "pass",
+                "results": {
+                  "total": 5657.807980790774
+                }
+              },
+              "2": {
+                "temperature": 1112.42577094,
+                "partial pressures": {
+                  "total": 5861.39158696608
+                },
+                "status": "pass",
+                "results": {
+                  "total": 5657.608941244301
+                }
+              },
+              "3": {
+                "temperature": 1094.9978015,
+                "partial pressures": {
+                  "total": 5189.352708497228
+                },
+                "status": "pass",
+                "results": {
+                  "total": 4776.793701672019
+                }
+              },
+              "4": {
+                "temperature": 1074.55084917,
+                "partial pressures": {
+                  "total": 4080.5430517627165
+                },
+                "status": "pass",
+                "results": {
+                  "total": 3886.6782009065764
+                }
+              },
+              "5": {
+                "temperature": 1060.1916588,
+                "partial pressures": {
+                  "total": 3656.8696033493416
+                },
+                "status": "pass",
+                "results": {
+                  "total": 3345.1092173625248
+                }
+              },
+              "6": {
+                "temperature": 1013.57909154,
+                "partial pressures": {
+                  "total": 2496.568238172033
+                },
+                "status": "pass",
+                "results": {
+                  "total": 1989.341274805291
+                }
+              },
+              "7": {
+                "temperature": 990.99457934,
+                "partial pressures": {
+                  "total": 2004.608128242974
+                },
+                "status": "pass",
+                "results": {
+                  "total": 1516.408719159579
+                }
+              },
+              "8": {
+                "temperature": 969.928029482,
+                "partial pressures": {
+                  "total": 1602.9332627220083
+                },
+                "status": "pass",
+                "results": {
+                  "total": 1162.2391362613373
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "vapor pressures"
+          }
+        }
+      },
+      "comment": "No access, data read from Robelin (2004)."
     }
   }
 }

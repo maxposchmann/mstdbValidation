@@ -28,8 +28,10 @@ def runVaporPressures(series,name):
         tseriesunit = tunit
     vaporPressureScale = 1
     if "vapor pressure unit" in series.keys():
-        if series["vapor pressure unit"] == 'mmHG':
+        if   series["vapor pressure unit"] == 'mmHG':
             vaporPressureScale = 1/760
+        elif series["vapor pressure unit"] == 'Pa':
+            vaporPressureScale = 1/101325
     # Write input script
     with open(inputScript, 'w') as inputFile:
         inputFile.write('! Python-generated input file for Thermochimica\n')
@@ -85,18 +87,28 @@ def runVaporPressures(series,name):
         # Loop over species
         sampleStatus = 'pass'
         for species in s['partial pressures']:
-            try:
-                # Calculate bounds
-                lb = (10**(-logErr)) * s['partial pressures'][species] * vaporPressureScale
-                ub = (10**( logErr)) * s['partial pressures'][species] * vaporPressureScale
-                calculated = o[species]['mole fraction']*press / adjustedTotal
+            # Calculate bounds
+            lb = (10**(-logErr)) * s['partial pressures'][species] * vaporPressureScale
+            ub = (10**( logErr)) * s['partial pressures'][species] * vaporPressureScale
+            if species == 'total':
+                # For total pressure, loop over all gas species
+                calculated = adjustedTotal - 1
+                for db_species in o:
+                    calculated += o[db_species]['mole fraction']*press
                 if not (calculated >= lb and calculated <= ub):
                     sampleStatus = 'fail'
                 # Save result
                 s['results'][species] = calculated / vaporPressureScale
-            except KeyError:
-                sampleStatus = 'fail'
-                s['results'][species] = 'Species not found'
+            else:
+                try:
+                    calculated = o[species]['mole fraction']*press / adjustedTotal
+                    if not (calculated >= lb and calculated <= ub):
+                        sampleStatus = 'fail'
+                    # Save result
+                    s['results'][species] = calculated / vaporPressureScale
+                except KeyError:
+                    sampleStatus = 'fail'
+                    s['results'][species] = 'Species not found'
         s['status'] = sampleStatus
 
 def runPhaseTransitions(series,name):

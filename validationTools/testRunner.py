@@ -368,6 +368,7 @@ def runSolubilityLimits(series,name):
             series['samples'][sample]['status'] = 'fail'
             series['samples'][sample]['results'] = 'Failed to open Thermochimica output file'
         return
+
     # Check output against experiment
     for sample in series['samples']:
         s = series['samples'][sample]
@@ -392,6 +393,11 @@ def runSolubilityLimits(series,name):
         if out[sample]['solution phases'][phase]['moles'] <= 0.0:
             s['status'] = 'fail'
             s['results'] = 'Phase not stable'
+            continue
+        # Check for not having encountered a solubility limit
+        if out[sample]['# solution phases'] + out[sample]['# pure condensed phases'] <= 1:
+            s['status'] = 'fail'
+            s['results'] = 'No solubility limit encountered (only 1 phase present)'
             continue
         # Calculate adjusted total pairs for multiple coordination cases
         multipleCoordPairs = ['Al2Cl6','Pu2Cl6','Be2F4']

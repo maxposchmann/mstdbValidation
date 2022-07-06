@@ -4423,60 +4423,48 @@
                 "fractions": {
                   "AlCl3": 0.5127210384308849
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.4499999999987655
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "5": {
                 "temperature": 885.0023624909509,
                 "fractions": {
                   "AlCl3": 0.5200029600804053
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.4500000000006723
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "6": {
                 "temperature": 858.8242288154538,
                 "fractions": {
                   "AlCl3": 0.5229853339781932
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.4499999999986967
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "7": {
                 "temperature": 857.5567199088937,
                 "fractions": {
                   "AlCl3": 0.5262925116777649
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.45000000000015544
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "8": {
                 "temperature": 843.2023115874761,
                 "fractions": {
                   "AlCl3": 0.5312562197296171
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.44999999999974977
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "9": {
                 "temperature": 840.554587784033,
                 "fractions": {
                   "AlCl3": 0.5292727181526621
                 },
-                "status": "pass",
-                "results": {
-                  "AlCl3": 0.449999999999648
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "10": {
                 "temperature": 830.0503894858933,
@@ -5574,9 +5562,9 @@
           "LiCl-AlCl3": {
             "database": "chloride",
             "composition": {
-              "Li": 99,
-              "Al": 1,
-              "Cl": 102
+              "Li": 99.75,
+              "Al": 0.25,
+              "Cl": 100.5
             },
             "error": 0.1,
             "phase": "MSCL",
@@ -5589,7 +5577,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.010000000000007354
+                  "AlCl3": 0.007702451625800841
                 }
               },
               "2": {
@@ -5599,7 +5587,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.027229200738627193
+                  "AlCl3": 0.027229200739539508
                 }
               },
               "3": {
@@ -5609,7 +5597,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.043668333504924814
+                  "AlCl3": 0.043711807479087095
                 }
               },
               "4": {
@@ -5619,7 +5607,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.07445318070498318
+                  "AlCl3": 0.07445318069905153
                 }
               },
               "5": {
@@ -5629,7 +5617,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "AlCl3": 0.10373094540311095
+                  "AlCl3": 0.10373097304260018
                 }
               },
               "6": {
@@ -5639,7 +5627,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "AlCl3": 0.14402421788991357
+                  "AlCl3": 0.1440645329196361
                 }
               },
               "7": {
@@ -5649,7 +5637,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.3558281975122896
+                  "AlCl3": 0.3558281975125124
                 }
               },
               "8": {
@@ -5659,7 +5647,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.39553936064823614
+                  "AlCl3": 0.395539360654974
                 }
               },
               "9": {
@@ -5669,7 +5657,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4215977700746509
+                  "AlCl3": 0.4215986757542621
                 }
               },
               "10": {
@@ -5687,7 +5675,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4633255680257903
+                  "AlCl3": 0.46332556803039193
                 }
               },
               "12": {
@@ -5697,7 +5685,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4690721917352311
+                  "AlCl3": 0.46907219287205454
                 }
               },
               "13": {
@@ -5707,7 +5695,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.47917025699629573
+                  "AlCl3": 0.4791702613268166
                 }
               },
               "14": {
@@ -5717,7 +5705,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4893298308546072
+                  "AlCl3": 0.4893298294846766
                 }
               },
               "15": {
@@ -5735,7 +5723,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4886160858100314
+                  "AlCl3": 0.488616085824198
                 }
               },
               "17": {
@@ -5834,9 +5822,9 @@
           "NaCl-AlCl3": {
             "database": "chloride",
             "composition": {
-              "Na": 97,
-              "Al": 3,
-              "Cl": 106
+              "Na": 99,
+              "Al": 1,
+              "Cl": 102
             },
             "error": 0.1,
             "phase": "MSCL",
@@ -5849,7 +5837,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.029999999999502612
+                  "AlCl3": 0.021089059151501326
                 }
               },
               "2": {
@@ -5859,7 +5847,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.07934481838541058
+                  "AlCl3": 0.07934502197138903
                 }
               },
               "3": {
@@ -5869,7 +5857,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.15199499017870297
+                  "AlCl3": 0.15199975029294807
                 }
               },
               "4": {
@@ -5879,7 +5867,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.2841792326053181
+                  "AlCl3": 0.2841792326073164
                 }
               },
               "5": {
@@ -5889,7 +5877,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.3467807096044032
+                  "AlCl3": 0.3488872186347903
                 }
               },
               "6": {
@@ -5899,7 +5887,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.3966531094485271
+                  "AlCl3": 0.3982024098895322
                 }
               },
               "7": {
@@ -5909,7 +5897,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.43380184538337846
+                  "AlCl3": 0.4338018453839325
                 }
               },
               "8": {
@@ -5919,7 +5907,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.44925215834641585
+                  "AlCl3": 0.4492521583455629
                 }
               },
               "9": {
@@ -5929,7 +5917,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.46920408490647575
+                  "AlCl3": 0.4692040847003007
                 }
               },
               "10": {
@@ -5939,7 +5927,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.4838206750050469
+                  "AlCl3": 0.4838190078622946
                 }
               },
               "11": {
@@ -5949,7 +5937,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "AlCl3": 0.495202165066516
+                  "AlCl3": 0.4952021731682932
                 }
               },
               "12": {
@@ -5957,8 +5945,10 @@
                 "fractions": {
                   "AlCl3": 0.525
                 },
-                "status": "fail",
-                "results": "Phase not stable"
+                "status": "pass",
+                "results": {
+                  "AlCl3": 0.4873919423642708
+                }
               },
               "13": {
                 "temperature": 415,
@@ -7650,9 +7640,9 @@
           "CsCl-CsMgCl3": {
             "database": "chloride",
             "composition": {
-              "Cs": 0.51,
-              "Mg": 0.49,
-              "Cl": 1.49
+              "Cs": 0.501,
+              "Mg": 0.499,
+              "Cl": 1.499
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -7665,10 +7655,8 @@
                 "fractions": {
                   "MgCl2": 0.4789222345896632
                 },
-                "status": "pass",
-                "results": {
-                  "MgCl2": 0.4899999999992277
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 603.4678633487782,
@@ -7677,7 +7665,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.45802002859979396
+                  "MgCl2": 0.45802002860543173
                 }
               },
               "3": {
@@ -7687,7 +7675,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.4381902845310784
+                  "MgCl2": 0.43819028454852993
                 }
               },
               "4": {
@@ -7697,7 +7685,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.41755325796177883
+                  "MgCl2": 0.417553257961773
                 }
               },
               "5": {
@@ -7707,7 +7695,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.4054171451975053
+                  "MgCl2": 0.4054171452024553
                 }
               },
               "6": {
@@ -7717,7 +7705,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.3909867595275002
+                  "MgCl2": 0.39098675952923184
                 }
               }
             },
@@ -7727,9 +7715,9 @@
           "MgCl2-CsMgCl3": {
             "database": "chloride",
             "composition": {
-              "Cs": 0.48,
-              "Mg": 0.52,
-              "Cl": 1.52
+              "Cs": 0.499,
+              "Mg": 0.501,
+              "Cl": 1.501
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -7742,10 +7730,8 @@
                 "fractions": {
                   "MgCl2": 0.5436998836829665
                 },
-                "status": "pass",
-                "results": {
-                  "MgCl2": 0.5199999999991303
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 602.9532043129989,
@@ -7754,7 +7740,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.5614039028284395
+                  "MgCl2": 0.5614039028141246
                 }
               },
               "3": {
@@ -7764,7 +7750,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.6327219004157831
+                  "MgCl2": 0.6327219003509865
                 }
               },
               "4": {
@@ -7774,7 +7760,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.6657504763769848
+                  "MgCl2": 0.665750476376989
                 }
               },
               "5": {
@@ -7784,7 +7770,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.688069383838565
+                  "MgCl2": 0.6880693838102508
                 }
               },
               "6": {
@@ -7794,7 +7780,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "MgCl2": 0.7051869114749141
+                  "MgCl2": 0.7051869114658872
                 }
               }
             },
@@ -7955,10 +7941,10 @@
           "KMgCl3-LiCl": {
             "database": "chloride",
             "composition": {
-              "Li": 0.02,
-              "K": 0.98,
-              "Mg": 0.98,
-              "Cl": 2.96
+              "Li": 0.01,
+              "K": 0.99,
+              "Mg": 0.99,
+              "Cl": 2.98
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -7971,10 +7957,8 @@
                 "fractions": {
                   "LiCl": 0.04954710175691232
                 },
-                "status": "pass",
-                "results": {
-                  "LiCl": 0.010101010100936557
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 475.84287980111196,
@@ -7983,7 +7967,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "LiCl": 0.050112411170162935
+                  "LiCl": 0.05011241117016119
                 }
               },
               "3": {
@@ -7993,7 +7977,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "LiCl": 0.07803974477187701
+                  "LiCl": 0.07803974477150177
                 }
               },
               "4": {
@@ -8095,10 +8079,8 @@
                 "fractions": {
                   "NaCl": 0.09032629772084297
                 },
-                "status": "pass",
-                "results": {
-                  "NaCl": 0.02564102564099349
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 456.05828220858893,
@@ -8520,10 +8502,8 @@
                 "fractions": {
                   "CaCl2": 0.19544491525423727
                 },
-                "status": "pass",
-                "results": {
-                  "CaCl2": 0.2004560617932567
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "6": {
                 "temperature": 625.5868544600938,
@@ -8619,9 +8599,9 @@
           "KCaCl3-CaCl2": {
             "database": "chloride",
             "composition": {
-              "K": 0.48,
-              "Ca": 0.52,
-              "Cl": 1.52
+              "K": 0.499,
+              "Ca": 0.501,
+              "Cl": 1.501
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -8634,10 +8614,8 @@
                 "fractions": {
                   "CaCl2": 0.5515520145354235
                 },
-                "status": "pass",
-                "results": {
-                  "CaCl2": 0.5199999999995077
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 725.1173708920188,
@@ -8646,7 +8624,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.610604059254953
+                  "CaCl2": 0.6106040592549484
                 }
               },
               "3": {
@@ -8656,7 +8634,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.6597876765134503
+                  "CaCl2": 0.6597876764156566
                 }
               },
               "4": {
@@ -8666,7 +8644,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.6983667811844111
+                  "CaCl2": 0.6983667811844023
                 }
               },
               "5": {
@@ -8676,7 +8654,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.7303775331676511
+                  "CaCl2": 0.7303775330943959
                 }
               }
             },
@@ -9124,9 +9102,9 @@
           "CsCl-CsCaCl3": {
             "database": "chloride",
             "composition": {
-              "Cs": 0.97,
-              "Ca": 0.03,
-              "Cl": 1.03
+              "Cs": 0.99,
+              "Ca": 0.01,
+              "Cl": 1.01
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -9141,7 +9119,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.029999999999965506
+                  "CaCl2": 0.011613310293993685
                 }
               }
             },
@@ -11465,9 +11443,9 @@
           "KCl-CeCl3-mid": {
             "database": "chloride",
             "composition": {
-              "K": 0.65,
-              "Ce": 0.35,
-              "Cl": 1.7
+              "K": 0.665,
+              "Ce": 0.335,
+              "Cl": 1.67
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -11480,10 +11458,8 @@
                 "fractions": {
                   "CeCl3": 0.3694267515923567
                 },
-                "status": "pass",
-                "results": {
-                  "CeCl3": 0.34999999999936765
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 618.6640965471003,
@@ -11492,7 +11468,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.3772932117330663
+                  "CeCl3": 0.37729321173307034
                 }
               },
               "3": {
@@ -11502,7 +11478,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.4432956986700434
+                  "CeCl3": 0.4432956986700315
                 }
               },
               "4": {
@@ -11512,7 +11488,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.496882406937934
+                  "CeCl3": 0.4968824163278208
                 }
               }
             },
@@ -11718,9 +11694,9 @@
           "CsCl-Cs3CeCl6": {
             "database": "chloride",
             "composition": {
-              "Cs": 0.77,
-              "Ce": 0.23,
-              "Cl": 1.46
+              "Cs": 0.755,
+              "Ce": 0.245,
+              "Cl": 1.49
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -11733,10 +11709,8 @@
                 "fractions": {
                   "CeCl3": 0.20547378603534106
                 },
-                "status": "pass",
-                "results": {
-                  "CeCl3": 0.22999999999985565
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 593.0501930501931,
@@ -11745,7 +11719,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.21694447276545534
+                  "CeCl3": 0.21694447276547016
                 }
               },
               "3": {
@@ -11754,9 +11728,7 @@
                   "CeCl3": 0.10618677918893898
                 },
                 "status": "fail",
-                "results": {
-                  "CeCl3": 0.23000000000087706
-                }
+                "results": "No solubility limit encountered (only 1 phase present)"
               }
             },
             "comment": "Database contains no intermediate Cs-Ce-Cl compounds.",
@@ -11834,9 +11806,9 @@
           "CeCl3-CsCe2Cl7": {
             "database": "chloride",
             "composition": {
-              "Cs": 0.02,
-              "Ce": 0.98,
-              "Cl": 2.96
+              "Cs": 0.01,
+              "Ce": 0.99,
+              "Cl": 2.98
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -11851,7 +11823,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.979999999997323
+                  "CeCl3": 0.9890219879869581
                 }
               },
               "2": {
@@ -11861,7 +11833,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeCl3": 0.895618546970506
+                  "CeCl3": 0.8956185469717636
                 }
               },
               "3": {
@@ -11871,7 +11843,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "CeCl3": 0.6844681443887844
+                  "CeCl3": 0.68447193052885
                 }
               }
             },
@@ -14801,9 +14773,9 @@
           "PuCl3-NaCl": {
             "database": "chloride",
             "composition": {
-              "Na": 0.01,
-              "Pu": 0.99,
-              "Cl": 2.98
+              "Na": 0.005,
+              "Pu": 0.995,
+              "Cl": 2.99
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -14816,10 +14788,8 @@
                 "fractions": {
                   "PuCl3": 0.976
                 },
-                "status": "pass",
-                "results": {
-                  "PuCl3": 0.9899999999994022
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 761,
@@ -14828,7 +14798,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.981311226067605
+                  "PuCl3": 0.9813112260678476
                 }
               },
               "3": {
@@ -14838,7 +14808,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.9481031089009491
+                  "PuCl3": 0.9481030504428295
                 }
               },
               "4": {
@@ -14848,7 +14818,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.8979132892322635
+                  "PuCl3": 0.8979132523506257
                 }
               },
               "5": {
@@ -14858,7 +14828,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.8699143990134085
+                  "PuCl3": 0.8699144231995619
                 }
               },
               "6": {
@@ -14868,7 +14838,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.8306840420751042
+                  "PuCl3": 0.8306840209071372
                 }
               },
               "7": {
@@ -14878,7 +14848,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.7249591135705215
+                  "PuCl3": 0.7249591137080427
                 }
               },
               "8": {
@@ -14888,7 +14858,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "PuCl3": 0.52039901343883
+                  "PuCl3": 0.5203975504014361
                 }
               },
               "9": {
@@ -14898,7 +14868,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "PuCl3": 0.633666015829919
+                  "PuCl3": 0.6336661085629928
                 }
               },
               "10": {
@@ -14916,7 +14886,7 @@
                 },
                 "status": "fail",
                 "results": {
-                  "PuCl3": 0.7430913945794363
+                  "PuCl3": 0.743091395875091
                 }
               },
               "12": {
@@ -19806,7 +19776,7 @@
               "Na": 20,
               "Ca": 2000,
               "Ce": 80,
-              "Cl": 2260
+              "Cl": 4260
             },
             "error": 0.1,
             "temperature unit": "K",
@@ -19819,9 +19789,9 @@
                 "fractions": {
                   "CaCl2": 0.9054265902924331
                 },
-                "status": "fail",
+                "status": "pass",
                 "results": {
-                  "CaCl2": 0.5278863134557792
+                  "CaCl2": 0.9241911780776099
                 }
               },
               "2": {
@@ -19829,9 +19799,9 @@
                 "fractions": {
                   "CaCl2": 0.7500925965803869
                 },
-                "status": "fail",
+                "status": "pass",
                 "results": {
-                  "CaCl2": 0.5287566488990721
+                  "CaCl2": 0.7563905579159838
                 }
               },
               "3": {
@@ -19841,7 +19811,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.5298235235051512
+                  "CaCl2": 0.5909924508923207
                 }
               },
               "4": {
@@ -19851,7 +19821,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CaCl2": 0.5332186267963618
+                  "CaCl2": 0.430045307101298
                 }
               }
             },
@@ -20326,9 +20296,7 @@
                   "AlCl3": 0.1613959408562906
                 },
                 "status": "fail",
-                "results": {
-                  "AlCl3": 0.00990099009861588
-                }
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "4": {
                 "temperature": 700.6479598671268,
@@ -20510,10 +20478,8 @@
                 "fractions": {
                   "BeF2": 0.9486887115165334
                 },
-                "status": "pass",
-                "results": {
-                  "BeF2": 0.9800000000000236
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "2": {
                 "temperature": 525.7001647446457,
@@ -23487,9 +23453,9 @@
             "database": "fluoride",
             "composition": {
               "Li": 60,
-              "Ce": 5,
+              "Ce": 10,
               "Th": 40,
-              "F": 235
+              "F": 250
             },
             "error": 0.1,
             "temperature unit": "C",
@@ -23504,7 +23470,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeF3": 0.021268862403536388
+                  "CeF3": 0.020571018072028806
                 }
               },
               "2": {
@@ -23514,7 +23480,7 @@
                 },
                 "status": "pass",
                 "results": {
-                  "CeF3": 0.0476190476188672
+                  "CeF3": 0.08087552063564268
                 }
               }
             },
@@ -23680,20 +23646,16 @@
                 "fractions": {
                   "CaF2": 0.461
                 },
-                "status": "pass",
-                "results": {
-                  "CaF2": 0.4900000000005947
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "3": {
                 "temperature": 1326.8,
                 "fractions": {
                   "CaF2": 0.441
                 },
-                "status": "pass",
-                "results": {
-                  "CaF2": 0.48999999999968
-                }
+                "status": "fail",
+                "results": "No solubility limit encountered (only 1 phase present)"
               },
               "4": {
                 "temperature": 1311.5,

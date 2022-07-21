@@ -13,3 +13,5 @@ KF-PuF3, RbF-PuF3, LaF3–PuF3: MSTDB-TC references O. Benes and R.J.M Konings (
 RbF-CsF: MSTDB-TC references O. Benes, R.J.M Konings (2008) "Thermodynamic evaluation of the MF-LaF3 (M = Li, Na, K, Rb, Cs) systems", which states that the only available experimental data is from Samuseva and Plyushchev, but the results violate the Gibbs phase rule and have thus been rejected. The current assessment appears to use these data points as a rough reference for the shape of the phase diagram.
 
 PuF3-UF4: MSTDB-TC references Capelli, Beneš, and Konings (2015) "Thermodynamic assessment of the LiF–ThF4–PuF3–UF4 system". This article states: "Based on the thermodynamic data described in the Section 2, the ThF4–PuF3 and UF4–PuF3 phase diagrams have been calculated and they are shown in Figs. 1 and 2, respectively. As discussed above, no experimental data have been found in literature for these two systems and thus no direct optimization was possible."
+
+UF3-CsF: MSTDB-TC references V. A. Volkov, I. G. Suglobova, D. E. Chirkst (1979) "Phase Diagrams of Systems of Uranium Trifluoride with Fluoride of Alkali Metal", which could not be found.

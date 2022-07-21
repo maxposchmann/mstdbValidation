@@ -24947,11 +24947,11 @@
     },
     "mstdb-15:thoma1974": {
       "mstdb references": [
-        "mstdb-09:vozarova2017"
+        "mstdb-15:thoma1974"
       ],
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021961417301404",
-      "title": "Thermodynamic determination and assessment of the CsF-ThF4 system",
-      "authors": "N. Voz\u00e1rov\u00e1 and A.L. Smith and J-Y. Colle and P.E. Raison and D. Bou\u00ebxi\u00e8re and R.J.M. Konings and O. Bene\u0161",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/0022190274802198",
+      "title": "Condensed equilibria in the uranium(III)-uranium(IV) fluoride system",
+      "authors": "Roy E. Thoma, Herbert Insley, George D. Brunton",
       "type": "experiment",
       "comment": "MSTDB direct reference with experimental data",
       "tests": {

@@ -10,3 +10,4 @@ LiCl-KCl-AlCl3: Only two references are available: Moore (1963) "Immiscibility G
 
 LiF-NdF3: Only cited reference is Thoma (1965) report "Rare-Earth Halides" which contains a sketch of a phase diagram, but no values or experimental references.
 
+KF-PuF3: MSTDB-TC references O. Benes and R.J.M Konings (2008) "Actinide burner fuel: Potential compositions based on the thermodynamic evaluation of MF-PuF3 (M = Li, Na, K, Rb, Cs) and LaF3-PuF3 systems". This paper states: "For the other binary subsystems containing plutonium (KF–PuF3; RbF–PuF3; CsF–PuF3; LaF3–PuF3) no experimental data are known and therefore no optimization of the phase diagrams is possible".

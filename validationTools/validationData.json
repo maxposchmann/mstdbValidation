@@ -24846,6 +24846,104 @@
           }
         }
       }
+    },
+    "mstdb-09:vozarova2017": {
+      "mstdb references": [
+        "mstdb-09:vozarova2017"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021961417301404",
+      "title": "Thermodynamic determination and assessment of the CsF-ThF4 system",
+      "authors": "N. Voz\u00e1rov\u00e1 and A.L. Smith and J-Y. Colle and P.E. Raison and D. Bou\u00ebxi\u00e8re and R.J.M. Konings and O. Bene\u0161",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "ThF4-CsF": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 0.01,
+              "Th": 0.99,
+              "F": 3.97
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1359.9,
+                "fractions": {
+                  "ThF4": 0.9458
+                },
+                "status": "pass",
+                "results": {
+                  "ThF4": 0.9415193704165914
+                }
+              },
+              "2": {
+                "temperature": 1329.1,
+                "fractions": {
+                  "ThF4": 0.8622
+                },
+                "status": "pass",
+                "results": {
+                  "ThF4": 0.8707674918428642
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CsTh6F25-CsF": {
+            "database": "fluoride",
+            "composition": {
+              "Cs": 0.15,
+              "Th": 0.85,
+              "F": 3.55
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1324.6,
+                "fractions": {
+                  "ThF4": 0.7955
+                },
+                "status": "pass",
+                "results": {
+                  "ThF4": 0.8500000032440334
+                }
+              },
+              "2": {
+                "temperature": 1299.8,
+                "fractions": {
+                  "ThF4": 0.7466
+                },
+                "status": "pass",
+                "results": {
+                  "ThF4": 0.7490579499528714
+                }
+              },
+              "3": {
+                "temperature": 1251.1,
+                "fractions": {
+                  "ThF4": 0.655
+                },
+                "status": "pass",
+                "results": {
+                  "ThF4": 0.6301768405001403
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

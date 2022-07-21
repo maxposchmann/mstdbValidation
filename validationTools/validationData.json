@@ -24944,6 +24944,86 @@
           }
         }
       }
+    },
+    "mstdb-15:thoma1974": {
+      "mstdb references": [
+        "mstdb-09:vozarova2017"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021961417301404",
+      "title": "Thermodynamic determination and assessment of the CsF-ThF4 system",
+      "authors": "N. Voz\u00e1rov\u00e1 and A.L. Smith and J-Y. Colle and P.E. Raison and D. Bou\u00ebxi\u00e8re and R.J.M. Konings and O. Bene\u0161",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "UF4-UF3": {
+            "database": "fluoride",
+            "composition": {
+              "U": 1,
+              "F": 3.97
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1278.829790138298,
+                "fractions": {
+                  "UF3": 0.09935976789350348
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.08482801479031923
+                }
+              },
+              "2": {
+                "temperature": 1247.223919320023,
+                "fractions": {
+                  "UF3": 0.1488697328647774
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.15792902093120587
+                }
+              },
+              "3": {
+                "temperature": 1223.1236661831115,
+                "fractions": {
+                  "UF3": 0.19963832204776372
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.20604476030474295
+                }
+              },
+              "4": {
+                "temperature": 1192.2685454088457,
+                "fractions": {
+                  "UF3": 0.2491487577087203
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.26051467133782646
+                }
+              },
+              "5": {
+                "temperature": 1162.913041963868,
+                "fractions": {
+                  "UF3": 0.29991405206392713
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.3065375024975271
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

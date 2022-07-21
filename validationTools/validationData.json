@@ -24617,6 +24617,114 @@
         }
       },
       "comment": "No access, data read from Ocadiz-Flores (2018)."
+    },
+    "deadmore-1960": {
+      "mstdb references": [
+        "mstdb-02:benes2008"
+      ],
+      "url": "https://pubs.acs.org/doi/10.1021/j100835a502",
+      "title": "PHASE RELATIONS IN THE SYSTEMS CsF\u2014LiF, CsF\u2014NaF AND CaF2\u2014LiF",
+      "authors": "DL Deadmore, JS Machin",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaF-CsF": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.99,
+              "Cs": 0.01,
+              "F": 1
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 956.8464730290456,
+                "fractions": {
+                  "NaF": 0.8540895248373437
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.8961953406146258
+                }
+              },
+              "2": {
+                "temperature": 900.4149377593359,
+                "fractions": {
+                  "NaF": 0.7461498861867284
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.7450133179296506
+                }
+              },
+              "3": {
+                "temperature": 847.8561549100965,
+                "fractions": {
+                  "NaF": 0.6270211934577528
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.6201408258401933
+                }
+              },
+              "4": {
+                "temperature": 815.21438450899,
+                "fractions": {
+                  "NaF": 0.5483628875698543
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.5510643492008194
+                }
+              },
+              "5": {
+                "temperature": 770.401106500691,
+                "fractions": {
+                  "NaF": 0.496542185338866
+                },
+                "status": "fail",
+                "results": "No Thermochimica output (likely Thermochimica convergence failure)"
+              },
+              "6": {
+                "temperature": 725.0345781466108,
+                "fractions": {
+                  "NaF": 0.3976331801350876
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.3898247525066
+                }
+              },
+              "7": {
+                "temperature": 674.9654218533879,
+                "fractions": {
+                  "NaF": 0.33008794943837655
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.3167510989502399
+                }
+              },
+              "8": {
+                "temperature": 635.6846473029036,
+                "fractions": {
+                  "NaF": 0.2760561065317035
+                },
+                "status": "pass",
+                "results": {
+                  "NaF": 0.26647799405796496
+                }
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

@@ -7709,7 +7709,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "MgCl2-CsMgCl3": {
@@ -7784,7 +7784,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "MgCl2-CsCl": {
@@ -8133,7 +8133,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "NaCl-KMgCl3": {
@@ -8516,7 +8516,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "KCaCl3-KCl": {
@@ -8658,7 +8658,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "CaCl2-KCaCl3": {
@@ -11492,7 +11492,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           },
           "CeCl3-KCl": {
@@ -19825,7 +19825,7 @@
                 }
               }
             },
-            "series status": "partial",
+            "series status": "pass",
             "series type": "solubility limits"
           }
         }
@@ -20522,7 +20522,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           }
         }
@@ -23698,7 +23698,7 @@
                 }
               }
             },
-            "series status": "pass",
+            "series status": "partial",
             "series type": "solubility limits"
           }
         },
@@ -24267,6 +24267,174 @@
             "series status": "pass",
             "status": "pass",
             "results": "Transition found between 605 K and 645 K at original composition"
+          }
+        }
+      }
+    },
+    "mstdb-18:beilmann2013": {
+      "mstdb references": [
+        "mstdb-18:beilmann2013"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S002196141200300X",
+      "title": "Thermodynamic assessment of the (LiF + UF3) and (NaF + UF3) systems",
+      "authors": "M. Beilmann, O. Bene\u0161, R.J.M. Konings, Th. Fangh\u00e4nel",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "UF3-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.1,
+              "U": 0.9,
+              "F": 2.8
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1436.876355748373,
+                "fractions": {
+                  "LiF": 0.3705598479124521
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.4633150437484703
+                }
+              },
+              "2": {
+                "temperature": 1395.2277657266811,
+                "fractions": {
+                  "LiF": 0.3982492058462713
+                },
+                "status": "fail",
+                "results": {
+                  "LiF": 0.5183258424004529
+                }
+              },
+              "3": {
+                "temperature": 1382.2125813449024,
+                "fractions": {
+                  "LiF": 0.48213621259759354
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.5345047500953244
+                }
+              },
+              "4": {
+                "temperature": 1395.2277657266811,
+                "fractions": {
+                  "LiF": 0.4986237376814773
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.5183258422930058
+                }
+              },
+              "5": {
+                "temperature": 1339.2624728850328,
+                "fractions": {
+                  "LiF": 0.5495251326297659
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.5834336468789948
+                }
+              },
+              "6": {
+                "temperature": 1317.1366594360088,
+                "fractions": {
+                  "LiF": 0.5697360403616952
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.6057219333536717
+                }
+              },
+              "7": {
+                "temperature": 1304.12147505423,
+                "fractions": {
+                  "LiF": 0.5989413991729426
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.6178992943049733
+                }
+              },
+              "8": {
+                "temperature": 1261.17136659436,
+                "fractions": {
+                  "LiF": 0.6453565364335794
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.6535458180616589
+                }
+              },
+              "9": {
+                "temperature": 1207.8091106290674,
+                "fractions": {
+                  "LiF": 0.6992558109304801
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.6897017541035888
+                }
+              },
+              "10": {
+                "temperature": 1132.3210412147505,
+                "fractions": {
+                  "LiF": 0.7493959557061265
+                },
+                "status": "pass",
+                "results": {
+                  "LiF": 0.7300000929093915
+                }
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "UF3-NaF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.99,
+              "U": 0.01,
+              "F": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1232.0512820512822,
+                "fractions": {
+                  "UF3": 0.10258302583025831
+                },
+                "status": "pass",
+                "results": {
+                  "UF3": 0.00987466743876261
+                }
+              },
+              "2": {
+                "temperature": 1184.615384615385,
+                "fractions": {
+                  "UF3": 0.15055350553505537
+                },
+                "status": "fail",
+                "results": {
+                  "UF3": 0.009898484960955108
+                }
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
           }
         }
       }

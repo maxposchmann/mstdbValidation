@@ -24438,6 +24438,185 @@
           }
         }
       }
+    },
+    "mstdb-17:ocadiz-flores2018": {
+      "mstdb references": [
+        "mstdb-17:ocadiz-flores2018"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S002196141200300X",
+      "title": "Thermodynamic assessment of the LiF-NiF2, NaF-NiF2 and KF-NiF2 systems",
+      "authors": "J.A. Ocadiz-Flores, E. Capelli, P.E. Raison, R.J.M. Konings, A.L.Smith",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "NiF2-LiF": {
+            "database": "fluoride",
+            "composition": {
+              "Li": 0.1,
+              "Ni": 0.9,
+              "F": 1.9
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1499.2248062015506,
+                "fractions": {
+                  "NiF2": 0.7395973154362416
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.7141670256839505
+                }
+              },
+              "2": {
+                "temperature": 1463.953488372093,
+                "fractions": {
+                  "NiF2": 0.6671140939597316
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.6606520206267559
+                }
+              },
+              "3": {
+                "temperature": 1382.5581395348838,
+                "fractions": {
+                  "NiF2": 0.5033557046979866
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.5585949813224235
+                }
+              },
+              "4": {
+                "temperature": 1184.4961240310076,
+                "fractions": {
+                  "NiF2": 0.3691275167785235
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.36341933989402825
+                }
+              },
+              "5": {
+                "temperature": 1165.5038759689924,
+                "fractions": {
+                  "NiF2": 0.3302013422818792
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.343933672339082
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
+    },
+    "kalinnikov-1999": {
+      "mstdb references": [
+        "mstdb-17:ocadiz-flores2018"
+      ],
+      "url": "Could not be found online",
+      "title": "Phase Diagrams of the NaF-NiF 2 and KF-NiF 2 Systems",
+      "authors": "Kalinnikov, V. T., D. V. Makarov, E. L. Tikhomirova, and V. I. Skiba",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "NaF-NiF2": {
+            "database": "fluoride",
+            "composition": {
+              "Na": 0.99,
+              "Ni": 0.01,
+              "F": 1.01
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1254.1701769165966,
+                "fractions": {
+                  "NiF2": 0.07962962962962963
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.033541718287547186
+                }
+              },
+              "2": {
+                "temperature": 1172.7885425442291,
+                "fractions": {
+                  "NiF2": 0.1493827160493826
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.14090566248665035
+                }
+              },
+              "3": {
+                "temperature": 1111.4574557708509,
+                "fractions": {
+                  "NiF2": 0.1993827160493826
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.18772232383973567
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "NiF2-Kf": {
+            "database": "fluoride",
+            "composition": {
+              "K": 0.05,
+              "Ni": 0.95,
+              "F": 1.95
+            },
+            "error": 0.1,
+            "temperature unit": "K",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1491.9085312225154,
+                "fractions": {
+                  "NiF2": 0.7992744860943168
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.7624199662653703
+                }
+              },
+              "2": {
+                "temperature": 1367.5461741424801,
+                "fractions": {
+                  "NiF2": 0.6698911729141475
+                },
+                "status": "pass",
+                "results": {
+                  "NiF2": 0.6473390555319947
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Ocadiz-Flores (2018)."
     }
   }
 }

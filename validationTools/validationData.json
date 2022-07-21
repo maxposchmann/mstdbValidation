@@ -24725,6 +24725,127 @@
           }
         }
       }
+    },
+    "mstdb-33:thoma1958": {
+      "mstdb references": [
+        "mstdb-33:thoma1958"
+      ],
+      "url": "https://ceramics.onlinelibrary.wiley.com/doi/abs/10.1111/j.1151-2916.1958.tb12912.x",
+      "title": "Phase Equilibria in the Alkali Fluoride-Uranium Tetrafluoride Fused Salt Systems: II, The Systems KF-UF4 and RbF-UF4",
+      "authors": "R. E. THOMA, HERBERT INSLEY, B. S. LANDAU, H. A. FRIEDMAN, W. R. GRIMES",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "UF4-KF": {
+            "database": "fluoride",
+            "composition": {
+              "K": 0.01,
+              "U": 0.99,
+              "F": 3.97
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSFL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 1010,
+                "fractions": {
+                  "UF4": 0.96
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.9313410248772912
+                }
+              },
+              "2": {
+                "temperature": 1016,
+                "fractions": {
+                  "UF4": 0.94
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.9454443323120935
+                }
+              },
+              "3": {
+                "temperature": 992,
+                "fractions": {
+                  "UF4": 0.92
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.8937125517256205
+                }
+              },
+              "4": {
+                "temperature": 980,
+                "fractions": {
+                  "UF4": 0.9
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.8717033127438929
+                }
+              },
+              "5": {
+                "temperature": 980,
+                "fractions": {
+                  "UF4": 0.865
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.871703312734002
+                }
+              },
+              "6": {
+                "temperature": 940,
+                "fractions": {
+                  "UF4": 0.8
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.8105768029420047
+                }
+              },
+              "7": {
+                "temperature": 895,
+                "fractions": {
+                  "UF4": 0.75
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.7568286515710048
+                }
+              },
+              "8": {
+                "temperature": 850,
+                "fractions": {
+                  "UF4": 0.7
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.713303156037407
+                }
+              },
+              "9": {
+                "temperature": 818,
+                "fractions": {
+                  "UF4": 0.68
+                },
+                "status": "pass",
+                "results": {
+                  "UF4": 0.686811238826751
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

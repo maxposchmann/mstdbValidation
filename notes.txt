@@ -7,3 +7,6 @@ LaF3–PuF3: MSTDB-TC paper references Benes and Konings (2008) "Actinide burner
 LiF-PuF3-UF4: MSTDB-TC references Capelli, Beneš, and Konings (2015) "Thermodynamic assessment of the LiF–ThF4–PuF3–UF4 system". LiF-PuF3-UF4 is absent from the experimental reference Table 3. No experimental data points are plotted in figures either. The descriptions of the experimental references make no mention of this subsystem. Possibly fit entirely by using other systems as analogs.
 
 LiCl-KCl-AlCl3: Only two references are available: Moore (1963) "Immiscibility Gap in the System: LiCl-KCl-AlCl3", which is entirely about immiscibility of the liquid (MSCL), and Lantelme, Alexopoulos, Chemla and Haas (1988) "Thermodynamic properties of aluminum chloride solutions in the molten LiCl-KCl system" which includes EMF data. The MSTDB-TC doesn't include a miscibility gap in the database as distributed, so the first test source cannot be used. No EMF test mode has been developed yet.
+
+LiF-NdF3: Only cited reference is Thoma (1965) report "Rare-Earth Halides" which contains a sketch of a phase diagram, but no values or experimental references.
+

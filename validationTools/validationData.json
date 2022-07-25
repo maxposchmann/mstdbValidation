@@ -25024,6 +25024,80 @@
           }
         }
       }
+    },
+    "plyushchev-1955": {
+      "mstdb references": [
+        "mstdb-19:pelton2001"
+      ],
+      "url": "Could not be found online",
+      "title": "ISSLEDOVANIE VZAIMODEISTVIYA KHLORIDOV SHCHELOCHNYKH I SHCHELOCHNOZEMELNYKH ELEMENTOV V RASPLAVAKH. 1. TROINAYA SISTEMA IZ KHLORIDOV NATRIYA, RUBIDIYA I KALTSIYA.",
+      "authors": "V. E. Plyushchev, F. V. Kovalev, and I. V. Shakhno",
+      "type": "experiment",
+      "tests": {
+        "phase transitions": {
+          "NaCl-RbCl-CaCl2 eutectic 1": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.4400648215467039,
+              "Rb": 0.02150159118325673,
+              "Ca": 0.5384335872700394,
+              "Cl": 1.5384335872700394
+            },
+            "error": 20,
+            "target temperature": 500,
+            "temperature unit": "C",
+            "phases low": [
+              "CaCl2_S1(s)",
+              "SScqsoln",
+              "RbCaCl3_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 477.4996425060596,
+              "Na": 0.07336284472894157,
+              "Rb": 0.002118784867494143,
+              "Ca": 0.11211253663291554,
+              "Cl": 0.7060541408365781,
+              "norm": 5.745619882204374e-15
+            }
+          },
+          "NaCl-RbCl-CaCl2 eutectic 2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.33004993574264035,
+              "Rb": 0.5551876288143295,
+              "Ca": 0.11476243544303018,
+              "Cl": 1.11476243544303
+            },
+            "error": 20,
+            "target temperature": 505,
+            "temperature unit": "C",
+            "phases low": [
+              "SScssoln",
+              "SScqsoln",
+              "RbCaCl3_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 512.5186706631439,
+              "Na": 0.2085308321858147,
+              "Rb": 0.16328206618640584,
+              "Ca": 0.054195089081844054,
+              "Cl": 0.4271336471462782,
+              "norm": 1.647726837601441e-12
+            }
+          }
+        }
+      },
+      "comment": "No access, data read from Pelton (2001)."
     }
   }
 }

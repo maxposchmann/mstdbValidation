@@ -15,3 +15,5 @@ RbF-CsF: MSTDB-TC references O. Benes, R.J.M Konings (2008) "Thermodynamic evalu
 PuF3-UF4: MSTDB-TC references Capelli, Beneš, and Konings (2015) "Thermodynamic assessment of the LiF–ThF4–PuF3–UF4 system". This article states: "Based on the thermodynamic data described in the Section 2, the ThF4–PuF3 and UF4–PuF3 phase diagrams have been calculated and they are shown in Figs. 1 and 2, respectively. As discussed above, no experimental data have been found in literature for these two systems and thus no direct optimization was possible."
 
 UF3-CsF: MSTDB-TC references V. A. Volkov, I. G. Suglobova, D. E. Chirkst (1979) "Phase Diagrams of Systems of Uranium Trifluoride with Fluoride of Alkali Metal", which could not be found.
+
+KCl-RbCl: MSTDB-TC references V. E. Plyushchev, F. V. Kovalev, and I. V. Shakhno (1955) for KCl-RbCl-CaCl2 ternary. This system contains no invariant points. No other data involving the KCl-RbCl subsystem can be found.

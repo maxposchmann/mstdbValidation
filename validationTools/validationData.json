@@ -25094,6 +25094,59 @@
               "Cl": 0.4271336471462782,
               "norm": 1.647726837601441e-12
             }
+          },
+          "NaCl-CsCl-CaCl2 eutectic 1": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.4699817974960513,
+              "Cs": 0.0077190556309617575,
+              "Ca": 0.522299146872987,
+              "Cl": 1.522299146872987
+            },
+            "error": 20,
+            "target temperature": 480,
+            "temperature unit": "C",
+            "phases low": [
+              "CaCl2_S1(s)",
+              "SScqsoln",
+              "CsCaCl3_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": {
+              "temperature": 480.47999999999996,
+              "Na": 0.1865170433399181,
+              "Cs": 0.003057264870779068,
+              "Ca": 0.20686556880970497,
+              "Cl": 0.6029327844048524,
+              "norm": 1.2868454533797263e-22
+            }
+          },
+          "NaCl-CsCl-CaCl2 eutectic 2": {
+            "database": "chloride",
+            "composition": {
+              "Na": 0.3368571270853971,
+              "Cs": 0.6460079927078206,
+              "Ca": 0.017134880206782235,
+              "Cl": 1.0171348802067823
+            },
+            "error": 20,
+            "target temperature": 482,
+            "temperature unit": "C",
+            "phases low": [
+              "CsCl_alpha(s)",
+              "SScqsoln",
+              "CsCaCl3_S1(s)"
+            ],
+            "phases high": [
+              "MSCL"
+            ],
+            "series status": "pass",
+            "status": "pass",
+            "results": "Transition found between 462 C and 502 C at original composition"
           }
         }
       },

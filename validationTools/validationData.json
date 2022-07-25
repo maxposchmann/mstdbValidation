@@ -25151,6 +25151,136 @@
         }
       },
       "comment": "No access, data read from Pelton (2001)."
+    },
+    "safonov-1986": {
+      "mstdb references": [
+        "mstdb-02:benes2008"
+      ],
+      "url": "Could not be found online",
+      "title": "INTERACTION OF NICKEL DICHLORIDE WITH MAGNESIUM AND ZINC DICHLORIDE",
+      "authors": "SAFONOV, VV and MIREEV, VA",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "BiCl2-MgCl2": {
+            "database": "chloride",
+            "composition": {
+              "Mg": 0.1,
+              "Ni": 0.9,
+              "Cl": 2
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 916.2623539982029,
+                "fractions": {
+                  "NiCl2": 0.5961763947352736
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.5483041342898165
+                }
+              },
+              "2": {
+                "temperature": 898.2929020664868,
+                "fractions": {
+                  "NiCl2": 0.541597387355321
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.4978749309534671
+                }
+              },
+              "3": {
+                "temperature": 882.1203953279423,
+                "fractions": {
+                  "NiCl2": 0.4987999012961289
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.45569629649111787
+                }
+              },
+              "4": {
+                "temperature": 865.0494159928121,
+                "fractions": {
+                  "NiCl2": 0.44856174757097683
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.41415829774608287
+                }
+              },
+              "5": {
+                "temperature": 847.5292003593888,
+                "fractions": {
+                  "NiCl2": 0.40266277644185905
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.3744534926205425
+                }
+              },
+              "6": {
+                "temperature": 821.9227313566935,
+                "fractions": {
+                  "NiCl2": 0.35117411374005786
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.32134416282345873
+                }
+              },
+              "7": {
+                "temperature": 808.8948787061993,
+                "fractions": {
+                  "NiCl2": 0.2990810847845086
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.29642678594850047
+                }
+              },
+              "8": {
+                "temperature": 791.3746630727761,
+                "fractions": {
+                  "NiCl2": 0.25256215085315903
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.2650338393833735
+                }
+              },
+              "9": {
+                "temperature": 771.1590296495956,
+                "fractions": {
+                  "NiCl2": 0.20541991200204535
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.23170072824625024
+                }
+              },
+              "10": {
+                "temperature": 748.6972147349504,
+                "fractions": {
+                  "NiCl2": 0.1477355204150465
+                },
+                "status": "pass",
+                "results": {
+                  "NiCl2": 0.19812895392711963
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

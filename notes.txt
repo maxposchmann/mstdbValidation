@@ -16,4 +16,4 @@ PuF3-UF4: MSTDB-TC references Capelli, Beneš, and Konings (2015) "Thermodynamic
 
 UF3-CsF: MSTDB-TC references V. A. Volkov, I. G. Suglobova, D. E. Chirkst (1979) "Phase Diagrams of Systems of Uranium Trifluoride with Fluoride of Alkali Metal", which could not be found.
 
-KCl-RbCl: MSTDB-TC references V. E. Plyushchev, F. V. Kovalev, and I. V. Shakhno (1955) for KCl-RbCl-CaCl2 ternary. This system contains no invariant points. No other data involving the KCl-RbCl subsystem can be found.
+KCl-RbCl, KCl-CsCl, RbCl-CsCl: MSTDB-TC references V. E. Plyushchev, F. V. Kovalev, and I. V. Shakhno (1955) for the KCl-RbCl-CaCl2 and KCl-CsCl-CaCl2 ternaries. These systems contain no invariant points. No other data involving the KCl-RbCl and KCl-CsCl subsystems can be found. For RbCl-CsCl, E.P. Dergunov and A.G. Bergman (1950) "Complex formation between chloride of alkaline and alkaline earth metals" is cited, but the issue is otherwise the same.

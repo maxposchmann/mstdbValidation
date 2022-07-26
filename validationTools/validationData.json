@@ -25281,6 +25281,268 @@
           }
         }
       }
+    },
+    "mstdb-38:benz1961": {
+      "mstdb references": [
+        "mstdb-38:benz1961"
+      ],
+      "url": "https://pubs.acs.org/doi/pdf/10.1021/j100826a515",
+      "title": "PHASE EQUILIBRIA IN THE BINARY SYSTEMS PuCl3\u2014RbCl AND PuCl3\u2014CsCl",
+      "authors": "Benz, R and Douglass, RM",
+      "type": "experiment",
+      "comment": "MSTDB direct reference with experimental data",
+      "tests": {
+        "solubility limits": {
+          "RbCl-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.99,
+              "Pu": 0.01,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 697.7791584897371,
+                "fractions": {
+                  "PuCl3": 0.04397230830624524
+                },
+                "status": "fail",
+                "results": {
+                  "PuCl3": 0.21366833311649264
+                }
+              },
+              "2": {
+                "temperature": 661.8607787720591,
+                "fractions": {
+                  "PuCl3": 0.09227744228160964
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.09308624777410923
+                }
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          },
+          "PuCl3-RbCl": {
+            "database": "chloride",
+            "composition": {
+              "Rb": 0.01,
+              "Pu": 0.99,
+              "Cl": 2.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 757.565333353539,
+                "fractions": {
+                  "PuCl3": 0.9444701223192928
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.9643150420899201
+                }
+              },
+              "2": {
+                "temperature": 748.812293051062,
+                "fractions": {
+                  "PuCl3": 0.8917323978167913
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.9235415860306687
+                }
+              },
+              "3": {
+                "temperature": 733.3126226539475,
+                "fractions": {
+                  "PuCl3": 0.8432441511273427
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.8629871892198437
+                }
+              },
+              "4": {
+                "temperature": 704.3378770543354,
+                "fractions": {
+                  "PuCl3": 0.7947079162783413
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7789767280157393
+                }
+              },
+              "5": {
+                "temperature": 664.3703069474229,
+                "fractions": {
+                  "PuCl3": 0.7461325331939151
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7011135314403604
+                }
+              },
+              "6": {
+                "temperature": 633.9801632102567,
+                "fractions": {
+                  "PuCl3": 0.6961667563287542
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.6591158507040542
+                }
+              },
+              "7": {
+                "temperature": 588.0024549732155,
+                "fractions": {
+                  "PuCl3": 0.6390229610714998
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.6122867673424386
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "CsCl-PuCl3": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.99,
+              "Pu": 0.01,
+              "Cl": 1.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 617.4777025010776,
+                "fractions": {
+                  "PuCl3": 0.0558100595705176
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.05119538889852081
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          },
+          "PuCl3-CsCl": {
+            "database": "chloride",
+            "composition": {
+              "Cs": 0.01,
+              "Pu": 0.99,
+              "Cl": 2.98
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 755.568019805263,
+                "fractions": {
+                  "PuCl3": 0.9626717211348238
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.9614134864293992
+                }
+              },
+              "2": {
+                "temperature": 734.0375327416806,
+                "fractions": {
+                  "PuCl3": 0.9146782197367403
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.9001396263585603
+                }
+              },
+              "3": {
+                "temperature": 709.5329406173672,
+                "fractions": {
+                  "PuCl3": 0.8576938804831954
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.8501489022651207
+                }
+              },
+              "4": {
+                "temperature": 679.8471502304351,
+                "fractions": {
+                  "PuCl3": 0.7976812811529491
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.8016579178419477
+                }
+              },
+              "5": {
+                "temperature": 652.0457333583847,
+                "fractions": {
+                  "PuCl3": 0.7571147533736365
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7627661001583921
+                }
+              },
+              "6": {
+                "temperature": 647.2369889811121,
+                "fractions": {
+                  "PuCl3": 0.7555840452691726
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7564726874362839
+                }
+              },
+              "7": {
+                "temperature": 632.3996198096838,
+                "fractions": {
+                  "PuCl3": 0.7285673235264863
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7376752975053633
+                }
+              },
+              "8": {
+                "temperature": 617.5733026823311,
+                "fractions": {
+                  "PuCl3": 0.7075297576286734
+                },
+                "status": "pass",
+                "results": {
+                  "PuCl3": 0.7196782149513227
+                }
+              }
+            },
+            "series status": "pass",
+            "series type": "solubility limits"
+          }
+        }
+      }
     }
   }
 }

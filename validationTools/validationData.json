@@ -25543,6 +25543,82 @@
           }
         }
       }
+    },
+    "schafer-1953": {
+      "mstdb references": [
+        "mstdb-34:viitala2019"
+      ],
+      "url": "Could not be found online",
+      "title": "INTERACTION OF NICKEL DICHLORIDE WITH MAGNESIUM AND ZINC DICHLORIDE",
+      "authors": "SAFONOV, VV and MIREEV, VA",
+      "type": "experiment",
+      "tests": {
+        "solubility limits": {
+          "FeCl3-FeCl2": {
+            "database": "chloride",
+            "composition": {
+              "Fe": 1,
+              "Cl": 2.02
+            },
+            "error": 0.1,
+            "temperature unit": "C",
+            "phase": "MSCL",
+            "fraction type": "endmembers",
+            "enabled": "true",
+            "samples": {
+              "1": {
+                "temperature": 405.8823529411763,
+                "fractions": {
+                  "FeCl3": 0.7704785077047855
+                },
+                "status": "fail",
+                "results": "Phase not stable"
+              },
+              "2": {
+                "temperature": 386.76470588235276,
+                "fractions": {
+                  "FeCl3": 0.7891321978913222
+                },
+                "status": "fail",
+                "results": "Phase not stable"
+              },
+              "3": {
+                "temperature": 365.19607843137226,
+                "fractions": {
+                  "FeCl3": 0.8102189781021898
+                },
+                "status": "pass",
+                "results": {
+                  "FeCl3": 0.8054154544191241
+                }
+              },
+              "4": {
+                "temperature": 340.6862745098037,
+                "fractions": {
+                  "FeCl3": 0.8296836982968372
+                },
+                "status": "pass",
+                "results": {
+                  "FeCl3": 0.8320035707682549
+                }
+              },
+              "5": {
+                "temperature": 314.21568627450955,
+                "fractions": {
+                  "FeCl3": 0.8499594484995947
+                },
+                "status": "pass",
+                "results": {
+                  "FeCl3": 0.8579797968644206
+                }
+              }
+            },
+            "series status": "partial",
+            "series type": "solubility limits"
+          }
+        }
+      },
+      "comment": "No access, data read from Viitala (2019). MSTDB predicts salt boiling for highest two temperatures."
     }
   }
 }

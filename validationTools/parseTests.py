@@ -72,6 +72,8 @@ class jsonTestData:
 
                         # Check series filters for series inclusion
                         includeSeries = True
+                        if testType == 'heat capacities':
+                            includeSeries = False
                         if (seriesStatus not in self.seriesStatusFilter) and self.seriesStatusFilter:
                             includeSeries = False
                         if (testType not in self.seriesTypeFilter) and self.seriesTypeFilter:
